@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cnmik1er7ncjj"]
+
+[ext_resource type="Script" uid="uid://dk54lv3m5k3em" path="res://scripts/play_button.gd" id="1_i26rj"]
+[ext_resource type="PackedScene" uid="uid://cctqacfflrntm" path="res://scenes/fade_black.tscn" id="2_eiy7p"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ykcb2"]
+font_size = 40
+
+[node name="Control" type="Control" unique_id=1829746973]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="title" type="Label" parent="." unique_id=18409696]
+layout_mode = 0
+offset_left = 413.0
+offset_top = 84.0
+offset_right = 745.0
+offset_bottom = 165.0
+text = "TITLE"
+label_settings = SubResource("LabelSettings_ykcb2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="play_button" type="Button" parent="." unique_id=878464427]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 399.0
+offset_right = 645.0
+offset_bottom = 431.0
+text = "PLAY"
+script = ExtResource("1_i26rj")
+
+[node name="fade_black" parent="play_button" unique_id=1813767706 instance=ExtResource("2_eiy7p")]
+layout_mode = 0
+offset_left = -549.0
+offset_top = -420.0
+offset_right = 695.0
+offset_bottom = 282.0
+
+[node name="Timer" type="Timer" parent="play_button" unique_id=715457754]
+wait_time = 2.0
+
+[connection signal="pressed" from="play_button" to="play_button" method="_on_pressed"]
+[connection signal="pressed" from="play_button" to="play_button/fade_black" method="fade_out" binds= [1.0]]
+[connection signal="timeout" from="play_button/Timer" to="play_button" method="_on_timer_timeout"]

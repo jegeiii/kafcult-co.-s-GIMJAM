@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cctqacfflrntm"]
+
+[ext_resource type="Script" uid="uid://dvn5uh6us7y8m" path="res://scripts/fade_black.gd" id="1_3usyw"]
+
+[node name="fade_black" type="ColorRect" unique_id=1813767706]
+offset_left = -39.0
+offset_top = -21.0
+offset_right = 1205.0
+offset_bottom = 681.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+script = ExtResource("1_3usyw")
