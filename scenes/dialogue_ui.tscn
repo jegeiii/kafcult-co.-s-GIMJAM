@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cvqlnlldj05ok"]
+
+[ext_resource type="Script" uid="uid://vfemrulm2n5j" path="res://scripts/dialogue_ui.gd" id="1_dwk8m"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uj04i"]
+font_size = 30
+
+[sub_resource type="LabelSettings" id="LabelSettings_p5viw"]
+font_size = 15
+
+[node name="DialogueUI" type="Control" unique_id=1234273672]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dwk8m")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=210769213]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 75
+theme_override_constants/margin_right = 75
+theme_override_constants/margin_bottom = 75
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer" unique_id=1137712031]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer" unique_id=924986039]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer" unique_id=2109218884]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="CharacterNameLabel" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=494576098]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Character Name"
+label_settings = SubResource("LabelSettings_uj04i")
+
+[node name="CharacterMessageLabel" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1560942092]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 0)
+layout_mode = 2
+text = "Character Message"
+label_settings = SubResource("LabelSettings_p5viw")
+autowrap_mode = 3
