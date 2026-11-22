@@ -1,6 +1,6 @@
 extends Button
 
-var next_scene = preload("res://ACT1.tscn")
+var next_scene = preload("res://scenes/ACT1.tscn")
 
 func _on_pressed():
 	$Timer.start()
