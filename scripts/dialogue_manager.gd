@@ -3,10 +3,11 @@ extends Node
 var dialogue_lines: Array
 var current_line_idx: int
 var dialogue_ongoing: bool
+var dialogue_line_ongoing: bool
 
 signal dialogue_start
 signal dialogue_end
-signal load_next_line(speaker, text)
+signal load_next_line(speaker, message)
 
 func load_dialogue_json(dialogue_path: String) -> Dictionary:
 	# Basically import the entire json file as text
@@ -31,10 +32,10 @@ func initiate_dialogue(dialogue_path: String) -> void:
 	
 	# Get the array of all the dialogues from a json file
 	var dialogue_json: Dictionary = load_dialogue_json(dialogue_path)
-	var dialogue_data = dialogue_json["dialogue"]
+	var dialogue_lines_data = dialogue_json["dialogue"]
 	
 	# Set initial conditions
-	dialogue_lines = dialogue_data
+	dialogue_lines = dialogue_lines_data
 	current_line_idx = 0
 	
 	# Display the first line
@@ -42,8 +43,9 @@ func initiate_dialogue(dialogue_path: String) -> void:
 
 func display_current_line() -> void:
 	var current_line: Dictionary = dialogue_lines[current_line_idx]
+	print(current_line)
 	var current_speaker = current_line["speaker"]
-	var current_message = current_line["text"]
+	var current_message = current_line["segments"]
 	
 	# Emit signal to load the next line
 	load_next_line.emit(current_speaker, current_message)
@@ -56,5 +58,5 @@ func display_current_line() -> void:
 		dialogue_ongoing = false
 
 #func _ready():
-	#print(dialogue_start)
+	#initiate_dialogue("res://dialogues/experimental_dialogue_text.json")
 	

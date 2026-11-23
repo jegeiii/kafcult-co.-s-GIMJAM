@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TextPreset" format=3 uid="uid://dsxjs7t8uu8s8"]
+
+[ext_resource type="Script" uid="uid://dtenxj4itxwi5" path="res://presets/text_preset.gd" id="1_4t1y7"]
+[ext_resource type="FontFile" uid="uid://cid85lhfdw6h2" path="res://fonts/LibreBaskerville-Bold.ttf" id="1_34t72"]
+
+[resource]
+script = ExtResource("1_4t1y7")
+font = ExtResource("1_34t72")
+font_size = 22
+color = Color(0.9411765, 0.9019608, 0.8352941, 1)
+bold = true
+outline = Color(0.16078432, 0.13333334, 0.11372549, 1)
+outline_size = 1
+metadata/_custom_type_script = "uid://dtenxj4itxwi5"
