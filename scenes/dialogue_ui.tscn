@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://cvqlnlldj05ok"]
+
+[ext_resource type="Script" uid="uid://vfemrulm2n5j" path="res://scripts/dialogue_ui.gd" id="1_dwk8m"]
+[ext_resource type="Texture2D" uid="uid://d06ww2hvcnoge" path="res://graphics/crosshair-188.png" id="2_6q285"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uj04i"]
+font_size = 30
+
+[node name="DialogueUI" type="Control" unique_id=1234273672]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dwk8m")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=210769213]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 75
+theme_override_constants/margin_right = 75
+theme_override_constants/margin_bottom = 75
+
+[node name="DialogueBox" type="PanelContainer" parent="MarginContainer" unique_id=1137712031]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/DialogueBox" unique_id=1428581842]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/DialogueBox/VBoxContainer2" unique_id=924986039]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/DialogueBox/VBoxContainer2/MarginContainer" unique_id=2109218884]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="CharacterNameLabel" type="Label" parent="MarginContainer/DialogueBox/VBoxContainer2/MarginContainer/VBoxContainer" unique_id=494576098]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Character Name"
+label_settings = SubResource("LabelSettings_uj04i")
+
+[node name="CharacterMessageLabel" type="RichTextLabel" parent="MarginContainer/DialogueBox/VBoxContainer2/MarginContainer/VBoxContainer" unique_id=1828002419]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(600, 100)
+layout_mode = 2
+bbcode_enabled = true
+fit_content = true
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/DialogueBox/VBoxContainer2" unique_id=567635494]
+layout_mode = 2
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 20
+
+[node name="ContinueMarker" type="TextureRect" parent="MarginContainer/DialogueBox/VBoxContainer2/MarginContainer2" unique_id=2103934933]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture = ExtResource("2_6q285")
+expand_mode = 1
