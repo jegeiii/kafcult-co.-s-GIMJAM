@@ -10,8 +10,4 @@ func _on_button_pressed() -> void:
 
 func _on_dialogue_end() -> void:
 	$CanvasLayer/Button.disabled = false
-
-func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("continue_dialogue") and DialogueManager.dialogue_ongoing:
-		DialogueManager.display_current_line()
 	

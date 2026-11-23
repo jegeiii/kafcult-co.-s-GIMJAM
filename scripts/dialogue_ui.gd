@@ -3,6 +3,7 @@ extends Control
 @onready var dialogue_box: PanelContainer = %DialogueBox
 @onready var name_label: Label = %CharacterNameLabel
 @onready var message_label: RichTextLabel = %CharacterMessageLabel
+@onready var continue_hint: TextureRect = %ContinueMarker
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -13,6 +14,7 @@ func _ready() -> void:
 	
 	# Initialize the dialogue box to be invisible until a dialogue is started
 	dialogue_box.visible = false
+	hide_continue_hint()
 
 func _on_dialogue_start() -> void:
 	dialogue_box.visible = true
@@ -52,12 +54,26 @@ func apply_preset(sample_text, preset) -> String:
 	
 	return result
 
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("continue_dialogue") and DialogueManager.dialogue_ongoing:
+		if is_typing:
+			skip_typing()
+		else:
+			DialogueManager.display_current_line()
+
+var is_typing: bool = false
+func skip_typing() -> void:
+	if is_typing:
+		is_typing = false
+
 func _on_load_next_line(name, message_segments) -> void:
 	# Initial state of dialogue box ig idk
+	hide_continue_hint()
 	name_label.text = name
 	message_label.text = ""
 	message_label.visible_characters = 0
 	var total_characters = 0
+	is_typing = true
 	
 	for segment in message_segments:
 		# Get the base text
@@ -74,8 +90,21 @@ func _on_load_next_line(name, message_segments) -> void:
 		var pace = segment.pacing
 		var pause_after = segment.pause_after
 		while message_label.visible_characters < total_characters:
+			if not is_typing:
+				break
 			message_label.visible_characters += 1
 			await get_tree().create_timer(pace).timeout
 		
-		await get_tree().create_timer(pause_after).timeout
-		
+		if is_typing:
+			await get_tree().create_timer(pause_after).timeout
+	
+	# If skipped, then just reveal the entire text
+	message_label.visible_characters = -1
+	is_typing = false
+	show_continue_hint()
+
+func hide_continue_hint() -> void:
+	continue_hint.modulate.a = 0
+
+func show_continue_hint() -> void:
+	continue_hint.modulate.a = 1
