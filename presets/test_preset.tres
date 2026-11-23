@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TextPreset" format=3 uid="uid://qxkm0u425b84"]
+
+[ext_resource type="Script" uid="uid://dtenxj4itxwi5" path="res://presets/text_preset.gd" id="1_fmtqp"]
+[ext_resource type="FontFile" uid="uid://pf8acnh0qmki" path="res://fonts/IMFellEnglish-Regular.ttf" id="1_v6k1m"]
+
+[resource]
+script = ExtResource("1_fmtqp")
+font = ExtResource("1_v6k1m")
+font_size = 24
+outline = Color(0.8901961, 0.5058824, 0.84705883, 0)
+metadata/_custom_type_script = "uid://dtenxj4itxwi5"
