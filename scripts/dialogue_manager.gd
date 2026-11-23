@@ -2,6 +2,7 @@ extends Node
 
 var dialogue_lines: Array
 var current_line_idx: int
+var dialogue_ongoing: bool
 
 signal dialogue_start
 signal dialogue_end
@@ -24,6 +25,7 @@ func load_dialogue_json(dialogue_path: String) -> Dictionary:
 	return data
 
 func initiate_dialogue(dialogue_path: String) -> void:
+	dialogue_ongoing = true
 	# Emit the signal that loads the dialogue box
 	dialogue_start.emit()
 	
@@ -51,6 +53,7 @@ func display_current_line() -> void:
 	# If reached the end of the array, emit signal to end the dialogue
 	if current_line_idx == dialogue_lines.size():
 		dialogue_end.emit()
+		dialogue_ongoing = false
 
 #func _ready():
 	#print(dialogue_start)
