@@ -3,7 +3,7 @@ extends RichTextLabel
 var sample_text: String = "Only the worthy ones deserve heaven..."
 
 # Test of loading the presets
-var preset = preload("res://presets/normal.tres")
+var preset = preload("res://presets/thought.tres")
 
 func _ready() -> void:
 	text = apply_preset(sample_text)

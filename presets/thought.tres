@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TextPreset" format=3 uid="uid://cu6c8k1u650m1"]
+
+[ext_resource type="FontFile" uid="uid://cl8eveor2hhxu" path="res://fonts/LibreBaskerville-MediumItalic.ttf" id="1_30i2k"]
+[ext_resource type="Script" uid="uid://dtenxj4itxwi5" path="res://presets/text_preset.gd" id="1_dcsq2"]
+
+[resource]
+script = ExtResource("1_dcsq2")
+font = ExtResource("1_30i2k")
+font_size = 16
+color = Color(0.90490705, 0.8689304, 0.9548759, 1)
+metadata/_custom_type_script = "uid://dtenxj4itxwi5"
