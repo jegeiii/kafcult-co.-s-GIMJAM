@@ -3,8 +3,9 @@ extends Node
 var dialogue_lines: Array
 var current_line_idx: int
 
-@onready var character_name: Label = get_node("/root/DialogueUI/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/CharacterNameLabel")
-@onready var character_message: Label = get_node("/root/DialogueUI/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/CharacterMessageLabel")
+signal dialogue_start
+signal dialogue_end
+signal load_next_line(speaker, text)
 
 func load_dialogue_json(dialogue_path: String) -> Dictionary:
 	# Basically import the entire json file as text
@@ -23,6 +24,9 @@ func load_dialogue_json(dialogue_path: String) -> Dictionary:
 	return data
 
 func initiate_dialogue(dialogue_path: String) -> void:
+	# Emit the signal that loads the dialogue box
+	dialogue_start.emit()
+	
 	# Get the array of all the dialogues from a json file
 	var dialogue_json: Dictionary = load_dialogue_json(dialogue_path)
 	var dialogue_data = dialogue_json["dialogue"]
@@ -30,14 +34,24 @@ func initiate_dialogue(dialogue_path: String) -> void:
 	# Set initial conditions
 	dialogue_lines = dialogue_data
 	current_line_idx = 0
+	
+	# Display the first line
+	display_current_line()
 
 func display_current_line() -> void:
 	var current_line: Dictionary = dialogue_lines[current_line_idx]
-	character_name.text = current_line["speaker"]
-	character_message.text = current_line["text"]
+	var current_speaker = current_line["speaker"]
+	var current_message = current_line["text"]
+	
+	# Emit signal to load the next line
+	load_next_line.emit(current_speaker, current_message)
 	
 	current_line_idx += 1
+	
+	# If reached the end of the array, emit signal to end the dialogue
+	if current_line_idx == dialogue_lines.size():
+		dialogue_end.emit()
 
 #func _ready():
-	#initiate_dialogue("res://dialogues/test_dialogue_text.json")
+	#print(dialogue_start)
 	

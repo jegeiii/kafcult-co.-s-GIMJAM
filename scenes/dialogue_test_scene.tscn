@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dl6oujcx0in1t"]
+
+[ext_resource type="Script" uid="uid://dfjhag2ng3ejs" path="res://scripts/dialogue_test_scene.gd" id="1_03o6t"]
+[ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="2_2dmkw"]
+
+[node name="DialogueTestScene" type="Node2D" unique_id=96239642]
+script = ExtResource("1_03o6t")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=645675460]
+
+[node name="DialogueUI" parent="CanvasLayer" unique_id=1234273672 instance=ExtResource("2_2dmkw")]
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=504446199]
+offset_left = 471.0
+offset_top = 139.0
+offset_right = 671.0
+offset_bottom = 214.0
+text = "Initiate Dialogue"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
