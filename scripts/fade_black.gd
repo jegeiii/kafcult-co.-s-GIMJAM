@@ -10,4 +10,4 @@ func fade_out(duration):
 
 func transparent():
 	var tween = create_tween()
-	tween.tween_property(self, "color:a", 0.5, 0.5)
+	tween.tween_property(self, "color:a", 0.5, 0.1)
