@@ -2,6 +2,7 @@ extends Node
 
 var inventory_slot: Dictionary
 var item_json: Dictionary
+signal fade_black_pressed
 
 func load_item_json(json_path: String) -> void:
 	var file = FileAccess.open(json_path, FileAccess.READ)
@@ -17,9 +18,12 @@ func load_item_json(json_path: String) -> void:
 func add_item(item: TextureButton):
 	item.custom_minimum_size = Vector2(50, 50)
 	item.reparent(get_node("/root/InventoryUi/PanelContainer/ScrollContainer/VBoxContainer"))
-	item.set_script(load("res://scripts/clickables.gd"))
-	item.button_interaction = "inspect"
-	
+
+func InventoryInspect(item_id: String):
+	$fade_black.transparent()
+	$fade_black.mouse_filter = Control.MOUSE_FILTER_STOP
+	#$item_closeup.visible = true
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	#load_item_json("res://item.json")
@@ -29,3 +33,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_fade_black_gui_input(event: InputEvent) -> void:
+	fade_black_pressed.emit()

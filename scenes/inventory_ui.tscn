@@ -1,15 +1,13 @@
 [gd_scene format=3 uid="uid://be83dtlgyydmy"]
 
-[node name="InventoryUI" type="Control" unique_id=1453639750]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[ext_resource type="PackedScene" uid="uid://cctqacfflrntm" path="res://scenes/fade_black.tscn" id="1_tahbm"]
+[ext_resource type="Script" uid="uid://bpwlrkh8pqrp2" path="res://scripts/inventory_manager.gd" id="1_ylkvr"]
+
+[node name="InventoryUI" type="CanvasLayer" unique_id=1724370343]
+layer = 10
+script = ExtResource("1_ylkvr")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=862810394]
-layout_mode = 0
 offset_left = 1088.0
 offset_top = 129.0
 offset_right = 1150.0
@@ -24,3 +22,11 @@ horizontal_scroll_mode = 0
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 size_flags_horizontal = 6
+
+[node name="fade_black" parent="." unique_id=1813767706 instance=ExtResource("1_tahbm")]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1244.0
+offset_bottom = 702.0
+
+[connection signal="gui_input" from="fade_black" to="." method="_on_fade_black_gui_input"]

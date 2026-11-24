@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 DialogueManager="*uid://kyreujamekhp"
-InventoryManager="*uid://bpwlrkh8pqrp2"
 InventoryUi="*uid://be83dtlgyydmy"
 
 [display]
