@@ -1,0 +1,14 @@
+{
+	"a": 
+		{
+			"name": "How to Prog: 101",
+			"description": "As the title suggests.",
+			"img_path": "res://items/a.png"
+		},
+	"b": 
+		{
+			"name": "Hear Me Out, Elmo",
+			"description": "I have nothing else to say.",
+			"img_path": "res://items/b.png"
+		}
+}

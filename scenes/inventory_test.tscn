@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://co043mlbremdc"]
+
+[ext_resource type="PackedScene" uid="uid://ci4sol1vea776" path="res://scenes/clickables.tscn" id="1_h73wm"]
+
+[node name="InventoryTest" type="Node2D" unique_id=2044100818]
+
+[node name="clickables" parent="." unique_id=473976335 instance=ExtResource("1_h73wm")]
+item_id = "a"
