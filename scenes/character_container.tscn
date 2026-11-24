@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dimqef8ptr4f4"]
+
+[ext_resource type="Script" uid="uid://cwtu27j0m6w0m" path="res://scenes/character_container.gd" id="1_cg1hg"]
+
+[node name="CharacterContainer" type="Control" unique_id=57957316]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cg1hg")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1758316299]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_bottom = 200
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1162034598]
+custom_minimum_size = Vector2(500, 20)
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 300
+alignment = 1
+
+[node name="LeftMarker" type="Control" parent="MarginContainer/HBoxContainer" unique_id=815092589]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="CenterMarker" type="Control" parent="MarginContainer/HBoxContainer" unique_id=340545386]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="RightMarker" type="Control" parent="MarginContainer/HBoxContainer" unique_id=69543951]
+unique_name_in_owner = true
+layout_mode = 2

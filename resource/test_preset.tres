@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="TextPreset" format=3 uid="uid://qxkm0u425b84"]
 
-[ext_resource type="Script" uid="uid://dtenxj4itxwi5" path="res://presets/text_preset.gd" id="1_fmtqp"]
+[ext_resource type="Script" uid="uid://dtenxj4itxwi5" path="res://resource/text_preset.gd" id="1_fmtqp"]
 [ext_resource type="FontFile" uid="uid://pf8acnh0qmki" path="res://fonts/IMFellEnglish-Regular.ttf" id="1_v6k1m"]
 
 [resource]

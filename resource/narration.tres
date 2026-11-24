@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="TextPreset" format=3 uid="uid://x358vy2r2rdo"]
 
 [ext_resource type="FontFile" uid="uid://cl8eveor2hhxu" path="res://fonts/LibreBaskerville-MediumItalic.ttf" id="1_2e5f7"]
-[ext_resource type="Script" uid="uid://dtenxj4itxwi5" path="res://presets/text_preset.gd" id="1_kv3yg"]
+[ext_resource type="Script" uid="uid://dtenxj4itxwi5" path="res://resource/text_preset.gd" id="1_kv3yg"]
 
 [resource]
 script = ExtResource("1_kv3yg")

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="TextPreset" format=3 uid="uid://d0eqdxesfcs48"]
 
-[ext_resource type="Script" uid="uid://dtenxj4itxwi5" path="res://presets/text_preset.gd" id="1_70bbt"]
+[ext_resource type="Script" uid="uid://dtenxj4itxwi5" path="res://resource/text_preset.gd" id="1_70bbt"]
 [ext_resource type="FontFile" uid="uid://cq3lu6aitrwg1" path="res://fonts/LibreBaskerville-Medium.ttf" id="1_iwd7w"]
 
 [resource]

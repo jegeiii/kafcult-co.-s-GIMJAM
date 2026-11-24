@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dxxvefglsklyd"]
+
+[ext_resource type="Texture2D" uid="uid://cbq4y3x6ek88q" path="res://graphics/william_happy.png" id="1_6b1p7"]
+
+[node name="WilliamHappySprite" type="TextureRect" unique_id=697537623]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -110.0
+offset_top = -133.0
+offset_right = -1041.0
+offset_bottom = -540.8999
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_6b1p7")
+expand_mode = 1

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cqka86o48dokl"]
+
+[ext_resource type="Texture2D" uid="uid://burwlsjcqp73u" path="res://graphics/william_surprised.png" id="1_rbwr4"]
+
+[node name="WilliamSurprisedSprite" type="TextureRect" unique_id=2005427691]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -83.0
+offset_top = -154.0
+offset_right = -1067.0
+offset_bottom = -555.3004
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_rbwr4")
+expand_mode = 1

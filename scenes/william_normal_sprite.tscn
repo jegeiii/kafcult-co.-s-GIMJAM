@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c07ebi28f4jtm"]
+
+[ext_resource type="Texture2D" uid="uid://dt1oquvq78t3s" path="res://graphics/william_normal.png" id="1_lmeht"]
+
+[node name="WilliamNormalSprite" type="TextureRect" unique_id=2137726588]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -109.0
+offset_top = -142.0
+offset_right = -1043.0
+offset_bottom = -561.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_lmeht")
+expand_mode = 1

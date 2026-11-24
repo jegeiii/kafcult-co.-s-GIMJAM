@@ -43,7 +43,6 @@ func initiate_dialogue(dialogue_path: String) -> void:
 
 func display_current_line() -> void:
 	var current_line: Dictionary = dialogue_lines[current_line_idx]
-	print(current_line)
 	var current_speaker = current_line["speaker"]
 	var current_message = current_line["segments"]
 	

@@ -23,11 +23,11 @@ func _on_dialogue_end() -> void:
 	dialogue_box.visible = false
 
 const PRESETS: Dictionary = {
-	"normal": preload("res://presets/normal.tres"),
-	"narration": preload("res://presets/narration.tres"),
-	"ominous": preload("res://presets/ominous.tres"),
-	"thought": preload("res://presets/thought.tres"),
-	"emphasis": preload("res://presets/emphasis.tres")
+	"normal": preload("res://resource/normal.tres"),
+	"narration": preload("res://resource/narration.tres"),
+	"ominous": preload("res://resource/ominous.tres"),
+	"thought": preload("res://resource/thought.tres"),
+	"emphasis": preload("res://resource/emphasis.tres")
 }
 
 func get_preset(style):
