@@ -1,20 +1,21 @@
-extends Button
+extends TextureButton
 
 @export var item_id = "placeholder"
+@export var button_interaction = "get" #get or interact
 
 func _ready():
 	print(item_id)
 
-func _on_pressed(interaction):
+func _on_pressed():
 	disabled = true
 	#print("pressed: ", interaction)
-	if interaction == "get":
+	if button_interaction == "get":
 		self_modulate.a = 0.0
 		$notification.text = "Obtained " + item_id
 		$notification.visible = true
 		$notification/Timer.start()
 		InventoryManager.add_item(item_id)
-	elif interaction == "inspect":
+	elif button_interaction == "inspect":
 		$fade_black.transparent()
 		$fade_black.mouse_filter = MOUSE_FILTER_STOP
 		$item_closeup.visible = true

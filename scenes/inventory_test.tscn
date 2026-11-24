@@ -5,4 +5,3 @@
 [node name="InventoryTest" type="Node2D" unique_id=2044100818]
 
 [node name="clickables" parent="." unique_id=473976335 instance=ExtResource("1_h73wm")]
-item_id = "a"
