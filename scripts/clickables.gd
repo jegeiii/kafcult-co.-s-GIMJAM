@@ -7,6 +7,7 @@ func _ready():
 	print(item_id)
 
 func _on_pressed():
+	print("pressed")
 	disabled = true
 	#print("pressed: ", interaction)
 	if button_interaction == "get":
@@ -14,7 +15,7 @@ func _on_pressed():
 		$notification.text = "Obtained " + item_id
 		$notification.visible = true
 		$notification/Timer.start()
-		InventoryManager.add_item(item_id)
+		InventoryManager.add_item(self)
 	elif button_interaction == "inspect":
 		$fade_black.transparent()
 		$fade_black.mouse_filter = MOUSE_FILTER_STOP

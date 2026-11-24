@@ -15,7 +15,6 @@ ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("1_bw4n5")
 item_id = "a"
-button_interaction = "inspect"
 
 [node name="dimmer" parent="." unique_id=1440613432 instance=ExtResource("3_sgte0")]
 
