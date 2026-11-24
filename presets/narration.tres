@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("1_kv3yg")
 font = ExtResource("1_2e5f7")
-font_size = 20
+font_size = 22
 color = Color(0.6638241, 0.66382414, 0.6638239, 1)
 outline = Color(1, 1, 1, 0)
 metadata/_custom_type_script = "uid://dtenxj4itxwi5"

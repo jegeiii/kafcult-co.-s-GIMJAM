@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource("1_70bbt")
 font = ExtResource("1_iwd7w")
-font_size = 20
+font_size = 22
 color = Color(1, 1, 1, 1)
 outline = Color(0.6063984, 0.4317659, 0.14782175, 1)
 outline_size = 5
