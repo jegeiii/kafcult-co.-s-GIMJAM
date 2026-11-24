@@ -2,11 +2,14 @@
 
 [ext_resource type="Script" uid="uid://dfjhag2ng3ejs" path="res://scripts/dialogue_test_scene.gd" id="1_03o6t"]
 [ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="2_2dmkw"]
+[ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="3_2dmkw"]
 
 [node name="DialogueTestScene" type="Node2D" unique_id=96239642]
 script = ExtResource("1_03o6t")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=645675460]
+
+[node name="CharacterContainer" parent="CanvasLayer" unique_id=57957316 instance=ExtResource("3_2dmkw")]
 
 [node name="DialogueUI" parent="CanvasLayer" unique_id=1234273672 instance=ExtResource("2_2dmkw")]
 

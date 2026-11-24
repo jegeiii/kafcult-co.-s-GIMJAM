@@ -12,7 +12,7 @@ func get_marker(position: String) -> Control:
 func get_marker_position(marker: Control) -> Vector2:
 	return marker.global_position
 
-func load_character(node: PackedScene, position: String) -> void:
+func load_character(node: PackedScene, position: String):
 	# Load the node into the scene
 	var character = node.instantiate()
 	add_child(character)
@@ -21,9 +21,25 @@ func load_character(node: PackedScene, position: String) -> void:
 	var marker = get_marker(position)
 	var marker_position = get_marker_position(marker)
 	character.global_position = marker_position - Vector2(
-		$WilliamHappySprite.size.x / 2,
-		$WilliamHappySprite.size.y
+		character.size.x / 2,
+		character.size.y
 	)
+	
+	return character
+
+# Character Resources
+var CHARACTER_RESOURCES: Dictionary = {
+	"William": preload("res://resource/test_sprites.tres")
+}
+
+func get_character_resource(name):
+	return CHARACTER_RESOURCES[name]
+
+func get_character_sprite(name, expression):
+	var resource = get_character_resource(name)
+	var sprite_path = resource.CHARACTER_SPRITES[expression]
+	var sprite = load(sprite_path)
+	return sprite
 
 func _ready() -> void:
 	# Initialize dictionary for marker
@@ -32,9 +48,19 @@ func _ready() -> void:
 		"center": center_marker,
 		"right": right_marker
 	}
-	await get_tree().process_frame
+	
+	# Connect signal to sprite
+	DialogueManager.load_sprite.connect(_on_load_sprite)
 
+# Keep track of the active characters
+var active_characters: Dictionary = {}
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_load_sprite(name, position, expression) -> void:
+	# Remove previous instance if it exists
+	if active_characters.has(name):
+		active_characters[name].queue_free()
+		active_characters.erase(name)
+		
+	var character_sprite = get_character_sprite(name, expression)
+	var character = load_character(character_sprite, position)
+	active_characters[name] = character

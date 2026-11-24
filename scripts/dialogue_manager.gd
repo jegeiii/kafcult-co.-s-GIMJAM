@@ -2,12 +2,14 @@ extends Node
 
 var dialogue_lines: Array
 var current_line_idx: int
+var character_position: Dictionary
 var dialogue_ongoing: bool
 var dialogue_line_ongoing: bool
 
 signal dialogue_start
 signal dialogue_end
 signal load_next_line(speaker, message)
+signal load_sprite(name, position, expression)
 
 func load_dialogue_json(dialogue_path: String) -> Dictionary:
 	# Basically import the entire json file as text
@@ -27,15 +29,22 @@ func load_dialogue_json(dialogue_path: String) -> Dictionary:
 
 func initiate_dialogue(dialogue_path: String) -> void:
 	dialogue_ongoing = true
-	# Emit the signal that loads the dialogue box
-	dialogue_start.emit()
 	
 	# Get the array of all the dialogues from a json file
 	var dialogue_json: Dictionary = load_dialogue_json(dialogue_path)
 	var dialogue_lines_data = dialogue_json["dialogue"]
 	
-	# Set initial conditions
+	# Emit the signal that loads the dialogue box
+	dialogue_start.emit()
+	
+	# Setup all the characters (get position to use later)
 	dialogue_lines = dialogue_lines_data
+	var characters = dialogue_json["characters"]
+	for character in characters:
+		if character["name"] != "Narrator":
+			character_position[character["name"]] = character["position"]
+			load_sprite.emit(character["name"], character["position"], character["int_exp"])
+	
 	current_line_idx = 0
 	
 	# Display the first line
@@ -44,10 +53,17 @@ func initiate_dialogue(dialogue_path: String) -> void:
 func display_current_line() -> void:
 	var current_line: Dictionary = dialogue_lines[current_line_idx]
 	var current_speaker = current_line["speaker"]
+	var current_expression = current_line["expression"]
+	var current_delivery = current_line["delivery"]
 	var current_message = current_line["segments"]
 	
 	# Emit signal to load the next line
 	load_next_line.emit(current_speaker, current_message)
+	
+	# Emit signal to load the next sprite
+	if current_delivery != "narration":
+		print("sending signals")
+		load_sprite.emit(current_speaker, character_position[current_speaker], current_expression)
 	
 	current_line_idx += 1
 	
@@ -56,6 +72,6 @@ func display_current_line() -> void:
 		dialogue_end.emit()
 		dialogue_ongoing = false
 
-#func _ready():
-	#initiate_dialogue("res://dialogues/experimental_dialogue_text.json")
+func _ready():
+	initiate_dialogue("res://dialogues/experimental_dialogue_text.json")
 	

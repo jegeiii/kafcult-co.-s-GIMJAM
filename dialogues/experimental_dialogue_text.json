@@ -3,7 +3,8 @@
   "characters": [
 	{
 	  "name": "William",
-	  "position": "center"
+	  "position": "center",
+	  "int_exp": "normal"
 	},
 	{
 	  "name": "Narrator"
