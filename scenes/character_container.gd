@@ -49,8 +49,9 @@ func _ready() -> void:
 		"right": right_marker
 	}
 	
-	# Connect signal to sprite
+	# Connect signal from DialogueManager
 	DialogueManager.load_sprite.connect(_on_load_sprite)
+	DialogueManager.dialogue_end.connect(_on_dialogue_end)
 
 # Keep track of the active characters
 var active_characters: Dictionary = {}
@@ -64,3 +65,11 @@ func _on_load_sprite(name, position, expression) -> void:
 	var character_sprite = get_character_sprite(name, expression)
 	var character = load_character(character_sprite, position)
 	active_characters[name] = character
+
+func _on_dialogue_end() -> void:
+	# Remove every character that is on the screen
+	for character in active_characters.values():
+		character.queue_free()
+		
+	# Clear the dictionary
+	active_characters.clear()
