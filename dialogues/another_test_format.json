@@ -1,0 +1,383 @@
+{
+  "characters": [
+	{
+	  "name": "William",
+	  "int_pos": "center",
+	  "int_exp": "normal"
+	},
+	{
+	  "name": "Narrator"
+	}
+  ],
+  "dialogue": [
+	{
+	  "speaker": "William",
+	  "position": "center",
+	  "expression": "normal",
+	  "delivery": "spoken",
+	  "segments": [
+		{
+		  "text": "Finally... ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Nothing beats the end of working day.",
+		  "pacing": 0.0275,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "speaker": "William",
+	  "position": "center",
+	  "expression": "normal",
+	  "delivery": "spoken",
+	  "segments": [
+		{
+		  "text": "Why is there a letter from... ",
+		  "pacing": 0.0275,
+		  "style": "normal",
+		  "pause_after": 0.5
+		},
+		{
+		  "text": "that place anyways?",
+		  "pacing": 0.045,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "speaker": "???",
+	  "expression": "normal",
+	  "delivery": "narration",
+	  "segments": [
+		{
+		  "text": "To my dear, William Blackwood",
+		  "pacing": 0.0275,
+		  "style": "narration",
+		  "pause_after": 0.8
+		}
+	  ]
+	},
+	{
+	  "speaker": "???",
+	  "expression": "normal",
+	  "delivery": "narration",
+	  "segments": [
+		{
+		  "text": "I hope this letter reaches you and you didn't immediately throw it away. ",
+		  "pacing": 0.0225,
+		  "style": "narration",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "Do read it first, I don't plan to ask much from you nor to cause any trouble. ",
+		  "pacing": 0.0225,
+		  "style": "narration",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "You don't have to know who I am. ",
+		  "pacing": 0.025,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "I'm merely curious about how the city has been treating you these days.",
+		  "pacing": 0.0225,
+		  "style": "narration",
+		  "pause_after": 0.9
+		}
+	  ]
+	},
+	{
+	  "speaker": "???",
+	  "expression": "normal",
+	  "delivery": "narration",
+	  "segments": [
+		{
+		  "text": "The city is heaven, isn't it? ",
+		  "pacing": 0.025,
+		  "style": "narration",
+		  "pause_after": 0.25
+		},
+		{
+		  "text": "Lots of opportunities. Plenty of possibilities. ",
+		  "pacing": 0.0225,
+		  "style": "narration",
+		  "pause_after": 0.25
+		},
+		{
+		  "text": "Even fresh chances to achieve your deep-rooted dreams. ",
+		  "pacing": 0.0225,
+		  "style": "narration",
+		  "pause_after": 0.5
+		},
+		{
+		  "text": "Still, you realize it, don't you? ",
+		  "pacing": 0.0325,
+		  "style": "narration",
+		  "pause_after": 0.4
+		},
+		{
+		  "text": "That no matter how far you run from the woods, you know that...",
+		  "pacing": 0.0425,
+		  "style": "narration",
+		  "pause_after": 1.0
+		}
+	  ]
+	},
+	{
+	  "speaker": "???",
+	  "expression": "normal",
+	  "delivery": "narration",
+	  "segments": [
+		{
+		  "text": "Only the worthy ones deserve heaven.",
+		  "pacing": 0.055,
+		  "style": "ominous",
+		  "pause_after": 1.0
+		}
+	  ]
+	},
+	{
+	  "speaker": "William",
+	  "position": "center",
+	  "expression": "surprised",
+	  "delivery": "spoken",
+	  "segments": [
+		{
+		  "text": "...!!",
+		  "pacing": 0.09,
+		  "style": "emphasis",
+		  "pause_after": 0.8
+		}
+	  ]
+	},
+	{
+	  "speaker": "???",
+	  "expression": "normal",
+	  "delivery": "narration",
+	  "segments": [
+		{
+		  "text": "The doors will greet you with open arms.",
+		  "pacing": 0.0375,
+		  "style": "narration",
+		  "pause_after": 0.7
+		}
+	  ]
+	},
+	{
+	  "speaker": "???",
+	  "expression": "normal",
+	  "delivery": "narration",
+	  "segments": [
+		{
+		  "text": "If you walk through the woods to the place that was once your home now, ",
+		  "pacing": 0.0225,
+		  "style": "narration",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "you'll see the walls are as steady as ever, expected from the Blackwoods. ",
+		  "pacing": 0.0225,
+		  "style": "narration",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "The roofs are still looming high to the sky though the power is now weak. ",
+		  "pacing": 0.0225,
+		  "style": "narration",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "The crickets still sing their ode late into the night.",
+		  "pacing": 0.025,
+		  "style": "narration",
+		  "pause_after": 0.6
+		}
+	  ]
+	},
+	{
+	  "speaker": "???",
+	  "expression": "normal",
+	  "delivery": "narration",
+	  "segments": [
+		{
+		  "text": "Nobody lives there anymore. ",
+		  "pacing": 0.0375,
+		  "style": "ominous",
+		  "pause_after": 0.5
+		},
+		{
+		  "text": "Nobody comes by.",
+		  "pacing": 0.0475,
+		  "style": "ominous",
+		  "pause_after": 0.8
+		}
+	  ]
+	},
+	{
+	  "speaker": "???",
+	  "expression": "normal",
+	  "delivery": "narration",
+	  "segments": [
+		{
+		  "text": "I hope you can do me a favor to visit the manor again. ",
+		  "pacing": 0.025,
+		  "style": "narration",
+		  "pause_after": 0.25
+		},
+		{
+		  "text": "Though I can't guarantee that we will meet there, ",
+		  "pacing": 0.0275,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "but you won't be alone.",
+		  "pacing": 0.0425,
+		  "style": "ominous",
+		  "pause_after": 0.7
+		}
+	  ]
+	},
+	{
+	  "speaker": "???",
+	  "expression": "normal",
+	  "delivery": "narration",
+	  "segments": [
+		{
+		  "text": "I'm waiting... ",
+		  "pacing": 0.055,
+		  "style": "narration",
+		  "pause_after": 0.7
+		},
+		{
+		  "text": "No, they're waiting.",
+		  "pacing": 0.065,
+		  "style": "ominous",
+		  "pause_after": 1.0
+		}
+	  ]
+	},
+	{
+	  "speaker": "William",
+	  "position": "center",
+	  "expression": "surprised",
+	  "delivery": "spoken",
+	  "segments": [
+		{
+		  "text": "...Going back? ",
+		  "pacing": 0.07,
+		  "style": "normal",
+		  "pause_after": 0.5
+		},
+		{
+		  "text": "There?",
+		  "pacing": 0.09,
+		  "style": "normal",
+		  "pause_after": 1.5
+		}
+	  ]
+	},
+	{
+	  "speaker": "William",
+	  "position": "center",
+	  "expression": "normal",
+	  "delivery": "spoken",
+	  "segments": [
+		{
+		  "text": "Only the worthy ones deserve heaven... ",
+		  "pacing": 0.0475,
+		  "style": "normal",
+		  "pause_after": 0.5
+		},
+		{
+		  "text": "Who even knows that?",
+		  "pacing": 0.0325,
+		  "style": "normal",
+		  "pause_after": 1.2
+		}
+	  ]
+	},
+	{
+	  "speaker": "William",
+	  "position": "center",
+	  "expression": "normal",
+	  "delivery": "spoken",
+	  "segments": [
+		{
+		  "text": "Should I go...? ",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0.6
+		},
+		{
+		  "text": "But...",
+		  "pacing": 0.085,
+		  "style": "normal",
+		  "pause_after": 0.9
+		}
+	  ]
+	},
+	{
+	  "speaker": "William",
+	  "position": "center",
+	  "expression": "normal",
+	  "delivery": "thought",
+	  "segments": [
+		{
+		  "text": "Who even sent this invitation to me ",
+		  "pacing": 0.0275,
+		  "style": "thought",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "after all these years?",
+		  "pacing": 0.045,
+		  "style": "thought",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "speaker": "William",
+	  "position": "center",
+	  "expression": "normal",
+	  "delivery": "thought",
+	  "segments": [
+		{
+		  "text": "Ignoring the invitation does feel kind of rude, ",
+		  "pacing": 0.025,
+		  "style": "thought",
+		  "pause_after": 0.25
+		},
+		{
+		  "text": "though.",
+		  "pacing": 0.06,
+		  "style": "thought",
+		  "pause_after": 0.7
+		}
+	  ]
+	},
+	{
+	  "speaker": "William",
+	  "position": "center",
+	  "expression": "normal",
+	  "delivery": "spoken",
+	  "segments": [
+		{
+		  "text": "Let's get this over with, then...",
+		  "pacing": 0.035,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	}
+  ]
+}

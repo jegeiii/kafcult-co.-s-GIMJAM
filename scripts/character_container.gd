@@ -29,7 +29,9 @@ func load_character(node: PackedScene, position: String):
 
 # Character Resources
 var CHARACTER_RESOURCES: Dictionary = {
-	"William": preload("res://resource/test_sprites.tres")
+	"William": preload("res://resource/test_sprites.tres"),
+	"Diana": preload("res://resource/test_sprites.tres"),
+	"Nathaniel": preload("res://resource/test_sprites.tres")
 }
 
 func get_character_resource(name):
@@ -49,8 +51,11 @@ func _ready() -> void:
 		"right": right_marker
 	}
 	
-	# Connect signal to sprite
+	# Connect signal from DialogueManager
 	DialogueManager.load_sprite.connect(_on_load_sprite)
+	DialogueManager.dialogue_end.connect(_on_dialogue_end)
+	DialogueManager.unload_sprite.connect(_on_unload_sprite)
+	DialogueManager.highlight_speaker.connect(_on_highlight_speaker)
 
 # Keep track of the active characters
 var active_characters: Dictionary = {}
@@ -64,3 +69,23 @@ func _on_load_sprite(name, position, expression) -> void:
 	var character_sprite = get_character_sprite(name, expression)
 	var character = load_character(character_sprite, position)
 	active_characters[name] = character
+
+func _on_unload_sprite(name) -> void:
+	if active_characters.has(name):
+		active_characters[name].queue_free()
+		active_characters.erase(name)
+
+func _on_highlight_speaker(name) -> void:
+	for character_name in active_characters.keys():
+		if character_name == name:
+			active_characters[character_name].modulate = Color(1, 1, 1, 1)
+		else:
+			active_characters[character_name].modulate = Color(0.7, 0.7, 0.7, 1)
+
+func _on_dialogue_end() -> void:
+	# Remove every character that is on the screen
+	for character in active_characters.values():
+		character.queue_free()
+		
+	# Clear the dictionary
+	active_characters.clear()
