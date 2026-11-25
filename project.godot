@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="kafcult 7 co.'s GIMJAM"
+config/name="kafcult & co.'s GIMJAM"
 run/main_scene="uid://cnmik1er7ncjj"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"

@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://ci4sol1vea776"]
 
 [ext_resource type="Script" uid="uid://cnyokkvpg3008" path="res://scripts/clickables.gd" id="1_bw4n5"]
-[ext_resource type="PackedScene" uid="uid://cctqacfflrntm" path="res://scenes/fade_black.tscn" id="1_iy21d"]
-[ext_resource type="Texture2D" uid="uid://b48765n6krxm" path="res://graphics/button_placeholder.png" id="1_sgte0"]
+[ext_resource type="Texture2D" uid="uid://b48765n6krxm" path="res://graphics/a.png" id="1_sgte0"]
 [ext_resource type="PackedScene" uid="uid://c1tdbiw7wt4m3" path="res://scenes/dimmer.tscn" id="3_sgte0"]
 
 [node name="clickables" type="TextureButton" unique_id=316619854]
@@ -18,39 +17,4 @@ item_id = "a"
 
 [node name="dimmer" parent="." unique_id=1440613432 instance=ExtResource("3_sgte0")]
 
-[node name="fade_black" parent="." unique_id=1813767706 instance=ExtResource("1_iy21d")]
-layout_mode = 0
-offset_left = -936.0
-offset_top = -472.0
-offset_right = 308.0
-offset_bottom = 230.0
-focus_mode = 1
-
-[node name="item_closeup" type="TextureButton" parent="." unique_id=1288458229]
-visible = false
-layout_mode = 0
-offset_left = -355.0
-offset_top = -141.0
-offset_right = -213.0
-offset_bottom = -70.0
-texture_normal = ExtResource("1_sgte0")
-ignore_texture_size = true
-stretch_mode = 5
-
-[node name="dimmer" parent="item_closeup" unique_id=259971659 instance=ExtResource("3_sgte0")]
-
-[node name="notification" type="Label" parent="." unique_id=1620389040]
-visible = false
-layout_mode = 0
-offset_left = -328.0
-offset_top = -375.0
-offset_right = -236.0
-offset_bottom = -352.0
-text = "placeholder"
-
-[node name="Timer" type="Timer" parent="notification" unique_id=709791206]
-wait_time = 3.0
-
 [connection signal="pressed" from="." to="." method="_on_pressed"]
-[connection signal="gui_input" from="fade_black" to="." method="_on_fade_black_gui_input"]
-[connection signal="timeout" from="notification/Timer" to="." method="_on_timer_timeout"]
