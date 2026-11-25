@@ -1,8 +1,7 @@
 extends Node
 
-var dialogue_lines: Array
-var current_line_idx: int
-var character_position: Dictionary
+var dialogue_lines: Array			# Array of dialogue lines
+var current_line_idx: int			# The index of the current dialogue line
 var dialogue_ongoing: bool
 var dialogue_line_ongoing: bool
 
@@ -42,8 +41,7 @@ func initiate_dialogue(dialogue_path: String) -> void:
 	var characters = dialogue_json["characters"]
 	for character in characters:
 		if character["name"] != "Narrator":
-			character_position[character["name"]] = character["position"]
-			load_sprite.emit(character["name"], character["position"], character["int_exp"])
+			load_sprite.emit(character["name"], character["int_pos"], character["int_exp"])
 	
 	current_line_idx = 0
 	
@@ -62,8 +60,8 @@ func display_current_line() -> void:
 	
 	# Emit signal to load the next sprite
 	if current_delivery != "narration":
-		print("sending signals")
-		load_sprite.emit(current_speaker, character_position[current_speaker], current_expression)
+		var current_position = current_line["position"]
+		load_sprite.emit(current_speaker, current_position, current_expression)
 	
 	current_line_idx += 1
 	
@@ -73,5 +71,6 @@ func display_current_line() -> void:
 		dialogue_ongoing = false
 
 func _ready():
-	initiate_dialogue("res://dialogues/experimental_dialogue_text.json")
+	# initiate_dialogue("res://dialogues/experimental_dialogue_text.json")
+	pass
 	
