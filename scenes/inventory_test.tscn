@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://co043mlbremdc"]
+
+[ext_resource type="PackedScene" uid="uid://ci4sol1vea776" path="res://scenes/clickables.tscn" id="1_h73wm"]
+
+[node name="InventoryTest" type="Node2D" unique_id=2044100818]
+
+[node name="clickables" parent="." unique_id=473976335 instance=ExtResource("1_h73wm")]
+offset_left = 584.0
+offset_top = 141.0
+offset_right = 688.0
+offset_bottom = 203.0
+
+[node name="clickables2" parent="." unique_id=316619854 instance=ExtResource("1_h73wm")]
+offset_left = 281.0
+offset_top = 90.0
+offset_right = 385.0
+offset_bottom = 152.0
+item_id = "b"
+
+[node name="clickables3" parent="." unique_id=1886409933 instance=ExtResource("1_h73wm")]
+offset_left = 713.0
+offset_top = 363.0
+offset_right = 817.0
+offset_bottom = 425.0
+
+[node name="clickables4" parent="." unique_id=684547791 instance=ExtResource("1_h73wm")]
+offset_left = 519.0
+offset_top = 296.0
+offset_right = 623.0
+offset_bottom = 358.0
+item_id = "b"
+
+[node name="clickables5" parent="." unique_id=215888762 instance=ExtResource("1_h73wm")]
+offset_left = 668.0
+offset_top = 487.0
+offset_right = 772.0
+offset_bottom = 549.0
+item_id = "b"
+
+[node name="clickables6" parent="." unique_id=991219956 instance=ExtResource("1_h73wm")]
+offset_left = 133.0
+offset_top = 182.0
+offset_right = 237.0
+offset_bottom = 244.0
+
+[node name="clickables7" parent="." unique_id=392846354 instance=ExtResource("1_h73wm")]
+offset_left = 816.0
+offset_top = 196.0
+offset_right = 920.0
+offset_bottom = 258.0
+item_id = "b"
+
+[node name="clickables8" parent="." unique_id=715462020 instance=ExtResource("1_h73wm")]
+offset_left = 428.0
+offset_top = 517.0
+offset_right = 532.0
+offset_bottom = 579.0
+button_interaction = "inspect"
+
+[node name="clickables9" parent="." unique_id=946105928 instance=ExtResource("1_h73wm")]
+offset_left = 148.0
+offset_top = 357.0
+offset_right = 252.0
+offset_bottom = 419.0
+item_id = "b"

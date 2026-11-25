@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c1tdbiw7wt4m3"]
+
+[ext_resource type="Script" uid="uid://bobdrcluvrr4b" path="res://scripts/dimmer.gd" id="1_tw5y5"]
+
+[node name="dimmer" type="Node" unique_id=1440613432]
+script = ExtResource("1_tw5y5")
