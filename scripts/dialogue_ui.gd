@@ -10,7 +10,7 @@ func _ready() -> void:
 	# Connect all the signals
 	DialogueManager.dialogue_start.connect(_on_dialogue_start)
 	DialogueManager.dialogue_end.connect(_on_dialogue_end)
-	DialogueManager.load_next_line.connect(_on_load_next_line)
+	DialogueManager.load_text.connect(_on_load_text)
 	
 	# Initialize the dialogue box to be invisible until a dialogue is started
 	dialogue_box.visible = false
@@ -59,14 +59,14 @@ func _process(delta: float) -> void:
 		if is_typing:
 			skip_typing()
 		else:
-			DialogueManager.display_current_line()
+			DialogueManager.dialogue_next()
 
 var is_typing: bool = false
 func skip_typing() -> void:
 	if is_typing:
 		is_typing = false
 
-func _on_load_next_line(name, message_segments) -> void:
+func _on_load_text(name, message_segments) -> void:
 	# Initial state of dialogue box ig idk
 	hide_continue_hint()
 	name_label.text = name
