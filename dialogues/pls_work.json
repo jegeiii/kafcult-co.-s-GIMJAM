@@ -650,6 +650,10 @@
 	  ]
 	},
 	{
+		"name": "Flashback",
+		"flashback_id": 1
+	},
+	{
 	  "name": "LoadSprite",
 	  "speaker": "Diana",
 	  "expression": "happy",

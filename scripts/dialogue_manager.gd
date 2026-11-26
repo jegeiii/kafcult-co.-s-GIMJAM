@@ -1,8 +1,13 @@
 extends Node
 
-var dialogue_events: Array				# Contain all of the events of the current dialogue
+var current_dialogue_events: Array				# Contain all of the events of the current dialogue
 var current_event_idx: int				# The index of the current dialogue line
 var dialogue_ongoing: bool				# Is there a dialogue ongoing?
+# If there's as flashback, save the state of the dialogue
+# Come back to it once the flashback is finished
+var previous_dialogue_events: Array
+var previous_event_idx: int
+var flashback_ongoing: bool
 
 signal dialogue_start
 signal dialogue_end
@@ -38,14 +43,14 @@ func initiate_dialogue(dialogue_path: String) -> void:
 	dialogue_start.emit()
 	
 	# Save data to global
-	dialogue_events = events
+	current_dialogue_events = events
 	current_event_idx = 0
 	
 	# Display the first event
 	dialogue_next()
 
 func display_current_event() -> void:
-	var event: Dictionary = dialogue_events[current_event_idx]
+	var event: Dictionary = current_dialogue_events[current_event_idx]
 	var event_name: String = event["name"]
 	
 	match event_name:
@@ -62,30 +67,69 @@ func display_current_event() -> void:
 		"UnloadSprite":
 			var character_name = event["speaker"]
 			unload_sprite.emit(character_name)
+		"Flashback":
+			current_event_idx += 1
+			var flashback_id = event["flashback_id"]
+			initiate_flashback(flashback_id)
 			
 
 # Runs every next LoadSprite event and 1 LoadText, essentially "grouping" them ig
 # Code runs under the assumption that the last event in the dialogue is a LoadText event
 func dialogue_next() -> void:
-	if current_event_idx == dialogue_events.size():
-		dialogue_end.emit()
-		dialogue_ongoing = false
+	if current_event_idx == current_dialogue_events.size():
+		finish_dialogue()
 		return
 
-	var curr_event = dialogue_events[current_event_idx]
+	var curr_event = current_dialogue_events[current_event_idx]
 	var curr_event_name = curr_event["name"]
 	
 	# Displays all the LoadSprite events
-	while curr_event_name != "LoadText":
+	while curr_event_name != "LoadText" and curr_event_name != "Flashback":
 		display_current_event()
 		
 		current_event_idx += 1
-		curr_event = dialogue_events[current_event_idx]
+		curr_event = current_dialogue_events[current_event_idx]
 		curr_event_name = curr_event["name"]
 	
-	# Display the 1 LoadText event
-	display_current_event()
-	current_event_idx += 1
+	if curr_event_name == "Flashback":
+		display_current_event()
+	else:
+		display_current_event()
+		current_event_idx += 1
+
+var FLASHBACK_FILES: Dictionary = {
+	1: "res://dialogues/pls_work.json",
+	2: "res://dialogues/flashback_2.json"
+}
+
+func initiate_flashback(flashback_id: int) -> void:
+	print("FLASHBACK")
+	flashback_ongoing = true
+	# Save the state before doing the flashback
+	previous_dialogue_events = current_dialogue_events
+	previous_event_idx = current_event_idx
+	
+	# Load the flashback
+	var flashback_path = FLASHBACK_FILES[flashback_id]
+	var flashback_json: Dictionary = load_dialogue_json(flashback_path)
+	current_dialogue_events = flashback_json["events"]
+	current_event_idx = 0
+	
+	# Prolly have a signal to change the scene
+	dialogue_next()
+
+func finish_dialogue() -> void:
+	if flashback_ongoing:
+		# Return to previous state
+		current_dialogue_events = previous_dialogue_events
+		current_event_idx = previous_event_idx
+		flashback_ongoing = false
+		
+		# Some signal to go back to the main scene
+		dialogue_next()
+	else:
+		dialogue_end.emit()
+		dialogue_ongoing = false
 
 func _ready():
 	# initiate_dialogue("res://dialogues/experimental_dialogue_text.json")
