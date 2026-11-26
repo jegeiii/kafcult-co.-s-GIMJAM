@@ -11,19 +11,21 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_ylkvr")
 
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=862810394]
-layout_mode = 0
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1400130431]
+layer = 5
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=862810394]
 offset_left = 1153.0
 offset_top = 130.0
 offset_right = 1215.0
 offset_bottom = 511.0
 
-[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer" unique_id=83714804]
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/PanelContainer" unique_id=83714804]
 layout_mode = 2
 follow_focus = true
 horizontal_scroll_mode = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/ScrollContainer" unique_id=341675588]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer/ScrollContainer" unique_id=341675588]
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 size_flags_horizontal = 6
@@ -157,6 +159,19 @@ offset_top = 92.0
 offset_right = 401.0
 offset_bottom = 123.0
 text = "Use Item"
+
+[node name="PanelContainer2" type="PanelContainer" parent="item_inspect/item_closeup" unique_id=973345674]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -74.0
+offset_top = -133.0
+offset_right = 325.0
+offset_bottom = 7.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="item_inspect/item_closeup/PanelContainer2" unique_id=2037673461]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=324460584]
 layout_mode = 0

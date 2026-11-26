@@ -5,13 +5,32 @@
 [ext_resource type="PackedScene" uid="uid://c1tdbiw7wt4m3" path="res://scenes/dimmer.tscn" id="3_qt1qe"]
 [ext_resource type="PackedScene" uid="uid://ci4sol1vea776" path="res://scenes/clickables.tscn" id="4_qt1qe"]
 [ext_resource type="Texture2D" uid="uid://bicspftpu8xxx" path="res://graphics/charles_key.png" id="5_54ip0"]
+[ext_resource type="Texture2D" uid="uid://bfsf0v188v7q7" path="res://graphics/plate.png" id="6_pd338"]
+[ext_resource type="Texture2D" uid="uid://do1pfr7355dcd" path="res://graphics/knife.png" id="7_kybp6"]
 [ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="7_sil4y"]
+[ext_resource type="Texture2D" uid="uid://clhbcr1d3j882" path="res://graphics/rotten_vegetable.png" id="8_q63ay"]
 [ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="8_udecq"]
+[ext_resource type="Texture2D" uid="uid://cgi7l5ivehs1c" path="res://graphics/rotten_meat.png" id="9_wbxdu"]
+
+[sub_resource type="GDScript" id="GDScript_pd338"]
+script/source = "extends TextureButton
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
 
 [node name="Node2D" type="Node2D" unique_id=1426360670]
 script = ExtResource("1_udt4n")
 
 [node name="mansion_entrance" type="Control" parent="." unique_id=1242478844]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 
@@ -58,7 +77,6 @@ usable = true
 [node name="dimmer" parent="dining_room/laci" unique_id=1757405502 instance=ExtResource("3_qt1qe")]
 
 [node name="distorted_dining_room" type="Control" parent="." unique_id=469903526]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -66,44 +84,63 @@ offset_bottom = 40.0
 
 [node name="plate" parent="distorted_dining_room" unique_id=2085533608 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 65.0
-offset_bottom = 62.0
+offset_left = 439.0
+offset_top = 256.0
+offset_right = 504.0
+offset_bottom = 318.0
+texture_normal = ExtResource("6_pd338")
 item_id = "plate"
 
 [node name="knife" parent="distorted_dining_room" unique_id=516024968 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 65.0
-offset_bottom = 62.0
+offset_left = 685.0
+offset_top = 165.0
+offset_right = 750.0
+offset_bottom = 227.0
+texture_normal = ExtResource("7_kybp6")
 item_id = "knife"
 usable = true
 
 [node name="rotten_vegetable" parent="distorted_dining_room" unique_id=1962551523 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 65.0
-offset_bottom = 62.0
+offset_left = 264.0
+offset_top = 164.0
+offset_right = 329.0
+offset_bottom = 226.0
+texture_normal = ExtResource("8_q63ay")
 item_id = "rotten_vegetable"
+condition = "knife"
 
 [node name="rotten_meat" parent="distorted_dining_room" unique_id=719141946 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 65.0
-offset_bottom = 62.0
+offset_left = 618.0
+offset_top = 252.0
+offset_right = 683.0
+offset_bottom = 314.0
+texture_normal = ExtResource("9_wbxdu")
 item_id = "rotten_meat"
+condition = "knife"
 
 [node name="spiderweb" parent="distorted_dining_room" unique_id=4767312 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 65.0
-offset_bottom = 62.0
+offset_left = -132.0
+offset_top = 159.0
+offset_right = -67.0
+offset_bottom = 221.0
 item_id = "spiderweb"
+
+[node name="charles\'s sillhouette" type="TextureButton" parent="distorted_dining_room" unique_id=845101209]
+layout_mode = 0
+offset_left = 980.0
+offset_top = 214.0
+offset_right = 1105.0
+offset_bottom = 293.0
+texture_normal = ExtResource("2_t1gpn")
+ignore_texture_size = true
+stretch_mode = 5
+script = SubResource("GDScript_pd338")
+
+[node name="dimmer" parent="distorted_dining_room/charles\'s sillhouette" unique_id=765403304 instance=ExtResource("3_qt1qe")]
 
 [node name="basement" type="Control" parent="." unique_id=1306281374]
 visible = false
@@ -148,3 +185,6 @@ visible = false
 
 [connection signal="pressed" from="mansion_entrance/door" to="." method="_on_door_pressed"]
 [connection signal="pressed" from="dining_room/laci" to="." method="_on_laci_pressed"]
+[connection signal="mouse_entered" from="distorted_dining_room/rotten_vegetable" to="." method="_on_rotten_vegetable_mouse_entered"]
+[connection signal="mouse_entered" from="distorted_dining_room/rotten_meat" to="." method="_on_rotten_meat_mouse_entered"]
+[connection signal="pressed" from="distorted_dining_room/charles\'s sillhouette" to="." method="_on_charless_sillhouette_pressed"]
