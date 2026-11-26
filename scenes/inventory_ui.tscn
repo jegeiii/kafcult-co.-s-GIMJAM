@@ -4,11 +4,14 @@
 [ext_resource type="Script" uid="uid://bpwlrkh8pqrp2" path="res://scripts/inventory_manager.gd" id="1_ylkvr"]
 [ext_resource type="PackedScene" uid="uid://c1tdbiw7wt4m3" path="res://scenes/dimmer.tscn" id="3_mdwe3"]
 
-[node name="InventoryUI" type="CanvasLayer" unique_id=1724370343]
-layer = 10
+[node name="InventoryUI" type="Control" unique_id=231228800]
+visible = false
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_ylkvr")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=862810394]
+layout_mode = 0
 offset_left = 1153.0
 offset_top = 130.0
 offset_right = 1215.0
@@ -26,6 +29,7 @@ size_flags_horizontal = 6
 
 [node name="inventory_closed" type="PanelContainer" parent="." unique_id=849046994]
 visible = false
+layout_mode = 0
 offset_left = 1153.0
 offset_top = 130.0
 offset_right = 1215.0
@@ -33,12 +37,14 @@ offset_bottom = 511.0
 
 [node name="inventory_opened" type="PanelContainer" parent="." unique_id=1370788534]
 visible = false
+layout_mode = 0
 offset_left = 1088.0
 offset_top = 129.0
 offset_right = 1150.0
 offset_bottom = 510.0
 
 [node name="Button" type="Button" parent="." unique_id=1276870091]
+layout_mode = 0
 offset_left = 1132.0
 offset_top = 298.0
 offset_right = 1154.0
@@ -47,6 +53,7 @@ text = "<"
 
 [node name="button_closed" type="Button" parent="." unique_id=633699166]
 visible = false
+layout_mode = 0
 offset_left = 1132.0
 offset_top = 298.0
 offset_right = 1154.0
@@ -55,6 +62,7 @@ text = "<"
 
 [node name="button_opened" type="Button" parent="." unique_id=51878666]
 visible = false
+layout_mode = 0
 offset_left = 1067.0
 offset_top = 298.0
 offset_right = 1089.0
@@ -62,6 +70,7 @@ offset_bottom = 342.0
 text = "<"
 
 [node name="fade_black" parent="." unique_id=1813767706 instance=ExtResource("1_tahbm")]
+layout_mode = 0
 offset_left = 0.0
 offset_top = 0.0
 offset_right = 1244.0
@@ -69,6 +78,7 @@ offset_bottom = 702.0
 
 [node name="item_closeup" type="TextureButton" parent="." unique_id=1663312931]
 visible = false
+layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -114,6 +124,7 @@ text = "Use Item"
 
 [node name="notification" type="PanelContainer" parent="." unique_id=930474287]
 self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
 offset_left = 454.0
 offset_right = 734.0
 offset_bottom = 40.0

@@ -5,6 +5,9 @@ var inventory: Dictionary
 var using_item: String
 signal fade_black_pressed
 
+func toggle_inventory(state: bool):
+	self.visible = state
+
 func expand_inventory():
 	if $Button.text == "<":
 		$Button.text = ">"

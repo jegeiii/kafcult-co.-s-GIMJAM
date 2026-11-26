@@ -1,12 +1,13 @@
 extends Button
 
-var next_scene
+var next_scene = preload("res://scenes/ACT1.tscn")
 
 func _ready():
-	next_scene = load(SaveSystem.save_data["current_act"])
+	pass
 
 func _on_pressed():
 	$Timer.start()
 	
 func _on_timer_timeout() -> void:
 	get_tree().change_scene_to_packed(next_scene)
+	InventoryUi.toggle_inventory(true)
