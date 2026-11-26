@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c1tdbiw7wt4m3" path="res://scenes/dimmer.tscn" id="3_qt1qe"]
 [ext_resource type="PackedScene" uid="uid://ci4sol1vea776" path="res://scenes/clickables.tscn" id="4_qt1qe"]
 [ext_resource type="Texture2D" uid="uid://bicspftpu8xxx" path="res://graphics/charles_key.png" id="5_54ip0"]
+[ext_resource type="Texture2D" uid="uid://6nqwtb578vl8" path="res://graphics/distorted_dining_room.png" id="6_kybp6"]
 [ext_resource type="Texture2D" uid="uid://bfsf0v188v7q7" path="res://graphics/plate.png" id="6_pd338"]
 [ext_resource type="Texture2D" uid="uid://do1pfr7355dcd" path="res://graphics/knife.png" id="7_kybp6"]
 [ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="7_sil4y"]
@@ -76,47 +77,51 @@ usable = true
 
 [node name="dimmer" parent="dining_room/laci" unique_id=1757405502 instance=ExtResource("3_qt1qe")]
 
-[node name="distorted_dining_room" type="Control" parent="." unique_id=469903526]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="distorted_dining_room" type="TextureRect" parent="." unique_id=67818663]
+offset_right = 1152.0
+offset_bottom = 647.0
+texture = ExtResource("6_kybp6")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="plate" parent="distorted_dining_room" unique_id=2085533608 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 439.0
-offset_top = 256.0
-offset_right = 504.0
-offset_bottom = 318.0
+offset_left = 334.0
+offset_top = 434.0
+offset_right = 573.0
+offset_bottom = 644.0
+scale = Vector2(0.435, 0.1)
 texture_normal = ExtResource("6_pd338")
 item_id = "plate"
 
 [node name="knife" parent="distorted_dining_room" unique_id=516024968 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 685.0
-offset_top = 165.0
-offset_right = 750.0
-offset_bottom = 227.0
+offset_left = 355.0
+offset_top = 428.0
+offset_right = 420.0
+offset_bottom = 490.0
+scale = Vector2(1, 0.5)
 texture_normal = ExtResource("7_kybp6")
 item_id = "knife"
 usable = true
 
 [node name="rotten_vegetable" parent="distorted_dining_room" unique_id=1962551523 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 264.0
-offset_top = 164.0
-offset_right = 329.0
-offset_bottom = 226.0
+offset_left = 288.0
+offset_top = 338.0
+offset_right = 345.0
+offset_bottom = 389.0
 texture_normal = ExtResource("8_q63ay")
 item_id = "rotten_vegetable"
 condition = "knife"
 
 [node name="rotten_meat" parent="distorted_dining_room" unique_id=719141946 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 618.0
-offset_top = 252.0
-offset_right = 683.0
-offset_bottom = 314.0
+offset_left = 503.0
+offset_top = 424.0
+offset_right = 557.0
+offset_bottom = 472.0
+scale = Vector2(1, 0.5)
 texture_normal = ExtResource("9_wbxdu")
 item_id = "rotten_meat"
 condition = "knife"
@@ -141,6 +146,13 @@ stretch_mode = 5
 script = SubResource("GDScript_pd338")
 
 [node name="dimmer" parent="distorted_dining_room/charles\'s sillhouette" unique_id=765403304 instance=ExtResource("3_qt1qe")]
+
+[node name="flashback_1" type="Control" parent="." unique_id=1522045219]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="basement" type="Control" parent="." unique_id=1306281374]
 visible = false

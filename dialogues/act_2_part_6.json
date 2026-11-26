@@ -1,64 +1,42 @@
 {
   "characters": [
-	"William",
+    "William",
     "Charles’s silhouette"
   ],
   "events": [
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "angry",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "This is all I have, okay? ",
-		  "pacing": 0.075,
-		  "style": "emphasis",
-		  "pause_after": 0.3
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Charles’s silhouette",
-	  "segments": [
-		{
-		  "text": "… ",
-		  "pacing": 0.1,
-		  "style": "normal",
-		  "pause_after": 0.3
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[SCREEN FADES OUT, AS IF PULLING WILLIAM’S CONSCIOUSNESS INTO THE DARKNESS]"
-	},
-	{
-	  "name": "Flashback",
-	  "flashback_id": 1
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "sad",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "…It was never enough, was it? ",
-		  "pacing": 0.07,
-		  "style": "normal",
-		  "pause_after": 0.3
-		}
-	  ]
-	}
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "angry",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "This is all I have, okay? ",
+          "pacing": 0.075,
+          "style": "emphasis",
+          "pause_after": 0.3
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Charles’s silhouette",
+      "segments": [
+        {
+          "text": "… ",
+          "pacing": 0.1,
+          "style": "normal",
+          "pause_after": 0.3
+        }
+      ]
+    },
+    {
+      "name": "Special",
+      "custom_event_name": "[SCREEN FADES OUT, AS IF PULLING WILLIAM’S CONSCIOUSNESS INTO THE DARKNESS]"
+    },
   ]
 }
