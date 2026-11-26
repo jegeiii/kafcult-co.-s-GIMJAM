@@ -1,7 +1,7 @@
 extends Node
 
 #var inventory_slot: Dictionary
-var inventory: Dictionary
+var inventory_ui: Dictionary
 var using_item: String
 var inspect_depth: int = 0;
 signal fade_black_pressed
@@ -14,7 +14,7 @@ func expand_inventory():
 		$Button/Label.text = ">"
 		#$Button.set_position($button_opened.position)
 		$PanelContainer.set_position($inventory_opened.position)
-	elif $Button/Label.text == ">":
+	elif $Button/Label.text == ">":	
 		$Button/Label.text = "<"
 		#$Button.set_position($button_closed.position)
 		$PanelContainer.set_position($inventory_closed.position)
@@ -28,22 +28,49 @@ func load_inventory(json_path: String) -> void:
 	var error = json.parse(text_extract)
 	var data = json.data
 	
-	inventory = data
+	inventory_ui = data
 
-func add_item(item: TextureButton, item_id: String):
-	item.custom_minimum_size = Vector2(50, 50)
-	item.reparent(get_node("/root/InventoryUi/PanelContainer/ScrollContainer/VBoxContainer"))
-	
-	inventory[item_id]["count"] += 1
+
+func add_item(item: TextureButton, item_id: String) -> void:
+	# Check whether this item is already in the inventory
+	var already_owned := GameManager.has_item(item_id)
+
+	# Update the actual inventory data
+	GameManager.add_item(item_id)
+
+	if already_owned:
+		item.queue_free()
+	else:
+		# This is the first time collecting this item.
+		# Move its button into the inventory UI.
+		item.name = item_id
+		item.custom_minimum_size = Vector2(50, 50)
+		item.reparent(
+			get_node("/root/InventoryUi/PanelContainer/ScrollContainer/VBoxContainer")
+		)
+
+		# Make it behave like an inventory item
+		item.button_interaction = "inventory"
+
 	notification_popup(item_id)
-	print(inventory[item_id]["count"])
-	#save()
+	update_item_quantity(item_id)
+	
+	print("Inventory: ", GameManager.inventory)
 
-func remove_item(item_id: String):
-	inventory[item_id]["count"] -= 1
-	if inventory[item_id]["count"] <= 0:
-		$PanelContainer/ScrollContainer/VBoxContainer.remove_child(get_node("PanelContainer/ScrollContainer/VBoxContainer/" + item_id))
-	#save()
+func remove_item(item_id: String, amount: int = 1) -> void:
+
+	GameManager.remove_item(item_id, amount)
+
+	# If the player no longer owns this item, remove its icon from the inventory UI.
+	if not GameManager.has_item(item_id):
+		var inventory_container = get_node(
+	        "/root/InventoryUi/PanelContainer/ScrollContainer/VBoxContainer"
+		)
+
+		var item_icon = inventory_container.get_node_or_null(item_id)
+
+		if item_icon:
+			item_icon.queue_free()
 
 func use_item(item_id: String):
 	using_item = item_id
@@ -54,7 +81,7 @@ func notification_popup(item_id: String):
 	$notification/RichTextLabel.visible = true
 	for i in range(5):
 		$notification/RichTextLabel.text = "Obtained "
-		$notification/RichTextLabel.text += inventory[item_id]["name"]
+		$notification/RichTextLabel.text += inventory_ui[item_id]["name"]
 		$notification/Timer.start(0.2)
 		await $notification/Timer.timeout
 		$notification/RichTextLabel.visible = not $notification/RichTextLabel.visible
@@ -64,10 +91,10 @@ func InventoryInspect(item_id: String, usable: bool):
 	print("a")
 	$fade_black/a.transparent()
 	$fade_black/a.mouse_filter = Control.MOUSE_FILTER_STOP
-	$item_inspect/item_closeup/PanelContainer/RichTextLabel.text = inventory[item_id]["description"]
+	$item_inspect/item_closeup/PanelContainer/RichTextLabel.text = inventory_ui[item_id]["description"]
 	$item_inspect/item_closeup.visible = true
 	$item_inspect/item_closeup/use_button.visible = usable
-	$item_inspect/item_closeup.texture_normal = load(inventory[item_id]["texture_path"])
+	$item_inspect/item_closeup.texture_normal = load(inventory_ui[item_id]["texture_path"])
 	$item_inspect/item_closeup/Label.text = item_id
 	update_item_closeup_clickmask()
 
@@ -76,17 +103,35 @@ func update_item_closeup_clickmask():
 	bitmap.create_from_image_alpha($item_inspect/item_closeup.texture_normal.get_image())
 	$item_inspect/item_closeup.texture_click_mask = bitmap
 
+func update_item_quantity(item_id: String) -> void:
+
+	var container = get_node(
+	    "/root/InventoryUi/PanelContainer/ScrollContainer/VBoxContainer"
+	)
+
+	var item_icon = container.get_node_or_null(item_id)
+
+	if item_icon == null:
+		return
+
+	var quantity = GameManager.get_item_count(item_id)
+
+	var label = item_icon.get_node("QuantityLabel")
+
+	label.text = "×" + str(quantity)
+	label.visible = quantity > 1
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	load_inventory("res://item.json")
 	#print(inventory)
-	print(inventory["a"]["name"])
-	print(inventory["b"]["description"])
+	print(inventory_ui["a"]["name"])
+	print(inventory_ui["b"]["description"])
 	
-func save():
-	var file = FileAccess.open("res://items.json", FileAccess.WRITE)
-	file.store_string(JSON.stringify(inventory, "\t"))
-	file.close
+#func save():
+	#var file = FileAccess.open("res://items.json", FileAccess.WRITE)
+	#file.store_string(JSON.stringify(inventory_ui, "\t"))
+	#file.close
 
 func _on_fade_black_gui_input(event: InputEvent) -> void:
 	if event.is_action_pressed("LMB"):
