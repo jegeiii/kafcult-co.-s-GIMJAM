@@ -3,29 +3,49 @@
     "William"
   ],
   "events": [
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "angry",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Okay, I’ve had enough of this… ",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "These anomalies keep disturbing me.",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    }
+	{
+	  "name": "Special",
+	  "custom_event_name": "[SHOW CHARLES’S OFFICE WITH WILLIAM’S SPRITE]"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Okay, I have a lot of things in my bag. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "There should be something I could do with them somehow… ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William (thoughts)",
+	  "segments": [
+		{
+		  "text": "Oh, maybe it’s related to the things I have collected in my bag! ",
+		  "pacing": 0.06,
+		  "style": "thought",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM’S SPRITE FADES OUT OF THE SCREEN]"
+	}
   ]
 }

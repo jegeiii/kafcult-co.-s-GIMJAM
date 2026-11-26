@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cl7mby3qm1qxv"]
+
+[ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="1_bxi8i"]
+[ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="2_fbw3p"]
+
+[node name="Node2D" type="Node2D" unique_id=1483532168]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=128722358]
+
+[node name="CharacterContainer" parent="CanvasLayer" unique_id=57957316 instance=ExtResource("1_bxi8i")]
+
+[node name="DialogueUI" parent="CanvasLayer" unique_id=1234273672 instance=ExtResource("2_fbw3p")]

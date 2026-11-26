@@ -1,186 +1,145 @@
 {
   "characters": [
-    "William",
-    "Nathaniel"
+	"William",
+	"Nathaniel",
+    "Narrator"
   ],
   "events": [
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "The moment before William open Charles’s Room, his hand reaching out toward the tarnished brass handle. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Before his fingers can close around it, the air in the hallway turns freezing cold.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "PlaySound",
-      "sound": "slow_footsteps_echo"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Slow, familiar footsteps echo behind him. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "A soft, patient voice cuts through the silence.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Nathaniel",
-      "segments": [
-        {
-          "text": "Still wandering the halls alone, little brother?",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "William freezes, his breath catching in his throat. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Slowly, he turns around. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Standing at the far end of the corridor is Nathaniel. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "He looks exactly as he did on that fateful night, wearing that warm, gentle older-brother smile.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "surprised",
-      "position": "left"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Nathaniel",
-      "expression": "smile",
-      "position": "right"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "N-Nate...? ",
-          "pacing": 0.07,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "No... that’s impossible. ",
-          "pacing": 0.07,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "You’re dead.",
-          "pacing": 0.07,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Nathaniel",
-      "segments": [
-        {
-          "text": "Is that what you tell yourself to sleep at night, Will? ",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "That I simply vanished? ",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Come now... you and I both know how that night really ended. ",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "We were standing right beside your bedroom window, weren't we?",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Nathaniel"
-    },
-    {
-      "name": "PlaySound",
-      "sound": "rain"
-    },
-    {
-      "name": "ScreenWarp",
-      "target": "corridor_walls",
-      "edge_darkening": true,
-      "duration": 2.0
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "The corridor walls begin to warp and darken at the edges as the sound of rain fills William’s ears.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    }
+	{
+	  "name": "Special",
+	  "custom_event_name": "[THE AIR IN THE ROOM TURNS FREEZING COLD JUST BEFORE WILLIAM OPENS THE SECRET ROOM]"
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<SLOW, FAMILIAR FOOTSTEPS APPROACHING FROM BEHIND WILLIAM>]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Nathaniel",
+	  "segments": [
+		{
+		  "text": "Still wandering alone, little brother? ",
+		  "pacing": 0.065,
+		  "style": "ominous",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM FREEZES, THEN SLOWLY TURNS AROUND TO FACE NATHANIEL STANDING AT THE FAR END OF THE CORRIDOR]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "N-Nate...? ",
+		  "pacing": 0.1,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "No... that’s impossible. You’re dead. ",
+		  "pacing": 0.075,
+		  "style": "emphasis",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Nathaniel",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Nathaniel",
+	  "segments": [
+		{
+		  "text": "Is that what you tell yourself to sleep at night, Will? ",
+		  "pacing": 0.06,
+		  "style": "ominous",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "That I simply vanished? ",
+		  "pacing": 0.06,
+		  "style": "ominous",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "Come now... you and I both know how that night really ended. ",
+		  "pacing": 0.055,
+		  "style": "ominous",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "We were standing right beside your bedroom window, weren't we? ",
+		  "pacing": 0.055,
+		  "style": "ominous",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[THE ROOM WALLS BEGIN TO WARP AND DARKEN AT THE EDGES]"
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<HEAVY RAINFALL SLOWLY FILLING WILLIAM’S EARS>]"
+	},
+	{
+	  "name": "Flashback",
+	  "flashback_id": 6
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM GASPS SHARPLY AS THE MEMORY CRASHES OVER HIM, SNAPPING HIM BACK INTO THE COLD ROOM]"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[NATHANIEL’S GENTLE SMILE VANISHES. A YELLOW FLAME IGNITES ALONG HIS COLLAR AND RAPIDLY SPREADS ACROSS HIS JAW, HAIR, AND FACE, BURNING SILENTLY]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Nathaniel",
+	  "segments": [
+		{
+		  "text": "You didn't just let me fall, Will. ",
+		  "pacing": 0.065,
+		  "style": "ominous",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "You burned me alive. ",
+		  "pacing": 0.055,
+		  "style": "ominous",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM CLUTCHES HIS CHEST AND BACKS AWAY IN TERROR AGAINST THE HEAVY OAK DOOR]"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[THE FLAMES CONSUMING NATHANIEL BEGIN TO FLICKER AND THIN OUT LIKE DYING SMOKE. HIS BURNING SILHOUETTE SLOWLY DISSOLVES INTO THE CORRIDOR SHADOWS UNTIL NOTHING REMAINS]"
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<SILENCE, WITH A FAINT AMBIENCE OF THE COLD ROOM>]"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[THE FAINT SMELL OF KEROSENE AND ASH LINGERS IN THE FREEZING AIR]"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[AFTER A MOMENT OF SILENCE, WILLIAM BENDS DOWN WITH A TREMBLING HAND, THEN TURNS BACK TO SEARCH THE SECRET ROOM]"
+	}
   ]
 }

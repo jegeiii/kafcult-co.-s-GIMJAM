@@ -1,495 +1,372 @@
 {
   "characters": [
-    "Charles",
-    "Clara",
-    "Margaret",
-    "Diana",
-    "William"
+	"William",
+	"Charles",
+	"Clara",
+	"Margaret",
+	"Diana",
+    "Narrator"
   ],
   "events": [
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Heavy rain beats against the tall windows of the dining hall. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "A long wooden table is set with candles and wine glasses, with one empty chair right next to Charles.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Forty days have passed since Nathaniel died. ",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "With their only heir gone and the Great Depression of 1930 ruining their family business, the Blackwoods are on the edge of losing everything. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Tonight, Charles has gathered everyone in the house for a quiet memorial dinner.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Charles",
-      "expression": "normal",
-      "position": "left"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Clara",
-      "expression": "sad",
-      "position": "right"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Charles stands at the head of the table, holding up a glass bottle of dark red wine. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Behind him, Clara, looking pale and tired, pours the wine for Margaret, Diana, and the rest of the staff.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "Tonight, we remember my son, Nathaniel—the true heir of Blackwood. ",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0.25
-        },
-        {
-          "text": "Even in these hard times, our family name will survive. ",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0.25
-        },
-        {
-          "text": "Drink, all of you, to his memory and to a fresh start.",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Clara"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Margaret",
-      "expression": "sad",
-      "position": "right"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "None of them know that Charles has mixed a heavy dose of sleeping drugs. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Margaret drinks hers quickly, her hands shaking.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Margaret"
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Charles"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Thirty minutes later, the dining hall goes completely silent. ",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "One by one, Margaret and the servants slump over the table or fall onto the floor in a deep sleep.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Charles",
-      "expression": "normal",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Charles stands alone among the unconscious bodies, breathing hard, his eyes locked on his family painting.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Charles"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "sad",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Upstairs in William's bedroom, a tray of untouched food and a full glass of wine sit cold on the side table. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "William lies awake in bed, staring at the ceiling, crushed by guilt over Nathaniel's death and the loss of Walter.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "*Scrape... Thud...*",
-          "pacing": 0.06,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "surprised",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Suddenly, a heavy dragging sound echoes up from the main stairs below. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "A strong, foul smell of sulfur, blood, and dirty lake water creeps under the crack of his bedroom door.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "William sits up slowly, his heart pounding fast. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "He walks to the door and cracks it open, looking out into the dark hallway.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "William creeps quietly down the stairs toward the main hall, following the wet drag marks smeared across the wooden floor.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Through the half-open doors of the ritual room, a strange, sickly yellow light flickers on the stone walls. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "William peeks through the gap.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "In the middle of the stone floor, a blank canvas stands in front of a freshly painted Yellow Sign. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Around the edge of the circle lie the unconscious bodies of Margaret, Clara, and the servants, all except one empty spot.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Charles",
-      "expression": "normal",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Charles stands beside the canvas, holding a silver knife in one hand and a porcelain mask in the other.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "Everything is set. ",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0.25
-        },
-        {
-          "text": "Only the final piece remains. ",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0.25
-        },
-        {
-          "text": "He must be in place before the first stroke is painted...",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Charles",
-      "expression": "surprised",
-      "position": "left"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "surprised",
-      "position": "right"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Charles turns sharply toward the doorway, intending to go upstairs and drag William down to complete the circle—and freezes as he spots William's pale face peeking through the gap.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Charles",
-      "expression": "happy",
-      "position": "left"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "William! ",
-          "pacing": 0.045,
-          "style": "emphasis",
-          "pause_after": 0.2
-        },
-        {
-          "text": "You're already here... Good. ",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0.25
-        },
-        {
-          "text": "You didn't drink the wine. ",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0.25
-        },
-        {
-          "text": "Stay right there!",
-          "pacing": 0.045,
-          "style": "emphasis",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Pure terror grips William's chest. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Seeing his mother and sister lying motionless on the floor and his father lunging at him with a bloodied knife and a blank mask, William thought that Charles has completely lost his mind.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Charles"
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "*Crash! Thud, thud, thud!*",
-          "pacing": 0.035,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "William stumbles back, turns, and runs blindly down the back hallway—bursting through the kitchen doors out into the pouring rain.",
-          "pacing": 0.04,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Behind him, Charles's angry shouts echo through the empty halls, quickly drowned out by the wind and thunder. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "William runs into the pitch-black forest, his boots slipping in the mud as he crosses the flooded stone bridge leading out of Blackwood Hollow.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "He keeps running until the dark shape of Blackwood Manor disappears into the fog behind him, leaving his family, his guilt, and his home.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    }
+	{
+	  "name": "Special",
+	  "custom_event_name": "[HEAVY RAIN BEATS AGAINST THE TALL WINDOWS OF THE DINING HALL]"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[SHOW DINING HALL WITH A LONG WOODEN TABLE SET WITH CANDLES AND WINE GLASSES, INCLUDING ONE EMPTY CHAIR NEXT TO CHARLES]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Heavy rain beats against the tall windows of the dining hall. A long wooden table is set with candles and wine glasses, with one empty chair right next to Charles. ",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Forty days have passed since Nathaniel died. With their only heir gone and the Great Depression of 1930 ruining their family business, the Blackwoods are on the edge of losing everything. Tonight, Charles has gathered everyone in the house for a quiet memorial dinner. ",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0.6
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Charles",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[CHARLES STANDS AT THE HEAD OF THE TABLE HOLDING A BOTTLE OF DARK RED WINE; CLARA STANDS BEHIND HIM, POURING WINE FOR MARGARET, DIANA, AND THE STAFF]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Charles stands at the head of the table, holding up a glass bottle of dark red wine. Behind him, Clara, looking pale and tired, pours the wine for Margaret, Diana, and the rest of the staff. ",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "Tonight, we remember my son, Nathaniel—the true heir of Blackwood. Even in these hard times, our family name will survive. Drink, all of you, to his memory and to a fresh start. ",
+		  "pacing": 0.08,
+		  "style": "normal",
+		  "pause_after": 0.6
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "None of them know that Charles has mixed a heavy dose of sleeping drugs. Margaret drinks hers quickly, her hands shaking. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[TIME SKIP: THIRTY MINUTES LATER]"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[DINING HALL GOES COMPLETELY SILENT; MARGARET AND THE SERVANTS ONE BY ONE SLUMP OVER THE TABLE OR FALL TO THE FLOOR ASLEEP]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Thirty minutes later, the dining hall goes completely silent. One by one, Margaret and the servants slump over the table or fall onto the floor in a deep sleep. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.6
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[CHARLES STANDS ALONE AMONG THE UNCONSCIOUS BODIES, BREATHING HARD AND STARING AT THE FAMILY PAINTING]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Charles stands alone among the unconscious bodies, breathing hard, his eyes locked on his family painting. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.6
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[CUT TO WILLIAM'S BEDROOM UPSTAIRS]"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "sad",
+	  "position": "center"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[SHOW A TRAY OF UNTOUCHED FOOD AND A FULL GLASS OF WINE GROWING COLD ON THE SIDE TABLE]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Upstairs in William’s bedroom, a tray of untouched food and a full glass of wine sit cold on the side table. William lies awake in bed, staring at the ceiling, crushed by guilt over Nathaniel’s death and the loss of Walter. ",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0.6
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[HEAVY DRAGGING SOUND ECHOING UP FROM THE MAIN STAIRS]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Suddenly, a heavy dragging sound echoes up from the main stairs below. A strong, foul smell of sulfur, blood, and dirty lake water creeps under the crack of his bedroom door. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "afraid",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "William sits up slowly, his heart pounding fast. He walks to the door and cracks it open, looking out into the dark hallway. ",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[QUIET FOOTSTEPS DESCENDING THE STAIRS]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "William creeps quietly down the stairs toward the main hall, following the wet drag marks smeared across the wooden floor. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[SHOW THE HALF-OPEN DOORS OF THE RITUAL ROOM; A SICKLY YELLOW LIGHT FLICKERS ON THE STONE WALLS]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Through the half-open doors of the ritual room, a strange, sickly yellow light flickers on the stone walls. William peeks through the gap. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[REVEAL A BLANK CANVAS IN FRONT OF A FRESHLY PAINTED YELLOW SIGN; UNCONSCIOUS BODIES OF MARGARET, CLARA, AND THE SERVANTS LIE AROUND THE CIRCLE, WITH ONE EMPTY SPOT]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "In the middle of the stone floor, a blank canvas stands in front of a freshly painted Yellow Sign. Around the edge of the circle lie the unconscious bodies of Margaret, Clara, and the servants, all except one empty spot. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.6
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Charles",
+	  "expression": "focused",
+	  "position": "center"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[CHARLES STANDS BESIDE THE CANVAS, HOLDING A SILVER KNIFE IN ONE HAND AND A PORCELAIN MASK IN THE OTHER]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Charles stands beside the canvas, holding a silver knife in one hand and a porcelain mask in the other. ",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "Everything is set. Only the final piece remains. He must be in place before the first stroke is painted... ",
+		  "pacing": 0.1,
+		  "style": "ominous",
+		  "pause_after": 0.6
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Charles turns sharply toward the doorway, intending to go upstairs and drag William down to complete the circle—and freezes as he spots William’s pale face peeking through the gap. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Charles",
+	  "expression": "surprised",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "William! You’re already here... Good. You didn't drink the wine. Stay right there! ",
+		  "pacing": 0.12,
+		  "style": "emphasis",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "terrified",
+	  "position": "left"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Pure terror grips William’s chest. Seeing his mother and sister lying motionless on the floor and his father lunging at him with a bloodied knife and a blank mask, William thought that Charles has completely lost his mind. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.6
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM STUMBLES BACK, TURNS, AND RUNS BLINDLY DOWN THE BACK HALLWAY]"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM BURSTS THROUGH THE KITCHEN DOORS INTO THE POURING RAIN]"
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[KITCHEN DOORS BURSTING OPEN]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "William stumbles back, turns, and runs blindly down the back hallway—bursting through the kitchen doors out into the pouring rain. ",
+		  "pacing": 0.05,
+		  "style": "emphasis",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[CHARLES SHOUTING ANGRILY, WIND AND THUNDER]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Behind him, Charles’s angry shouts echo through the empty halls, quickly drowned out by the wind and thunder. William runs into the pitch-black forest, his boots slipping in the mud as he crosses the flooded stone bridge leading out of Blackwood Hollow. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.6
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[BLACKWOOD MANOR DISAPPEARS INTO THE FOG BEHIND WILLIAM]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "He keeps running until the dark shape of Blackwood Manor disappears into the fog behind him, leaving his family, his guilt, and his home. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.7
+		}
+	  ]
+	}
   ]
 }

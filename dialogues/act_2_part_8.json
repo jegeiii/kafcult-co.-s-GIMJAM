@@ -1,204 +1,44 @@
 {
   "characters": [
-    "William"
+	"William",
+    "Narrator"
   ],
   "events": [
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "happy",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Well, at least this basement looks normal like how I remember it. ",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Let’s look around and–",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "PlaySound",
-      "sound": "dog_bark"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "…?",
-          "pacing": 0.12,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "PlaySound",
-      "sound": "dog_bark"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "(sighs)... Don’t tell me I’m imagining things",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "William can feel a shiver on his feet, as if something is nuzzling his legs. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "And when he looks down, he can see an Irish Wolfhound nuzzling its head onto his leg. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "But the dog’s flesh is rotten with its organ showing, creating a very sharp smell in the small dimly-lit basement.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "surprised",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "…!",
-          "pacing": 0.14,
-          "style": "emphasis",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Out of instinct, William immediately steps back in shock. ",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "His eyes wide with fear. ",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "But as he looks closely at the dog, there’s an undertone of familiarity that stings on the corner of his memories as he fights back tears.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Oh my f*cking God… ",
-          "pacing": 0.045,
-          "style": "emphasis",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Walter???",
-          "pacing": 0.045,
-          "style": "emphasis",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "The Irish Wolfhound in front of him barks as he wiggles his tail when William calls, happy to meet him. ",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "The same familiar sound he had missed all these years as he tries to fight back tears.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "PlaySound",
-      "sound": "dog_bark"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "sad",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Hang on, you must be hungry… ",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Wait here and be a good boy, okay?",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William",
-      "transition": "fade"
-    }
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "William watches Walter eat his meal with a hint of softness on his eyes. He smiles fondly and watches how his tail swings left to right out of happiness. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "happy",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William (thoughts)",
+	  "segments": [
+		{
+		  "text": "He used to play after eating his food. ",
+		  "pacing": 0.06,
+		  "style": "thought",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "I remember seeing a toy somewhere in here. ",
+		  "pacing": 0.06,
+		  "style": "thought",
+		  "pause_after": 0.3
+		}
+	  ]
+	}
   ]
 }
