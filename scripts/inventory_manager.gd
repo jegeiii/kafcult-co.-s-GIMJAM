@@ -188,3 +188,9 @@ func fade_in(duration: float):
 	
 func fade_out(duration: float):
 	$fade_black/a.fade_out(duration)
+
+func flashback_notification(s: String = "FLASHBACK"):
+	$fade_black/fbnotif/RichTextLabel.text = s
+	$fade_black/fbnotif.visible = true
+	await get_tree().create_timer(2).timeout
+	$fade_black/fbnotif.visible = false

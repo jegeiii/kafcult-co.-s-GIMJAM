@@ -40,7 +40,7 @@
 	},
 	{
 	  "name": "PlaySoundEffect",
-	  "path": "[<DOG BARKING>]"
+	  "path": "res://audio/Dog Bark 1.wav"
 	},
 	{
 	  "name": "LoadText",
@@ -56,7 +56,7 @@
 	},
 	{
 	  "name": "PlaySoundEffect",
-	  "path": "[<ANOTHER DOG BARK>]"
+	  "path": "res://audio/Dog Bark 2.wav"
 	},
 	{
 	  "name": "LoadText",
@@ -162,7 +162,7 @@
 	},
 	{
 	  "name": "PlaySoundEffect",
-	  "path": "[<ANOTHER DOG BARK>]"
+	  "path": "res://audio/Dog Bark 3.wav"
 	},
 	{
 	  "name": "LoadSprite",

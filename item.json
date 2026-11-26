@@ -55,4 +55,25 @@
 			"description": "Don't eat it, bruh",
 			"texture_path": "res://graphics/rotten_meat.png"
 		},
+	"dogfood": 
+		{
+			"name": "Dog Food",
+			"count": 0,
+			"description": "Tastes like chocolate. How do I know? Shhh, don't question it.",
+			"texture_path": "res://graphics/dogfood.png"
+		},
+	"water": 
+		{
+			"name": "Dog Feeding Bowl with Water",
+			"count": 0,
+			"description": "Are you sure that's 'water'?",
+			"texture_path": "res://graphics/water.png"
+		},
+	"toy": 
+		{
+			"name": "Dog Toy",
+			"count": 0,
+			"description": "Walter seems to like it.",
+			"texture_path": "res://graphics/toy.png"
+		},
 }

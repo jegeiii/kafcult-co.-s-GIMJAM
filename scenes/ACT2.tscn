@@ -12,6 +12,9 @@
 [ext_resource type="Texture2D" uid="uid://clhbcr1d3j882" path="res://graphics/rotten_vegetable.png" id="8_q63ay"]
 [ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="8_udecq"]
 [ext_resource type="Texture2D" uid="uid://cgi7l5ivehs1c" path="res://graphics/rotten_meat.png" id="9_wbxdu"]
+[ext_resource type="Texture2D" uid="uid://crf0d4l75qq71" path="res://graphics/dogfood.png" id="11_600ry"]
+[ext_resource type="Texture2D" uid="uid://c568v606lbe2x" path="res://graphics/water.png" id="12_bn5lx"]
+[ext_resource type="Texture2D" uid="uid://b5j30cj73g77a" path="res://graphics/toy.png" id="13_4sy8i"]
 
 [sub_resource type="GDScript" id="GDScript_pd338"]
 script/source = "extends TextureButton
@@ -78,6 +81,7 @@ usable = true
 [node name="dimmer" parent="dining_room/laci" unique_id=1757405502 instance=ExtResource("3_qt1qe")]
 
 [node name="distorted_dining_room" type="TextureRect" parent="." unique_id=67818663]
+visible = false
 offset_right = 1152.0
 offset_bottom = 647.0
 texture = ExtResource("6_kybp6")
@@ -155,7 +159,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="basement" type="Control" parent="." unique_id=1306281374]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 515.0
@@ -165,26 +168,29 @@ offset_bottom = 336.0
 
 [node name="dogfood" parent="basement" unique_id=1288662413 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 65.0
-offset_bottom = 62.0
+offset_left = -17.0
+offset_top = -115.0
+offset_right = 48.0
+offset_bottom = -53.0
+texture_normal = ExtResource("11_600ry")
 item_id = "dogfood"
 
 [node name="water" parent="basement" unique_id=738309657 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 65.0
-offset_bottom = 62.0
+offset_left = 177.0
+offset_top = -199.0
+offset_right = 242.0
+offset_bottom = -137.0
+texture_normal = ExtResource("12_bn5lx")
 item_id = "water"
 
 [node name="toy" parent="basement" unique_id=1634944282 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 65.0
-offset_bottom = 62.0
+offset_left = -253.0
+offset_top = -105.0
+offset_right = -188.0
+offset_bottom = -43.0
+texture_normal = ExtResource("13_4sy8i")
 item_id = "toy"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=457309828]
@@ -197,6 +203,10 @@ visible = false
 
 [connection signal="pressed" from="mansion_entrance/door" to="." method="_on_door_pressed"]
 [connection signal="pressed" from="dining_room/laci" to="." method="_on_laci_pressed"]
+[connection signal="pressed" from="distorted_dining_room/plate" to="." method="_on_plate_pressed"]
+[connection signal="pressed" from="distorted_dining_room/knife" to="." method="_on_knife_pressed"]
 [connection signal="mouse_entered" from="distorted_dining_room/rotten_vegetable" to="." method="_on_rotten_vegetable_mouse_entered"]
+[connection signal="pressed" from="distorted_dining_room/rotten_vegetable" to="." method="_on_rotten_vegetable_pressed"]
 [connection signal="mouse_entered" from="distorted_dining_room/rotten_meat" to="." method="_on_rotten_meat_mouse_entered"]
+[connection signal="pressed" from="distorted_dining_room/rotten_meat" to="." method="_on_rotten_meat_pressed"]
 [connection signal="pressed" from="distorted_dining_room/charles\'s sillhouette" to="." method="_on_charless_sillhouette_pressed"]

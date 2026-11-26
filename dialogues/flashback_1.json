@@ -1,202 +1,158 @@
 {
   "characters": [
 	"William",
-	"Miranda",
-	"Arthur",
 	"Margaret",
+	"Charles",
 	"Nathaniel",
-    "Narrator"
+    "Diana"
   ],
   "events": [
 	{
+	  "name": "ChangeBackground",
+	  "background": "dining_room_rainy_evening"
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "res://audio/Rain Sound.wav",
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "wall_clock_ticking",
+	  "loop": true
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "china_clinking",
+	  "loop": true
+	},
+	{
 	  "name": "LoadText",
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "One afternoon ago, the 12-year-old William was bored after repeatedly being corrected by his tutor, Miranda. ",
+		  "text": "The crystal chandelier above the long mahogany table cast a dim, yellow light over the silverware. ",
 		  "pacing": 0.045,
 		  "style": "narration",
-		  "pause_after": 0.5
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Outside the tall dining room windows, autumn rain poured steadily over the dense New England forest, cutting the mansion off from the rest of the world.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
 		}
 	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[THE SCREEN FADES IN, REVEALING THE CHILDREN'S ROOM. WILLIAM'S SPRITE APPEARS WITH A NORMAL EXPRESSION]"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "normal",
-	  "position": "center"
 	},
 	{
 	  "name": "LoadText",
-	  "speaker": "Miranda",
+	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "No, William. You should divide the number by three, not times them. Your calculation result will be three times bigger than the profit demands– ",
-		  "pacing": 0.06,
-		  "style": "normal",
+		  "text": "At the head of the table, Charles sat straight, slicing his rare roast beef with precise movements. ",
+		  "pacing": 0.045,
+		  "style": "narration",
 		  "pause_after": 0.3
+		},
+		{
+		  "text": "Across from him, Margaret smiled faintly as she watched their children.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
 		}
 	  ]
 	},
 	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "On the right side sat Nathaniel—perfect in his evening suit, every move natural and commanding. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "On the left sat the youngest, Diana, looking graceful and charming in a dark dress, while at the far end closest to the kitchen door sat William.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "For several minutes, only the clink of silver forks and the ticking of the large wall clock echoed through the spacious room. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Then, Margaret’s smile vanished the instant her eyes landed on William’s left hand.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "StopSound",
+	  "path": "china_clinking",
+	  "scope": "one_plate"
+	},
+	{
 	  "name": "LoadSprite",
-	  "speaker": "William",
+	  "speaker": "Margaret",
 	  "expression": "angry",
 	  "position": "center"
 	},
 	{
 	  "name": "LoadText",
-	  "speaker": "William",
+	  "speaker": "Margaret",
 	  "segments": [
 		{
-		  "text": "Ugh, why is everything I do always wrong? I'm tired of this…! ",
-		  "pacing": 0.09,
-		  "style": "emphasis",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "PlaySoundEffect",
-	  "path": "[<FOOTSTEPS APPROACHING, FOLLOWED BY A DOOR OPENING>]"
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[WILLIAM'S SPRITE FADES OUT]"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Miranda",
-	  "segments": [
-		{
-		  "text": "William?! ",
-		  "pacing": 0.1,
-		  "style": "emphasis",
-		  "pause_after": 0.3
-		}
-	  ]
-	},
-	{
-	  "name": "PlaySoundEffect",
-	  "path": "[<DOOR SLAMMING SHUT>]"
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[THE SCREEN FADES TO BLACK]"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "William walked out of the room without taking a single glance at his tutor. He proceeded to walk through the side corridors of the manor quietly, just not to get caught sneaking out by his mother. ",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0.5
-		}
-	  ]
-	},
-	{
-	  "name": "PlaySoundEffect",
-	  "path": "[<STEADY FOOTSTEPS WALKING THROUGH THE CORRIDORS>]"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Hmm… Ms. Miranda is always boring. What should I do now I'm out of her sight? ",
-		  "pacing": 0.07,
-		  "style": "thought",
-		  "pause_after": 0.5
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[A FEW MOMENTS OF SILENCE PASS WHILE THE FOOTSTEPS CONTINUE]"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Oh! I haven’t played with Walter since this morning. That big doggo should be in the manor now. He’s usually hungry at this hour. ",
-		  "pacing": 0.075,
+		  "text": "William, your fork.",
+		  "pacing": 0.05,
 		  "style": "normal",
-		  "pause_after": 0.4
+		  "pause_after": 0
 		}
 	  ]
-	},
-	{
-	  "name": "PlaySoundEffect",
-	  "path": "[<FOOTSTEPS QUICKENING INTO A RUN THROUGH THE CORRIDORS>]"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "With Walter in mind, William starts to make his way through the corridors and down the stairs. There should be a place that his Irish Wolfhound would be going he knows by heart. ",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0.5
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[THE SCREEN FADES IN, REVEALING THE DINING ROOM AS THE DOOR OPENS]"
-	},
-	{
-	  "name": "PlaySoundEffect",
-	  "path": "[<DINING ROOM DOOR OPENING>]"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "As usual, the dining room is empty since it’s not the time for lunch yet. But William knows that Walter often gets hungry fast, so he’s scheduled to get his meal at that hour. ",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[ARTHUR'S SPRITE APPEARS ON SCREEN, FOLLOWED BY THE SOUND OF PLATES BEING PLACED ON THE TABLE]"
 	},
 	{
 	  "name": "LoadSprite",
-	  "speaker": "Arthur",
-	  "expression": "normal",
-	  "position": "center"
+	  "speaker": "Margaret",
+	  "expression": "angry",
+	  "position": "right"
 	},
 	{
-	  "name": "PlaySoundEffect",
-	  "path": "[<CERAMIC PLATES BEING ARRANGED ON THE DINING TABLE>]"
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "surprised",
+	  "position": "left"
 	},
 	{
 	  "name": "LoadText",
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "Instead, right there stands Arthur, the manor’s head butler, arranging the plates on the table to prepare for lunch. ",
+		  "text": "William froze. ",
 		  "pacing": 0.045,
 		  "style": "narration",
-		  "pause_after": 0.4
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "His slightly trembling fingers had been gripping the silver handle too low—a bad habit that always came back whenever his chest felt tight, just like the nights he spent locked in the third-floor attic as a child.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
 		}
 	  ]
 	},
 	{
-	  "name": "Special",
-	  "custom_event_name": "[WILLIAM'S SPRITE APPEARS BESIDE ARTHUR'S SPRITE]"
+	  "name": "Wait",
+	  "duration": 1.0
 	},
 	{
 	  "name": "LoadSprite",
@@ -209,10 +165,10 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Arthur, have you fed Walter this afternoon? ",
-		  "pacing": 0.07,
+		  "text": "Sorry, Mother.",
+		  "pacing": 0.065,
 		  "style": "normal",
-		  "pause_after": 0.4
+		  "pause_after": 0
 		}
 	  ]
 	},
@@ -221,428 +177,114 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "Upon hearing William’s question, Arthur turned his head to William for a moment before shifting his focus back on arranging the plates on the table as he answered calmly. ",
+		  "text": "Margaret let out a long, dramatic sigh, shaking her head as if carrying a lifelong disappointment.",
 		  "pacing": 0.045,
 		  "style": "narration",
-		  "pause_after": 0.4
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "exasperated_sigh"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Margaret",
+	  "segments": [
+		{
+		  "text": "I truly don't understand where we went wrong raising you, William. ",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0
 		}
 	  ]
 	},
 	{
 	  "name": "LoadText",
-	  "speaker": "Arthur",
+	  "speaker": "Margaret",
 	  "segments": [
 		{
-		  "text": "My apologies, young master, but it seems that Walter has not visited the dining room yet since I have been here waiting to feed him for a while. ",
+		  "text": "Look at Nathaniel—so calm, commanding, the pride of this family in every way. ",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Margaret",
+	  "segments": [
+		{
+		  "text": "And look at Diana, never once forgetting the grace expected of our name. ",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Margaret",
+	  "segments": [
+		{
+		  "text": "Meanwhile, you sit there holding your utensils so awkwardly, as if you were raised in a stable.",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "china_clinking",
+	  "loop": true,
+	  "scope": "one_plate"
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Margaret",
+	  "transition": "fade"
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "William",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Charles",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "Your mother is right. ",
 		  "pacing": 0.06,
 		  "style": "normal",
-		  "pause_after": 0.5
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "surprised",
-	  "position": "left"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Hmmm… That’s odd. He should feel hungry at this hour and very sluggish when he doesn't have his meals. Well, anyways, thank you, Arthur! ",
-		  "pacing": 0.07,
-		  "style": "normal",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "PlaySoundEffect",
-	  "path": "[<RUNNING FOOTSTEPS AND THE DINING ROOM DOOR OPENING>]"
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[WILLIAM AND ARTHUR'S SPRITES FADE OUT AS WILLIAM RUNS OUT OF THE DINING ROOM]"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "Without waiting for Arthur’s reply, William immediately bolts outside the dining room. A strange feeling settled in his gut about his dog’s whereabouts. ",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0.5
-		}
-	  ]
-	},
-	{
-	  "name": "PlaySoundEffect",
-	  "path": "[<DINING ROOM DOOR CLOSING>]"
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[THE SCREEN TURNS DARK]"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Walter…! Walter?! Where are you?? ",
-		  "pacing": 0.1,
-		  "style": "emphasis",
-		  "pause_after": 0.5
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "William's voice echoes throughout the corridors he ran into, calling his beloved dog's name in hopes that the Irish Wolfhound will somehow respond to him. He decided to head into the entrance hall, hoping once again that he will catch the sight of Walter's happily wagging tail when the dog ran through the corridors. ",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0.5
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[THE SCREEN FADES IN, REVEALING THE MAIN ENTRANCE. MARGARET'S AND WILLIAM'S SPRITES APPEAR]"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Margaret",
-	  "expression": "angry",
-	  "position": "left"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "normal",
-	  "position": "right"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Walter? Walter! ",
-		  "pacing": 0.09,
-		  "style": "normal",
 		  "pause_after": 0.3
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Margaret",
-	  "segments": [
+		},
 		{
-		  "text": "William, keep your tone down! Isn't this still the time in your schedule to study with Ms. Miranda? ",
-		  "pacing": 0.065,
-		  "style": "normal",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "sad",
-	  "position": "right"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Sorry, Mother, but have you seen Walter? ",
-		  "pacing": 0.07,
-		  "style": "normal",
-		  "pause_after": 0.3
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Margaret",
-	  "segments": [
-		{
-		  "text": "Walter? How could I know about that? Go back to studying and don't make Ms. Miranda wait for you! ",
-		  "pacing": 0.065,
-		  "style": "normal",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "He's not eating in the dining room, Mother! ",
-		  "pacing": 0.085,
-		  "style": "emphasis",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "PlaySoundEffect",
-	  "path": "[<HURRIED FOOTSTEPS AND A DOOR OPENING>]"
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[WILLIAM'S SPRITE FADES OUT AS HE RUNS AWAY]"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Margaret",
-	  "expression": "surprised",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Margaret",
-	  "segments": [
-		{
-		  "text": "William?! ",
-		  "pacing": 0.1,
-		  "style": "emphasis",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[THE SCREEN FADES TO BLACK, AND MARGARET'S SPRITE FADES OUT]"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "Even outside the manor, no matter how loudly William called his dog's name, there was still no sight of him anywhere. Ms. Miranda then caught up to him and dragged William back to the room for their study session while repeatedly reassuring him that Walter would be back soon, perhaps the furball was currently out exploring or taking a walk with one of the maids. That reassurance managed to drive William's focus back to his studies, so he decided to give his tutor of the day his best until the day ended. ",
-		  "pacing": 0.04,
-		  "style": "narration",
-		  "pause_after": 0.6
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "The next day, William came back to studying with Ms. Miranda as usual. Though, in the back of his mind, he still thought of his Irish Wolfhound’s whereabouts. Until he eventually found out the truth four days later in the evening… ",
-		  "pacing": 0.04,
-		  "style": "narration",
-		  "pause_after": 0.7
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[THE SCREEN SHOWS THE DINING ROOM. ARTHUR'S SPRITE APPEARS]"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Arthur",
-	  "expression": "normal",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "Madame, my apologies for interrupting your peaceful evening. ",
+		  "text": "When someone carries this family's name, every small movement at the table decides whether they are worthy of inheriting our legacy... or destined to be nothing more than a stain.",
 		  "pacing": 0.06,
 		  "style": "normal",
-		  "pause_after": 0.4
+		  "pause_after": 0
 		}
 	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[MARGARET'S SPRITE FADES IN]"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Margaret",
-	  "expression": "normal",
-	  "position": "left"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Margaret",
-	  "segments": [
-		{
-		  "text": "Is there something you need, Arthur? ",
-		  "pacing": 0.07,
-		  "style": "normal",
-		  "pause_after": 0.3
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "I received a report from a maid that there’s an unpleasant smell coming from the fuel storage room. ",
-		  "pacing": 0.06,
-		  "style": "normal",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Margaret",
-	  "expression": "surprised",
-	  "position": "left"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Margaret",
-	  "segments": [
-		{
-		  "text": "Have you checked it yet? If it’s from a dead mice then I question your servants’ competence in cleaning the manor. ",
-		  "pacing": 0.065,
-		  "style": "normal",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "I shall check the latter, then. ",
-		  "pacing": 0.065,
-		  "style": "normal",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[ARTHUR AND MARGARET'S SPRITES FADE OUT, REPLACED BY NATHANIEL'S AND WILLIAM'S SPRITES]"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "normal",
-	  "position": "left"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Nathaniel",
-	  "expression": "normal",
-	  "position": "right"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Sir Arthur, can I come with you? ",
-		  "pacing": 0.07,
-		  "style": "normal",
-		  "pause_after": 0.3
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Nathaniel",
-	  "segments": [
-		{
-		  "text": "I would like to tag along, Sir Arthur. Do you mind? ",
-		  "pacing": 0.07,
-		  "style": "normal",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[WILLIAM AND NATHANIEL'S SPRITES FADE OUT, REPLACED BY ARTHUR'S SPRITE]"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Arthur",
-	  "expression": "normal",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "Very well. Please, follow me. ",
-		  "pacing": 0.065,
-		  "style": "normal",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[ARTHUR'S SPRITE FADES OUT. THE BACKGROUND TURNS BLACK]"
-	},
-	{
-	  "name": "PlaySoundEffect",
-	  "path": "[<STEADY FOOTSTEPS DESCENDING THE BASEMENT STAIRS>]"
 	},
 	{
 	  "name": "LoadText",
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "William and Nathaniel then followed Arthur down to the basement with steady footsteps. As they all suspected, there was a heavy scent of rotten meat that sharply struck their senses, making all of them scrunch their noses from the intensity. ",
+		  "text": "Charles agreed, didn't look up from his plate.",
 		  "pacing": 0.045,
 		  "style": "narration",
-		  "pause_after": 0.5
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "Stay here for a moment, young masters. I shall open and walk in first to check for possible danger. ",
-		  "pacing": 0.065,
-		  "style": "normal",
-		  "pause_after": 0.4
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[THE SCREEN FADES IN, REVEALING THE BASEMENT. THE LIGHT SWITCH CLICKS ON]"
-	},
-	{
-	  "name": "PlaySoundEffect",
-	  "path": "[<LIGHT SWITCH CLICKING ON>]"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "… ",
-		  "pacing": 0.1,
-		  "style": "thought",
-		  "pause_after": 0.7
+		  "pause_after": 0
 		}
 	  ]
 	},
@@ -651,74 +293,453 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "The moment the lights turned on, right in the middle of the basement's cold ground, there lay Walter with some parts of his flesh starting to rot, the dog’s head lulled to the side with his lips turned pale blue. The Irish Wolfhound's tail no longer wagged, just lying there stiffly. ",
-		  "pacing": 0.04,
+		  "text": "Nathaniel turned toward William with a warm, understanding smile—the exact expression guests always praised as the mark of a true gentleman.",
+		  "pacing": 0.045,
 		  "style": "narration",
-		  "pause_after": 0.7
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[WILLIAM'S SPRITE APPEARS ON SCREEN]"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "surprised",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Walter…? ",
-		  "pacing": 0.1,
-		  "style": "thought",
-		  "pause_after": 0.6
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "Without waiting for Arthur to back off, William immediately rushed to the dog’s side despite the horrible smell, sobbing loudly as he mourned the lifeless furball in front of him. It’s the first time he ever cried this hard for something ever in his whole life. ",
-		  "pacing": 0.04,
-		  "style": "narration",
-		  "pause_after": 0.6
+		  "pause_after": 0
 		}
 	  ]
 	},
 	{
 	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "sad",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "No… Walter!! ",
-		  "pacing": 0.1,
-		  "style": "emphasis",
-		  "pause_after": 0.7
-		}
-	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[WILLIAM'S SPRITE FADES OUT AND IS REPLACED BY NATHANIEL'S SPRITE WITH A HAPPY EXPRESSION]"
+	  "speaker": "Charles",
+	  "expression": "normal",
+	  "position": "left"
 	},
 	{
 	  "name": "LoadSprite",
 	  "speaker": "Nathaniel",
 	  "expression": "happy",
+	  "position": "right"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Nathaniel",
+	  "segments": [
+		{
+		  "text": "Don't be too hard on him, Mother, Father. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Will has been locked up in the library all day. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "His mind must be wandering. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "I'm sure he's trying his best.",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "res://audio/Meat Cut Sound.wav"
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Charles",
+	  "transition": "fade"
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Nathaniel",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Margaret",
+	  "expression": "angry",
 	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Margaret",
+	  "segments": [
+		{
+		  "text": "His best is never enough, Nate.",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Nathaniel",
+	  "expression": "happy",
+	  "position": "left"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Margaret",
+	  "expression": "happy",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Diana",
+	  "expression": "happy",
+	  "position": "right"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Margaret",
+	  "segments": [
+		{
+		  "text": "You two are the only pride left in this house.",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "She reached out to gently tuck a strand of hair behind Diana's ear, then placed the best cuts of meat onto Nathan and Diana's plates. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Diana bowed her head gracefully, her lips curving into a sweet, practiced smile.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Diana",
+	  "segments": [
+		{
+		  "text": "Thank you, Mother. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "I only want to make you and father proud.",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Nathaniel",
+	  "transition": "fade"
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Margaret",
+	  "transition": "fade"
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Diana",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "sad",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "…",
+		  "pacing": 0.12,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Will swallowed hard. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "His throat felt dry and tight.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "William",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "In the dim corner of the room, Arthur, the old butler who had served the family for forty years, stood still like a stone statue—staring blankly ahead without blinking when the water glass in Will’s hand slipped.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "glass_shattering"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Crash.",
+		  "pacing": 0.06,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Clear water spilled across the white linen tablecloth, soaking quickly toward Charles’s plate like a spreading stain.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "StopSound",
+	  "path": "china_clinking"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Charles",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "Wait",
+	  "duration": 3.0
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Charles",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "The entire table went silent instantly. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Nobody screamed. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Nobody flinched.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Margaret slowly closed her eyes, pinching the bridge of her nose in annoyance.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "surprised",
+	  "position": "left"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Margaret",
+	  "expression": "angry",
+	  "position": "right"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Margaret",
+	  "segments": [
+		{
+		  "text": "Always you, William. ",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Every time something gets ruined here, it's always you.",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Charles set his carving knife down slowly beside his plate, then lifted his face to look at Will with a cold gaze that made Will's stomach twist—the exact same look from the night his father dragged him up the attic stairs years ago.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "knife_set_on_table"
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Margaret",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Charles",
+	  "expression": "angry",
+	  "position": "right"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "You always ruin everything you touch, William.",
+		  "pacing": 0.06,
+		  "style": "emphasis",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Nathan pushed his chair back calmly, buttoning his jacket as he walked around the table toward Will's seat.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "chair_pushed_and_footsteps"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "He placed one hand supportively on Will’s shoulder, his face showing sympathy and patience for the whole table to see.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Charles",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Nathaniel",
+	  "expression": "happy",
+	  "position": "right"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Nathaniel",
+	  "segments": [
+		{
+		  "text": "Come on, Will. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Nathan said gently, his voice warm and reassuring even though his fingers dug tightly into Will's shoulder, holding him in place so he couldn't move.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Nathaniel",
+	  "segments": [
+		{
+		  "text": "Let’s get you cleaned up before mother gets more upset. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "I'll walk you upstairs.",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
 	}
   ]
 }
