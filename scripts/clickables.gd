@@ -3,6 +3,13 @@ extends TextureButton
 @export var item_id = "placeholder"
 @export var button_interaction = "get" #get or interact
 @export var usable: bool = false
+@onready var quantity_label: Label = $QuantityLabel
+
+func update_quantity_display() -> void:
+	var amount = GameManager.get_item_count(item_id)
+
+	quantity_label.text = "×" + str(amount)
+	quantity_label.visible = amount > 1
 
 func _ready():
 	InventoryUi.fade_black_pressed.connect(_on_root_fade_black_gui_input)
