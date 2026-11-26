@@ -37,7 +37,7 @@
 	  "speaker": "Miranda",
 	  "segments": [
 		{
-		  "text": "No, William. You should divide the number by three, not times them.",
+		  "text": "No, William. You should divide the number by three, not times them. ",
 		  "pacing": 0.05,
 		  "style": "normal",
 		  "pause_after": 0.25
@@ -61,7 +61,7 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Ugh, why is everything I do always wrong?",
+		  "text": "Ugh, why is everything I do always wrong? ",
 		  "pacing": 0.04,
 		  "style": "emphasis",
 		  "pause_after": 0.3
@@ -123,7 +123,7 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "William walked out of the room without taking a single glance at his tutor.",
+		  "text": "William walked out of the room without taking a single glance at his tutor. ",
 		  "pacing": 0.05,
 		  "style": "narration",
 		  "pause_after": 0.25
@@ -159,7 +159,7 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Hmm… Ms. Miranda is always boring.",
+		  "text": "Hmm… Ms. Miranda is always boring. ",
 		  "pacing": 0.06,
 		  "style": "normal",
 		  "pause_after": 0.3
@@ -195,13 +195,13 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Oh! I haven't played with Walter since this morning.",
+		  "text": "Oh! I haven't played with Walter since this morning. ",
 		  "pacing": 0.045,
 		  "style": "emphasis",
 		  "pause_after": 0.3
 		},
 		{
-		  "text": "That big doggo should be in the manor now.",
+		  "text": "That big doggo should be in the manor now. ",
 		  "pacing": 0.05,
 		  "style": "normal",
 		  "pause_after": 0.25
@@ -231,7 +231,7 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "With Walter in mind, William starts to make his way through the corridors and down the stairs.",
+		  "text": "With Walter in mind, William starts to make his way through the corridors and down the stairs. ",
 		  "pacing": 0.05,
 		  "style": "narration",
 		  "pause_after": 0.25
@@ -261,7 +261,7 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "As usual, the dining room is empty since it's not the time for lunch yet.",
+		  "text": "As usual, the dining room is empty since it's not the time for lunch yet. ",
 		  "pacing": 0.05,
 		  "style": "narration",
 		  "pause_after": 0.25
@@ -363,13 +363,13 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Hmmm… That's odd.",
+		  "text": "Hmmm… That's odd. ",
 		  "pacing": 0.06,
 		  "style": "normal",
 		  "pause_after": 0.3
 		},
 		{
-		  "text": "He should feel hungry at this hour and very sluggish when he doesn't have his meals.",
+		  "text": "He should feel hungry at this hour and very sluggish when he doesn't have his meals. ",
 		  "pacing": 0.05,
 		  "style": "normal",
 		  "pause_after": 0.3
@@ -407,7 +407,7 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "Without waiting for Arthur's reply, William immediately bolts outside the dining room.",
+		  "text": "Without waiting for Arthur's reply, William immediately bolts outside the dining room. ",
 		  "pacing": 0.05,
 		  "style": "narration",
 		  "pause_after": 0.3
@@ -443,7 +443,7 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Walter…!",
+		  "text": "Walter…! ",
 		  "pacing": 0.045,
 		  "style": "emphasis",
 		  "pause_after": 0.3
@@ -461,7 +461,7 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "William's voice echoes throughout the corridors he ran into, calling his beloved dog's name in hopes that the Irish Wolfhound will somehow respond to him.",
+		  "text": "William's voice echoes throughout the corridors he ran into, calling his beloved dog's name in hopes that the Irish Wolfhound will somehow respond to him. ",
 		  "pacing": 0.05,
 		  "style": "narration",
 		  "pause_after": 0.3
@@ -491,7 +491,7 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Walter?",
+		  "text": "Walter? ",
 		  "pacing": 0.055,
 		  "style": "normal",
 		  "pause_after": 0.25
@@ -509,7 +509,7 @@
 	  "speaker": "Margaret",
 	  "segments": [
 		{
-		  "text": "William, keep your tone down!",
+		  "text": "William, keep your tone down! ",
 		  "pacing": 0.045,
 		  "style": "emphasis",
 		  "pause_after": 0.3
@@ -551,7 +551,7 @@
 	  "speaker": "Margaret",
 	  "segments": [
 		{
-		  "text": "Walter? How could I know about that?",
+		  "text": "Walter? How could I know about that? ",
 		  "pacing": 0.045,
 		  "style": "emphasis",
 		  "pause_after": 0.3
@@ -619,13 +619,13 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "Even outside the manor, no matter how loud William's voice when he calls his dog's name, there's still no sight of him anywhere.",
+		  "text": "Even outside the manor, no matter how loud William's voice when he calls his dog's name, there's still no sight of him anywhere. ",
 		  "pacing": 0.05,
 		  "style": "narration",
 		  "pause_after": 0.35
 		},
 		{
-		  "text": "Ms. Miranda then caught up to him and dragged William back to the room for their study session while repeatedly reassuring him that Walter will be back soon, perhaps now the furball is currently out to explore or a walk with one of the maids.",
+		  "text": "Ms. Miranda then caught up to him and dragged William back to the room for their study session while repeatedly reassuring him that Walter will be back soon, perhaps now the furball is currently out to explore or a walk with one of the maids. ",
 		  "pacing": 0.045,
 		  "style": "narration",
 		  "pause_after": 0.35
@@ -643,13 +643,13 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "The next day, William comes back to studying with Ms. Miranda as usual.",
+		  "text": "The next day, William comes back to studying with Ms. Miranda as usual. ",
 		  "pacing": 0.05,
 		  "style": "narration",
 		  "pause_after": 0.3
 		},
 		{
-		  "text": "Though, in the back of his mind, he still thinks of his Irish Wolfhound's whereabouts.",
+		  "text": "Though, in the back of his mind, he still thinks of his Irish Wolfhound's whereabouts. ",
 		  "pacing": 0.05,
 		  "style": "narration",
 		  "pause_after": 0.3
@@ -721,7 +721,7 @@
 	  "speaker": "Margaret",
 	  "segments": [
 		{
-		  "text": "Have you checked it yet?",
+		  "text": "Have you checked it yet? ",
 		  "pacing": 0.05,
 		  "style": "normal",
 		  "pause_after": 0.3
@@ -837,7 +837,7 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "William and Nathaniel then followed Arthur down to the basement with steady footsteps.",
+		  "text": "William and Nathaniel then followed Arthur down to the basement with steady footsteps. ",
 		  "pacing": 0.05,
 		  "style": "narration",
 		  "pause_after": 0.3
@@ -861,7 +861,7 @@
 	  "speaker": "Arthur",
 	  "segments": [
 		{
-		  "text": "Stay here for a moment, young masters.",
+		  "text": "Stay here for a moment, young masters. ",
 		  "pacing": 0.055,
 		  "style": "normal",
 		  "pause_after": 0.3
@@ -907,13 +907,13 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "The moment the lights turn on, right in the middle of the basement's cold ground, there lies Walter with some parts of his flesh starting to rot.",
+		  "text": "The moment the lights turn on, right in the middle of the basement's cold ground, there lies Walter with some parts of his flesh starting to rot. ",
 		  "pacing": 0.05,
 		  "style": "narration",
 		  "pause_after": 0.35
 		},
 		{
-		  "text": "The dog's head lulled to the side with his lips turned pale blue.",
+		  "text": "The dog's head lulled to the side with his lips turned pale blue. ",
 		  "pacing": 0.055,
 		  "style": "narration",
 		  "pause_after": 0.3
@@ -949,7 +949,7 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "Without waiting for Arthur to back off, William immediately rushed to the dog's side despite the horrible smell, sobbing loudly as he mourned the lifeless furball in front of him.",
+		  "text": "Without waiting for Arthur to back off, William immediately rushed to the dog's side despite the horrible smell, sobbing loudly as he mourned the lifeless furball in front of him. ",
 		  "pacing": 0.05,
 		  "style": "narration",
 		  "pause_after": 0.35
@@ -973,7 +973,7 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "No…",
+		  "text": "No… ",
 		  "pacing": 0.1,
 		  "style": "normal",
 		  "pause_after": 0.35

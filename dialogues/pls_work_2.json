@@ -1,3 +1,4 @@
+
 {
   "characters": [
     "William"
@@ -14,7 +15,7 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Well, at least this basement looks normal like how I remember it.",
+		  "text": "Well, at least this basement looks normal like how I remember it. ",
 		  "pacing": 0.055,
 		  "style": "normal",
 		  "pause_after": 0.25
@@ -80,7 +81,7 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "William can feel a shiver on his feet, as if something is nuzzling his legs. And when he looks down, he can see an Irish Wolfhound nuzzling its head onto his leg.",
+		  "text": "William can feel a shiver on his feet, as if something is nuzzling his legs. And when he looks down, he can see an Irish Wolfhound nuzzling its head onto his leg. ",
 		  "pacing": 0.045,
 		  "style": "narration",
 		  "pause_after": 0.3
@@ -116,7 +117,7 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "Out of instinct, William immediately steps back in shock, his eyes wide with fear.",
+		  "text": "Out of instinct, William immediately steps back in shock, his eyes wide with fear. ",
 		  "pacing": 0.045,
 		  "style": "narration",
 		  "pause_after": 0.3
@@ -134,7 +135,7 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Oh my f*cking God…",
+		  "text": "Oh my f*cking God… ",
 		  "pacing": 0.045,
 		  "style": "emphasis",
 		  "pause_after": 0.3
@@ -164,7 +165,7 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "The Irish Wolfhound in front of him barks as he wiggles his tail when William calls, happy to meet him.",
+		  "text": "The Irish Wolfhound in front of him barks as he wiggles his tail when William calls, happy to meet him. ",
 		  "pacing": 0.05,
 		  "style": "narration",
 		  "pause_after": 0.3
@@ -200,7 +201,7 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Hang on, you must be hungry…",
+		  "text": "Hang on, you must be hungry… ",
 		  "pacing": 0.065,
 		  "style": "normal",
 		  "pause_after": 0.3
