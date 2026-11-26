@@ -1,6 +1,9 @@
 extends Button
 
-var next_scene = preload("res://scenes/ACT1.tscn")
+var next_scene
+
+func _ready():
+	next_scene = load(SaveSystem.save_data["current_act"])
 
 func _on_pressed():
 	$Timer.start()

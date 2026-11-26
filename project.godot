@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 DialogueManager="*uid://kyreujamekhp"
 InventoryUi="*uid://be83dtlgyydmy"
+SaveSystem="uid://cssnkkmldmgqj"
 
 [display]
 

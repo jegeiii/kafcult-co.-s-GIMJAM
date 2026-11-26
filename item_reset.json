@@ -1,0 +1,16 @@
+{
+	"a": 
+		{
+			"name": "How to Prog: 101",
+			"count": 0,
+			"description": "As the title suggests.",
+			"texture_path": "res://graphics/a.png"
+		},
+	"b": 
+		{
+			"name": "Hear Me Out, Elmo",
+			"count": 0,
+			"description": "I have nothing else to say.",
+			"texture_path": "res://graphics/b.png"
+		}
+}

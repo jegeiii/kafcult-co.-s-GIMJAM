@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cktwvd800t72l"]
+
+[ext_resource type="Script" uid="uid://fdkjeewm7gjx" path="res://scenes/act_2.gd" id="1_udt4n"]
+[ext_resource type="PackedScene" uid="uid://cctqacfflrntm" path="res://scenes/fade_black.tscn" id="2_qt1qe"]
+
+[node name="Node2D" type="Node2D" unique_id=1426360670]
+script = ExtResource("1_udt4n")
+
+[node name="fade_black" parent="." unique_id=1813767706 instance=ExtResource("2_qt1qe")]
+visible = false
+offset_left = -76.0
+offset_top = -48.0
+offset_right = 1168.0
+offset_bottom = 654.0
+color = Color(0, 0, 0, 1)
