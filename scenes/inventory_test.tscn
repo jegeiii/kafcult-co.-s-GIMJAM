@@ -4,13 +4,13 @@
 
 [node name="InventoryTest" type="Node2D" unique_id=2044100818]
 
-[node name="clickables" parent="." unique_id=473976335 instance=ExtResource("1_h73wm")]
+[node name="a" parent="." unique_id=473976335 instance=ExtResource("1_h73wm")]
 offset_left = 584.0
 offset_top = 141.0
 offset_right = 688.0
 offset_bottom = 203.0
 
-[node name="clickables2" parent="." unique_id=316619854 instance=ExtResource("1_h73wm")]
+[node name="b" parent="." unique_id=316619854 instance=ExtResource("1_h73wm")]
 offset_left = 281.0
 offset_top = 90.0
 offset_right = 385.0

@@ -9,10 +9,10 @@ layer = 10
 script = ExtResource("1_ylkvr")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=862810394]
-offset_left = 1088.0
-offset_top = 129.0
-offset_right = 1150.0
-offset_bottom = 510.0
+offset_left = 1153.0
+offset_top = 130.0
+offset_right = 1215.0
+offset_bottom = 511.0
 
 [node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer" unique_id=83714804]
 layout_mode = 2
@@ -23,6 +23,43 @@ horizontal_scroll_mode = 0
 custom_minimum_size = Vector2(50, 0)
 layout_mode = 2
 size_flags_horizontal = 6
+
+[node name="inventory_closed" type="PanelContainer" parent="." unique_id=849046994]
+visible = false
+offset_left = 1153.0
+offset_top = 130.0
+offset_right = 1215.0
+offset_bottom = 511.0
+
+[node name="inventory_opened" type="PanelContainer" parent="." unique_id=1370788534]
+visible = false
+offset_left = 1088.0
+offset_top = 129.0
+offset_right = 1150.0
+offset_bottom = 510.0
+
+[node name="Button" type="Button" parent="." unique_id=1276870091]
+offset_left = 1132.0
+offset_top = 298.0
+offset_right = 1154.0
+offset_bottom = 342.0
+text = "<"
+
+[node name="button_closed" type="Button" parent="." unique_id=633699166]
+visible = false
+offset_left = 1132.0
+offset_top = 298.0
+offset_right = 1154.0
+offset_bottom = 342.0
+text = "<"
+
+[node name="button_opened" type="Button" parent="." unique_id=51878666]
+visible = false
+offset_left = 1067.0
+offset_top = 298.0
+offset_right = 1089.0
+offset_bottom = 342.0
+text = "<"
 
 [node name="fade_black" parent="." unique_id=1813767706 instance=ExtResource("1_tahbm")]
 offset_left = 0.0
@@ -37,14 +74,20 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -50.0
-offset_top = -50.0
-offset_right = 50.0
-offset_bottom = 50.0
+offset_left = -31.0
+offset_top = -69.0
+offset_right = 69.0
+offset_bottom = 31.0
 grow_horizontal = 2
 grow_vertical = 2
 ignore_texture_size = true
 stretch_mode = 5
+
+[node name="Label" type="Label" parent="item_closeup" unique_id=480561035]
+visible = false
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
 
 [node name="dimmer" parent="item_closeup" unique_id=1440613432 instance=ExtResource("3_mdwe3")]
 
@@ -60,6 +103,14 @@ offset_bottom = 266.0
 layout_mode = 2
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="use_button" type="Button" parent="item_closeup" unique_id=172195069]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 182.0
+offset_right = 353.0
+offset_bottom = 213.0
+text = "Use Item"
 
 [node name="notification" type="PanelContainer" parent="." unique_id=930474287]
 self_modulate = Color(1, 1, 1, 0)
@@ -77,4 +128,6 @@ vertical_alignment = 1
 [node name="Timer" type="Timer" parent="notification" unique_id=825099220]
 wait_time = 0.1
 
+[connection signal="pressed" from="Button" to="." method="expand_inventory"]
 [connection signal="gui_input" from="fade_black" to="." method="_on_fade_black_gui_input"]
+[connection signal="pressed" from="item_closeup/use_button" to="." method="_on_use_button_pressed"]
