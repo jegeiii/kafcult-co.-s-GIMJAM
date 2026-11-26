@@ -9,6 +9,7 @@ offset_left = 584.0
 offset_top = 141.0
 offset_right = 688.0
 offset_bottom = 203.0
+usable = true
 
 [node name="b" parent="." unique_id=316619854 instance=ExtResource("1_h73wm")]
 offset_left = 281.0
@@ -25,9 +26,7 @@ offset_bottom = 425.0
 
 [node name="clickables4" parent="." unique_id=684547791 instance=ExtResource("1_h73wm")]
 offset_left = 519.0
-offset_top = 296.0
 offset_right = 623.0
-offset_bottom = 358.0
 item_id = "b"
 
 [node name="clickables5" parent="." unique_id=215888762 instance=ExtResource("1_h73wm")]

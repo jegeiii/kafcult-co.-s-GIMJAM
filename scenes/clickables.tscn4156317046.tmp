@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://ci4sol1vea776"]
+
+[ext_resource type="Script" uid="uid://cnyokkvpg3008" path="res://scripts/clickables.gd" id="1_bw4n5"]
+[ext_resource type="Texture2D" uid="uid://b48765n6krxm" path="res://graphics/a.png" id="1_sgte0"]
+[ext_resource type="PackedScene" uid="uid://c1tdbiw7wt4m3" path="res://scenes/dimmer.tscn" id="3_sgte0"]
+
+[node name="clickables" type="Area2D" unique_id=515118720]
+script = ExtResource("1_bw4n5")
+item_id = "a"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1659339115]
+scale = Vector2(0.86378205, 0.7535994)
+polygon = PackedVector2Array(-65.98886, 49.0977, 62.515766, 51.75163, 63.673466, -54.40556, -63.673466, -54.40556, -64.83116, 51.75163)
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionPolygon2D" unique_id=1362932573]
+scale = Vector2(0.101390116, 0.13613114)
+texture = ExtResource("1_sgte0")
+
+[node name="dimmer" parent="." unique_id=1440613432 instance=ExtResource("3_sgte0")]
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

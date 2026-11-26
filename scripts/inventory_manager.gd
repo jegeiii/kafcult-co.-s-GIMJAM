@@ -4,6 +4,19 @@ extends Node
 var inventory: Dictionary
 signal fade_black_pressed
 
+func toggle_inventory(state: bool):
+	self.visible = state
+
+func expand_inventory():
+	if $Button.text == "<":
+		$Button.text = ">"
+		$Button.set_position($button_opened.position)
+		$PanelContainer.set_position($inventory_opened.position)
+	elif $Button.text == ">":
+		$Button.text = "<"
+		$Button.set_position($button_closed.position)
+		$PanelContainer.set_position($inventory_closed.position)
+
 func load_inventory(json_path: String) -> void:
 	var file = FileAccess.open(json_path, FileAccess.READ)
 	var text_extract = file.get_as_text()
@@ -33,12 +46,13 @@ func notification_popup(item_id: String):
 		$notification/RichTextLabel.visible = not $notification/RichTextLabel.visible
 	$notification/RichTextLabel.visible = false
 		
-func InventoryInspect(item_id: String):
+func InventoryInspect(item_id: String, usable: bool):
 	print("a")
 	$fade_black.transparent()
 	$fade_black.mouse_filter = Control.MOUSE_FILTER_STOP
 	$item_closeup/PanelContainer/RichTextLabel.text = inventory[item_id]["description"]
 	$item_closeup.visible = true
+	$item_closeup/use_button.visible = usable
 	$item_closeup.texture_normal = load(inventory[item_id]["texture_path"])
 
 # Called when the node enters the scene tree for the first time.
@@ -60,3 +74,18 @@ func _on_fade_black_gui_input(event: InputEvent) -> void:
 		$fade_black.fade_in(0.1)
 		$fade_black.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	
+		close_inspect()
+
+func _on_use_button_pressed() -> void:
+	use_item($item_closeup/Label.text)
+
+func close_inspect():
+	fade_black_pressed.emit()
+	$item_closeup.visible = false
+	$fade_black.fade_in(0.1)
+	$fade_black.mouse_filter = Control.MOUSE_FILTER_IGNORE
+
+func _on_item_closeup_pressed() -> void:
+	pass
+	#if inventory[item_id]["inspect_depth"] > 0:
+		

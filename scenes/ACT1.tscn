@@ -4,9 +4,27 @@
 [ext_resource type="Script" uid="uid://dxfqjxdh1v6an" path="res://scripts/act_1.gd" id="1_vrawt"]
 [ext_resource type="AudioStream" uid="uid://dlpyn7wr33tju" path="res://audio/act1_placeholder.mp3" id="3_3hga0"]
 [ext_resource type="Script" uid="uid://cfle5fyc23mhf" path="res://scripts/act_1_audio.gd" id="4_dgj6o"]
+[ext_resource type="Texture2D" uid="uid://dko16tgyu12ji" path="res://graphics/letter_to_william.png" id="5_awjct"]
+[ext_resource type="PackedScene" uid="uid://ci4sol1vea776" path="res://scenes/clickables.tscn" id="5_wybf4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ykcb2"]
+size = Vector2(157.98724, 115.39972)
 
 [node name="Node2D" type="Node2D" unique_id=1426360670]
 script = ExtResource("1_vrawt")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=824933361]
+stream = ExtResource("3_3hga0")
+script = ExtResource("4_dgj6o")
+
+[node name="Timer" type="Timer" parent="AudioStreamPlayer" unique_id=871860394]
+
+[node name="letter_to_william" parent="." unique_id=316619854 instance=ExtResource("5_wybf4")]
+offset_right = 986.0
+offset_bottom = 530.0
+texture_normal = ExtResource("5_awjct")
+item_id = "letter_to_william"
+button_interaction = "inspect"
 
 [node name="fade_black" parent="." unique_id=1813767706 instance=ExtResource("1_ac27t")]
 visible = false
@@ -16,17 +34,17 @@ offset_right = 1168.0
 offset_bottom = 654.0
 color = Color(0, 0, 0, 1)
 
-[node name="act1_audio" type="AudioStreamPlayer" parent="." unique_id=824933361]
-stream = ExtResource("3_3hga0")
-script = ExtResource("4_dgj6o")
+[node name="Area2D" type="Area2D" parent="." unique_id=1592648120]
+position = Vector2(824, 432)
 
-[node name="Timer" type="Timer" parent="act1_audio" unique_id=871860394]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1423111504]
+position = Vector2(-353.47095, -0.14776611)
+rotation = 2.2811453
+shape = SubResource("RectangleShape2D_ykcb2")
 
-[node name="table" type="ColorRect" parent="." unique_id=1352512355]
-offset_left = 132.0
-offset_top = 403.0
-offset_right = 1056.0
-offset_bottom = 596.0
-color = Color(0.41166076, 0.3027552, 0.230329, 1)
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=2140803765]
+position = Vector2(-354.00003, 5.0000153)
+scale = Vector2(0.17465281, 0.16840275)
+texture = ExtResource("5_awjct")
 
-[connection signal="timeout" from="act1_audio/Timer" to="fade_black" method="fade_in" binds= [1.0]]
+[connection signal="timeout" from="AudioStreamPlayer/Timer" to="fade_black" method="fade_in" binds= [1.0]]
