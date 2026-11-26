@@ -6,7 +6,7 @@ func _ready() -> void:
 func _on_button_pressed() -> void:
 	print("Dialogue initiated")
 	$CanvasLayer/Button.disabled = true
-	DialogueManager.initiate_dialogue("res://dialogues/pls_work_2.json")
+	DialogueManager.initiate_dialogue("res://dialogues/act_1_part_1.json")
 
 func _on_dialogue_end() -> void:
 	$CanvasLayer/Button.disabled = false

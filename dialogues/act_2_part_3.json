@@ -3,43 +3,43 @@
     "William"
   ],
   "events": [
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "normal",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Is this some kind of sign for me to check on his study first?",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "PlaySound",
-      "sound": "incoherent_whispering_voice"
-    },
-    {
-      "name": "Wait",
-      "duration": 2.0
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Nevermind, let’s just get out of here–",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    }
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Is this some kind of sign for me to check on his study first?",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySound",
+	  "sound": "incoherent_whispering_voice"
+	},
+	{
+	  "name": "Wait",
+	  "duration": 2.0
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Nevermind, let’s just get out of here–",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	}
   ]
 }
