@@ -6,12 +6,20 @@
   ],
   "events": [
 	{
-	  "name": "Special",
-	  "custom_event_name": "[THE AIR IN THE ROOM TURNS FREEZING COLD JUST BEFORE WILLIAM OPENS THE SECRET ROOM]"
-	},
-	{
 	  "name": "PlaySoundEffect",
 	  "path": "[<SLOW, FAMILIAR FOOTSTEPS APPROACHING FROM BEHIND WILLIAM>]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Nathaniel",
+	  "segments": [
+		{
+		  "text": "... ",
+		  "pacing": 0.065,
+		  "style": "ominous",
+		  "pause_after": 0.3
+		}
+	  ]
 	},
 	{
 	  "name": "LoadText",
@@ -24,10 +32,6 @@
 		  "pause_after": 0.3
 		}
 	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[WILLIAM FREEZES, THEN SLOWLY TURNS AROUND TO FACE NATHANIEL STANDING AT THE FAR END OF THE CORRIDOR]"
 	},
 	{
 	  "name": "LoadText",

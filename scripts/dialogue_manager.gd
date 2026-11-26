@@ -106,8 +106,13 @@ func dialogue_next() -> void:
 		current_event_idx += 1
 
 var FLASHBACK_FILES: Dictionary = {
-	1: "res://dialogues/pls_work.json",
-	2: "res://dialogues/flashback_2.json"
+	1: "res://dialogues/flashback_1.json",
+	2: "res://dialogues/flashback_2.json",
+	3: "res://dialogues/flashback_3.json",
+	4: "res://dialogues/flashback_4.json",
+	5: "res://dialogues/flashback_5.json",
+	6: "res://dialogues/flashback_6.json",
+	7: "res://dialogues/flashback_7.json"
 }
 
 func initiate_flashback(flashback_id: int) -> void:
