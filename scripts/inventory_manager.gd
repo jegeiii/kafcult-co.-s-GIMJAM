@@ -59,12 +59,13 @@ func notification_popup(item_id: String):
 		$notification/RichTextLabel.visible = not $notification/RichTextLabel.visible
 	$notification/RichTextLabel.visible = false
 		
-func InventoryInspect(item_id: String):
+func InventoryInspect(item_id: String, usable: bool):
 	print("a")
 	$fade_black.transparent()
 	$fade_black.mouse_filter = Control.MOUSE_FILTER_STOP
 	$item_closeup/PanelContainer/RichTextLabel.text = inventory[item_id]["description"]
 	$item_closeup.visible = true
+	$item_closeup/use_button.visible = usable
 	$item_closeup.texture_normal = load(inventory[item_id]["texture_path"])
 	$item_closeup/Label.text = item_id
 
@@ -92,3 +93,8 @@ func close_inspect():
 	$item_closeup.visible = false
 	$fade_black.fade_in(0.1)
 	$fade_black.mouse_filter = Control.MOUSE_FILTER_IGNORE
+
+func _on_item_closeup_pressed() -> void:
+	pass
+	#if inventory[item_id]["inspect_depth"] > 0:
+		

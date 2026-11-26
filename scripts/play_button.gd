@@ -3,6 +3,7 @@ extends Button
 var next_scene = preload("res://scenes/ACT1.tscn")
 
 func _ready():
+	InventoryUi.toggle_inventory(false)
 	pass
 
 func _on_pressed():
