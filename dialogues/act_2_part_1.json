@@ -4,40 +4,36 @@
   ],
   "events": [
 	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "normal",
-	  "position": "center"
+	  "name": "Special",
+	  "custom_event_name": "[SCREEN FADES IN, REVEALING THE BLACKWOOD MANOR’S ENTRANCE HALL]"
 	},
 	{
 	  "name": "LoadText",
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "I can’t believe I decided to go back here again…",
+		  "text": "I can’t believe I decided to go back here again… ",
 		  "pacing": 0.065,
 		  "style": "normal",
-		  "pause_after": 0
+		  "pause_after": 0.3
 		}
 	  ]
 	},
 	{
 	  "name": "LoadText",
-	  "speaker": "William",
+	  "speaker": "William (thoughts)",
 	  "segments": [
 		{
-		  "text": "It’s quieter than I expected. ",
-		  "pacing": 0.065,
+		  "text": "It’s quieter than I expected. There’s obviously no one inside… right? ",
+		  "pacing": 0.06,
 		  "style": "thought",
 		  "pause_after": 0.3
-		},
-		{
-		  "text": "There’s obviously no one inside… right?",
-		  "pacing": 0.065,
-		  "style": "thought",
-		  "pause_after": 0
 		}
 	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[SCREEN FADES OUT]"
 	}
   ]
 }

@@ -3,189 +3,23 @@
     "William"
   ],
   "events": [
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "normal",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "This one looks normal… ",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Let’s look around for a moment.",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Without hesitation, William steps deeper into the room and closes the door, eyeing each corner of the room with quiet intensity. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Hanging on the wall nearby, there are three paintings with Nathaniel’s distorted face on one canvas, William’s clear face on the other canvas, and one canvas left blank.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "normal",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "How strange… ",
-          "pacing": 0.065,
-          "style": "thought",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Shouldn’t Diana’s portrait be in this canvas? ",
-          "pacing": 0.065,
-          "style": "thought",
-          "pause_after": 0.3
-        },
-        {
-          "text": "And why is Nathan's painting distorted?",
-          "pacing": 0.065,
-          "style": "thought",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "William eyes the blank canvas with a furrow between his brow. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Surely he couldn’t forget that detail, did he?",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "normal",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Well… ",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "I guess these paintings are the anomalies, then.",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Somehow, William seems to keep his eyes straightened to his brother’s distorted portrait. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "The longer he looks, the more magnetic the canvas seems to tug at his soul, pulling him into the darkness.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "normal",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Ugh… ",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "It’s pulling me…",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Before William can even pull himself, the canvas devours him with a heavy pull as his consciousness gets swallowed into the painting.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    }
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Now… ",
+		  "pacing": 0.1,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "You don’t get in my way again! ",
+		  "pacing": 0.075,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		}
+	  ]
+	}
   ]
 }

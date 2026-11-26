@@ -1,299 +1,236 @@
 {
   "characters": [
-    "William",
-    "Charles"
+	"William",
+    "Charles’s silhouette"
   ],
   "events": [
-    {
-      "name": "ScreenGlitch",
-      "duration": 1.0
-    },
-    {
-      "name": "ChangeBackground",
-      "background": "dining_room_distorted_teeth_walls_charles_silhouette_painting"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "surprised",
-      "position": "left"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Oh my God… ",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "What is wrong with this place?",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "PlaySound",
-      "sound": "crunching_teeth"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "normal",
-      "position": "left"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "…Should I do something?",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Nuh uh, they look scary enough…",
-          "pacing": 0.065,
-          "style": "thought",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "PlaySound",
-      "sound": "knocking_canvas"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "…?",
-          "pacing": 0.12,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "The moment William turned his head away from the tooth peppering his dining room’s walls, he was met by a peculiar shadow looming over the canvas above his fireplace.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "ChangeBackground",
-      "background": "dining_room_king_in_yellow_shadow_visible"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "surprised",
-      "position": "left"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Oh sh*t!",
-          "pacing": 0.04,
-          "style": "emphasis",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Even if William flinched at the sight of his father’s silhouette, Charles remained motionless. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Gazing down at William as if he is part of the stars in The Starry Night above.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "normal",
-      "position": "left"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Charles",
-      "expression": "normal",
-      "position": "right"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles’s silhouette",
-      "segments": [
-        {
-          "text": "…",
-          "pacing": 0.12,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "F-Father?",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles’s silhouette",
-      "segments": [
-        {
-          "text": "…",
-          "pacing": 0.12,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Do you need something…?",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Charles"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "For a few moments of silence, they just meet each other’s gaze, ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "as if trying to understand each other’s intentions behind the tense atmosphere with no verbal words being exchanged.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "PlaySound",
-      "sound": "knocking_canvas"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "normal",
-      "position": "left"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Charles",
-      "expression": "normal",
-      "position": "right"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "… No, he’s not my father. ",
-          "pacing": 0.06,
-          "style": "thought",
-          "pause_after": 0.3
-        },
-        {
-          "text": "He shouldn’t even be here in the first place!",
-          "pacing": 0.06,
-          "style": "thought",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles’s silhouette",
-      "segments": [
-        {
-          "text": "…",
-          "pacing": 0.12,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Should I get him something so he can leave me alone?",
-          "pacing": 0.065,
-          "style": "thought",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William",
-      "transition": "fade"
-    }
+	{
+	  "name": "Special",
+	  "custom_event_name": "[SCREEN GLITCHES, REVEALING A DISTORTED DINING ROOM WITH TEETH COVERING THE WALLS AND CHARLES’S THIN SILHOUETTE IN THE PAINTING ABOVE THE FIREPLACE]"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "surprised",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Oh my God… What is wrong with this place? ",
+		  "pacing": 0.07,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<CRUNCHING NOISE COMING FROM THE TEETH ON THE WALLS>]"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "…Should I do something? ",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William (thoughts)",
+	  "segments": [
+		{
+		  "text": "Nuh uh, they look scary enough… ",
+		  "pacing": 0.055,
+		  "style": "thought",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<KNOCKING SOUND COMING FROM THE CANVAS>]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "…? ",
+		  "pacing": 0.12,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "The moment William turned his head away from the tooth peppering his dining room’s walls, he was met by a peculiar shadow looming over the canvas above his fireplace. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[CHARLES’S SHADOW BECOMES MORE VISIBLE IN THE PAINTING]"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "surprised",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Oh sh*t! ",
+		  "pacing": 0.12,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Even if William flinched at the sight of his father’s silhouette, Charles remained motionless. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.1
+		},
+		{
+		  "text": "Charles gazes down at William as if he himself is a part of the stars in The Starry Night above. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles’s silhouette",
+	  "segments": [
+		{
+		  "text": "… ",
+		  "pacing": 0.1,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "F-Father? ",
+		  "pacing": 0.09,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles’s silhouette",
+	  "segments": [
+		{
+		  "text": "… ",
+		  "pacing": 0.1,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Do you need something…? ",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "For a few moments of silence, they just meet each other’s gaze, as if trying to understand each other’s intentions behind the tense atmosphere with no verbal words being exchanged. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<KNOCKING SOUND COMING FROM THE CANVAS AGAIN>]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William (thoughts)",
+	  "segments": [
+		{
+		  "text": "… No, he’s not my father. He shouldn’t even be here in the first place! ",
+		  "pacing": 0.06,
+		  "style": "thought",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles’s silhouette",
+	  "segments": [
+		{
+		  "text": "… ",
+		  "pacing": 0.1,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William (thoughts)",
+	  "segments": [
+		{
+		  "text": "Should I get him something so he can leave me alone? ",
+		  "pacing": 0.06,
+		  "style": "thought",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM’S SPRITE FADES OUT OF THE SCREEN]"
+	}
   ]
 }

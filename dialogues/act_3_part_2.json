@@ -1,137 +1,247 @@
 {
   "characters": [
-    "William",
-    "Nathaniel"
+	"William",
+	"Nathaniel (The King)",
+    "Narrator"
   ],
   "events": [
-    {
-      "name": "ScreenEffectEnd",
-      "effect": "ScreenWarp"
-    },
-    {
-      "name": "PlaySound",
-      "sound": "sharp_gasp"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "A sharp gasp rips from William’s throat as the memory crashes over him, snapping him back to the cold hallway.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "surprised",
-      "position": "left"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Nathaniel",
-      "expression": "smile",
-      "position": "right"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Nathaniel’s gentle smile vanishes. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Suddenly, a yellow flame ignites along his collar and spreads rapidly across his jaw, hair, and face, burning silently.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Nathaniel",
-      "expression": "burning",
-      "position": "right"
-    },
-    {
-      "name": "PlaySound",
-      "sound": "flames_burning"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Nathaniel",
-      "segments": [
-        {
-          "text": "You didn't just let me fall, Will. ",
-          "pacing": 0.06,
-          "style": "emphasis",
-          "pause_after": 0.3
-        },
-        {
-          "text": "You burned me alive.",
-          "pacing": 0.06,
-          "style": "emphasis",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "William clutches his chest, backing away in terror against the heavy oak door.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "As William watches, the silent flames consuming Nathaniel’s figure begin to flicker and thin out like dying smoke. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Slowly, Nathaniel’s burning silhouette dissolves into the shadows of the corridor until nothing remains but the faint, lingering smell of kerosene and ash in the freezing air.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Nathaniel",
-      "transition": "fade"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Silence falls over the hallway once more, William bends down with a trembling hand, he turns back toward the tarnished brass handle behind him.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    }
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM STEPS INSIDE THE ROOM AND EXPERIENCES A STRONG SENSE OF FAMILIARITY]"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[THE CAMERA REVEALS A BEAUTIFUL BUT TRAGIC-LOOKING PAINTING IN THE MIDDLE OF THE ROOM. IT APPEARS INCOMPLETE, WITH A FAMILIAR PORCELAIN MASK LYING ON THE FLOORBOARD BESIDE IT]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "This is… I knew this, that night… ",
+		  "pacing": 0.09,
+		  "style": "thought",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[MEMORIES SUDDENLY FLOOD WILLIAM'S MIND, REVEALING THE MOMENT THAT CHANGED HIS LIFE AND FORCED HIM TO KEEP RUNNING]"
+	},
+	{
+	  "name": "Flashback",
+	  "flashback_id": 7
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM GASPS SHARPLY, STUMBLING BACK A STEP FROM THE DUST-COVERED CANVAS AND THE BLANK PORCELAIN MASK RESTING BESIDE IT]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "For years, William believed his father had simply gone mad from grief and ruin. Now, staring at the yellow sign and the unfinished canvas, the chilling truth settles in: it was never madness, and whatever his father tried to summon never left this place. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "It wasn't just grief... Father wasn't trying to end it all. ",
+		  "pacing": 0.075,
+		  "style": "thought",
+		  "pause_after": 0.4
+		},
+		{
+		  "text": "He was trying to finish something. ",
+		  "pacing": 0.065,
+		  "style": "thought",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM SLOWLY LOOKS DOWN AT HIS SHAKING HANDS, THEN BACK AT THE HOLLOW EYES OF THE PORCELAIN MASK]"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[PLAYER INTERACTION: WILLIAM EXAMINES THE BOOK LYING IN THE ROOM AND READS ITS CONTENTS, REVEALING LOGS ABOUT THE RITUAL AND HIS FATHER'S ACTIONS]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "And he left the last piece waiting for me. ",
+		  "pacing": 0.07,
+		  "style": "thought",
+		  "pause_after": 0.4
+		},
+		{
+		  "text": "I'm sorry father, but I will end this madness… ",
+		  "pacing": 0.065,
+		  "style": "emphasis",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM STEELS HIS NERVES AND STEPS FORWARD TO DESTROY THE UNFINISHED CANVAS AND END THE CURSED RITUAL]"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM GRABS THE EDGE OF THE WOODEN FRAME AND PULLS HARD, TRYING TO TEAR THE CANVAS APART OR SMASH IT AGAINST THE STONE FLOOR, BUT THE FABRIC DOES NOT RIP AND THE WOOD DOES NOT SPLINTER, AS IF PROTECTED BY AN INVISIBLE FORCE]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "What... why won't it tear?! ",
+		  "pacing": 0.1,
+		  "style": "emphasis",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[A SUFFOCATING WAVE OF HEAT WASHES OVER WILLIAM'S BACK, ACCOMPANIED BY THE SHARP SMELL OF KEROSENE, ASH, AND BURNING FLESH]"
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<LOW, DISTORTED RUMBLE AS A WAVE OF SUPERNATURAL HEAT BUILDS>]"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM SPINS AROUND, TENSING HIS JAW. NATHANIEL STANDS A FEW PACES BEHIND HIM IN THE SHADOWS, HALF OF HIS FACE AND HAIR ENGULFED IN SILENT, PALE-YELLOW FLAMES. THE FIRE CASTS NO WARMTH, AND HIS EYES STARE CALMLY THROUGH IT WITH A FAMILIAR, PATIENT SMILE]"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Nathaniel (The King)",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Nathaniel (The King)",
+	  "segments": [
+		{
+		  "text": "Always rushing ahead without thinking, Will. ",
+		  "pacing": 0.065,
+		  "style": "ominous",
+		  "pause_after": 0.4
+		},
+		{
+		  "text": "You can’t break what isn't fully anchored to this world. ",
+		  "pacing": 0.06,
+		  "style": "ominous",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "That canvas is bound to another world. Until your mind crosses over and connects to it, nothing in this room can touch it. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "You again? ",
+		  "pacing": 0.09,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "You’re not him. You’re just another phantom this house keeps throwing at me. ",
+		  "pacing": 0.065,
+		  "style": "emphasis",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Nathaniel (The King)",
+	  "segments": [
+		{
+		  "text": "To destroy it, you have to wear the mask and complete the rite first. ",
+		  "pacing": 0.06,
+		  "style": "ominous",
+		  "pause_after": 0.4
+		},
+		{
+		  "text": "Though... once you stand before Him, why throw it all away? ",
+		  "pacing": 0.065,
+		  "style": "ominous",
+		  "pause_after": 0.4
+		},
+		{
+		  "text": "Look at this empty, rotting place, Will. Look at everything you broke. Mother, Diana, Walter... even me. ",
+		  "pacing": 0.055,
+		  "style": "ominous",
+		  "pause_after": 0.4
+		},
+		{
+		  "text": "You ran away like a coward and left us all in the dark. ",
+		  "pacing": 0.055,
+		  "style": "ominous",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[NATHANIEL TAKES A SLOW STEP CLOSER, GESTURING TOWARD THE BRUSH AND THE PORCELAIN MASK BESIDE THE CANVAS]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Nathaniel (The King)",
+	  "segments": [
+		{
+		  "text": "You want to fix it, don’t you? ",
+		  "pacing": 0.065,
+		  "style": "ominous",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "You want our family whole again, sitting around that dinner table just like before. ",
+		  "pacing": 0.055,
+		  "style": "ominous",
+		  "pause_after": 0.4
+		},
+		{
+		  "text": "Perform the rite, little brother. Once you're connected, give in to The King, and He can grant you everything you lost. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
+		  "pause_after": 0.6
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "… ",
+		  "pacing": 0.1,
+		  "style": "thought",
+		  "pause_after": 0.8
+		}
+	  ]
+	}
   ]
 }

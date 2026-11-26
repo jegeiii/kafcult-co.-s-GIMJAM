@@ -1,43 +1,180 @@
 {
   "characters": [
-    "William"
+	"William",
+    "Narrator"
   ],
   "events": [
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "normal",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Oh, it’s unlocked!",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "The lock is still stiff… ",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Did I get it wrong?",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    }
+	{
+	  "name": "Special",
+	  "custom_event_name": "[SCREEN FADES IN, REVEALING THE CHILDREN’S BEDROOM WITH WILLIAM’S SPRITE ON SCREEN, ACCOMPANIED BY THE SOUND OF A DOOR OPENING]"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "This one looks normal… ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "Let’s look around for a moment. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<SOUND OF THE DOOR CLOSING>]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Without hesitation, William steps deeper into the room and closes the door, eyeing each corner of the room with quiet intensity. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.1
+		},
+		{
+		  "text": "Hanging on the wall nearby, there are three paintings with Nathaniel’s distorted face on one canvas, William’s clear face on the other canvas, and one canvas left blank. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William (thoughts)",
+	  "segments": [
+		{
+		  "text": "How strange… ",
+		  "pacing": 0.06,
+		  "style": "thought",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "Shouldn’t Diana’s portrait be in this canvas? ",
+		  "pacing": 0.06,
+		  "style": "thought",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "And why is Nathan's painting distorted? ",
+		  "pacing": 0.06,
+		  "style": "thought",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "William eyes the blank canvas with a furrow between his brow. Surely he couldn’t forget that detail, did he? ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Well… I guess these paintings are the anomalies, then. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Somehow, William seems to keep his eyes straightened to his brother’s distorted portrait. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.1
+		},
+		{
+		  "text": "The longer he looks, the more magnetic the canvas seems to tug at his soul, pulling him into the darkness. ",
+		  "pacing": 0.04,
+		  "style": "ominous",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Ugh… It’s pulling me… ",
+		  "pacing": 0.09,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Before William can even pull himself, the canvas devours him with a heavy pull as his consciousness gets swallowed into the painting. ",
+		  "pacing": 0.04,
+		  "style": "ominous",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM’S SPRITE FADES OUT WHILE THE BACKGROUND FADES INTO BLANKNESS FOR THE FLASHBACK]"
+	},
+	{
+	  "name": "Flashback",
+	  "flashback_id": 4
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "angry",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Okay, I’ve had enough of this… ",
+		  "pacing": 0.075,
+		  "style": "emphasis",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "These anomalies keep disturbing me. ",
+		  "pacing": 0.07,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		}
+	  ]
+	}
   ]
 }

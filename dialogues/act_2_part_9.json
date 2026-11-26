@@ -1,49 +1,36 @@
 {
   "characters": [
-    "William"
+	"William",
+    "Narrator"
   ],
   "events": [
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "William watches Walter eat his meal with a hint of softness on his eyes. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "He smiles fondly and watches how his tail swings left to right out of happiness.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "happy",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "He used to play after eating his food. ",
-          "pacing": 0.065,
-          "style": "thought",
-          "pause_after": 0.3
-        },
-        {
-          "text": "I remember seeing a toy somewhere in here.",
-          "pacing": 0.065,
-          "style": "thought",
-          "pause_after": 0
-        }
-      ]
-    }
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Just as he predicted, the Irish Wolfhound lifts his head and barks, energetically bounces onto the toy and trail bites all over it, resulting in a squeaking sound from the toy. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<DOG BARKING AND TOY SQUEAKING AS WALTER BITES IT>]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Who’s a good boy? ",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	}
   ]
 }

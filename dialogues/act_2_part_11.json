@@ -1,25 +1,204 @@
 {
   "characters": [
-    "William"
+	"William",
+    "Narrator"
   ],
   "events": [
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "sad",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Maybe next time I’ll say goodbye to you properly, buddy.",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    }
+	{
+	  "name": "Special",
+	  "custom_event_name": "[SCREEN FADES IN, REVEALING THE PARENTS’ BEDROOM WITH WILLIAM’S SPRITE ON SCREEN]"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Excuse me, Mother, Father… ",
+		  "pacing": 0.055,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<SOUND OF A WOODEN DOOR SLOWLY OPENING, FOLLOWED BY STEADY, CAUTIOUS FOOTSTEPS>]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "William mumbled as he carefully stepped into the room before he caught himself and stopped his tracks. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Ah, right… They’re no longer here, are they? ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Instead of looking around the room, he just froze there, taking the sight of his parents’ room from the carpet below his foot up to the ceiling. William realizes, with a sharp stab right into his heart, that his parents never even allowed him to step inside this very room, not until now, when they’re no longer breathing the damp air he’s breathing. ",
+		  "pacing": 0.04,
+		  "style": "narration",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Mother, Father, I promise I don’t mess with your things too much. ",
+		  "pacing": 0.055,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM’S SPRITE FADES OUT WHILE THE BACKGROUND FADES INTO BLANKNESS FOR THE FLASHBACK]"
+	},
+	{
+	  "name": "Flashback",
+	  "flashback_id": 3
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "“Only the worthy ones deserve heaven”, hm? ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "It feels different now when I hear it again when I read that letter. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William (thoughts)",
+	  "segments": [
+		{
+		  "text": "Come to think of it, I didn’t meet anyone here. ",
+		  "pacing": 0.055,
+		  "style": "thought",
+		  "pause_after": 0.1
+		},
+		{
+		  "text": "The sender told me in the letter that I’ll meet someone. They even know those particular words… ",
+		  "pacing": 0.055,
+		  "style": "thought",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "Hm, oh, well. ",
+		  "pacing": 0.06,
+		  "style": "thought",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "William shakes his head from his own thoughts before he continues to look around the room. Opening the drawers, looking under the bed, even wardrobes. He didn’t leave any nooks and cranny unchecked, yet made sure he didn’t change the position of the things present in the room just for the sake of it. ",
+		  "pacing": 0.04,
+		  "style": "narration",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "surprised",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "!! ",
+		  "pacing": 0.12,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "When he opened one of the drawers inside his mother’s side of the wardrobe, he found a medium locked jewelry box with his mother’s name carved on it. The box is light made of wood with a five digit combination padlock hanging on the edge. Beside it, lies a poem on a piece of paper. ",
+		  "pacing": 0.04,
+		  "style": "narration",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Oh… The box is locked. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "Time to think of the password, then… ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "Does this poem have some connection with it? ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	}
   ]
 }

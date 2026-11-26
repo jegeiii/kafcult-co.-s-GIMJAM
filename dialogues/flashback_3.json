@@ -1,460 +1,337 @@
 {
   "characters": [
-    "William",
-    "Charles"
+	"William",
+	"Charles",
+    "Narrator"
   ],
   "events": [
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "It was a sunny afternoon when the 7 year old William ran towards his parents’ room whilst crying. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "His steps echoed across the corridors of the manor before stopping in front of the wooden door, hands trembling as he knocked on the firmly closed door.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "PlaySound",
-      "sound": "door_knock"
-    },
-    {
-      "name": "PlaySound",
-      "sound": "sobbing",
-      "loop": true
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "(hiks) Mother, father…",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "Come in, William.",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "PlaySound",
-      "sound": "door_open"
-    },
-    {
-      "name": "PlaySound",
-      "sound": "rushed_footsteps"
-    },
-    {
-      "name": "ChangeBackground",
-      "background": "parents_bedroom"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "The moment Charles’s voice echoed from inside the room, William didn’t wait for even a second and stumbled into the room with tear-streaked cheeks. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "He slouches his face onto the soft mattress as he sobs near where his father sat.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "sad",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Father, I-I can’t beat Nathan on horseback training today… ",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "(hiks)... ",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "I’ve practiced so hard… ",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "b-but why is he always better than me?",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "That afternoon, William and his older brother, Nathaniel, had horseback training with one of the trainers in the woods near the manor. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "While Nathaniel’s posture is elegant on his horseback when he rides, William got a lot of criticism from the trainer regarding that since he won’t stop wobbling to the sides whenever his horse gallops. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "In which, resulting him to stormed into his parents’ room and cried beside his father.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Charles watched his son for a long moment before reaching his hand to William’s hair and brushing it steadily.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "sad",
-      "position": "left"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Charles",
-      "expression": "happy",
-      "position": "right"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "You practiced horseback training again, son? ",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "You really are a hard worker.",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "(hiks)... ",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "But, Father, I still wobble…",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "You don’t have to master it immediately, William. ",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Training takes time and you still have a lot to learn, like your brother.",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "(hiks)... ",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "D-Do you think so? ",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "That… I can be as good as Nathan when I learn more?",
-          "pacing": 0.075,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "Of course you will, son.",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "The moment his father said that, William lifts his head to meet Charles’s eyes, his gaze full of quiet hope of one day being better. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "His father stares at him back, then lowering his hand that was resting on William’s head down to the boy’s shoulder, gripping it firmly.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "Besides, in this family, only the worthy ones deserve heaven. ",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "And I know that all of my children are worthy of that because you bear my last name. ",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "You hear me?",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "surprised",
-      "position": "left"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Only the worthy ones deserve heaven… ",
-          "pacing": 0.065,
-          "style": "thought",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Really?",
-          "pacing": 0.065,
-          "style": "thought",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "Really.",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "“Only the worthy ones deserve heaven”. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "That’s enough to make the crying William forget his sadness as he gazes at his father like he hung the moon. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "The worthy ones, he thought, are the Blackwoods, including himself. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "He will deserve heaven, like his own brother and sister.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "William then stood up, wiping the remaining tears from his face with his sleeves a little aggressively from grit. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Looking back at his father with a soldier-like respect.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "happy",
-      "position": "left"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Then, I will continue learning so I can deserve heaven!",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "That’s the spirit! ",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Go on, then.",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William",
-      "transition": "fade"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Thank you, father. ",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "I love you!",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Without glancing twice at his father, William immediately rushed back through the door of his parents' room with a new insight that he, just like his other siblings, will always have a place in heaven if he’s trying hard to gain worth.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    }
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<HURRIED FOOTSTEPS AND MUFFLED CRYING>]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "It was a sunny afternoon when the 7-year-old William ran towards his parents’ room whilst crying. His steps echoed across the corridors of the manor before stopping in front of the wooden door, hands trembling as he knocked on the firmly closed door. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<KNOCKING ON A WOODEN DOOR, WITH MUFFLED SOBS>]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "(hiks) Mother, father… ",
+		  "pacing": 0.1,
+		  "style": "thought",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "Come in, William. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "[<DOOR OPENING, RUSHED FOOTSTEPS AND CONTINUED CRYING>]"
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[THE BACKGROUND CHANGES TO THE PARENTS' BEDROOM]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "The moment Charles’s voice echoed from inside the room, William didn’t wait for even a second and stumbled into the room with tear-streaked cheeks. He slouched his face onto the soft mattress as he sobbed near where his father sat. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM'S SPRITE APPEARS ON THE SCREEN]"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "sad",
+	  "position": "left"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Father, I-I can’t beat Nathan on horseback training today… (hiks)... I’ve practiced so hard… b-but why is he always better than me? ",
+		  "pacing": 0.09,
+		  "style": "emphasis",
+		  "pause_after": 0.6
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "That afternoon, William and his older brother, Nathaniel, had horseback training with one of the trainers in the woods near the manor. While Nathaniel’s posture was elegant on his horseback when he rode, William got a lot of criticism from the trainer regarding that since he wouldn’t stop wobbling to the sides whenever his horse galloped. This resulted in him storming into his parents’ room and crying beside his father. ",
+		  "pacing": 0.04,
+		  "style": "narration",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Charles watched his son for a long moment before reaching his hand to William’s hair and brushing it steadily. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[CHARLES'S SPRITE APPEARS BESIDE WILLIAM'S SPRITE]"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Charles",
+	  "expression": "happy",
+	  "position": "right"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "You practiced horseback training again, son? You really are a hard worker. ",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "(hiks)... But, Father, I still wobble… ",
+		  "pacing": 0.09,
+		  "style": "thought",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "You don’t have to master it immediately, William. Training takes time and you still have a lot to learn, like your brother. ",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "(hiks)... D-Do you think so? That… I can be as good as Nathan when I learn more? ",
+		  "pacing": 0.09,
+		  "style": "thought",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "Of course you will, son. ",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "The moment his father said that, William lifted his head to meet Charles’s eyes, his gaze full of quiet hope of one day being better. His father stared back at him, then lowered his hand that was resting on William’s head down to the boy’s shoulder, gripping it firmly. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "Besides, in this family, ",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "only the worthy ones deserve heaven",
+		  "pacing": 0.12,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": ". And I know that all of my children are worthy of that because you bear my last name. You hear me? ",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William (thoughts)",
+	  "expression": "surprised",
+	  "position": "left"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William (thoughts)",
+	  "segments": [
+		{
+		  "text": "Only the worthy ones deserve heaven… Really? ",
+		  "pacing": 0.09,
+		  "style": "thought",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "Really. ",
+		  "pacing": 0.08,
+		  "style": "normal",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "“Only the worthy ones deserve heaven”. That’s enough to make the crying William forget his sadness as he gazed at his father like he hung the moon. The worthy ones, he thought, were the Blackwoods, including himself. He would deserve heaven, like his own brother and sister. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.5
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "William then stood up, wiping the remaining tears from his face with his sleeves a little aggressively from grit. Looking back at his father with a soldier-like respect. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "happy",
+	  "position": "left"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Then, I will continue learning so I can deserve heaven! ",
+		  "pacing": 0.09,
+		  "style": "emphasis",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "That’s the spirit! Go on, then. ",
+		  "pacing": 0.07,
+		  "style": "normal",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[WILLIAM'S SPRITE FADES OUT, LEAVING CHARLES'S SPRITE ON SCREEN]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Thank you, father. I love you! ",
+		  "pacing": 0.08,
+		  "style": "happy",
+		  "pause_after": 0.4
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Without glancing twice at his father, William immediately rushed back through the door of his parents' room with a new insight that he, just like his other siblings, would always have a place in heaven if he was trying hard to gain worth. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.6
+		}
+	  ]
+	}
   ]
 }

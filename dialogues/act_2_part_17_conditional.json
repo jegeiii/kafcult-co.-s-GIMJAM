@@ -3,95 +3,21 @@
     "William"
   ],
   "events": [
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Nathaniel, your heart is one of blazing fire of pride, continue swallowing anyone beneath you.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Your empty eyes gleam with ambition, yet submissive to order like a puppet on stage.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "You're brilliant, yet you're blind to realize that your hands are bound. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Or you never fight it? ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Keep moving as the director commands.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Keep your head high above the sky, then. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Until the fire in your heart climb its way up to burn each tip of your hair.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "angry",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "(catching his breath) Now… ",
-          "pacing": 0.05,
-          "style": "emphasis",
-          "pause_after": 0.3
-        },
-        {
-          "text": "You don’t get in my way again!",
-          "pacing": 0.05,
-          "style": "emphasis",
-          "pause_after": 0
-        }
-      ]
-    }
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Finally! It’s all over… right? ",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "[SCREEN TURNS DARK]"
+	}
   ]
 }

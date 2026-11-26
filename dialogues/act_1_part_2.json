@@ -4,30 +4,14 @@
   ],
   "events": [
 	{
-	  "name": "ChangeBackground",
-	  "background": "envelope"
-	},
-	{
-	  "name": "ChangeBackground",
-	  "background": "unsealed_envelope"
-	},
-	{
-	  "name": "ChangeBackground",
-	  "background": "written_paper"
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "William"
-	},
-	{
 	  "name": "LoadText",
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "To my dear, William Blackwood",
+		  "text": "To my dear, William Blackwood. ",
 		  "pacing": 0.05,
 		  "style": "narration",
-		  "pause_after": 0
+		  "pause_after": 0.3
 		}
 	  ]
 	},
@@ -39,25 +23,25 @@
 		  "text": "I hope this letter reaches you and you didn’t immediately throw it away. ",
 		  "pacing": 0.045,
 		  "style": "narration",
-		  "pause_after": 0.3
+		  "pause_after": 0.1
 		},
 		{
 		  "text": "Do read it first, I don’t plan to ask much from you nor to cause any trouble. ",
 		  "pacing": 0.045,
 		  "style": "narration",
-		  "pause_after": 0.3
+		  "pause_after": 0.1
 		},
 		{
 		  "text": "You don’t have to know who I am. ",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0.1
+		},
+		{
+		  "text": "I’m merely curious about how the city has been treating you these days. ",
 		  "pacing": 0.045,
 		  "style": "narration",
 		  "pause_after": 0.3
-		},
-		{
-		  "text": "I’m merely curious about how the city has been treating you these days.",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0
 		}
 	  ]
 	},
@@ -66,52 +50,34 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "The city is heaven, isn't it? ",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "Lots of opportunities. ",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "Plenty of possibilities. ",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0.3
+		  "text": "The city is heaven, isn't it? Lots of opportunities. Plenty of possibilities. ",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0.1
 		},
 		{
 		  "text": "Even fresh chances to achieve your deep-rooted dreams. ",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0.3
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0.15
 		},
 		{
 		  "text": "Still, you realize it, don’t you? ",
-		  "pacing": 0.045,
-		  "style": "narration",
+		  "pacing": 0.055,
+		  "style": "ominous",
+		  "pause_after": 0.1
+		},
+		{
+		  "text": "That no matter how far you run from the woods, you know that… ",
+		  "pacing": 0.05,
+		  "style": "ominous",
 		  "pause_after": 0.3
 		},
 		{
-		  "text": "That no matter how far you run from the woods, you know that…",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "Only the worthy ones deserve heaven.",
-		  "pacing": 0.06,
-		  "style": "emphasis",
-		  "pause_after": 0
+		  "text": "Only the worthy ones deserve heaven. ",
+		  "pacing": 0.055,
+		  "style": "ominous",
+		  "pause_after": 0.4
 		}
 	  ]
 	},
@@ -126,26 +92,10 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "…!!",
+		  "text": "…!! ",
 		  "pacing": 0.14,
 		  "style": "emphasis",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "William"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "The doors will greet you with open arms.",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0
+		  "pause_after": 0.3
 		}
 	  ]
 	},
@@ -154,22 +104,40 @@
 	  "speaker": "Narrator",
 	  "segments": [
 		{
-		  "text": "If you walk through the woods to the place that was once your home now, you’ll see the walls are as steady as ever, expected from the Blackwoods. ",
+		  "text": "The doors will greet you with open arms. ",
+		  "pacing": 0.055,
+		  "style": "ominous",
+		  "pause_after": 0.3
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "If you walk through the woods to the place that was once your home now, ",
 		  "pacing": 0.045,
 		  "style": "narration",
-		  "pause_after": 0.3
+		  "pause_after": 0.1
+		},
+		{
+		  "text": "you’ll see the walls are as steady as ever, expected from the Blackwoods. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.1
 		},
 		{
 		  "text": "The roofs are still looming high to the sky though the power is now weak. ",
 		  "pacing": 0.045,
 		  "style": "narration",
-		  "pause_after": 0.3
+		  "pause_after": 0.1
 		},
 		{
-		  "text": "The crickets still sing their ode late into the night.",
+		  "text": "The crickets still sing their ode late into the night. ",
 		  "pacing": 0.045,
 		  "style": "narration",
-		  "pause_after": 0
+		  "pause_after": 0.3
 		}
 	  ]
 	},
@@ -179,15 +147,15 @@
 	  "segments": [
 		{
 		  "text": "Nobody lives there anymore. ",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0.3
+		  "pacing": 0.055,
+		  "style": "ominous",
+		  "pause_after": 0.2
 		},
 		{
-		  "text": "Nobody comes by.",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0
+		  "text": "Nobody comes by. ",
+		  "pacing": 0.06,
+		  "style": "ominous",
+		  "pause_after": 0.4
 		}
 	  ]
 	},
@@ -198,62 +166,38 @@
 		{
 		  "text": "I hope you can do me a favor to visit the manor again. ",
 		  "pacing": 0.045,
-		  "style": "narration",
+		  "style": "normal",
+		  "pause_after": 0.1
+		},
+		{
+		  "text": "Though I can’t guarantee that we will meet there, but you won’t be alone. ",
+		  "pacing": 0.05,
+		  "style": "ominous",
 		  "pause_after": 0.3
 		},
 		{
-		  "text": "Though I can’t guarantee that we will meet there, but you won’t be alone.",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0
+		  "text": "I’m waiting… No, they’re waiting. ",
+		  "pacing": 0.06,
+		  "style": "ominous",
+		  "pause_after": 0.4
 		}
 	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "I’m waiting… ",
-		  "pacing": 0.06,
-		  "style": "narration",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "No, they’re waiting.",
-		  "pacing": 0.06,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "surprised",
-	  "position": "center"
 	},
 	{
 	  "name": "LoadText",
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "… Going back? ",
+		  "text": "Going back? There? ",
 		  "pacing": 0.065,
 		  "style": "normal",
 		  "pause_after": 0.3
-		},
-		{
-		  "text": "There?",
-		  "pacing": 0.065,
-		  "style": "normal",
-		  "pause_after": 0
 		}
 	  ]
 	},
 	{
-	  "name": "Wait",
-	  "duration": 2.0
+	  "name": "Special",
+	  "custom_event_name": "[There’s a long pause]"
 	},
 	{
 	  "name": "LoadText",
@@ -261,21 +205,21 @@
 	  "segments": [
 		{
 		  "text": "“Only the worthy ones deserve heaven”... ",
-		  "pacing": 0.065,
+		  "pacing": 0.06,
 		  "style": "normal",
-		  "pause_after": 0.3
+		  "pause_after": 0.1
 		},
 		{
-		  "text": "Who even knows that?",
-		  "pacing": 0.065,
+		  "text": "Who even knows that? ",
+		  "pacing": 0.06,
 		  "style": "normal",
-		  "pause_after": 0
+		  "pause_after": 0.3
 		}
 	  ]
 	},
 	{
-	  "name": "Wait",
-	  "duration": 2.0
+	  "name": "Special",
+	  "custom_event_name": "[There’s another long pause]"
 	},
 	{
 	  "name": "LoadSprite",
@@ -288,58 +232,52 @@
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Should I go…? ",
-		  "pacing": 0.07,
+		  "text": "Should I go…? But… ",
+		  "pacing": 0.065,
 		  "style": "normal",
 		  "pause_after": 0.3
-		},
-		{
-		  "text": "But…",
-		  "pacing": 0.07,
-		  "style": "normal",
-		  "pause_after": 0
 		}
 	  ]
 	},
 	{
 	  "name": "LoadText",
-	  "speaker": "William",
+	  "speaker": "William (thoughts)",
 	  "segments": [
 		{
-		  "text": "Who even sent this invitation to me after all these years?",
-		  "pacing": 0.065,
+		  "text": "Who even sent this invitation to me after all these years? ",
+		  "pacing": 0.06,
 		  "style": "thought",
-		  "pause_after": 0
+		  "pause_after": 0.3
 		}
 	  ]
 	},
 	{
 	  "name": "LoadText",
-	  "speaker": "William",
+	  "speaker": "William (thoughts)",
 	  "segments": [
 		{
-		  "text": "Ignoring the invitation does feel kind of rude, though ",
-		  "pacing": 0.065,
+		  "text": "Ignoring the invitation does feel kind of rude, though. ",
+		  "pacing": 0.06,
 		  "style": "thought",
-		  "pause_after": 0
+		  "pause_after": 0.3
 		}
 	  ]
 	},
 	{
-	  "name": "PlaySound",
-	  "sound": "rustling_paper"
+	  "name": "PlaySoundEffect",
+	  "path": "[<sound of rustling paper>]"
 	},
 	{
-	  "name": "FadeOut",
-	  "duration": 2.0
+	  "name": "Special",
+	  "custom_event_name": "[Screen slowly fades out dark]"
 	},
 	{
 	  "name": "LoadText",
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Let’s get this over with, then…",
-		  "pacing": 0.07,
+		  "text": "Let’s get this over with, then… ",
+		  "pacing": 0.065,
 		  "style": "normal",
 		  "pause_after": 0
 		}

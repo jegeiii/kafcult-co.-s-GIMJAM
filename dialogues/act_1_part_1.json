@@ -8,23 +8,17 @@
 	  "path": "res://audio/act1_1.wav"
 	},
 	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "normal",
-	  "position": "center"
-	},
-	{
 	  "name": "LoadText",
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "(grumbling with a tired sigh) Finally… ",
-		  "pacing": 0.06,
+		  "text": "*Sighs*... Finally… ",
+		  "pacing": 0.075,
 		  "style": "normal",
-		  "pause_after": 0.3
+		  "pause_after": 0.35
 		},
 		{
-		  "text": "Nothing beats the end of working day",
+		  "text": "Nothing beats the end of working day.",
 		  "pacing": 0.06,
 		  "style": "normal",
 		  "pause_after": 0
@@ -32,25 +26,21 @@
 	  ]
 	},
 	{
-	  "name": "UnloadSprite",
-	  "speaker": "William"
-	},
-	{
 	  "name": "PlaySoundEffect",
 	  "path": "res://audio/act1_2.wav"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "normal",
-	  "position": "center"
 	},
 	{
 	  "name": "LoadText",
 	  "speaker": "William",
 	  "segments": [
 		{
-		  "text": "Why is there a letter from… that place anyways? ",
+		  "text": "Why is there a letter from... ",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0.35
+		},
+		{
+		  "text": "that place anyways?",
 		  "pacing": 0.06,
 		  "style": "normal",
 		  "pause_after": 0
