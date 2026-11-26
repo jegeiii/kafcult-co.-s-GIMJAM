@@ -44,9 +44,24 @@ func _on_dialogue_end():
 
 
 func _on_charless_sillhouette_pressed() -> void:
-	if InventoryUi.inventory_ui["rotten_vegetable"]["count"] >= 1 and InventoryUi.inventory_ui["rotten_meat"]["count"] >= 1:
+	if InventoryUi.inventory_ui["rotten_vegetable"]["count"] >= 1 and InventoryUi.inventory_ui["rotten_meat"]["count"] >= 1 and InventoryUi.inventory_ui["plate"]["count"] >= 1:
 		InventoryUi.remove_item("rotten_vegetable", 1)
 		InventoryUi.remove_item("rotten_meat", 1)
+		InventoryUi.remove_item("plate", 1)
+		DialogueManager.dialogue_end.disconnect(_on_dialogue_end)
+		DialogueManager.initiate_dialogue("res://dialogues/act_2_part_6.json")
+		DialogueManager.dialogue_end.connect(flashback_1)
+
+func flashback_1():
+	DialogueManager.dialogue_end.disconnect(flashback_1)
+	print("flashback 1")
+	InventoryUi.fade_out(1)
+	await get_tree().create_timer(1).timeout
+	$distorted_dining_room.visible = false
+	$flashback_1.visible = true
+	InventoryUi.fade_in(1)
+	await get_tree().create_timer(1).timeout
+	DialogueManager.initiate_dialogue("res://dialogues/flashback_1.json")
 
 var rotten_done: bool = false
 func _on_rotten_vegetable_mouse_entered() -> void:

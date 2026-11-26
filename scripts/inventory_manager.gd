@@ -10,23 +10,23 @@ signal written_paper_clicked
 
 func _process(delta):
 	if Input.is_action_pressed("RMB"):
-		$tip.visible = false
+		$CanvasLayer/tip.visible = false
 		using_item = "none"
-		$TextureRect.global_position = Vector2(-100, -100)
+		$CanvasLayer/TextureRect.global_position = Vector2(-100, -100)
 	if using_item != "none":
-		$TextureRect.texture = load(inventory_ui[using_item]["texture_path"])
-		$TextureRect.global_position = get_global_mouse_position() + Vector2(16, -16)
+		$CanvasLayer/TextureRect.texture = load(inventory_ui[using_item]["texture_path"])
+		$CanvasLayer/TextureRect.global_position = get_global_mouse_position() + Vector2(16, -16)
 
 func toggle_inventory(state: bool):
 	self.visible = state
 
 func expand_inventory():
-	if $Button/Label.text == "<":
-		$Button/Label.text = ">"
+	if $CanvasLayer/Button/Label.text == "<":
+		$CanvasLayer/Button/Label.text = ">"
 		#$Button.set_position($button_opened.position)
 		$CanvasLayer/PanelContainer.set_position($inventory_opened.position)
-	elif $Button/Label.text == ">":	
-		$Button/Label.text = "<"
+	elif $CanvasLayer/Button/Label.text == ">":	
+		$CanvasLayer/Button/Label.text = "<"
 		#$Button.set_position($button_closed.position)
 		$CanvasLayer/PanelContainer.set_position($inventory_closed.position)
 
@@ -61,6 +61,7 @@ func add_item(item: TextureButton, item_id: String) -> void:
 		item.reparent(
 			get_node("/root/InventoryUi/CanvasLayer/PanelContainer/ScrollContainer/VBoxContainer")
 		)
+		item.texture_normal = load(inventory_ui[item_id]["texture_path"])
 
 		# Make it behave like an inventory item
 		item.button_interaction = "inventory"
@@ -88,19 +89,19 @@ func remove_item(item_id: String, amount: int = 1) -> void:
 
 func use_item(item_id: String):
 	using_item = item_id
-	$tip.visible = true
+	$CanvasLayer/tip.visible = true
 	#remove_item(item_id)
 	close_inspect()
 
 func notification_popup(item_id: String):
-	$notification/RichTextLabel.visible = true
+	$CanvasLayer/notification/RichTextLabel.visible = true
 	for i in range(5):
-		$notification/RichTextLabel.text = "Obtained "
-		$notification/RichTextLabel.text += inventory_ui[item_id]["name"]
-		$notification/Timer.start(0.2)
-		await $notification/Timer.timeout
-		$notification/RichTextLabel.visible = not $notification/RichTextLabel.visible
-	$notification/RichTextLabel.visible = false
+		$CanvasLayer/notification/RichTextLabel.text = "Obtained "
+		$CanvasLayer/notification/RichTextLabel.text += inventory_ui[item_id]["name"]
+		$CanvasLayer/notification/Timer.start(0.2)
+		await $CanvasLayer/notification/Timer.timeout
+		$CanvasLayer/notification/RichTextLabel.visible = not $CanvasLayer/notification/RichTextLabel.visible
+	$CanvasLayer/notification/RichTextLabel.visible = false
 		
 func InventoryInspect(item_id: String, usable: bool):
 	print("a")
