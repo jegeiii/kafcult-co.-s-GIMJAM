@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="8_udecq"]
 [ext_resource type="Texture2D" uid="uid://cgi7l5ivehs1c" path="res://graphics/rotten_meat.png" id="9_wbxdu"]
 [ext_resource type="Texture2D" uid="uid://crf0d4l75qq71" path="res://graphics/dogfood.png" id="11_600ry"]
+[ext_resource type="Texture2D" uid="uid://ir84836xl5rn" path="res://graphics/basement.png" id="11_bn5lx"]
 [ext_resource type="Texture2D" uid="uid://c568v606lbe2x" path="res://graphics/water.png" id="12_bn5lx"]
 [ext_resource type="Texture2D" uid="uid://b5j30cj73g77a" path="res://graphics/toy.png" id="13_4sy8i"]
 
@@ -158,40 +159,55 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="basement" type="Control" parent="." unique_id=1306281374]
-layout_mode = 3
-anchors_preset = 0
-offset_left = 515.0
-offset_top = 296.0
-offset_right = 555.0
-offset_bottom = 336.0
+[node name="basement" type="TextureRect" parent="." unique_id=1910798505]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("11_bn5lx")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="dogfood" parent="basement" unique_id=1288662413 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = -17.0
-offset_top = -115.0
-offset_right = 48.0
-offset_bottom = -53.0
+offset_left = 589.0
+offset_top = 307.00003
+offset_right = 679.0
+offset_bottom = 412.40546
+scale = Vector2(1, 0.74)
 texture_normal = ExtResource("11_600ry")
 item_id = "dogfood"
+usable = true
 
 [node name="water" parent="basement" unique_id=738309657 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 177.0
-offset_top = -199.0
-offset_right = 242.0
-offset_bottom = -137.0
+offset_left = 312.0
+offset_top = 397.0
+offset_right = 624.0
+offset_bottom = 552.0
 texture_normal = ExtResource("12_bn5lx")
 item_id = "water"
+usable = true
 
 [node name="toy" parent="basement" unique_id=1634944282 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = -253.0
-offset_top = -105.0
-offset_right = -188.0
-offset_bottom = -43.0
+offset_left = 73.999985
+offset_top = 217.99997
+offset_right = 191.18365
+offset_bottom = 293.93155
+rotation = 0.33684856
+scale = Vector2(1, 0.765)
 texture_normal = ExtResource("13_4sy8i")
 item_id = "toy"
+usable = true
+
+[node name="dog" type="TextureButton" parent="basement" unique_id=1072540421]
+layout_mode = 0
+offset_left = 91.0
+offset_top = 507.0
+offset_right = 224.0
+offset_bottom = 593.0
+texture_normal = ExtResource("2_t1gpn")
+ignore_texture_size = true
+stretch_mode = 5
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=457309828]
 
@@ -210,3 +226,4 @@ visible = false
 [connection signal="mouse_entered" from="distorted_dining_room/rotten_meat" to="." method="_on_rotten_meat_mouse_entered"]
 [connection signal="pressed" from="distorted_dining_room/rotten_meat" to="." method="_on_rotten_meat_pressed"]
 [connection signal="pressed" from="distorted_dining_room/charles\'s sillhouette" to="." method="_on_charless_sillhouette_pressed"]
+[connection signal="pressed" from="basement/dog" to="." method="_on_dog_pressed"]

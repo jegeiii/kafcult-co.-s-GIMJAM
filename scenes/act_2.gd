@@ -112,3 +112,42 @@ func _on_rotten_vegetable_pressed() -> void:
 func _on_rotten_meat_pressed() -> void:
 	if InventoryUi.using_item == "knife":
 		AudioManager.play_sfx("res://audio/Meat Cut Sound.wav")
+
+var given_water: bool = false
+var given_food: bool = false
+func _on_give_dog_food_and_water() -> void:
+	if InventoryUi.using_item == "water":
+		given_water = true
+		InventoryUi.using_item = "none"
+		InventoryUi.remove_item("water")
+	if InventoryUi.using_item == "dogfood":
+		given_food = true
+		InventoryUi.using_item = "none"
+		InventoryUi.remove_item("dogfood")
+	if given_food and given_water:
+		DialogueManager.initiate_dialogue("res://dialogues/act_2_part_8.json")
+		$basement/dog.button_pressed.connect(_on_give_dog_toy)
+
+func _on_give_dog_toy():
+	if InventoryUi.using_item == "toy":
+		InventoryUi.remove_item("toy")
+		InventoryUi.using_item = "none"
+		DialogueManager.initiate_dialogue("res://dialogues/act_2_part_9.json")
+		$basement/dog.button_pressed.disconnect(_on_give_dog_toy)
+		$basement/dog.button_pressed.connect(pet_dog)
+
+func pet_dog():
+	if InventoryUi.using_item == "none":
+		DialogueManager.initiate_dialogue("res://dialogues/flashback_2.json")
+		$basement/dog.button_pressed.disconnect(pet_dog)
+		DialogueManager.dialogue_end.connect(flashback_2_end)
+
+func flashback_2_end():
+	var tween = create_tween()
+	tween.tween_property($basement/dog, "self_modulate:a", 0.0, 2.0)
+	DialogueManager.dialogue_end.disconnect(flashback_2_end)
+	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_10.json")
+	DialogueManager.dialogue_end.connect(basement_done)
+
+func basement_done():
+	pass
