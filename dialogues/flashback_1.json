@@ -1,0 +1,746 @@
+{
+  "characters": [
+    "William",
+    "Margaret",
+    "Charles",
+    "Nathaniel",
+    "Diana"
+  ],
+  "events": [
+    {
+      "name": "ChangeBackground",
+      "background": "dining_room_rainy_evening"
+    },
+    {
+      "name": "PlaySound",
+      "sound": "autumn_rain_ambient",
+      "loop": true
+    },
+    {
+      "name": "PlaySound",
+      "sound": "wall_clock_ticking",
+      "loop": true
+    },
+    {
+      "name": "PlaySound",
+      "sound": "china_clinking",
+      "loop": true
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "The crystal chandelier above the long mahogany table cast a dim, yellow light over the silverware. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Outside the tall dining room windows, autumn rain poured steadily over the dense New England forest, cutting the mansion off from the rest of the world.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "At the head of the table, Charles sat straight, slicing his rare roast beef with precise movements. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Across from him, Margaret smiled faintly as she watched their children.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "On the right side sat Nathaniel—perfect in his evening suit, every move natural and commanding. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "On the left sat the youngest, Diana, looking graceful and charming in a dark dress, while at the far end closest to the kitchen door sat William.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "For several minutes, only the clink of silver forks and the ticking of the large wall clock echoed through the spacious room. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Then, Margaret’s smile vanished the instant her eyes landed on William’s left hand.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "StopSound",
+      "sound": "china_clinking",
+      "scope": "one_plate"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Margaret",
+      "expression": "angry",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Margaret",
+      "segments": [
+        {
+          "text": "William, your fork.",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Margaret",
+      "expression": "angry",
+      "position": "right"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William froze. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "His slightly trembling fingers had been gripping the silver handle too low—a bad habit that always came back whenever his chest felt tight, just like the nights he spent locked in the third-floor attic as a child.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "Wait",
+      "duration": 1.0
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "sad",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Sorry, Mother.",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Margaret let out a long, dramatic sigh, shaking her head as if carrying a lifelong disappointment.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "exasperated_sigh"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Margaret",
+      "segments": [
+        {
+          "text": "I truly don't understand where we went wrong raising you, William. ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Margaret",
+      "segments": [
+        {
+          "text": "Look at Nathaniel—so calm, commanding, the pride of this family in every way. ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Margaret",
+      "segments": [
+        {
+          "text": "And look at Diana, never once forgetting the grace expected of our name. ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Margaret",
+      "segments": [
+        {
+          "text": "Meanwhile, you sit there holding your utensils so awkwardly, as if you were raised in a stable.",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "china_clinking",
+      "loop": true,
+      "scope": "one_plate"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Margaret",
+      "transition": "fade"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Charles",
+      "expression": "normal",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Charles",
+      "segments": [
+        {
+          "text": "Your mother is right. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "When someone carries this family's name, every small movement at the table decides whether they are worthy of inheriting our legacy... or destined to be nothing more than a stain.",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Charles agreed, didn't look up from his plate.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Nathaniel turned toward William with a warm, understanding smile—the exact expression guests always praised as the mark of a true gentleman.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Charles",
+      "expression": "normal",
+      "position": "left"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "happy",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "Don't be too hard on him, Mother, Father. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Will has been locked up in the library all day. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "His mind must be wandering. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "I'm sure he's trying his best.",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "meat_being_cut_stiffly"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Charles",
+      "transition": "fade"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Nathaniel",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Margaret",
+      "expression": "angry",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Margaret",
+      "segments": [
+        {
+          "text": "His best is never enough, Nate.",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "happy",
+      "position": "left"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Margaret",
+      "expression": "happy",
+      "position": "center"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Diana",
+      "expression": "happy",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Margaret",
+      "segments": [
+        {
+          "text": "You two are the only pride left in this house.",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "She reached out to gently tuck a strand of hair behind Diana's ear, then placed the best cuts of meat onto Nathan and Diana's plates. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Diana bowed her head gracefully, her lips curving into a sweet, practiced smile.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "Thank you, Mother. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "I only want to make you and father proud.",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Nathaniel",
+      "transition": "fade"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Margaret",
+      "transition": "fade"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Diana",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "sad",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "…",
+          "pacing": 0.12,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Will swallowed hard. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "His throat felt dry and tight.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "In the dim corner of the room, Arthur, the old butler who had served the family for forty years, stood still like a stone statue—staring blankly ahead without blinking when the water glass in Will’s hand slipped.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "glass_shattering"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Crash.",
+          "pacing": 0.06,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Clear water spilled across the white linen tablecloth, soaking quickly toward Charles’s plate like a spreading stain.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "StopSound",
+      "sound": "china_clinking"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Charles",
+      "expression": "normal",
+      "position": "center"
+    },
+    {
+      "name": "Wait",
+      "duration": 3.0
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Charles",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "The entire table went silent instantly. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Nobody screamed. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Nobody flinched.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Margaret slowly closed her eyes, pinching the bridge of her nose in annoyance.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "left"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Margaret",
+      "expression": "angry",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Margaret",
+      "segments": [
+        {
+          "text": "Always you, William. ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Every time something gets ruined here, it's always you.",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Charles set his carving knife down slowly beside his plate, then lifted his face to look at Will with a cold gaze that made Will's stomach twist—the exact same look from the night his father dragged him up the attic stairs years ago.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "knife_set_on_table"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Margaret",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Charles",
+      "expression": "angry",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Charles",
+      "segments": [
+        {
+          "text": "You always ruin everything you touch, William.",
+          "pacing": 0.06,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Nathan pushed his chair back calmly, buttoning his jacket as he walked around the table toward Will's seat.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "chair_pushed_and_footsteps"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "He placed one hand supportively on Will’s shoulder, his face showing sympathy and patience for the whole table to see.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Charles",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "happy",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "Come on, Will. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Nathan said gently, his voice warm and reassuring even though his fingers dug tightly into Will's shoulder, holding him in place so he couldn't move.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "Let’s get you cleaned up before mother gets more upset. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "I'll walk you upstairs.",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

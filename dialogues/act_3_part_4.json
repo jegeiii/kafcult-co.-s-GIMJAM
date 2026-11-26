@@ -1,0 +1,83 @@
+{
+  "characters": [
+    "William"
+  ],
+  "events": [
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William gasps sharply, stumbling back a step from the dust-covered canvas and the blank porcelain mask resting beside it. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "For years, William believed his father had simply gone mad from grief and ruin. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Now, staring at the yellow sign and the unfinished canvas, the chilling truth settles in, it was never madness, and whatever his father tried to summon never left this place. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "It wasn't just grief... ",
+          "pacing": 0.075,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Father wasn't trying to end it all. ",
+          "pacing": 0.075,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "He was trying to finish something.",
+          "pacing": 0.075,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Slowly, William looks down at his shaking hands, then back at the hollow eyes of the porcelain mask..",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

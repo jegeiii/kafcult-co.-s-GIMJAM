@@ -1,0 +1,43 @@
+{
+  "characters": [
+    "William"
+  ],
+  "events": [
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "normal",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Oh, it’s unlocked!",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "The lock is still stiff… ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Did I get it wrong?",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

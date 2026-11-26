@@ -1,0 +1,37 @@
+{
+  "characters": [
+    "William"
+  ],
+  "events": [
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "normal",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "(grunts) Ugh… ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "It smells so bad. ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Here goes nothing.",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

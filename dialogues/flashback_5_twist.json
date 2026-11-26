@@ -1,0 +1,37 @@
+{
+  "characters": [
+    "Diana"
+  ],
+  "events": [
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Meanwhile, on the second floor, Margaret had just tucked Diana into her warm bed and kissed her forehead before turning off the lamp.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "As soon as the bedroom door closed, Diana turned around to face the rain-streaked window. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "She reached into the pocket of her nightgown and pulled out her father's small wooden ruler—the exact tool she had used earlier to nudge the ink bottle from behind the chair so her fingertips wouldn't get a single drop of black stain on them, then slipped it neatly under her mattress before closing her eyes peacefully.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

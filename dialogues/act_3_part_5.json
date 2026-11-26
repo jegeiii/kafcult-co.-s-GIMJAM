@@ -1,0 +1,304 @@
+{
+  "characters": [
+    "William",
+    "Nathaniel"
+  ],
+  "events": [
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "sad",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "And he left the last piece waiting for me. ",
+          "pacing": 0.07,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Im sorry father, but i will end this madness… ",
+          "pacing": 0.07,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Steeling his nerves, William steps forward to destroy the unfinished canvas and end the cursed ritual once and for all.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William grabs the edge of the wooden frame and pulls hard, trying to tear the canvas apart, or smash it against the stone floor. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Yet the fabric does not rip, and the wood does not splinter, as if shielded by an invisible force.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "angry",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "What... why won't it tear?!",
+          "pacing": 0.04,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William"
+    },
+    {
+      "name": "PlaySound",
+      "sound": "heat_wave_whoosh"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Before he can strike it again, a sudden, suffocating wave of heat washes over his back, accompanied by the sharp smell of kerosene, ash, and burning flesh.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William spins around, tensing his jaw. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Standing just a few paces behind him in the shadows is Nathaniel. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Half of his face and hair are engulfed in silent, pale-yellow flames that cast no warmth, his eyes staring calmly through the fire with that familiar, patient smile.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "angry",
+      "position": "left"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "burning",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel (The King)",
+      "segments": [
+        {
+          "text": "Always rushing ahead without thinking, Will. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "You can’t break what isn't fully anchored to this world. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "That canvas is bound to another world, until your mind crosses over and connects to it, nothing in this room can touch it.",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "You again? ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "You’re not him. ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "You’re just another phantom this house keeps throwing at me.",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel (The King)",
+      "segments": [
+        {
+          "text": "To destroy it, you have to wear the mask and complete the rite first. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Though... once you stand before Him, why throw it all away? ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Look at this empty, rotting place, Will. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Look at everything you broke. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Mother, Diana, Walter... even me. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "You ran away like a coward and left us all in the dark.",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Nathaniel"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Nathaniel takes a slow step closer, gesturing toward the brush and the porcelain mask beside the canvas.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "sad",
+      "position": "left"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "burning",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel (The King)",
+      "segments": [
+        {
+          "text": "You want to fix it, don’t you? ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "You want our family whole again, sitting around that dinner table just like before. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Perform the rite, little brother. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Once you're connected, give in to The King, and He can grant you everything you lost.",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "…",
+          "pacing": 0.12,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

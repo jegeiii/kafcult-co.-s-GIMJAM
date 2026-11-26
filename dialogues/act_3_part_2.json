@@ -1,0 +1,137 @@
+{
+  "characters": [
+    "William",
+    "Nathaniel"
+  ],
+  "events": [
+    {
+      "name": "ScreenEffectEnd",
+      "effect": "ScreenWarp"
+    },
+    {
+      "name": "PlaySound",
+      "sound": "sharp_gasp"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "A sharp gasp rips from William’s throat as the memory crashes over him, snapping him back to the cold hallway.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "left"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "smile",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Nathaniel’s gentle smile vanishes. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Suddenly, a yellow flame ignites along his collar and spreads rapidly across his jaw, hair, and face, burning silently.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "burning",
+      "position": "right"
+    },
+    {
+      "name": "PlaySound",
+      "sound": "flames_burning"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "You didn't just let me fall, Will. ",
+          "pacing": 0.06,
+          "style": "emphasis",
+          "pause_after": 0.3
+        },
+        {
+          "text": "You burned me alive.",
+          "pacing": 0.06,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William clutches his chest, backing away in terror against the heavy oak door.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "As William watches, the silent flames consuming Nathaniel’s figure begin to flicker and thin out like dying smoke. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Slowly, Nathaniel’s burning silhouette dissolves into the shadows of the corridor until nothing remains but the faint, lingering smell of kerosene and ash in the freezing air.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Nathaniel",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Silence falls over the hallway once more, William bends down with a trembling hand, he turns back toward the tarnished brass handle behind him.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William"
+    }
+  ]
+}

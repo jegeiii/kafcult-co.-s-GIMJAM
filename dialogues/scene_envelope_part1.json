@@ -1,0 +1,70 @@
+{
+  "characters": [
+    "William"
+  ],
+  "events": [
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "tired",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "(grumbling with a tired sigh) Finally… ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Nothing beats the end of working day",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William"
+    },
+    {
+      "name": "PlaySound",
+      "sound": "scratching_paper"
+    },
+    {
+      "name": "FadeIn",
+      "duration": 1.5
+    },
+    {
+      "name": "ChangeBackground",
+      "background": "table_hands_holding_letter"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "normal",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Why is there a letter from… that place anyways? ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "ClickObject",
+      "object": "Envelope",
+      "next": "part_2"
+    }
+  ]
+}

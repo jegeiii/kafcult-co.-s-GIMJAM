@@ -1,0 +1,915 @@
+{
+  "characters": [
+    "William",
+    "Diana",
+    "Nathaniel"
+  ],
+  "events": [
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "angry",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Why does father always compare me to Nathan?! ",
+          "pacing": 0.045,
+          "style": "emphasis",
+          "pause_after": 0.3
+        },
+        {
+          "text": "I'm getting tired of this…",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "That day, William just finished his study with his tutor, Ms. Miranda, where she just reported his progress to Charles, his father. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "From the early afternoon, his father talked William's ears off about his incompetence compared to his brother, Nathan, until he walked out of the room recently, resulting in quiet annoyance from William.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "sad",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Why is it always never enough?? ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "What have I done wrong? ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "He always outshines me in everything… ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Ugh… I hate him–",
+          "pacing": 0.06,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "*Creak...*",
+          "pacing": 0.06,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "sad",
+      "position": "left"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Diana",
+      "expression": "normal",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "Will?",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William's anger fades the moment he hears Diana's voice from the door from his bed, the color on his face dies as he realizes that she heard him all this time. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "On the contrary, his sister didn't seem to realize the effect of her presence, instead, walking closer to William's bed and looking at him with her usual bright eyes.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "*Rustle...*",
+          "pacing": 0.06,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "Nathan hasn't come back to bed?",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William quietly shakes his head as he shifts himself on bed to make room for his sister to sit down, still processing the fact that he had been caught grumbling about his brother, Nathaniel.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "angry",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "D-Don't tell Nathan about what I've said, please. ",
+          "pacing": 0.045,
+          "style": "emphasis",
+          "pause_after": 0.25
+        },
+        {
+          "text": "You have to promise me, Diana!",
+          "pacing": 0.045,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Diana",
+      "expression": "happy",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "Don't worry, Diana didn't hear a thing, honest!",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "…",
+          "pacing": 0.12,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "They sat in silence for a few long moments before Diana suddenly brought up a topic even William himself never talked about.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Diana",
+      "expression": "normal",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "Will… ",
+          "pacing": 0.075,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "I don't know if I'm allowed to talk about this, but it's about Nathan.",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "…? ",
+          "pacing": 0.12,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "What about him?",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "He's engaged to Ellie, right?",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "normal",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Yes, he is. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "It's for the business, though. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "What about it?",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Diana falls silent for a moment when Nathaniel's fiancee, Eleanor, is confirmed. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Then she continues, her voice turns quieter than her usual cheerful politeness.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "… I think he likes Clara more than Ellie, Will.",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Clara? ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "You mean, one of our maids?",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Diana nods her head in silent confirmation, making William's eyebrows twitch in confusion.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "normal",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Diana, you know you shouldn't spread rumors like that. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "If father found out–",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "I saw it myself, really!",
+          "pacing": 0.045,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "…!!!",
+          "pacing": 0.14,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "…",
+          "pacing": 0.12,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "normal",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "… Tell me.",
+          "pacing": 0.075,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "…",
+          "pacing": 0.12,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "There's a trace of doubt on Diana's face when William asked her to explain. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Regardless of propriety, she decided to elaborate.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "Well… ",
+          "pacing": 0.075,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "It was a few days ago, when I walked into the kitchen to sneak in some pastry, Nathan was…",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "angry",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Nathan was…?",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "He… ",
+          "pacing": 0.075,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "he's being very affectionate with her.",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Affectionate, as in…?",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "They kissed.",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "They ",
+          "pacing": 0.045,
+          "style": "normal",
+          "pause_after": 0.1
+        },
+        {
+          "text": "WHAT?!",
+          "pacing": 0.025,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "*Creak... Thud, thud...*",
+          "pacing": 0.06,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Before William could process the information, the door into their bedroom is now wide open with the very subject they're talking about walking into the room. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Nathaniel stops at the front door, looking at his siblings with his poised smile.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Diana"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "normal",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "My, you both seem to get along well today. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "Is something happening?",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "normal",
+      "position": "left"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Diana",
+      "expression": "happy",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "Oh, Nathan! ",
+          "pacing": 0.045,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "We're just wondering where you were. ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "Mother didn't want all of us to wake up too late after all…",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "happy",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "You always worry for everyone, Diana. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "Thank you, really.",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Then, Nathaniel turns his head to stare at William. At that exact moment, William is still processing the revelation, his eyes still wide. A shiver ran onto his spine. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Why is he looking this way? Nathaniel then turns his head back to his own bed on the corner of the room without saying a word to William.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Diana"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "Since you've been waiting, let's not prolong this moment with idle chit-chat, then. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "Especially not about something scandalous about someone you didn't like.",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "…!!",
+          "pacing": 0.14,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "(Did he just… called us out? ",
+          "pacing": 0.055,
+          "style": "thought",
+          "pause_after": 0.25
+        },
+        {
+          "text": "He didn't even realize we talked about him back then, I remember it…!)",
+          "pacing": 0.05,
+          "style": "thought",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Diana",
+      "expression": "happy",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "Okay, let's sleep! ",
+          "pacing": 0.045,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "Good night, Nathan, Will!",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "normal",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "Yes, rest well for tomorrow. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "Good night to you too, Diana.",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "With that, all children start to go to their own beds and get some rest to prepare for tomorrow.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Nathaniel"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Diana"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "normal",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "(Something's off… ",
+          "pacing": 0.065,
+          "style": "thought",
+          "pause_after": 0.3
+        },
+        {
+          "text": "It's not supposed to be this way!)",
+          "pacing": 0.05,
+          "style": "thought",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

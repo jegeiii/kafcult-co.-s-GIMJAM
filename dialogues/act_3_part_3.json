@@ -1,0 +1,71 @@
+{
+  "characters": [
+    "William"
+  ],
+  "events": [
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "The moment William step inside, he felt a sense of familiarity, as if he had been there before. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "In the middle of the room, lies a beautiful, yet tragic painting, as if someone sang a song of beauty and sorrow. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "The painting looks incomplete, on the floorboard near the painting, William found a mask, a familiar porcelain mask. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "This is… ",
+          "pacing": 0.075,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "i knew this, that night…",
+          "pacing": 0.075,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Suddenly, memories pour in, the moment from that night, the moment that changed William's life, forcing him to keep running.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

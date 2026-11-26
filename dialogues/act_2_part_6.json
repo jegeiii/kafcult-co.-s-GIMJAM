@@ -1,0 +1,44 @@
+{
+  "characters": [
+    "William",
+    "Charles"
+  ],
+  "events": [
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "angry",
+      "position": "left"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Charles",
+      "expression": "normal",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "This is all I have, okay?",
+          "pacing": 0.055,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Charles’s silhouette",
+      "segments": [
+        {
+          "text": "…",
+          "pacing": 0.12,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,990 +1,691 @@
 {
   "characters": [
-	"William",
-	"Miranda",
-	"Arthur",
-	"Margaret",
-	"Nathaniel",
-    "Walter"
+    "William",
+    "Miranda",
+    "Arthur",
+    "Margaret"
   ],
   "events": [
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "One afternoon ago, the twelve-year-old William was bored after repeatedly being corrected by his tutor, Miranda.",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "normal",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Miranda",
-	  "expression": "normal",
-	  "position": "right"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Miranda",
-	  "segments": [
-		{
-		  "text": "No, William. You should divide the number by three, not times them. ",
-		  "pacing": 0.05,
-		  "style": "normal",
-		  "pause_after": 0.25
-		},
-		{
-		  "text": "Your calculation result will be three times bigger than the profit demands–",
-		  "pacing": 0.05,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "angry",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Ugh, why is everything I do always wrong? ",
-		  "pacing": 0.04,
-		  "style": "emphasis",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "I'm tired of this…!",
-		  "pacing": 0.045,
-		  "style": "emphasis",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "... (?)",
-	  "segments": [
-		{
-		  "text": "*Footsteps approaching, followed by the sound of a door opening.*",
-		  "pacing": 0.06,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "William"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Miranda",
-	  "segments": [
-		{
-		  "text": "William?!",
-		  "pacing": 0.045,
-		  "style": "emphasis",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "... (?)",
-	  "segments": [
-		{
-		  "text": "*A door closes.*",
-		  "pacing": 0.06,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "Miranda"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "William walked out of the room without taking a single glance at his tutor. ",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0.25
-		},
-		{
-		  "text": "He proceeds to walk through the side corridors of the manor quietly, just not to get caught sneaking out by his mother.",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "... (?)",
-	  "segments": [
-		{
-		  "text": "*Steady footsteps.*",
-		  "pacing": 0.06,
-		  "style": "normal",
-		  "pause_after": 0.3
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "normal",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Hmm… Ms. Miranda is always boring. ",
-		  "pacing": 0.06,
-		  "style": "normal",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "What should I do now I'm out of her sight?",
-		  "pacing": 0.055,
-		  "style": "thought",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "... (?)",
-	  "segments": [
-		{
-		  "text": "*A few moments of silence, accompanied by the sound of footsteps.*",
-		  "pacing": 0.06,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "happy",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Oh! I haven't played with Walter since this morning. ",
-		  "pacing": 0.045,
-		  "style": "emphasis",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "That big doggo should be in the manor now. ",
-		  "pacing": 0.05,
-		  "style": "normal",
-		  "pause_after": 0.25
-		},
-		{
-		  "text": "He's usually hungry at this hour.",
-		  "pacing": 0.055,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "... (?)",
-	  "segments": [
-		{
-		  "text": "*Hurried footsteps, indicating William running through the corridors.*",
-		  "pacing": 0.045,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "With Walter in mind, William starts to make his way through the corridors and down the stairs. ",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0.25
-		},
-		{
-		  "text": "There should be a place that his Irish Wolfhound would be going he knows by heart.",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "... (?)",
-	  "segments": [
-		{
-		  "text": "*A door opens.*",
-		  "pacing": 0.06,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "As usual, the dining room is empty since it's not the time for lunch yet. ",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0.25
-		},
-		{
-		  "text": "But William knows that Walter often gets hungry fast, so he's scheduled to get his meal at that hour.",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Arthur",
-	  "expression": "normal",
-	  "position": "right"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "... (?)",
-	  "segments": [
-		{
-		  "text": "*The sound of plates clinking as they are placed on the table.*",
-		  "pacing": 0.06,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "Instead, right there stands Arthur, the manor's head butler, arranging the plates on the table to prepare for lunch.",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "normal",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "sad",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Arthur, have you fed Walter this afternoon?",
-		  "pacing": 0.055,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "Upon hearing William's question, Arthur turned his head to William for a moment before shifting his focus back on arranging the plates on the table as he answered calmly.",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "My apologies, young master, but it seems that Walter has not visited the dining room yet since I have been here waiting to feed him for a while.",
-		  "pacing": 0.05,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "surprised",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Hmmm… That's odd. ",
-		  "pacing": 0.06,
-		  "style": "normal",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "He should feel hungry at this hour and very sluggish when he doesn't have his meals. ",
-		  "pacing": 0.05,
-		  "style": "normal",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "Well, anyways, thank you, Arthur!",
-		  "pacing": 0.045,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "... (?)",
-	  "segments": [
-		{
-		  "text": "*Running footsteps followed by the sound of a door opening.*",
-		  "pacing": 0.045,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "William"
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "Arthur"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "Without waiting for Arthur's reply, William immediately bolts outside the dining room. ",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "A strange feeling settled in his gut about his dog's whereabouts.",
-		  "pacing": 0.055,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "... (?)",
-	  "segments": [
-		{
-		  "text": "*A door closes.*",
-		  "pacing": 0.06,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "normal",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Walter…! ",
-		  "pacing": 0.045,
-		  "style": "emphasis",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "Walter?! Where are you??",
-		  "pacing": 0.035,
-		  "style": "emphasis",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "William's voice echoes throughout the corridors he ran into, calling his beloved dog's name in hopes that the Irish Wolfhound will somehow respond to him. ",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "He decided to head into the entrance hall, hoping once again that he will catch the sight of Walter's happily wagging tail when the dog ran through the corridors.",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Margaret",
-	  "expression": "angry",
-	  "position": "right"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "normal",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Walter? ",
-		  "pacing": 0.055,
-		  "style": "normal",
-		  "pause_after": 0.25
-		},
-		{
-		  "text": "Walter!",
-		  "pacing": 0.045,
-		  "style": "emphasis",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Margaret",
-	  "segments": [
-		{
-		  "text": "William, keep your tone down! ",
-		  "pacing": 0.045,
-		  "style": "emphasis",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "Isn't this still the time in your schedule to study with Ms. Miranda?",
-		  "pacing": 0.05,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "sad",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Sorry, Mother, but have you seen Walter?",
-		  "pacing": 0.055,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Margaret",
-	  "expression": "angry",
-	  "position": "right"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Margaret",
-	  "segments": [
-		{
-		  "text": "Walter? How could I know about that? ",
-		  "pacing": 0.045,
-		  "style": "emphasis",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "Go back to studying and don't make Ms. Miranda wait for you!",
-		  "pacing": 0.045,
-		  "style": "emphasis",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "He's not eating in the dining room, Mother!",
-		  "pacing": 0.035,
-		  "style": "emphasis",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "... (?)",
-	  "segments": [
-		{
-		  "text": "*Hurried footsteps followed by the sound of a door opening.*",
-		  "pacing": 0.04,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "William"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Margaret",
-	  "expression": "surprised",
-	  "position": "right"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Margaret",
-	  "segments": [
-		{
-		  "text": "William?!",
-		  "pacing": 0.045,
-		  "style": "emphasis",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "Margaret"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "Even outside the manor, no matter how loud William's voice when he calls his dog's name, there's still no sight of him anywhere. ",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0.35
-		},
-		{
-		  "text": "Ms. Miranda then caught up to him and dragged William back to the room for their study session while repeatedly reassuring him that Walter will be back soon, perhaps now the furball is currently out to explore or a walk with one of the maids. ",
-		  "pacing": 0.045,
-		  "style": "narration",
-		  "pause_after": 0.35
-		},
-		{
-		  "text": "That reassurance managed to drive William's focus back to his study, so he decided to give his best for his tutor of the day until the day ends.",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "The next day, William comes back to studying with Ms. Miranda as usual. ",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "Though, in the back of his mind, he still thinks of his Irish Wolfhound's whereabouts. ",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "Until he eventually found out the truth four days later in the evening…",
-		  "pacing": 0.055,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Arthur",
-	  "expression": "normal",
-	  "position": "right"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "Madame, my apologies for interrupting your peaceful evening.",
-		  "pacing": 0.055,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Margaret",
-	  "expression": "normal",
-	  "position": "left"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Margaret",
-	  "segments": [
-		{
-		  "text": "Is there something you need, Arthur?",
-		  "pacing": 0.055,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "I received a report from a maid that there's an unpleasant smell coming from the fuel storage room.",
-		  "pacing": 0.05,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Margaret",
-	  "expression": "surprised",
-	  "position": "left"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Margaret",
-	  "segments": [
-		{
-		  "text": "Have you checked it yet? ",
-		  "pacing": 0.05,
-		  "style": "normal",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "If it's from a dead mice then I question your servants' competence in cleaning the manor.",
-		  "pacing": 0.05,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "I shall check the latter, then.",
-		  "pacing": 0.055,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "Arthur"
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "Margaret"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Nathaniel",
-	  "expression": "normal",
-	  "position": "right"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "normal",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Sir Arthur, can I come with you?",
-		  "pacing": 0.055,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Nathaniel",
-	  "segments": [
-		{
-		  "text": "I would like to tag along, Sir Arthur. Do you mind?",
-		  "pacing": 0.055,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "William"
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "Nathaniel"
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Arthur",
-	  "expression": "normal",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "Very well. Please, follow me.",
-		  "pacing": 0.055,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "Arthur"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "... (?)",
-	  "segments": [
-		{
-		  "text": "*Steady footsteps descending the stairs.*",
-		  "pacing": 0.06,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "William and Nathaniel then followed Arthur down to the basement with steady footsteps. ",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "As they all suspected, there's a heavy scent of rotten meat that sharply struck their senses, making all of them squint their noses from the intensity.",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "Arthur",
-	  "expression": "normal",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "Stay here for a moment, young masters. ",
-		  "pacing": 0.055,
-		  "style": "normal",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "I shall open walk in first to check for possible danger.",
-		  "pacing": 0.055,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "UnloadSprite",
-	  "speaker": "Arthur"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "... (?)",
-	  "segments": [
-		{
-		  "text": "*Click.*",
-		  "pacing": 0.06,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Arthur",
-	  "segments": [
-		{
-		  "text": "…!",
-		  "pacing": 0.14,
-		  "style": "emphasis",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "The moment the lights turn on, right in the middle of the basement's cold ground, there lies Walter with some parts of his flesh starting to rot. ",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0.35
-		},
-		{
-		  "text": "The dog's head lulled to the side with his lips turned pale blue. ",
-		  "pacing": 0.055,
-		  "style": "narration",
-		  "pause_after": 0.3
-		},
-		{
-		  "text": "The Irish Wolfhound's tail no longer wags, just laying there stiffly.",
-		  "pacing": 0.06,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "surprised",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Walter…?",
-		  "pacing": 0.12,
-		  "style": "normal",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "Narrator",
-	  "segments": [
-		{
-		  "text": "Without waiting for Arthur to back off, William immediately rushed to the dog's side despite the horrible smell, sobbing loudly as he mourned the lifeless furball in front of him. ",
-		  "pacing": 0.05,
-		  "style": "narration",
-		  "pause_after": 0.35
-		},
-		{
-		  "text": "It's the first time he ever cried this hard for something ever in his whole life.",
-		  "pacing": 0.055,
-		  "style": "narration",
-		  "pause_after": 0
-		}
-	  ]
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "sad",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "No… ",
-		  "pacing": 0.1,
-		  "style": "normal",
-		  "pause_after": 0.35
-		},
-		{
-		  "text": "WALTER!!",
-		  "pacing": 0.025,
-		  "style": "emphasis",
-		  "pause_after": 0
-		}
-	  ]
-	}
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "One afternoon ago, the 12 years old William was bored after repeatedly being corrected by his tutor, Miranda.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "ChangeBackground",
+      "background": "childrens_room"
+    },
+    {
+      "name": "FadeIn",
+      "duration": 1.5
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "normal",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Miranda",
+      "segments": [
+        {
+          "text": "No, William. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "You should divide the number by three, not times them. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Your calculation result will be three times bigger than the profit demands–",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "angry",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Ugh, why is everything I do always wrong? ",
+          "pacing": 0.05,
+          "style": "emphasis",
+          "pause_after": 0.3
+        },
+        {
+          "text": "I’m tired of this…!",
+          "pacing": 0.05,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "footsteps"
+    },
+    {
+      "name": "PlaySound",
+      "sound": "door_open"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Miranda",
+      "segments": [
+        {
+          "text": "William?!",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "door_close"
+    },
+    {
+      "name": "FadeOut",
+      "duration": 1.5
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William walked out of the room without taking a single glance at his tutor. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "He proceeds to walk through the side corridors of the manor quietly just not to get caught sneaking out by his mother.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "steady_footsteps",
+      "loop": true
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Hmm… ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Ms. Miranda is always boring. ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "What should I do now I’m out of her sight?",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "Wait",
+      "duration": 2.0
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Oh! ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "I haven’t played with Walter since this morning. ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "That big doggo should be in the manor now. ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "He’s usually hungry at this hour.",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "hurried_footsteps"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "With Walter in mind, William starts to make his way through the corridors and down the stairs. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "There should be a place that his Irish Wolfhound would be going he knows by heart.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "ChangeBackground",
+      "background": "dining_room"
+    },
+    {
+      "name": "FadeIn",
+      "duration": 1.5
+    },
+    {
+      "name": "PlaySound",
+      "sound": "door_open"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "As usual, the dining room is empty since it’s not the time for lunch yet. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "But William knows that Walter often gets hungry fast so he’s scheduled to get his meal at that hour.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Arthur",
+      "expression": "normal",
+      "position": "right"
+    },
+    {
+      "name": "PlaySound",
+      "sound": "plates_clinking_on_table"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Instead, right there stands Arthur, the manor’s head butler, arranging the plates on the table to prepare for lunch",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "sad",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Arthur, have you fed Walter this afternoon?",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Upon hearing William’s question, Arthur turned his head to William for a moment before shifting his focus back on arranging the plates on the table as he answered calmly.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Arthur",
+      "segments": [
+        {
+          "text": "My apologies, young master, but it seems that Walter has not visited the dining room yet since I have been here waiting to feed him for a while.",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Hmmm… ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "That’s odd. ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "He should feel hungry at this hour and very sluggish when he doesn't have his meals. ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Well, anyways, thank you, Arthur!",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "running"
+    },
+    {
+      "name": "PlaySound",
+      "sound": "door_open"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William",
+      "transition": "fade"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Arthur",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Without waiting for Arthur’s reply, William immediately bolts outside the dining room. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "A strange feeling settled in his gut about his dog’s whereabouts.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "FadeOut",
+      "duration": 0.5
+    },
+    {
+      "name": "PlaySound",
+      "sound": "door_close"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Walter…! ",
+          "pacing": 0.05,
+          "style": "emphasis",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Walter?! ",
+          "pacing": 0.05,
+          "style": "emphasis",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Where are you??",
+          "pacing": 0.05,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William's voice echoes throughout the corridors he ran into, calling his beloved dog's name in hopes that the Irish Wolfhound will somehow respond to him. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "He decided to head into the entrance hall, hoping once again that he will catch the sight of Walter's happily wagging tail when the dog ran through the corridors.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "ChangeBackground",
+      "background": "main_entrance"
+    },
+    {
+      "name": "FadeIn",
+      "duration": 1.5
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "normal",
+      "position": "left"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Margaret",
+      "expression": "angry",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Walter? ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Walter!",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Margaret",
+      "segments": [
+        {
+          "text": "William, keep your tone down! ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Isn't this still the time in your schedule to study with Ms. Miranda?",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "sad",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Sorry, Mother, but have you seen Walter?",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Margaret",
+      "segments": [
+        {
+          "text": "Walter? ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "How could I know about that? ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Go back to studying and don't make Ms. Miranda wait for you!",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "He's not eating in the dining room, Mother!",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "hurried_footsteps"
+    },
+    {
+      "name": "PlaySound",
+      "sound": "door_open"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Margaret",
+      "expression": "surprised",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Margaret",
+      "segments": [
+        {
+          "text": "William?!",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "FadeOut",
+      "duration": 1.5
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Margaret",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Even outside the manor, no matter how loud William's voice when he calls his dog's name, there's still no sight of him anywhere. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Ms. Miranda then catched up to him and dragged William back to the room for their study session while repeatedly reassuring him that Walter will be back soon, perhaps now the furball is currently out to explore or a walk with one of the maids. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "That reassurance managed to drive William's focus back to his study so he decided to give his best for his tutor of the day until the day ends.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "The next day, William comes back to studying with Ms. Miranda as usual. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Though, in the back of his mind, he still thinks of his Irish Wolfhound’s whereabouts. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Until he eventually found out the truth four days later in the evening…",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "ChangeBackground",
+      "background": "dining_room"
+    },
+    {
+      "name": "FadeIn",
+      "duration": 1.5
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Arthur",
+      "expression": "normal",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Arthur",
+      "segments": [
+        {
+          "text": "Madame, my apologies for interrupting your peaceful evening.",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Margaret",
+      "expression": "normal",
+      "position": "right",
+      "transition": "fade"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Margaret",
+      "segments": [
+        {
+          "text": "Is there something you need, Arthur?",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Arthur",
+      "segments": [
+        {
+          "text": "I received a report from a maid that there’s an unpleasant smell coming from the fuel storage room.",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    }
   ]
 }

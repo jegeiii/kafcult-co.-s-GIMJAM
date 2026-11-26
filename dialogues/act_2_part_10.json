@@ -1,0 +1,41 @@
+{
+  "characters": [
+    "William"
+  ],
+  "events": [
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Just as he predicted, the Irish Wolfhound lifts his head and barks, energetically bounces onto the toy and trail bites all over it, resulting in a squeaking sound from the toy.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "PlaySound",
+      "sound": "dog_toy_squeak"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "happy",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "(laughs) Who’s a good boy?",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

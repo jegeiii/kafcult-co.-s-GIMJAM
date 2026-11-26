@@ -1,0 +1,31 @@
+{
+  "characters": [
+    "William"
+  ],
+  "events": [
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "angry",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Okay, I’ve had enough of this… ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "These anomalies keep disturbing me.",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

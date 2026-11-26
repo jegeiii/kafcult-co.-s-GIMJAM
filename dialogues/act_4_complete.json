@@ -1,0 +1,173 @@
+{
+  "characters": [],
+  "events": [
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William gives in to The King in Yellow to have his wish granted. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Will finishes his painting, and his soul is taken to Carcosa.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "FadeOut",
+      "duration": 2.0
+    },
+    {
+      "name": "ChangeBackground",
+      "background": "blackwood_dining_hall_golden_sunlight"
+    },
+    {
+      "name": "FadeIn",
+      "duration": 2.0
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "The oppressive darkness fades, replaced by warm golden sunlight streaming through clean, tall windows. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "The heavy, suffocating air of the haunted mansion is completely gone.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "The scene shifts to a normal, vibrant Blackwood Manor. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Inside the grand dining hall, the fire crackles cheerfully in the hearth. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "William, Nathan, Diana, and their parents are gathered together, smiling and laughing as if the tragedies of the past never happened. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "For the first time in years, the house feels alive, warm, and whole, the exact family William had always prayed for.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "CameraMove",
+      "action": "pull_back_out_dining_hall_window_rise_to_sky"
+    },
+    {
+      "name": "ChangeBackground",
+      "background": "carcosa_manor_courtyard_exterior"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Slowly, the camera begins to pull back, moving away from the laughing family, drifting out through the dining hall window, and rising higher into the sky.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "However, the comforting illusion begins to crack at the edges. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Outside the manor’s courtyard, there is no New England forest—only jagged, impossible spires, black stars hanging in a sickly yellow sky, and the dark, endless waters of Lake Hali. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "It is revealed that this peaceful Blackwood Manor is actually located deep within Carcosa. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Everything William sees is nothing more than a gilded cage—an illusion crafted by The King to trap William’s soul in Carcosa forever.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "ChangeBackground",
+      "background": "ritual_room_finished_canvas_masked_william"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Back in the real world, inside the rotting ritual room of the true mansion, William’s empty body stands motionless before the finished canvas, a blank porcelain mask resting quietly over his face.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "While his mind sleeps inside a lie, his real body has now become an empty vessel, an actor belonging solely to The King. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Beyond the walls of the manor, the landscape of Blackwood Hollow begins to twist and shift as Carcosa starts to manifest, slowly merging with the valley. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Dark anomalies grow thicker in the fog, reality bends in unimaginable way, and The King’s influence over the world becomes ever stronger.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

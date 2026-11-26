@@ -1,0 +1,841 @@
+{
+  "characters": [
+    "William",
+    "Nathaniel",
+    "Diana"
+  ],
+  "events": [
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "*Creak...*",
+          "pacing": 0.06,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "The heavy oak door creaks open, revealing a cramped, shadow-drenched bedroom at the end of the second-floor corridor. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Rain lashes relentlessly against a tall, wide-open sash window overlooking the stone courtyard below. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "A single brass kerosene lamp flickers on a small wooden side table right beside the window.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "sad",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William stands motionless near the center of the room, his chest heaving, his coat dusted with ash and soot from the basement below. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Clutched tightly in his trembling fist is a fine silk handkerchief embroidered with the initials \"N.B.\"—stained with dark red wine-dregs and crushed grape skins.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "*Thud, thud...*",
+          "pacing": 0.06,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "sad",
+      "position": "right"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "happy",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Soft, measured footsteps echo down the hallway before stopping at the front door. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Nathaniel steps into the room. He wears his usual warm, sympathetic expression.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "William. ",
+          "pacing": 0.06,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "The maid said she saw you coming up from the cellar stairs looking like a ghost. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "Come away from the open window before you catch your death.",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William does not move. ",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Slowly, he raises his trembling hand, holding the stained handkerchief into the amber glow of the kerosene lamp.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "angry",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "You poisoned him.",
+          "pacing": 0.065,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "normal",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Nathaniel's brow furrows in gentle, practiced concern. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "He takes a slow step forward.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "Will, I heard about Walter. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "I know losing him is tearing you apart, he was an old hound, and the dampness down in the cellar isn't kind to an aging heart. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "Don't let grief twist your mind into—",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Stop it! ",
+          "pacing": 0.035,
+          "style": "emphasis",
+          "pause_after": 0.2
+        },
+        {
+          "text": "Stop talking to me like I'm stupid!",
+          "pacing": 0.04,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William's voice cracks, echoing off the timber walls. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "He steps closer, thrusting the handkerchief forward.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "I found Walter in the fuel storage room down in the basement, right beside the firewood and kerosene barrels. ",
+          "pacing": 0.045,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "He was poisoned by crushed grapes laced with rat poison from the cellar shelf, and this was lying near his body. ",
+          "pacing": 0.045,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "Your handkerchief.",
+          "pacing": 0.055,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "surprised",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "For a fraction of a second, Nathaniel's eyes dart to the dark-stained silk. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "His breath hitches, genuinely caught off guard by how his handkerchief ended up in the basement, before he quickly forces his calm mask back into place.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "normal",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "That's absurd. ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "Why on earth would I go down to the fuel cellar to poison your dog? ",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "I haven't stepped foot down there in weeks.",
+          "pacing": 0.055,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "You didn't go down there yourself, Nate. ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "You sent Clara.",
+          "pacing": 0.06,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Silence drops over the room, broken only by the drumming rain outside.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Diana told me she kept hearing you wandering the halls late at night. ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "So two nights ago, I followed you. ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "I saw you with Clara in the servants' corridor. ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "I heard every word, all the sweet lies you fed her, and how she told you she would do anything you asked of her.",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Nathaniel",
+      "expression": "angry",
+      "position": "left"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Nathaniel's expression goes completely still. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Slowly, the warmth drains from his eyes, replaced by a cold, hollow stare.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "You've been spying on me.",
+          "pacing": 0.065,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William instinctively takes a step backward toward the window as Nathaniel advances, the floorboards creaking beneath his boots.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "angry",
+      "position": "right"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "You gave her your handkerchief, and she dropped it when she poisoned Walter in the fuel room! ",
+          "pacing": 0.045,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "I'm going to show Father the poison tin and tell him everything about you and Clara!",
+          "pacing": 0.045,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "You think Father is going to believe the word of a pathetic, half-broken boy over his own heir? ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "Even if you drag Clara in front of him, she'll swear she never touched that dog, and Father will have her thrown onto the streets before she finishes a sentence.",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Nathaniel"
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "With a sudden lunge, Nathaniel darts forward, snatching the handkerchief from William's hand before clamping both hands tightly around William's collar and throat.",
+          "pacing": 0.04,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "*Thud! Clatter...*",
+          "pacing": 0.04,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Nathaniel slams William backward against the edge of the small wooden side table beside the open window. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "The kerosene lamp rattles violently on the wood. Rain sprays onto their shoulders from the open frame behind them.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "You won't say a single word. ",
+          "pacing": 0.05,
+          "style": "emphasis",
+          "pause_after": 0.25
+        },
+        {
+          "text": "That mutt was a filthy nuisance, and you're an embarrassment to this family. ",
+          "pacing": 0.05,
+          "style": "normal",
+          "pause_after": 0.25
+        },
+        {
+          "text": "If you breathe a word of this to Father, I swear I will have you locked inside an asylum before morning.",
+          "pacing": 0.045,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Choking under Nathaniel's grip, William's vision blurs as memories of the dark attic flood back. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Panicked and gasping for air, his right hand scrambles blindly across the wooden side table—and closes around the warm brass base of the kerosene lamp.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "In pure, blind terror, William swings the kerosene lamp upward with all his strength, smashing the lamp directly across the side of Nathaniel's face.",
+          "pacing": 0.04,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "*Crash! Fwoosh!*",
+          "pacing": 0.03,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "A sharp crack of shattering glass cuts through the sound of the storm. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "The loosened fuel cap gives way—splashing raw kerosene across Nathaniel's face and neck. The exposed wick ignites instantly.",
+          "pacing": 0.04,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Nathaniel",
+      "segments": [
+        {
+          "text": "Aaargh! ",
+          "pacing": 0.025,
+          "style": "emphasis",
+          "pause_after": 0.2
+        },
+        {
+          "text": "My face—get it off!",
+          "pacing": 0.03,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Flames erupt across the side of Nathaniel's jaw and collar. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Screaming, Nathaniel releases William's throat, staggering backward and clawing blindly at his burning face.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Gasping for air and terrified of the flames, William shoves both hands hard against Nathaniel's chest.",
+          "pacing": 0.04,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Nathaniel stumbles back, blinded by fire and smoke. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "His leather heel hits a slick oil on the floorboards right in front of the low window sill. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "His knees strike the low wooden frame, his upper body tipping backward over the edge.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "For one suspended heartbeat, Nathaniel's wide, terrified eyes lock onto William's through the flickering flames, before earth pulls him out into the dark rain.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "William freezes at the edge of the open window, his chest heaving, his fingers trembling. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Down below in the courtyard, a heavy thud echoes against the wet stones.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "*Thud!*",
+          "pacing": 0.04,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "William"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Diana",
+      "expression": "normal",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "In the shadows near the edge of the garden below, Diana stands motionless beside the stone wall, looking down at Nathaniel's broken body as the rain washes out the dying embers on his coat. ",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0.3
+        },
+        {
+          "text": "Slowly, she raises her gaze toward the second floor window where William stands frozen.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "Diana",
+      "expression": "surprised",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Then, Diana takes a deep breath, and lets out a terrified scream into the night.",
+          "pacing": 0.045,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Diana",
+      "segments": [
+        {
+          "text": "FATHER! ",
+          "pacing": 0.025,
+          "style": "emphasis",
+          "pause_after": 0.2
+        },
+        {
+          "text": "MOTHER! ",
+          "pacing": 0.025,
+          "style": "emphasis",
+          "pause_after": 0.2
+        },
+        {
+          "text": "HELP! ",
+          "pacing": 0.025,
+          "style": "emphasis",
+          "pause_after": 0.2
+        },
+        {
+          "text": "NATHAN!",
+          "pacing": 0.025,
+          "style": "emphasis",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "UnloadSprite",
+      "speaker": "Diana"
+    },
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "surprised",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "Narrator",
+      "segments": [
+        {
+          "text": "Inside the silent, smoke-hazy bedroom, William stares down at his shaking hands, the weight of the unthinkable crushing down on him as heavy footsteps begin thundering up the grand staircase below.",
+          "pacing": 0.05,
+          "style": "narration",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "characters": [
+    "William"
+  ],
+  "events": [
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "normal",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "I can’t believe I decided to go back here again…",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "It’s quieter than I expected. ",
+          "pacing": 0.065,
+          "style": "thought",
+          "pause_after": 0.3
+        },
+        {
+          "text": "There’s obviously no one inside… right?",
+          "pacing": 0.065,
+          "style": "thought",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

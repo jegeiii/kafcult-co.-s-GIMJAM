@@ -1,0 +1,43 @@
+{
+  "characters": [
+    "William"
+  ],
+  "events": [
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "normal",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Okay, I have a lot of things in my bag. ",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0.3
+        },
+        {
+          "text": "There should be something I could do with them somehow…",
+          "pacing": 0.065,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "I'll look around for a moment, then.",
+          "pacing": 0.065,
+          "style": "thought",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}

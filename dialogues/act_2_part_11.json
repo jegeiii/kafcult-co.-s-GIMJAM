@@ -1,0 +1,25 @@
+{
+  "characters": [
+    "William"
+  ],
+  "events": [
+    {
+      "name": "LoadSprite",
+      "speaker": "William",
+      "expression": "sad",
+      "position": "center"
+    },
+    {
+      "name": "LoadText",
+      "speaker": "William",
+      "segments": [
+        {
+          "text": "Maybe next time I’ll say goodbye to you properly, buddy.",
+          "pacing": 0.075,
+          "style": "normal",
+          "pause_after": 0
+        }
+      ]
+    }
+  ]
+}
