@@ -37,6 +37,18 @@ func add_item(item: TextureButton, item_id: String):
 	inventory[item_id]["count"] += 1
 	notification_popup(item_id)
 	print(inventory[item_id]["count"])
+	#save()
+
+func remove_item(item_id: String):
+	inventory[item_id]["count"] -= 1
+	if inventory[item_id]["count"] <= 0:
+		$PanelContainer/ScrollContainer/VBoxContainer.remove_child(get_node("PanelContainer/ScrollContainer/VBoxContainer/" + item_id))
+	#save()
+
+func use_item(item_id: String):
+	using_item = item_id
+	#remove_item(item_id)
+	close_inspect()
 
 func notification_popup(item_id: String):
 	$notification/RichTextLabel.visible = true
@@ -70,19 +82,14 @@ func _ready() -> void:
 	#print(inventory)
 	print(inventory["a"]["name"])
 	print(inventory["b"]["description"])
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
+	
+func save():
+	var file = FileAccess.open("res://items.json", FileAccess.WRITE)
+	file.store_string(JSON.stringify(inventory, "\t"))
+	file.close
 
 func _on_fade_black_gui_input(event: InputEvent) -> void:
 	if event.is_action_pressed("LMB"):
-		fade_black_pressed.emit()
-		$item_closeup.visible = false
-		$fade_black.fade_in(0.1)
-		$fade_black.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	
 		close_inspect()
 
 func _on_use_button_pressed() -> void:
