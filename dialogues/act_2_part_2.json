@@ -16,10 +16,6 @@
 	  ]
 	},
 	{
-	  "name": "PlaySoundEffect",
-	  "path": "[<RUSTLING SOUND AND FOOTSTEPS AROUND THE DINING ROOM>]"
-	},
-	{
 	  "name": "Special",
 	  "custom_event_name": "[SHOW THE DINING ROOM WITH WILLIAM’S SPRITE]"
 	},
@@ -37,7 +33,7 @@
 	},
 	{
 	  "name": "PlaySoundEffect",
-	  "path": "[<SLOW, SLIGHTLY RUSTY SOUND OF A DRAWER OPENING>]"
+	  "path": "res://audio/Drawer.wav"
 	},
 	{
 	  "name": "LoadSprite",
@@ -59,7 +55,7 @@
 	},
 	{
 	  "name": "PlaySoundEffect",
-	  "path": "[<A FEW SECONDS OF SILENCE, FOLLOWED BY WILLIAM’S SLOW FOOTSTEPS APPROACHING THE DRAWER>]"
+	  "path": "res://audio/Footsteps.wav"
 	},
 	{
 	  "name": "LoadSprite",
@@ -71,6 +67,12 @@
 	  "name": "LoadText",
 	  "speaker": "William",
 	  "segments": [
+		{
+		  "text": "... ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 1
+		},
 		{
 		  "text": "Isn’t it father’s office key? ",
 		  "pacing": 0.06,

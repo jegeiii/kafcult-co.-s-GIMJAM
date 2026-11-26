@@ -62,7 +62,7 @@
 	},
 	{
 	  "name": "PlaySoundEffect",
-	  "path": "[<KNOCKING SOUND COMING FROM THE CANVAS>]"
+	  "path": "res://audio/Canvas Knock.wav"
 	},
 	{
 	  "name": "LoadText",
@@ -190,7 +190,7 @@
 	},
 	{
 	  "name": "PlaySoundEffect",
-	  "path": "[<KNOCKING SOUND COMING FROM THE CANVAS AGAIN>]"
+	  "path": "res://audio/Canvas Knock.wav"
 	},
 	{
 	  "name": "LoadText",

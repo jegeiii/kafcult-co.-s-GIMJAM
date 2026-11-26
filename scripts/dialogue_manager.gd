@@ -84,15 +84,19 @@ func dialogue_next() -> void:
 
 	var curr_event = current_dialogue_events[current_event_idx]
 	var curr_event_name = curr_event["name"]
-	
-	# Displays all the LoadSprite events
+
 	while curr_event_name != "LoadText" and curr_event_name != "Flashback":
 		display_current_event()
-		
+
 		current_event_idx += 1
+
+		if current_event_idx >= current_dialogue_events.size():
+			finish_dialogue()
+			return
+
 		curr_event = current_dialogue_events[current_event_idx]
 		curr_event_name = curr_event["name"]
-	
+
 	if curr_event_name == "Flashback":
 		display_current_event()
 	else:

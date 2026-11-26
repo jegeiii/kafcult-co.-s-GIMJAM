@@ -6,6 +6,7 @@ var scene_lock = true
 @export var using_item: String = "none"
 #var inspect_depth: int = 0;
 signal fade_black_pressed
+signal written_paper_clicked
 
 func _process(delta):
 	if Input.is_action_pressed("RMB"):
@@ -135,7 +136,7 @@ func update_item_quantity(item_id: String) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	DialogueManager.dialogue_end.connect(_on_dialogue_end)
+	#DialogueManager.dialogue_end.connect(_on_dialogue_end)
 	load_inventory("res://item.json")
 	#print(inventory)
 	print(inventory_ui["a"]["name"])
@@ -169,13 +170,14 @@ func _on_item_closeup_pressed() -> void:
 		update_item_closeup_clickmask()
 		$item_inspect/item_closeup/Label.text = "letter_to_william_paper"
 	elif $item_inspect/item_closeup/Label.text == "letter_to_william_paper":
+		written_paper_clicked.emit()
 		close_inspect()
-		DialogueManager.initiate_dialogue("res://dialogues/act_1_part_2.json")
-		scene_lock = false
+		#DialogueManager.initiate_dialogue("res://dialogues/act_1_part_2.json")
+		#scene_lock = false
 
-func _on_dialogue_end():
-	if !scene_lock:
-		GameManager.change_act_to(2)
+#func _on_dialogue_end():
+	#if !scene_lock:
+		#GameManager.change_act_to(2)
 
 func fade_in(duration: float):
 	$fade_black/a.fade_in(duration)

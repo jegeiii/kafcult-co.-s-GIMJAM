@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://cktwvd800t72l"]
 
 [ext_resource type="Script" uid="uid://fdkjeewm7gjx" path="res://scenes/act_2.gd" id="1_udt4n"]
-[ext_resource type="PackedScene" uid="uid://cctqacfflrntm" path="res://scenes/fade_black.tscn" id="2_qt1qe"]
 [ext_resource type="Texture2D" uid="uid://b48765n6krxm" path="res://graphics/a.png" id="2_t1gpn"]
 [ext_resource type="PackedScene" uid="uid://c1tdbiw7wt4m3" path="res://scenes/dimmer.tscn" id="3_qt1qe"]
 [ext_resource type="PackedScene" uid="uid://ci4sol1vea776" path="res://scenes/clickables.tscn" id="4_qt1qe"]
@@ -67,23 +66,43 @@ offset_bottom = 40.0
 
 [node name="plate" parent="distorted_dining_room" unique_id=2085533608 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 65.0
+offset_bottom = 62.0
 item_id = "plate"
 
 [node name="knife" parent="distorted_dining_room" unique_id=516024968 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 65.0
+offset_bottom = 62.0
 item_id = "knife"
 usable = true
 
 [node name="rotten_vegetable" parent="distorted_dining_room" unique_id=1962551523 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 65.0
+offset_bottom = 62.0
 item_id = "rotten_vegetable"
 
 [node name="rotten_meat" parent="distorted_dining_room" unique_id=719141946 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 65.0
+offset_bottom = 62.0
 item_id = "rotten_meat"
 
 [node name="spiderweb" parent="distorted_dining_room" unique_id=4767312 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 65.0
+offset_bottom = 62.0
 item_id = "spiderweb"
 
 [node name="basement" type="Control" parent="." unique_id=1306281374]
@@ -97,23 +116,27 @@ offset_bottom = 336.0
 
 [node name="dogfood" parent="basement" unique_id=1288662413 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 65.0
+offset_bottom = 62.0
 item_id = "dogfood"
 
 [node name="water" parent="basement" unique_id=738309657 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 65.0
+offset_bottom = 62.0
 item_id = "water"
 
 [node name="toy" parent="basement" unique_id=1634944282 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 65.0
+offset_bottom = 62.0
 item_id = "toy"
-
-[node name="fade_black" parent="." unique_id=1813767706 instance=ExtResource("2_qt1qe")]
-visible = false
-offset_left = -76.0
-offset_top = -48.0
-offset_right = 1168.0
-offset_bottom = 654.0
-color = Color(0, 0, 0, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=457309828]
 
