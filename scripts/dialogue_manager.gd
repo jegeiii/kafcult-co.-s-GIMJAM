@@ -71,7 +71,9 @@ func display_current_event() -> void:
 			current_event_idx += 1
 			var flashback_id = event["flashback_id"]
 			initiate_flashback(flashback_id)
-			
+		"PlaySoundEffect":
+			var SFX_path = event["path"]
+			AudioManager.play_sfx(SFX_path)
 
 # Runs every next LoadSprite event and 1 LoadText, essentially "grouping" them ig
 # Code runs under the assumption that the last event in the dialogue is a LoadText event

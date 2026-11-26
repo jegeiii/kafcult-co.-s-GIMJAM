@@ -21,6 +21,7 @@ DialogueManager="*uid://kyreujamekhp"
 InventoryUi="*uid://be83dtlgyydmy"
 SaveSystem="uid://cssnkkmldmgqj"
 GameManager="*uid://bisrjd447wmks"
+AudioManager="*uid://b3nf8qfwlwhfa"
 
 [display]
 
