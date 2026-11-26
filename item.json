@@ -3,7 +3,6 @@
 		{
 			"name": "How to Prog: 101",
 			"count": 0,
-			"inspect_depth": 1,
 			"description": "As the title suggests.",
 			"texture_path": "res://graphics/a.png"
 		},
@@ -11,16 +10,14 @@
 		{
 			"name": "Hear Me Out, Elmo",
 			"count": 0,
-			"inspect_depth": 1,
 			"description": "I have nothing else to say.",
 			"texture_path": "res://graphics/b.png"
 		},
 	"letter_to_william": 
 		{
-			"name": "Letter to William",
+			"name": "A Letter to William",
 			"count": 0,
-			"inspect_depth": 2,
-			"description": "A letter intended for William",
+			"description": "A letter intended for you.",
 			"texture_path": "res://graphics/letter_to_william.png"
 		},
 }

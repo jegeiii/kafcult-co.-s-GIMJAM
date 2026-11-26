@@ -4,12 +4,12 @@
 
 [node name="InventoryTest" type="Node2D" unique_id=2044100818]
 
-[node name="a" parent="." unique_id=473976335 instance=ExtResource("1_h73wm")]
+[node name="letter_to_william" parent="." unique_id=473976335 instance=ExtResource("1_h73wm")]
 offset_left = 584.0
 offset_top = 141.0
 offset_right = 688.0
 offset_bottom = 203.0
-usable = true
+item_id = "letter_to_william"
 
 [node name="b" parent="." unique_id=316619854 instance=ExtResource("1_h73wm")]
 offset_left = 281.0
