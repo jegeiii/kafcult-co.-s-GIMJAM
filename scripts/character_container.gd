@@ -35,7 +35,8 @@ var CHARACTER_RESOURCES: Dictionary = {
 }
 
 func get_character_resource(name):
-	return CHARACTER_RESOURCES[name]
+	#return CHARACTER_RESOURCES[name]
+	return preload("res://resource/test_sprites.tres")
 
 func get_character_sprite(name, expression):
 	var resource = get_character_resource(name)
