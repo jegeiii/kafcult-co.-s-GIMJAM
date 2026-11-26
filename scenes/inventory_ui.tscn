@@ -79,6 +79,7 @@ layout_mode = 0
 offset_left = 454.0
 offset_right = 734.0
 offset_bottom = 40.0
+mouse_filter = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="notification" unique_id=1009077993]
 visible = false
@@ -89,6 +90,22 @@ vertical_alignment = 1
 
 [node name="Timer" type="Timer" parent="notification" unique_id=825099220]
 wait_time = 0.1
+
+[node name="tip" type="PanelContainer" parent="." unique_id=39450908]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 949.0
+offset_top = 566.0
+offset_right = 1229.0
+offset_bottom = 606.0
+mouse_filter = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="tip" unique_id=1402541986]
+layout_mode = 2
+text = "RMB to Cancel"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="item_inspect" type="CanvasLayer" parent="." unique_id=612618648]
 layer = 11
@@ -135,11 +152,21 @@ vertical_alignment = 1
 [node name="use_button" type="Button" parent="item_inspect/item_closeup" unique_id=172195069]
 visible = false
 layout_mode = 0
-offset_left = 355.0
-offset_top = 310.0
-offset_right = 432.0
-offset_bottom = 341.0
+offset_left = 324.0
+offset_top = 92.0
+offset_right = 401.0
+offset_bottom = 123.0
 text = "Use Item"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=324460584]
+layout_mode = 0
+offset_left = 257.0
+offset_top = 132.0
+offset_right = 321.0
+offset_bottom = 196.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
 
 [connection signal="pressed" from="Button" to="." method="expand_inventory"]
 [connection signal="gui_input" from="fade_black/a" to="." method="_on_fade_black_gui_input"]

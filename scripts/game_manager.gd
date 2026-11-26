@@ -5,6 +5,11 @@ var current_act: int = 1
 
 func change_act_to(act_number: int) -> void:
 	current_act = act_number
+	var next_scene: PackedScene = load("res://scenes/ACT"+ str(act_number) +".tscn")
+	
+	InventoryUi.fade_out(1)
+	await get_tree().create_timer(1.5).timeout
+	get_tree().change_scene_to_packed(next_scene)
 
 # Items collected by the player
 # Store item_id and their quantities

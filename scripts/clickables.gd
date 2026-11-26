@@ -4,6 +4,8 @@ extends TextureButton
 @export var button_interaction = "get" #get or interact
 @export var usable: bool = false
 @onready var quantity_label: Label = $QuantityLabel
+@export var is_conditional: bool = false
+@export var condition: String
 
 func update_quantity_display() -> void:
 	var amount = GameManager.get_item_count(item_id)
@@ -24,10 +26,17 @@ func _on_pressed():
 	print("pressed")
 	#print("pressed: ", interaction)
 	if button_interaction == "get":
-		button_interaction = "inventory"
-		self_modulate.a = 0.0
-		disabled = false
-		InventoryUi.add_item(self, item_id)
+		if !is_conditional:
+			button_interaction = "inventory"
+			self_modulate.a = 0.0
+			disabled = false
+			InventoryUi.add_item(self, item_id)
+		else:
+			if condition == InventoryUi.using_item:
+				button_interaction = "inventory"
+				self_modulate.a = 0.0
+				disabled = false
+				InventoryUi.add_item(self, item_id)
 	elif button_interaction == "inspect":
 		disabled = true
 		InventoryUi.InventoryInspect(item_id, usable)

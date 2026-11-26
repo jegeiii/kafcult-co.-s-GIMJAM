@@ -4,6 +4,7 @@ extends Control
 @onready var left_marker: Control = %LeftMarker
 @onready var center_marker: Control = %CenterMarker
 @onready var right_marker: Control = %RightMarker
+
 var MARKERS: Dictionary
 
 func get_marker(position: String) -> Control:
@@ -57,6 +58,7 @@ func _ready() -> void:
 	DialogueManager.dialogue_end.connect(_on_dialogue_end)
 	DialogueManager.unload_sprite.connect(_on_unload_sprite)
 	DialogueManager.highlight_speaker.connect(_on_highlight_speaker)
+	DialogueManager.dialogue_start.connect(_on_dialogue_start)
 
 # Keep track of the active characters
 var active_characters: Dictionary = {}
@@ -83,6 +85,9 @@ func _on_highlight_speaker(name) -> void:
 		else:
 			active_characters[character_name].modulate = Color(0.7, 0.7, 0.7, 1)
 
+func _on_dialogue_start():
+	visible = true
+
 func _on_dialogue_end() -> void:
 	# Remove every character that is on the screen
 	for character in active_characters.values():
@@ -90,3 +95,4 @@ func _on_dialogue_end() -> void:
 		
 	# Clear the dictionary
 	active_characters.clear()
+	visible = false
