@@ -20,4 +20,11 @@
 			"description": "A letter intended for you.",
 			"texture_path": "res://graphics/letter_to_william.png"
 		},
+	"charles_key": 
+		{
+			"name": "Charles's Key",
+			"count": 0,
+			"description": "",
+			"texture_path": "res://graphics/charles_key.png"
+		},
 }

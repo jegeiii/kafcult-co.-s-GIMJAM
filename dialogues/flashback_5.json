@@ -1,692 +1,692 @@
 {
   "characters": [
-    "William",
-    "Charles",
-    "Margaret",
+	"William",
+	"Charles",
+	"Margaret",
     "Diana"
   ],
   "events": [
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "That night, the rain fell just as heavily as any other night in the New England woods.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "surprised",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Young William—only ten years old at the time—stood frozen in the middle of Charles's dimly lit study. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "On the red carpet at his feet, a bottle of pitch-black ink lay overturned, spilling across the trade partnership documents Charles had just finished signing that afternoon. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "The thick black ink soaked in quickly, ruining the red wax seal and the original signatures meant to be sent to Boston the next morning to save their family's business deal.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "No… How? ",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0.25
-        },
-        {
-          "text": "I-I swear I just walked in to grab Diana's storybook near the sofa…",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Before William could pick up the papers, the study door swung wide open.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "*Creak... Thud, thud...*",
-          "pacing": 0.06,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Charles",
-      "expression": "normal",
-      "position": "left"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Margaret",
-      "expression": "normal",
-      "position": "right"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Charles stood in the doorway, with Margaret right behind him. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Charles's gaze dropped immediately to the pool of black ink swallowing the most crucial business papers of the year, then slowly rose to William's fingertips, which had just reached out to touch the ink-soaked edges of the paper.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Margaret"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "surprised",
-      "position": "right"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Charles",
-      "expression": "angry",
-      "position": "left"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "What have you done, William?",
-          "pacing": 0.065,
-          "style": "emphasis",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Charles's voice was very quiet, almost a whisper, yet far more terrifying than a shout.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "I-I didn't touch it, Father! ",
-          "pacing": 0.045,
-          "style": "emphasis",
-          "pause_after": 0.2
-        },
-        {
-          "text": "It was already spilled—",
-          "pacing": 0.045,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Charles"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Margaret",
-      "expression": "angry",
-      "position": "left"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Margaret",
-      "segments": [
-        {
-          "text": "Don't lie in this house!",
-          "pacing": 0.04,
-          "style": "emphasis",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Margaret cut in sharply from the doorway. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Her eyes swept the room before landing on the small figure standing frightened behind the curtains near the fireplace.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Diana",
-      "expression": "sad",
-      "position": "right"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Margaret",
-      "expression": "happy",
-      "position": "left"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Margaret",
-      "segments": [
-        {
-          "text": "Diana? ",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0.25
-        },
-        {
-          "text": "Sweetheart, come here. ",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0.25
-        },
-        {
-          "text": "What happened?",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Diana—only seven years old at the time—stepped out in her nightgown. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Her eyes were watery, her small hands twisting the hem of her dress with an innocent face that looked deeply shaken.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Diana",
-      "segments": [
-        {
-          "text": "Diana told him not to climb on the desk… ",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "But Will got mad because Father wouldn't take him to the city tomorrow... ",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "so Will pushed the ink bottle onto Father's papers.",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Diana sobbed softly, her voice faint and trembling like a scared child.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Margaret"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "surprised",
-      "position": "left"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "William stared wide-eyed at his sister.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "What? No! ",
-          "pacing": 0.04,
-          "style": "emphasis",
-          "pause_after": 0.2
-        },
-        {
-          "text": "Diana, I just came in to get your book—",
-          "pacing": 0.045,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Diana"
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "William"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Slap.",
-          "pacing": 0.03,
-          "style": "emphasis",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "*Smack!*",
-          "pacing": 0.04,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "A hard slap landed across William's left cheek before he could finish his sentence. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "His head snapped to the side, his ears ringing, and a sharp, burning pain shot straight up to his temple.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Charles",
-      "expression": "angry",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Charles stood towering over him with a clenched jaw.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "It's not enough that you ruined a deal I spent months building, now you accuse your own sister of lying? ",
-          "pacing": 0.05,
-          "style": "normal",
-          "pause_after": 0.3
-        },
-        {
-          "text": "You aren't just useless to this family's business, William—",
-          "pacing": 0.05,
-          "style": "normal",
-          "pause_after": 0.25
-        },
-        {
-          "text": "you are a threat.",
-          "pacing": 0.06,
-          "style": "emphasis",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Charles"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Margaret",
-      "expression": "happy",
-      "position": "left"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "Diana",
-      "expression": "sad",
-      "position": "right"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Margaret immediately knelt down and pulled Diana into a tight hug, stroking the little girl's hair lovingly.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Margaret",
-      "segments": [
-        {
-          "text": "There, there, sweetheart, don't look. ",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0.25
-        },
-        {
-          "text": "Your brother has never been able to control his jealousy.",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Inside her mother's embrace, Diana's face was buried against Margaret's shoulder. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "From behind her soft curls, Diana's small eyes peeked straight at Will—calm, without a single tear, the corners of her lips curling upward into a barely visible smile.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Margaret"
-    },
-    {
-      "name": "UnloadSprite",
-      "speaker": "Diana"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Without saying another word, Charles grabbed the back of William's pajama collar with one hand stained black with ink from the desk. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "The grip was so tight that Will nearly choked as his feet dragged across the cold wooden floor.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Father, I'm sorry! ",
-          "pacing": 0.04,
-          "style": "emphasis",
-          "pause_after": 0.2
-        },
-        {
-          "text": "I didn't do it! ",
-          "pacing": 0.04,
-          "style": "emphasis",
-          "pause_after": 0.2
-        },
-        {
-          "text": "Father, please!",
-          "pacing": 0.04,
-          "style": "emphasis",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Will screamed, trying to grab onto the stair railing with his small, trembling fingers. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Charles didn't flinch.",
-          "pacing": 0.055,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "*Scrape... Thud, thud...*",
-          "pacing": 0.06,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "He dragged Will up step after step toward the third floor, down the dark, stuffy hallway, until they stopped in front of the thick wooden door of the old attic. ",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0.3
-        },
-        {
-          "text": "Charles unlocked the iron bolt, threw Will's small body into the dusty, damp darkness, and slammed the door shut.",
-          "pacing": 0.045,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "*Clack!*",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Click. ",
-          "pacing": 0.05,
-          "style": "emphasis",
-          "pause_after": 0.3
-        },
-        {
-          "text": "The sound of the iron key turning from the outside.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Charles",
-      "segments": [
-        {
-          "text": "You will stay in there until you learn that this family's name and business are worth far more than your life.",
-          "pacing": 0.055,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Charles's voice sounded muffled through the thick door, followed by footsteps walking away up the stairs.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "*Sob... Hic...*",
-          "pacing": 0.07,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "LoadText",
-      "speaker": "Narrator",
-      "segments": [
-        {
-          "text": "Inside the cold darkness of the basement, young Will curled up in the corner against the wall, hugging his knees and staring at his fingertips, blackened with ink and shaking uncontrollably.",
-          "pacing": 0.05,
-          "style": "narration",
-          "pause_after": 0
-        }
-      ]
-    }
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "That night, the rain fell just as heavily as any other night in the New England woods.",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "surprised",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Young William—only ten years old at the time—stood frozen in the middle of Charles's dimly lit study. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "On the red carpet at his feet, a bottle of pitch-black ink lay overturned, spilling across the trade partnership documents Charles had just finished signing that afternoon. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "The thick black ink soaked in quickly, ruining the red wax seal and the original signatures meant to be sent to Boston the next morning to save their family's business deal.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "No… How? ",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0.25
+		},
+		{
+		  "text": "I-I swear I just walked in to grab Diana's storybook near the sofa…",
+		  "pacing": 0.055,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Before William could pick up the papers, the study door swung wide open.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "*Creak... Thud, thud...*",
+		  "pacing": 0.06,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "William"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Charles",
+	  "expression": "normal",
+	  "position": "left"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Margaret",
+	  "expression": "normal",
+	  "position": "right"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Charles stood in the doorway, with Margaret right behind him. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Charles's gaze dropped immediately to the pool of black ink swallowing the most crucial business papers of the year, then slowly rose to William's fingertips, which had just reached out to touch the ink-soaked edges of the paper.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Margaret"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "surprised",
+	  "position": "right"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Charles",
+	  "expression": "angry",
+	  "position": "left"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "What have you done, William?",
+		  "pacing": 0.065,
+		  "style": "emphasis",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Charles's voice was very quiet, almost a whisper, yet far more terrifying than a shout.",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "I-I didn't touch it, Father! ",
+		  "pacing": 0.045,
+		  "style": "emphasis",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "It was already spilled—",
+		  "pacing": 0.045,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Charles"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Margaret",
+	  "expression": "angry",
+	  "position": "left"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Margaret",
+	  "segments": [
+		{
+		  "text": "Don't lie in this house!",
+		  "pacing": 0.04,
+		  "style": "emphasis",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Margaret cut in sharply from the doorway. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Her eyes swept the room before landing on the small figure standing frightened behind the curtains near the fireplace.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "William"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Diana",
+	  "expression": "sad",
+	  "position": "right"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Margaret",
+	  "expression": "happy",
+	  "position": "left"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Margaret",
+	  "segments": [
+		{
+		  "text": "Diana? ",
+		  "pacing": 0.055,
+		  "style": "normal",
+		  "pause_after": 0.25
+		},
+		{
+		  "text": "Sweetheart, come here. ",
+		  "pacing": 0.055,
+		  "style": "normal",
+		  "pause_after": 0.25
+		},
+		{
+		  "text": "What happened?",
+		  "pacing": 0.055,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Diana—only seven years old at the time—stepped out in her nightgown. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Her eyes were watery, her small hands twisting the hem of her dress with an innocent face that looked deeply shaken.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Diana",
+	  "segments": [
+		{
+		  "text": "Diana told him not to climb on the desk… ",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "But Will got mad because Father wouldn't take him to the city tomorrow... ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "so Will pushed the ink bottle onto Father's papers.",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Diana sobbed softly, her voice faint and trembling like a scared child.",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Margaret"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "surprised",
+	  "position": "left"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "William stared wide-eyed at his sister.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "What? No! ",
+		  "pacing": 0.04,
+		  "style": "emphasis",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "Diana, I just came in to get your book—",
+		  "pacing": 0.045,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Diana"
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "William"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Slap.",
+		  "pacing": 0.03,
+		  "style": "emphasis",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "*Smack!*",
+		  "pacing": 0.04,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "A hard slap landed across William's left cheek before he could finish his sentence. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "His head snapped to the side, his ears ringing, and a sharp, burning pain shot straight up to his temple.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Charles",
+	  "expression": "angry",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Charles stood towering over him with a clenched jaw.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "It's not enough that you ruined a deal I spent months building, now you accuse your own sister of lying? ",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "You aren't just useless to this family's business, William—",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0.25
+		},
+		{
+		  "text": "you are a threat.",
+		  "pacing": 0.06,
+		  "style": "emphasis",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Charles"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Margaret",
+	  "expression": "happy",
+	  "position": "left"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Diana",
+	  "expression": "sad",
+	  "position": "right"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Margaret immediately knelt down and pulled Diana into a tight hug, stroking the little girl's hair lovingly.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Margaret",
+	  "segments": [
+		{
+		  "text": "There, there, sweetheart, don't look. ",
+		  "pacing": 0.055,
+		  "style": "normal",
+		  "pause_after": 0.25
+		},
+		{
+		  "text": "Your brother has never been able to control his jealousy.",
+		  "pacing": 0.055,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Inside her mother's embrace, Diana's face was buried against Margaret's shoulder. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "From behind her soft curls, Diana's small eyes peeked straight at Will—calm, without a single tear, the corners of her lips curling upward into a barely visible smile.",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Margaret"
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Diana"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Without saying another word, Charles grabbed the back of William's pajama collar with one hand stained black with ink from the desk. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "The grip was so tight that Will nearly choked as his feet dragged across the cold wooden floor.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Father, I'm sorry! ",
+		  "pacing": 0.04,
+		  "style": "emphasis",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "I didn't do it! ",
+		  "pacing": 0.04,
+		  "style": "emphasis",
+		  "pause_after": 0.2
+		},
+		{
+		  "text": "Father, please!",
+		  "pacing": 0.04,
+		  "style": "emphasis",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Will screamed, trying to grab onto the stair railing with his small, trembling fingers. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Charles didn't flinch.",
+		  "pacing": 0.055,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "*Scrape... Thud, thud...*",
+		  "pacing": 0.06,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "He dragged Will up step after step toward the third floor, down the dark, stuffy hallway, until they stopped in front of the thick wooden door of the old attic. ",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Charles unlocked the iron bolt, threw Will's small body into the dusty, damp darkness, and slammed the door shut.",
+		  "pacing": 0.045,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "*Clack!*",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Click. ",
+		  "pacing": 0.05,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "The sound of the iron key turning from the outside.",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Charles",
+	  "segments": [
+		{
+		  "text": "You will stay in there until you learn that this family's name and business are worth far more than your life.",
+		  "pacing": 0.055,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Charles's voice sounded muffled through the thick door, followed by footsteps walking away up the stairs.",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "*Sob... Hic...*",
+		  "pacing": 0.07,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Inside the cold darkness of the basement, young Will curled up in the corner against the wall, hugging his knees and staring at his fingertips, blackened with ink and shaking uncontrollably.",
+		  "pacing": 0.05,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	}
   ]
 }

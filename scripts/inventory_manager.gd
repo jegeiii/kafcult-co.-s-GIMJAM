@@ -1,10 +1,20 @@
-extends Node
+extends Control
 
 #var inventory_slot: Dictionary
 var inventory_ui: Dictionary
-var using_item: String
-var inspect_depth: int = 0;
+var scene_lock = true
+@export var using_item: String = "none"
+#var inspect_depth: int = 0;
 signal fade_black_pressed
+
+func _process(delta):
+	if Input.is_action_pressed("RMB"):
+		$tip.visible = false
+		using_item = "none"
+		$TextureRect.global_position = Vector2(-100, -100)
+	if using_item != "none":
+		$TextureRect.texture = load(inventory_ui[using_item]["texture_path"])
+		$TextureRect.global_position = get_global_mouse_position() + Vector2(16, -16)
 
 func toggle_inventory(state: bool):
 	self.visible = state
@@ -45,6 +55,7 @@ func add_item(item: TextureButton, item_id: String) -> void:
 		# Move its button into the inventory UI.
 		item.name = item_id
 		item.custom_minimum_size = Vector2(50, 50)
+		await get_tree().create_timer(0.2).timeout
 		item.reparent(
 			get_node("/root/InventoryUi/PanelContainer/ScrollContainer/VBoxContainer")
 		)
@@ -74,6 +85,7 @@ func remove_item(item_id: String, amount: int = 1) -> void:
 
 func use_item(item_id: String):
 	using_item = item_id
+	$tip.visible = true
 	#remove_item(item_id)
 	close_inspect()
 
@@ -123,6 +135,7 @@ func update_item_quantity(item_id: String) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	DialogueManager.dialogue_end.connect(_on_dialogue_end)
 	load_inventory("res://item.json")
 	#print(inventory)
 	print(inventory_ui["a"]["name"])
@@ -144,15 +157,28 @@ func close_inspect():
 	fade_black_pressed.emit()
 	$item_inspect/item_closeup.visible = false
 	$fade_black/a.fade_in(0.1)
-	$fade_black/a.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	$fade_black/a.mouse_filter = MOUSE_FILTER_IGNORE
 
 func _on_item_closeup_pressed() -> void:
 	if $item_inspect/item_closeup/Label.text == "letter_to_william":
 		$item_inspect/item_closeup.texture_normal = load("res://graphics/letter_to_william_opened.png")
 		update_item_closeup_clickmask()
 		await get_tree().create_timer(0.5).timeout
+		AudioManager.play_sfx("res://audio/act1_2.wav")
 		$item_inspect/item_closeup.texture_normal = load("res://graphics/letter_to_william_paper.png")
 		update_item_closeup_clickmask()
 		$item_inspect/item_closeup/Label.text = "letter_to_william_paper"
 	elif $item_inspect/item_closeup/Label.text == "letter_to_william_paper":
 		close_inspect()
+		DialogueManager.initiate_dialogue("res://dialogues/act_1_part_2.json")
+		scene_lock = false
+
+func _on_dialogue_end():
+	if !scene_lock:
+		GameManager.change_act_to(2)
+
+func fade_in(duration: float):
+	$fade_black/a.fade_in(duration)
+	
+func fade_out(duration: float):
+	$fade_black/a.fade_out(duration)

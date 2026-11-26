@@ -18,9 +18,11 @@ func _ready() -> void:
 
 func _on_dialogue_start() -> void:
 	dialogue_box.visible = true
+	visible = true
 
 func _on_dialogue_end() -> void:
 	dialogue_box.visible = false
+	visible = false
 
 const PRESETS: Dictionary = {
 	"normal": preload("res://resource/normal.tres"),

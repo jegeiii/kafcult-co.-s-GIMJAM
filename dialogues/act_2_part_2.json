@@ -3,101 +3,103 @@
     "William"
   ],
   "events": [
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "normal",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Let’s start from here, then…",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "PlaySound",
-      "sound": "rustling_footsteps_dining_room"
-    },
-    {
-      "name": "Wait",
-      "duration": 2.0
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "There’s not as much as change than I thought–",
-          "pacing": 0.06,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "PlaySound",
-      "sound": "drawer_open_slow_rusty"
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "surprised",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "!!! ",
-          "pacing": 0.03,
-          "style": "emphasis",
-          "pause_after": 0.3
-        },
-        {
-          "text": "W-Who’s there?!",
-          "pacing": 0.03,
-          "style": "emphasis",
-          "pause_after": 0
-        }
-      ]
-    },
-    {
-      "name": "Wait",
-      "duration": 3.0
-    },
-    {
-      "name": "PlaySound",
-      "sound": "footsteps_william_slow"
-    },
-    {
-      "name": "Wait",
-      "duration": 2.0
-    },
-    {
-      "name": "LoadSprite",
-      "speaker": "William",
-      "expression": "normal",
-      "position": "center"
-    },
-    {
-      "name": "LoadText",
-      "speaker": "William",
-      "segments": [
-        {
-          "text": "Isn’t it father’s office key?",
-          "pacing": 0.065,
-          "style": "normal",
-          "pause_after": 0
-        }
-      ]
-    }
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Let’s start from here, then…",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "Wait",
+	  "duration": 2.0
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "There’s not as much as change than I thought–",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "res://audio/Drawer.wav"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "surprised",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "!!! ",
+		  "pacing": 0.03,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "W-Who’s there?!",
+		  "pacing": 0.03,
+		  "style": "emphasis",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "Wait",
+	  "duration": 3.0
+	},
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "res://audio/Footsteps.wav"
+	},
+	{
+	  "name": "Wait",
+	  "duration": 2.0
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "normal",
+	  "position": "center"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "... ",
+		  "pacing": 0.01,
+		  "style": "normal",
+		  "pause_after": 1
+		},
+		{
+		  "text": "Isn’t it father’s office key?",
+		  "pacing": 0.065,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	}
   ]
 }

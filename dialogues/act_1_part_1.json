@@ -36,16 +36,8 @@
 	  "speaker": "William"
 	},
 	{
-	  "name": "PlaySound",
-	  "sound": "scratching_paper"
-	},
-	{
-	  "name": "FadeIn",
-	  "duration": 1.5
-	},
-	{
-	  "name": "ChangeBackground",
-	  "background": "table_hands_holding_letter"
+	  "name": "PlaySoundEffect",
+	  "path": "res://audio/act1_2.wav"
 	},
 	{
 	  "name": "LoadSprite",
@@ -64,11 +56,6 @@
 		  "pause_after": 0
 		}
 	  ]
-	},
-	{
-	  "name": "ClickObject",
-	  "object": "Envelope",
-	  "next": "part_2"
 	}
   ]
 }
