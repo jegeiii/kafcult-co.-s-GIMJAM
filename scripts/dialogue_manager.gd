@@ -74,6 +74,8 @@ func display_current_event() -> void:
 		"PlaySoundEffect":
 			var SFX_path = event["path"]
 			AudioManager.play_sfx(SFX_path)
+		"Special":
+			print("Special Effect")
 
 # Runs every next LoadSprite event and 1 LoadText, essentially "grouping" them ig
 # Code runs under the assumption that the last event in the dialogue is a LoadText event
@@ -84,16 +86,16 @@ func dialogue_next() -> void:
 
 	var curr_event = current_dialogue_events[current_event_idx]
 	var curr_event_name = curr_event["name"]
-
+	
 	while curr_event_name != "LoadText" and curr_event_name != "Flashback":
 		display_current_event()
 
 		current_event_idx += 1
-
+		
 		if current_event_idx >= current_dialogue_events.size():
 			finish_dialogue()
 			return
-
+		
 		curr_event = current_dialogue_events[current_event_idx]
 		curr_event_name = curr_event["name"]
 
@@ -109,7 +111,7 @@ var FLASHBACK_FILES: Dictionary = {
 }
 
 func initiate_flashback(flashback_id: int) -> void:
-	print("FLASHBACK")
+	print("FLASHBACK STARTS")
 	flashback_ongoing = true
 	# Save the state before doing the flashback
 	previous_dialogue_events = current_dialogue_events
@@ -133,9 +135,11 @@ func finish_dialogue() -> void:
 		
 		# Some signal to go back to the main scene
 		dialogue_next()
+		print("FLASHBACK ENDS")
 	else:
 		dialogue_end.emit()
 		dialogue_ongoing = false
+		print("DIALOGUE ENDS")
 
 func _ready():
 	# initiate_dialogue("res://dialogues/experimental_dialogue_text.json")
