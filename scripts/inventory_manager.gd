@@ -3,19 +3,20 @@ extends Node
 #var inventory_slot: Dictionary
 var inventory: Dictionary
 var using_item: String
+var inspect_depth: int = 0;
 signal fade_black_pressed
 
 func toggle_inventory(state: bool):
 	self.visible = state
 
 func expand_inventory():
-	if $Button.text == "<":
-		$Button.text = ">"
-		$Button.set_position($button_opened.position)
+	if $Button/Label.text == "<":
+		$Button/Label.text = ">"
+		#$Button.set_position($button_opened.position)
 		$PanelContainer.set_position($inventory_opened.position)
-	elif $Button.text == ">":
-		$Button.text = "<"
-		$Button.set_position($button_closed.position)
+	elif $Button/Label.text == ">":
+		$Button/Label.text = "<"
+		#$Button.set_position($button_closed.position)
 		$PanelContainer.set_position($inventory_closed.position)
 
 func load_inventory(json_path: String) -> void:
@@ -61,13 +62,19 @@ func notification_popup(item_id: String):
 		
 func InventoryInspect(item_id: String, usable: bool):
 	print("a")
-	$fade_black.transparent()
-	$fade_black.mouse_filter = Control.MOUSE_FILTER_STOP
-	$item_closeup/PanelContainer/RichTextLabel.text = inventory[item_id]["description"]
-	$item_closeup.visible = true
-	$item_closeup/use_button.visible = usable
-	$item_closeup.texture_normal = load(inventory[item_id]["texture_path"])
-	$item_closeup/Label.text = item_id
+	$fade_black/a.transparent()
+	$fade_black/a.mouse_filter = Control.MOUSE_FILTER_STOP
+	$item_inspect/item_closeup/PanelContainer/RichTextLabel.text = inventory[item_id]["description"]
+	$item_inspect/item_closeup.visible = true
+	$item_inspect/item_closeup/use_button.visible = usable
+	$item_inspect/item_closeup.texture_normal = load(inventory[item_id]["texture_path"])
+	$item_inspect/item_closeup/Label.text = item_id
+	update_item_closeup_clickmask()
+
+func update_item_closeup_clickmask():
+	var bitmap := BitMap.new()
+	bitmap.create_from_image_alpha($item_inspect/item_closeup.texture_normal.get_image())
+	$item_inspect/item_closeup.texture_click_mask = bitmap
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -86,15 +93,21 @@ func _on_fade_black_gui_input(event: InputEvent) -> void:
 		close_inspect()
 
 func _on_use_button_pressed() -> void:
-	use_item($item_closeup/Label.text)
+	use_item($item_inspect/item_closeup/Label.text)
 
 func close_inspect():
 	fade_black_pressed.emit()
-	$item_closeup.visible = false
-	$fade_black.fade_in(0.1)
-	$fade_black.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	$item_inspect/item_closeup.visible = false
+	$fade_black/a.fade_in(0.1)
+	$fade_black/a.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 func _on_item_closeup_pressed() -> void:
-	pass
-	#if inventory[item_id]["inspect_depth"] > 0:
-		
+	if $item_inspect/item_closeup/Label.text == "letter_to_william":
+		$item_inspect/item_closeup.texture_normal = load("res://graphics/letter_to_william_opened.png")
+		update_item_closeup_clickmask()
+		await get_tree().create_timer(0.5).timeout
+		$item_inspect/item_closeup.texture_normal = load("res://graphics/letter_to_william_paper.png")
+		update_item_closeup_clickmask()
+		$item_inspect/item_closeup/Label.text = "letter_to_william_paper"
+	elif $item_inspect/item_closeup/Label.text == "letter_to_william_paper":
+		close_inspect()

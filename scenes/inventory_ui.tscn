@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://cctqacfflrntm" path="res://scenes/fade_black.tscn" id="1_tahbm"]
 [ext_resource type="Script" uid="uid://bpwlrkh8pqrp2" path="res://scripts/inventory_manager.gd" id="1_ylkvr"]
+[ext_resource type="Texture2D" uid="uid://moqbstanexga" path="res://graphics/inventory_ui.png" id="2_iradw"]
+[ext_resource type="Script" uid="uid://cotejsnlwchi8" path="res://scripts/clickmask.gd" id="3_eifbp"]
 [ext_resource type="PackedScene" uid="uid://c1tdbiw7wt4m3" path="res://scenes/dimmer.tscn" id="3_mdwe3"]
 
 [node name="InventoryUI" type="Control" unique_id=231228800]
@@ -42,87 +44,34 @@ offset_top = 129.0
 offset_right = 1150.0
 offset_bottom = 510.0
 
-[node name="Button" type="Button" parent="." unique_id=1276870091]
+[node name="Button" type="TextureButton" parent="." unique_id=319967963]
 layout_mode = 0
-offset_left = 1132.0
-offset_top = 298.0
-offset_right = 1154.0
-offset_bottom = 342.0
-text = "<"
+offset_left = 1079.0
+offset_top = 502.0
+offset_right = 1153.0
+offset_bottom = 578.0
+texture_normal = ExtResource("2_iradw")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("3_eifbp")
 
-[node name="button_closed" type="Button" parent="." unique_id=633699166]
+[node name="dimmer" parent="Button" unique_id=1440613432 instance=ExtResource("3_mdwe3")]
+
+[node name="Label" type="Label" parent="Button" unique_id=1557943295]
 visible = false
 layout_mode = 0
-offset_left = 1132.0
-offset_top = 298.0
-offset_right = 1154.0
-offset_bottom = 342.0
+offset_right = 40.0
+offset_bottom = 23.0
 text = "<"
 
-[node name="button_opened" type="Button" parent="." unique_id=51878666]
-visible = false
-layout_mode = 0
-offset_left = 1067.0
-offset_top = 298.0
-offset_right = 1089.0
-offset_bottom = 342.0
-text = "<"
+[node name="fade_black" type="CanvasLayer" parent="." unique_id=147500776]
+layer = 10
 
-[node name="fade_black" parent="." unique_id=1813767706 instance=ExtResource("1_tahbm")]
-layout_mode = 0
+[node name="a" parent="fade_black" unique_id=1813767706 instance=ExtResource("1_tahbm")]
 offset_left = 0.0
 offset_top = 0.0
 offset_right = 1244.0
 offset_bottom = 702.0
-
-[node name="item_closeup" type="TextureButton" parent="." unique_id=1663312931]
-visible = false
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = 529.0
-offset_top = 216.0
-offset_right = 629.0
-offset_bottom = 316.0
-grow_horizontal = 2
-grow_vertical = 2
-ignore_texture_size = true
-stretch_mode = 5
-
-[node name="Label" type="Label" parent="item_closeup" unique_id=480561035]
-visible = false
-layout_mode = 0
-offset_left = -94.0
-offset_top = 62.0
-offset_right = 74.0
-offset_bottom = 160.0
-
-[node name="dimmer" parent="item_closeup" unique_id=1440613432 instance=ExtResource("3_mdwe3")]
-
-[node name="PanelContainer" type="PanelContainer" parent="item_closeup" unique_id=1272769160]
-self_modulate = Color(1, 1, 1, 0)
-layout_mode = 0
-offset_left = -154.0
-offset_top = 159.0
-offset_right = 245.0
-offset_bottom = 299.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="item_closeup/PanelContainer" unique_id=328659117]
-layout_mode = 2
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="use_button" type="Button" parent="item_closeup" unique_id=172195069]
-visible = false
-layout_mode = 0
-offset_left = 9.0
-offset_top = 311.0
-offset_right = 86.0
-offset_bottom = 342.0
-text = "Use Item"
 
 [node name="notification" type="PanelContainer" parent="." unique_id=930474287]
 self_modulate = Color(1, 1, 1, 0)
@@ -141,7 +90,58 @@ vertical_alignment = 1
 [node name="Timer" type="Timer" parent="notification" unique_id=825099220]
 wait_time = 0.1
 
+[node name="item_inspect" type="CanvasLayer" parent="." unique_id=612618648]
+layer = 11
+
+[node name="item_closeup" type="TextureButton" parent="item_inspect" unique_id=1663312931]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -133.0
+offset_top = -136.0
+offset_right = 128.0
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="item_inspect/item_closeup" unique_id=480561035]
+visible = false
+layout_mode = 0
+offset_left = -94.0
+offset_top = 62.0
+offset_right = 74.0
+offset_bottom = 160.0
+
+[node name="dimmer" parent="item_inspect/item_closeup" unique_id=1021959902 instance=ExtResource("3_mdwe3")]
+
+[node name="PanelContainer" type="PanelContainer" parent="item_inspect/item_closeup" unique_id=1272769160]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -74.0
+offset_top = 254.0
+offset_right = 325.0
+offset_bottom = 394.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="item_inspect/item_closeup/PanelContainer" unique_id=328659117]
+layout_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="use_button" type="Button" parent="item_inspect/item_closeup" unique_id=172195069]
+visible = false
+layout_mode = 0
+offset_left = 355.0
+offset_top = 310.0
+offset_right = 432.0
+offset_bottom = 341.0
+text = "Use Item"
+
 [connection signal="pressed" from="Button" to="." method="expand_inventory"]
-[connection signal="gui_input" from="fade_black" to="." method="_on_fade_black_gui_input"]
-[connection signal="pressed" from="item_closeup" to="." method="_on_item_closeup_pressed"]
-[connection signal="pressed" from="item_closeup/use_button" to="." method="_on_use_button_pressed"]
+[connection signal="gui_input" from="fade_black/a" to="." method="_on_fade_black_gui_input"]
+[connection signal="pressed" from="item_inspect/item_closeup" to="." method="_on_item_closeup_pressed"]
+[connection signal="pressed" from="item_inspect/item_closeup/use_button" to="." method="_on_use_button_pressed"]
