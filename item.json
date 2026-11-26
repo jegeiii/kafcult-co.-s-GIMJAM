@@ -24,7 +24,35 @@
 		{
 			"name": "Charles's Key",
 			"count": 0,
-			"description": "",
+			"description": "A key that leads to an office.",
 			"texture_path": "res://graphics/charles_key.png"
+		},
+	"plate": 
+		{
+			"name": "Plate",
+			"count": 0,
+			"description": "Something you put food on, I guess.",
+			"texture_path": "res://graphics/plate.png"
+		},
+	"knife": 
+		{
+			"name": "Knife",
+			"count": 0,
+			"description": "Be careful with it. It can stab things.",
+			"texture_path": "res://graphics/knife.png"
+		},
+	"rotten_vegetable": 
+		{
+			"name": "Rotten Vegetable",
+			"count": 0,
+			"description": "Eww.",
+			"texture_path": "res://graphics/rotten_vegetable.png"
+		},
+	"rotten_meat": 
+		{
+			"name": "Rotten Meat",
+			"count": 0,
+			"description": "Don't eat it, bruh",
+			"texture_path": "res://graphics/rotten_meat.png"
 		},
 }

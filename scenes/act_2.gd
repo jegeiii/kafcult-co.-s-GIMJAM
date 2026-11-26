@@ -9,7 +9,7 @@ var from_room: String
 func _ready() -> void:
 	DialogueManager.dialogue_end.connect(_on_dialogue_end)
 	await get_tree().create_timer(1).timeout
-	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_1.json")
+	#DialogueManager.initiate_dialogue("res://dialogues/act_2_part_1.json")
 
 func _on_door_pressed() -> void:
 	AudioManager.play_sfx("res://audio/Door.wav")
@@ -41,3 +41,21 @@ func _on_dialogue_end():
 		InventoryUi.fade_in(1)
 		
 		DialogueManager.initiate_dialogue("res://dialogues/act_2_part_4.json")
+
+
+func _on_charless_sillhouette_pressed() -> void:
+	if InventoryUi.inventory_ui["rotten_vegetable"]["count"] >= 1 and InventoryUi.inventory_ui["rotten_meat"]["count"] >= 1:
+		InventoryUi.remove_item("rotten_vegetable", 1)
+		InventoryUi.remove_item("rotten_meat", 1)
+
+var rotten_done: bool = false
+func _on_rotten_vegetable_mouse_entered() -> void:
+	if !rotten_done and InventoryUi.using_item == "knife":
+		rotten_done = true
+		DialogueManager.initiate_dialogue("res://dialogues/act_2_part_5.json")
+
+
+func _on_rotten_meat_mouse_entered() -> void:
+	if !rotten_done and InventoryUi.using_item == "knife":
+		rotten_done = true
+		DialogueManager.initiate_dialogue("res://dialogues/act_2_part_5.json")

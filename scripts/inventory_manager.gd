@@ -24,11 +24,11 @@ func expand_inventory():
 	if $Button/Label.text == "<":
 		$Button/Label.text = ">"
 		#$Button.set_position($button_opened.position)
-		$PanelContainer.set_position($inventory_opened.position)
+		$CanvasLayer/PanelContainer.set_position($inventory_opened.position)
 	elif $Button/Label.text == ">":	
 		$Button/Label.text = "<"
 		#$Button.set_position($button_closed.position)
-		$PanelContainer.set_position($inventory_closed.position)
+		$CanvasLayer/PanelContainer.set_position($inventory_closed.position)
 
 func load_inventory(json_path: String) -> void:
 	var file = FileAccess.open(json_path, FileAccess.READ)
@@ -48,6 +48,7 @@ func add_item(item: TextureButton, item_id: String) -> void:
 
 	# Update the actual inventory data
 	GameManager.add_item(item_id)
+	inventory_ui[item_id]["count"] += 1
 
 	if already_owned:
 		item.queue_free()
@@ -58,7 +59,7 @@ func add_item(item: TextureButton, item_id: String) -> void:
 		item.custom_minimum_size = Vector2(50, 50)
 		await get_tree().create_timer(0.2).timeout
 		item.reparent(
-			get_node("/root/InventoryUi/PanelContainer/ScrollContainer/VBoxContainer")
+			get_node("/root/InventoryUi/CanvasLayer/PanelContainer/ScrollContainer/VBoxContainer")
 		)
 
 		# Make it behave like an inventory item
@@ -72,11 +73,12 @@ func add_item(item: TextureButton, item_id: String) -> void:
 func remove_item(item_id: String, amount: int = 1) -> void:
 
 	GameManager.remove_item(item_id, amount)
+	inventory_ui[item_id]["count"] -= 1
 
 	# If the player no longer owns this item, remove its icon from the inventory UI.
 	if not GameManager.has_item(item_id):
 		var inventory_container = get_node(
-	        "/root/InventoryUi/PanelContainer/ScrollContainer/VBoxContainer"
+	        "/root/InventoryUi/CanvasLayer/PanelContainer/ScrollContainer/VBoxContainer"
 		)
 
 		var item_icon = inventory_container.get_node_or_null(item_id)
@@ -105,6 +107,7 @@ func InventoryInspect(item_id: String, usable: bool):
 	$fade_black/a.transparent()
 	$fade_black/a.mouse_filter = Control.MOUSE_FILTER_STOP
 	$item_inspect/item_closeup/PanelContainer/RichTextLabel.text = inventory_ui[item_id]["description"]
+	$item_inspect/item_closeup/PanelContainer2/RichTextLabel.text = inventory_ui[item_id]["name"]
 	$item_inspect/item_closeup.visible = true
 	$item_inspect/item_closeup/use_button.visible = usable
 	$item_inspect/item_closeup.texture_normal = load(inventory_ui[item_id]["texture_path"])
@@ -119,7 +122,7 @@ func update_item_closeup_clickmask():
 func update_item_quantity(item_id: String) -> void:
 
 	var container = get_node(
-	    "/root/InventoryUi/PanelContainer/ScrollContainer/VBoxContainer"
+	    "/root/InventoryUi/CanvasLayer/PanelContainer/ScrollContainer/VBoxContainer"
 	)
 
 	var item_icon = container.get_node_or_null(item_id)
