@@ -5,6 +5,15 @@
 [ext_resource type="Texture2D" uid="uid://moqbstanexga" path="res://graphics/inventory_ui.png" id="2_iradw"]
 [ext_resource type="Script" uid="uid://cotejsnlwchi8" path="res://scripts/clickmask.gd" id="3_eifbp"]
 [ext_resource type="PackedScene" uid="uid://c1tdbiw7wt4m3" path="res://scenes/dimmer.tscn" id="3_mdwe3"]
+[ext_resource type="Script" uid="uid://cxkvbboms5i45" path="res://scripts/pw.gd" id="6_2lmnb"]
+[ext_resource type="Texture2D" uid="uid://qyk68lj2mrqr" path="res://graphics/nathaniels_painting.png" id="6_cwdri"]
+[ext_resource type="Texture2D" uid="uid://ck6ayqa657u3x" path="res://graphics/nathaniels_painting_heart.png" id="8_rg5pf"]
+[ext_resource type="Script" uid="uid://cu4edyfuh8r75" path="res://scripts/np.gd" id="8_rmxcj"]
+[ext_resource type="Texture2D" uid="uid://d4nkcnxe4hbde" path="res://graphics/nathaniels_painting_eye.png" id="9_rmxcj"]
+[ext_resource type="Texture2D" uid="uid://byfd5ydt422t2" path="res://graphics/nathaniels_painting_handL.png" id="10_3y5j4"]
+[ext_resource type="Texture2D" uid="uid://b0hmndyjdjjxm" path="res://graphics/nathaniels_painting_handR.png" id="11_rc4hi"]
+[ext_resource type="Texture2D" uid="uid://euws6uxn7v27" path="res://graphics/nathaniels_painting_head.png" id="12_rqtn1"]
+[ext_resource type="Texture2D" uid="uid://s5ww86ms53sa" path="res://graphics/nathaniels_painting_body.png" id="13_ucuti"]
 
 [node name="InventoryUI" type="Control" unique_id=1943628534]
 layout_mode = 3
@@ -12,7 +21,7 @@ anchors_preset = 0
 script = ExtResource("1_ylkvr")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1400130431]
-layer = 5
+layer = 12
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=324460584]
 offset_left = 257.0
@@ -26,8 +35,9 @@ stretch_mode = 5
 [node name="notification" type="PanelContainer" parent="CanvasLayer" unique_id=930474287]
 self_modulate = Color(1, 1, 1, 0)
 offset_left = 5.0
+offset_top = 37.0
 offset_right = 1148.0
-offset_bottom = 40.0
+offset_bottom = 77.0
 mouse_filter = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/notification" unique_id=1009077993]
@@ -111,17 +121,18 @@ offset_bottom = 510.0
 layer = 10
 
 [node name="a" parent="fade_black" unique_id=1813767706 instance=ExtResource("1_tahbm")]
-offset_left = 0.0
-offset_top = 0.0
-offset_right = 1244.0
-offset_bottom = 702.0
+offset_left = -13.0
+offset_top = 7.0
+offset_right = 1231.0
+offset_bottom = 709.0
 
 [node name="fbnotif" type="PanelContainer" parent="fade_black" unique_id=212802826]
 visible = false
 self_modulate = Color(1, 1, 1, 0)
 offset_left = 454.0
+offset_top = 37.0
 offset_right = 734.0
-offset_bottom = 40.0
+offset_bottom = 77.0
 mouse_filter = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="fade_black/fbnotif" unique_id=527294821]
@@ -143,12 +154,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -133.0
-offset_top = -136.0
-offset_right = 128.0
-offset_bottom = 59.0
+offset_left = -573.0
+offset_top = -186.0
+offset_right = 575.0
+offset_bottom = 119.0
 grow_horizontal = 2
 grow_vertical = 2
+texture_normal = ExtResource("6_cwdri")
 ignore_texture_size = true
 stretch_mode = 5
 
@@ -165,10 +177,11 @@ offset_bottom = 160.0
 [node name="PanelContainer" type="PanelContainer" parent="item_inspect/item_closeup" unique_id=1272769160]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = -74.0
-offset_top = 254.0
-offset_right = 325.0
-offset_bottom = 394.0
+offset_left = 352.0
+offset_top = 311.0
+offset_right = 803.0
+offset_bottom = 477.0
+mouse_filter = 1
 
 [node name="RichTextLabel" type="RichTextLabel" parent="item_inspect/item_closeup/PanelContainer" unique_id=328659117]
 layout_mode = 2
@@ -178,26 +191,163 @@ vertical_alignment = 1
 [node name="use_button" type="Button" parent="item_inspect/item_closeup" unique_id=172195069]
 visible = false
 layout_mode = 0
-offset_left = 324.0
-offset_top = 92.0
-offset_right = 401.0
-offset_bottom = 123.0
+offset_left = 834.0
+offset_top = 395.0
+offset_right = 911.0
+offset_bottom = 426.0
 text = "Use Item"
 
 [node name="PanelContainer2" type="PanelContainer" parent="item_inspect/item_closeup" unique_id=973345674]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 0
-offset_left = -74.0
+offset_left = 256.0
 offset_top = -133.0
-offset_right = 325.0
-offset_bottom = 7.0
+offset_right = 891.0
+offset_bottom = -55.0
+mouse_filter = 1
 
 [node name="RichTextLabel" type="RichTextLabel" parent="item_inspect/item_closeup/PanelContainer2" unique_id=2037673461]
 layout_mode = 2
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="pw" type="VBoxContainer" parent="item_inspect/item_closeup" unique_id=1869581221]
+visible = false
+layout_mode = 0
+offset_left = -187.0
+offset_top = 2.0
+offset_right = -137.0
+offset_bottom = 302.0
+script = ExtResource("6_2lmnb")
+
+[node name="sun" type="Button" parent="item_inspect/item_closeup/pw" unique_id=800229219]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 3
+mouse_filter = 1
+text = "☀"
+icon_alignment = 1
+
+[node name="star" type="Button" parent="item_inspect/item_closeup/pw" unique_id=806878005]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 3
+mouse_filter = 1
+text = "✦"
+icon_alignment = 1
+
+[node name="moon" type="Button" parent="item_inspect/item_closeup/pw" unique_id=1034546213]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 3
+mouse_filter = 1
+text = "☾"
+icon_alignment = 1
+
+[node name="queen" type="Button" parent="item_inspect/item_closeup/pw" unique_id=181219160]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 3
+mouse_filter = 1
+text = "♕"
+icon_alignment = 1
+
+[node name="flower" type="Button" parent="item_inspect/item_closeup/pw" unique_id=1925743283]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 3
+mouse_filter = 1
+text = "✿"
+icon_alignment = 1
+
+[node name="cross" type="Button" parent="item_inspect/item_closeup/pw" unique_id=569117572]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 3
+mouse_filter = 1
+text = "† "
+icon_alignment = 1
+
+[node name="np" type="Control" parent="item_inspect/item_closeup" unique_id=846023612]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("8_rmxcj")
+
+[node name="heart" type="TextureButton" parent="item_inspect/item_closeup/np" unique_id=1483358314]
+layout_mode = 0
+offset_left = 524.0
+offset_top = 126.0
+offset_right = 612.0
+offset_bottom = 198.0
+texture_normal = ExtResource("8_rg5pf")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("3_eifbp")
+
+[node name="eyes" type="TextureButton" parent="item_inspect/item_closeup/np" unique_id=998264937]
+layout_mode = 0
+offset_left = 544.0
+offset_top = 54.0
+offset_right = 602.0
+offset_bottom = 76.0
+texture_normal = ExtResource("9_rmxcj")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("3_eifbp")
+
+[node name="handL" type="TextureButton" parent="item_inspect/item_closeup/np" unique_id=746983358]
+layout_mode = 0
+offset_left = 588.0
+offset_top = 121.0
+offset_right = 678.0
+offset_bottom = 303.0
+texture_normal = ExtResource("10_3y5j4")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("3_eifbp")
+
+[node name="handR" type="TextureButton" parent="item_inspect/item_closeup/np" unique_id=964359104]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 111.0
+offset_right = 561.0
+offset_bottom = 325.0
+texture_normal = ExtResource("11_rc4hi")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("3_eifbp")
+
+[node name="head" type="TextureButton" parent="item_inspect/item_closeup/np" unique_id=79966156]
+layout_mode = 0
+offset_left = 499.0
+offset_top = -7.0
+offset_right = 611.0
+offset_bottom = 129.0
+texture_normal = ExtResource("12_rqtn1")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("3_eifbp")
+
+[node name="body" type="TextureButton" parent="item_inspect/item_closeup/np" unique_id=791447395]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 90.0
+offset_right = 630.0
+offset_bottom = 275.0
+texture_normal = ExtResource("13_ucuti")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("3_eifbp")
+
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="expand_inventory"]
 [connection signal="gui_input" from="fade_black/a" to="." method="_on_fade_black_gui_input"]
 [connection signal="pressed" from="item_inspect/item_closeup" to="." method="_on_item_closeup_pressed"]
 [connection signal="pressed" from="item_inspect/item_closeup/use_button" to="." method="_on_use_button_pressed"]
+[connection signal="pressed" from="item_inspect/item_closeup/pw/sun" to="item_inspect/item_closeup/pw" method="_on_sun_pressed"]
+[connection signal="pressed" from="item_inspect/item_closeup/pw/star" to="item_inspect/item_closeup/pw" method="_on_star_pressed"]
+[connection signal="pressed" from="item_inspect/item_closeup/pw/moon" to="item_inspect/item_closeup/pw" method="_on_moon_pressed"]
+[connection signal="pressed" from="item_inspect/item_closeup/pw/queen" to="item_inspect/item_closeup/pw" method="_on_queen_pressed"]
+[connection signal="pressed" from="item_inspect/item_closeup/pw/flower" to="item_inspect/item_closeup/pw" method="_on_flower_pressed"]
+[connection signal="pressed" from="item_inspect/item_closeup/pw/cross" to="item_inspect/item_closeup/pw" method="_on_cross_pressed"]

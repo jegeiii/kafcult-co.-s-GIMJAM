@@ -8,10 +8,6 @@
   ],
   "events": [
 	{
-	  "name": "ChangeBackground",
-	  "background": "dining_room_rainy_evening"
-	},
-	{
 	  "name": "PlaySoundEffect",
 	  "path": "res://audio/Rain Sound.wav",
 	},

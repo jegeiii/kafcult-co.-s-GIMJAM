@@ -4,20 +4,31 @@
 [ext_resource type="Texture2D" uid="uid://b48765n6krxm" path="res://graphics/a.png" id="2_t1gpn"]
 [ext_resource type="PackedScene" uid="uid://c1tdbiw7wt4m3" path="res://scenes/dimmer.tscn" id="3_qt1qe"]
 [ext_resource type="PackedScene" uid="uid://ci4sol1vea776" path="res://scenes/clickables.tscn" id="4_qt1qe"]
+[ext_resource type="Texture2D" uid="uid://cn8cw652d1w13" path="res://graphics/entrance.png" id="4_sbh7n"]
+[ext_resource type="Texture2D" uid="uid://bewrvixrh3lrg" path="res://graphics/entrance_door.png" id="5_3nniy"]
 [ext_resource type="Texture2D" uid="uid://bicspftpu8xxx" path="res://graphics/charles_key.png" id="5_54ip0"]
 [ext_resource type="Texture2D" uid="uid://6nqwtb578vl8" path="res://graphics/distorted_dining_room.png" id="6_kybp6"]
 [ext_resource type="Texture2D" uid="uid://bfsf0v188v7q7" path="res://graphics/plate.png" id="6_pd338"]
 [ext_resource type="Texture2D" uid="uid://do1pfr7355dcd" path="res://graphics/knife.png" id="7_kybp6"]
 [ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="7_sil4y"]
+[ext_resource type="Texture2D" uid="uid://bq5qditn1x7ig" path="res://graphics/dining_room_laci.png" id="7_v5o21"]
 [ext_resource type="Texture2D" uid="uid://clhbcr1d3j882" path="res://graphics/rotten_vegetable.png" id="8_q63ay"]
 [ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="8_udecq"]
+[ext_resource type="Texture2D" uid="uid://c5vwowaytcoh3" path="res://graphics/dining_room_door.png" id="9_1a31q"]
 [ext_resource type="Texture2D" uid="uid://cgi7l5ivehs1c" path="res://graphics/rotten_meat.png" id="9_wbxdu"]
+[ext_resource type="Script" uid="uid://cotejsnlwchi8" path="res://scripts/clickmask.gd" id="10_v5o21"]
 [ext_resource type="Texture2D" uid="uid://f2btv1hpd3r5" path="res://graphics/dining_room.png" id="11_4sy8i"]
 [ext_resource type="Texture2D" uid="uid://crf0d4l75qq71" path="res://graphics/dogfood.png" id="11_600ry"]
 [ext_resource type="Texture2D" uid="uid://ir84836xl5rn" path="res://graphics/basement.png" id="11_bn5lx"]
+[ext_resource type="Texture2D" uid="uid://b8pa0fww0ttow" path="res://graphics/the_verse.png" id="12_5fu1d"]
 [ext_resource type="Texture2D" uid="uid://c568v606lbe2x" path="res://graphics/water.png" id="12_bn5lx"]
 [ext_resource type="Texture2D" uid="uid://b5j30cj73g77a" path="res://graphics/toy.png" id="13_4sy8i"]
 [ext_resource type="Texture2D" uid="uid://cjtucnlgrujin" path="res://graphics/kids_room.png" id="16_54jsy"]
+[ext_resource type="Texture2D" uid="uid://buv8u18knivq5" path="res://graphics/parent's_bedroom.png" id="17_gk6dy"]
+[ext_resource type="Texture2D" uid="uid://c6bfpxbedpl0x" path="res://graphics/transition.png" id="17_oxde8"]
+[ext_resource type="Texture2D" uid="uid://xv1keyuf4l66" path="res://graphics/poem.png" id="18_rpow8"]
+[ext_resource type="Texture2D" uid="uid://6rexed1eogdi" path="res://graphics/necklace.png" id="20_73isr"]
+[ext_resource type="Texture2D" uid="uid://qyk68lj2mrqr" path="res://graphics/nathaniels_painting.png" id="29_g56mk"]
 
 [sub_resource type="GDScript" id="GDScript_pd338"]
 script/source = "extends TextureButton
@@ -36,23 +47,57 @@ func _process(delta: float) -> void:
 [node name="Node2D" type="Node2D" unique_id=1426360670]
 script = ExtResource("1_udt4n")
 
-[node name="mansion_entrance" type="Control" parent="." unique_id=1242478844]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=457309828]
+layer = 11
+
+[node name="CharacterContainer" parent="CanvasLayer" unique_id=57957316 instance=ExtResource("7_sil4y")]
 visible = false
-layout_mode = 3
-anchors_preset = 0
+
+[node name="DialogueUI" parent="CanvasLayer" unique_id=1234273672 instance=ExtResource("8_udecq")]
+visible = false
+
+[node name="transition" type="TextureRect" parent="." unique_id=1116784007]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.5999809, 0.6003189)
+texture = ExtResource("17_oxde8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="door" type="TextureButton" parent="transition" unique_id=910922027]
+layout_mode = 0
+offset_left = 798.35876
+offset_top = 446.42938
+offset_right = 1157.3589
+offset_bottom = 735.4294
+texture_normal = ExtResource("5_3nniy")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("10_v5o21")
+
+[node name="dimmer" parent="transition/door" unique_id=1440613432 instance=ExtResource("3_qt1qe")]
+
+[node name="mansion_entrance" type="TextureRect" parent="." unique_id=403601098]
+visible = false
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("4_sbh7n")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="door" type="TextureButton" parent="mansion_entrance" unique_id=58421315]
 layout_mode = 0
-offset_left = 1035.0
-offset_top = 194.0
-offset_right = 1312.3048
-offset_bottom = 362.35162
-rotation = 1.5707964
-texture_normal = ExtResource("2_t1gpn")
+offset_left = 421.0
+offset_top = 29.0
+offset_right = 780.0
+offset_bottom = 318.0
+texture_normal = ExtResource("5_3nniy")
 ignore_texture_size = true
 stretch_mode = 5
+script = ExtResource("10_v5o21")
 
-[node name="dimmer" parent="mansion_entrance/door" unique_id=1440613432 instance=ExtResource("3_qt1qe")]
+[node name="dimmer" parent="mansion_entrance/door" unique_id=692736383 instance=ExtResource("3_qt1qe")]
 
 [node name="dining_room" type="TextureRect" parent="." unique_id=394453594]
 visible = false
@@ -64,25 +109,38 @@ stretch_mode = 5
 
 [node name="laci" type="TextureButton" parent="dining_room" unique_id=1659465627]
 layout_mode = 0
-offset_left = 934.0
-offset_top = 418.0
-offset_right = 1086.0
-offset_bottom = 510.0
-texture_normal = ExtResource("2_t1gpn")
+offset_left = 121.0
+offset_top = 282.0
+offset_right = 537.0
+offset_bottom = 437.0
+texture_normal = ExtResource("7_v5o21")
 ignore_texture_size = true
 stretch_mode = 5
+script = ExtResource("10_v5o21")
 
 [node name="charles_key" parent="dining_room/laci" unique_id=316619854 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 326.0
-offset_top = -135.0
-offset_right = 391.0
-offset_bottom = -73.0
+offset_left = -273.0
+offset_top = -134.0
+offset_right = -208.0
+offset_bottom = -72.0
 texture_normal = ExtResource("5_54ip0")
 item_id = "charles_key"
 usable = true
 
 [node name="dimmer" parent="dining_room/laci" unique_id=1757405502 instance=ExtResource("3_qt1qe")]
+
+[node name="door" type="TextureButton" parent="dining_room" unique_id=67318197]
+visible = false
+layout_mode = 0
+offset_left = 789.0
+offset_top = 2.0
+offset_right = 1087.0
+offset_bottom = 562.0
+texture_normal = ExtResource("9_1a31q")
+script = ExtResource("10_v5o21")
+
+[node name="dimmer" parent="dining_room/door" unique_id=2146359363 instance=ExtResource("3_qt1qe")]
 
 [node name="distorted_dining_room" type="TextureRect" parent="." unique_id=67818663]
 visible = false
@@ -134,13 +192,15 @@ texture_normal = ExtResource("9_wbxdu")
 item_id = "rotten_meat"
 condition = "knife"
 
-[node name="spiderweb" parent="distorted_dining_room" unique_id=4767312 instance=ExtResource("4_qt1qe")]
+[node name="the_verse" parent="distorted_dining_room" unique_id=4767312 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = -132.0
-offset_top = 159.0
-offset_right = -67.0
-offset_bottom = 221.0
-item_id = "spiderweb"
+offset_left = 1207.0
+offset_top = 225.0
+offset_right = 1272.0
+offset_bottom = 287.0
+texture_normal = ExtResource("12_5fu1d")
+item_id = "the_verse"
+usable = true
 
 [node name="charles\'s sillhouette" type="TextureButton" parent="distorted_dining_room" unique_id=845101209]
 layout_mode = 0
@@ -154,6 +214,20 @@ stretch_mode = 5
 script = SubResource("GDScript_pd338")
 
 [node name="dimmer" parent="distorted_dining_room/charles\'s sillhouette" unique_id=765403304 instance=ExtResource("3_qt1qe")]
+
+[node name="door" type="TextureButton" parent="distorted_dining_room" unique_id=1318661662]
+visible = false
+layout_mode = 0
+offset_left = 421.0
+offset_top = 29.0
+offset_right = 780.0
+offset_bottom = 318.0
+texture_normal = ExtResource("5_3nniy")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("10_v5o21")
+
+[node name="dimmer" parent="distorted_dining_room/door" unique_id=879629186 instance=ExtResource("3_qt1qe")]
 
 [node name="flashback_1" type="TextureRect" parent="." unique_id=969746261]
 visible = false
@@ -218,6 +292,31 @@ stretch_mode = 5
 
 [node name="dimmer" parent="basement/dog" unique_id=1972933080 instance=ExtResource("3_qt1qe")]
 
+[node name="water_vial" parent="basement" unique_id=632586546 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = 1223.0
+offset_top = 321.00003
+offset_right = 1313.0
+offset_bottom = 426.40546
+scale = Vector2(1, 0.74)
+texture_normal = ExtResource("11_600ry")
+item_id = "water_vial"
+usable = true
+
+[node name="door" type="TextureButton" parent="basement" unique_id=1280210408]
+visible = false
+layout_mode = 0
+offset_left = 421.0
+offset_top = 29.0
+offset_right = 780.0
+offset_bottom = 318.0
+texture_normal = ExtResource("5_3nniy")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("10_v5o21")
+
+[node name="dimmer" parent="basement/door" unique_id=988134085 instance=ExtResource("3_qt1qe")]
+
 [node name="flashback_2" type="TextureRect" parent="." unique_id=656166770]
 visible = false
 offset_right = 1920.0
@@ -231,11 +330,62 @@ stretch_mode = 5
 visible = false
 offset_right = 1152.0
 offset_bottom = 648.0
+texture = ExtResource("17_gk6dy")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="jewelry_box" parent="parent\'s_bedroom" unique_id=1345098143 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = 861.0
+offset_top = 417.0
+offset_right = 938.8629
+offset_bottom = 464.61264
+texture_normal = ExtResource("2_t1gpn")
+item_id = "jewelry_box"
+
+[node name="poem" parent="parent\'s_bedroom" unique_id=1795484812 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = 802.0
+offset_top = 483.0
+offset_right = 886.0
+offset_bottom = 556.0
+texture_normal = ExtResource("18_rpow8")
+item_id = "poem"
+
+[node name="necklace" parent="parent\'s_bedroom" unique_id=764672888 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = 1193.0
+offset_top = 365.0
+offset_right = 1287.0
+offset_bottom = 452.0
+texture_normal = ExtResource("20_73isr")
+item_id = "necklace"
+usable = true
+
+[node name="door" type="TextureButton" parent="parent\'s_bedroom" unique_id=2000587434]
+visible = false
+layout_mode = 0
+offset_left = 421.0
+offset_top = 29.0
+offset_right = 780.0
+offset_bottom = 318.0
+texture_normal = ExtResource("5_3nniy")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("10_v5o21")
+
+[node name="dimmer" parent="parent\'s_bedroom/door" unique_id=137324727 instance=ExtResource("3_qt1qe")]
+
 [node name="flashback_3" type="TextureRect" parent="." unique_id=707810316]
 visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.5999809, 0.6003189)
+texture = ExtResource("17_oxde8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="distorted_kids_room" type="TextureRect" parent="." unique_id=98947509]
 offset_right = 1920.0
 offset_bottom = 1080.0
 scale = Vector2(0.5999809, 0.6003189)
@@ -243,16 +393,40 @@ texture = ExtResource("16_54jsy")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=457309828]
+[node name="nathaniels_painting" parent="distorted_kids_room" unique_id=1675885653 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = 748.3572
+offset_top = 301.50638
+offset_right = 905.02875
+offset_bottom = 496.4028
+texture_normal = ExtResource("29_g56mk")
+item_id = "nathaniels_painting"
+button_interaction = "inspect"
 
-[node name="CharacterContainer" parent="CanvasLayer" unique_id=57957316 instance=ExtResource("7_sil4y")]
+[node name="knife" parent="distorted_kids_room" unique_id=511602231 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = 1316.7086
+offset_top = 341.48517
+offset_right = 1598.3955
+offset_bottom = 654.8636
+scale = Vector2(1, 0.5)
+texture_normal = ExtResource("7_kybp6")
+item_id = "knife"
+usable = true
+
+[node name="flashback_4" type="TextureRect" parent="." unique_id=582889705]
 visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.5999809, 0.6003189)
+texture = ExtResource("17_oxde8")
+expand_mode = 1
+stretch_mode = 5
 
-[node name="DialogueUI" parent="CanvasLayer" unique_id=1234273672 instance=ExtResource("8_udecq")]
-visible = false
-
+[connection signal="pressed" from="transition/door" to="." method="transition"]
 [connection signal="pressed" from="mansion_entrance/door" to="." method="_on_door_pressed"]
 [connection signal="pressed" from="dining_room/laci" to="." method="_on_laci_pressed"]
+[connection signal="pressed" from="dining_room/door" to="." method="dining_room_done"]
 [connection signal="pressed" from="distorted_dining_room/plate" to="." method="_on_plate_pressed"]
 [connection signal="pressed" from="distorted_dining_room/knife" to="." method="_on_knife_pressed"]
 [connection signal="mouse_entered" from="distorted_dining_room/rotten_vegetable" to="." method="_on_rotten_vegetable_mouse_entered"]
@@ -260,4 +434,7 @@ visible = false
 [connection signal="mouse_entered" from="distorted_dining_room/rotten_meat" to="." method="_on_rotten_meat_mouse_entered"]
 [connection signal="pressed" from="distorted_dining_room/rotten_meat" to="." method="_on_rotten_meat_pressed"]
 [connection signal="pressed" from="distorted_dining_room/charles\'s sillhouette" to="." method="_on_charless_sillhouette_pressed"]
+[connection signal="pressed" from="distorted_dining_room/door" to="." method="distorted_dining_room_done"]
 [connection signal="pressed" from="basement/dog" to="." method="_on_give_dog_food_and_water"]
+[connection signal="pressed" from="basement/door" to="." method="basement_done"]
+[connection signal="pressed" from="parent\'s_bedroom/door" to="." method="parents_bedroom_done"]

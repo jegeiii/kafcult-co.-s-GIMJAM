@@ -52,7 +52,7 @@
 		{
 			"name": "Rotten Meat",
 			"count": 0,
-			"description": "Don't eat it, bruh",
+			"description": "Don't eat it. Like, for real.",
 			"texture_path": "res://graphics/rotten_meat.png"
 		},
 	"dogfood": 
@@ -75,5 +75,60 @@
 			"count": 0,
 			"description": "Walter seems to like it.",
 			"texture_path": "res://graphics/toy.png"
+		},
+	"the_verse":
+		{
+			"name": "The Verse",
+			"count": 0,
+			"description": "",
+			"texture_path": "res://graphics/the_verse.png"
+		},
+	"water_vial":
+		{
+			"name": "Blackwood Water in Vial",
+			"count": 0,
+			"description": "",
+			"texture_path": "res://graphics/water_vial.png"
+		},
+	"jewelry_box":
+		{
+			"name": "Mother's Jewelry Box",
+			"count": 0,
+			"description": "Margaret's treasured jewelry box. Appears to be locked.",
+			"texture_path": "res://graphics/jewelry_box.png"
+		},
+	"poem":
+		{
+			"name": "A Poem",
+			"count": 0,
+			"description": "
+				A golden wound upon the endless blue,
+				Bleeding its warmth for those it never knew.
+				A thousand distant eyes adorn the night,
+				Yet none shall lead the faithless toward the light.
+				A borrowed face that fades before the day,
+				A silent witness slowly swept away.
+				An empty circle once bestowed on kings,
+				Now rests forgotten, stripped of all its things.
+				A fragile bloom where paradise has died,
+				Still reaching for the heavens from below.
+				Two paths entwined beneath the sacred sky,
+				Where faith ascends, yet all its prayers must die.
+				",
+			"texture_path": "res://graphics/poem.png"
+		},
+	"necklace":
+		{
+			"name": "Necklace",
+			"count": 0,
+			"description": "Something Margaret used to wear all the time.",
+			"texture_path": "res://graphics/necklace.png"
+		},
+	"nathaniels_painting":
+		{
+			"name": "Nathaniel's Unfinished Painting",
+			"count": 0,
+			"description": "Supposedly, a self-portrait of Nathaniel. Looks fragile, especially in the heart, eyes, hands, and head region. Better keep it away from sharp objects.",
+			"texture_path": "res://graphics/nathaniels_painting.png"
 		},
 }

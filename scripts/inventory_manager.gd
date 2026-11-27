@@ -9,7 +9,9 @@ signal fade_black_pressed
 signal written_paper_clicked
 
 func _process(delta):
-	if Input.is_action_pressed("RMB"):
+	if Input.is_action_just_pressed("close_inspect"):
+		close_inspect()
+	if Input.is_action_just_pressed("RMB"):
 		$CanvasLayer/tip.visible = false
 		using_item = "none"
 	if using_item != "none":
@@ -127,14 +129,19 @@ func InventoryInspect(item_id: String, usable: bool):
 	$item_inspect/item_closeup/PanelContainer2/RichTextLabel.text = inventory_ui[item_id]["name"]
 	$item_inspect/item_closeup.visible = true
 	$item_inspect/item_closeup/use_button.visible = usable
-	$item_inspect/item_closeup.texture_normal = load(inventory_ui[item_id]["texture_path"])
+	if item_id == "nathaniels_painting":
+		$item_inspect/item_closeup.texture_normal = null
+		$item_inspect/item_closeup/np.visible = true
+	else:
+		$item_inspect/item_closeup.texture_normal = load(inventory_ui[item_id]["texture_path"])
 	$item_inspect/item_closeup/Label.text = item_id
 	update_item_closeup_clickmask()
 
 func update_item_closeup_clickmask():
-	var bitmap := BitMap.new()
-	bitmap.create_from_image_alpha($item_inspect/item_closeup.texture_normal.get_image())
-	$item_inspect/item_closeup.texture_click_mask = bitmap
+	if $item_inspect/item_closeup.texture_normal != null:
+		var bitmap := BitMap.new()
+		bitmap.create_from_image_alpha($item_inspect/item_closeup.texture_normal.get_image())
+		$item_inspect/item_closeup.texture_click_mask = bitmap
 
 func update_item_quantity(item_id: String) -> void:
 
@@ -176,6 +183,7 @@ func _on_use_button_pressed() -> void:
 
 func close_inspect():
 	fade_black_pressed.emit()
+	$item_inspect/item_closeup/np.visible = false
 	$item_inspect/item_closeup.visible = false
 	$fade_black/a.fade_in(0.1)
 	$fade_black/a.mouse_filter = MOUSE_FILTER_IGNORE
@@ -194,6 +202,8 @@ func _on_item_closeup_pressed() -> void:
 		close_inspect()
 		#DialogueManager.initiate_dialogue("res://dialogues/act_1_part_2.json")
 		#scene_lock = false
+	elif $item_inspect/item_closeup/Label.text == "jewelry_box":
+		$item_inspect/item_closeup/pw.visible = true
 
 #func _on_dialogue_end():
 	#if !scene_lock:

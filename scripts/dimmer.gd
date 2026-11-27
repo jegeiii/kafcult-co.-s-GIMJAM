@@ -1,7 +1,7 @@
 extends Node
 
-var hover_tint: Color = Color(0.85, 0.85, 0.85, 1.0)
-var pressed_tint: Color = Color(0.65, 0.65, 0.65, 1.0)
+@export var hover_tint: Color = Color(0.85, 0.85, 0.85, 1.0)
+@export var pressed_tint: Color = Color(0.65, 0.65, 0.65, 1.0)
 @onready var parent_button: TextureButton = get_parent()
 
 func _ready():

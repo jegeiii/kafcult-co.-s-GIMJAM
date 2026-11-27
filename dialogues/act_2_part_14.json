@@ -148,33 +148,5 @@
 	  "name": "Special",
 	  "custom_event_name": "[WILLIAM’S SPRITE FADES OUT WHILE THE BACKGROUND FADES INTO BLANKNESS FOR THE FLASHBACK]"
 	},
-	{
-	  "name": "Flashback",
-	  "flashback_id": 4
-	},
-	{
-	  "name": "LoadSprite",
-	  "speaker": "William",
-	  "expression": "angry",
-	  "position": "center"
-	},
-	{
-	  "name": "LoadText",
-	  "speaker": "William",
-	  "segments": [
-		{
-		  "text": "Okay, I’ve had enough of this… ",
-		  "pacing": 0.075,
-		  "style": "emphasis",
-		  "pause_after": 0.2
-		},
-		{
-		  "text": "These anomalies keep disturbing me. ",
-		  "pacing": 0.07,
-		  "style": "emphasis",
-		  "pause_after": 0.3
-		}
-	  ]
-	}
   ]
 }

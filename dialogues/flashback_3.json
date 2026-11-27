@@ -7,7 +7,7 @@
   "events": [
 	{
 	  "name": "PlaySoundEffect",
-	  "path": "[<HURRIED FOOTSTEPS AND MUFFLED CRYING>]"
+	  "path": "res://audio/Footsteps.wav"
 	},
 	{
 	  "name": "LoadText",
@@ -51,7 +51,12 @@
 	},
 	{
 	  "name": "PlaySoundEffect",
-	  "path": "[<DOOR OPENING, RUSHED FOOTSTEPS AND CONTINUED CRYING>]"
+	  "path": "res://audio/door open.wav"
+	},
+	{
+	  "name": "ChangeBackground",
+	  "path": "res://graphics/parent's_bedroom.png",
+	  "receiver": "flashback_3"
 	},
 	{
 	  "name": "Special",
@@ -316,7 +321,7 @@
 		{
 		  "text": "Thank you, father. I love you! ",
 		  "pacing": 0.08,
-		  "style": "happy",
+		  "style": "normal",
 		  "pause_after": 0.4
 		}
 	  ]
