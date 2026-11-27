@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ddbev1vu3radu"]
 
 [ext_resource type="Texture2D" uid="uid://67c5l4t38eks" path="res://graphics/manor_office_with_book.png" id="1_f2p12"]
-[ext_resource type="Script" uid="uid://dcfvbc6e0mwhb" path="res://scenes/act_3_main.gd" id="1_lio8j"]
+[ext_resource type="Script" uid="uid://dcfvbc6e0mwhb" path="res://scripts/act_3_main.gd" id="1_lio8j"]
 [ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="2_57d65"]
 [ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="3_ccm2q"]
 [ext_resource type="PackedScene" uid="uid://ci4sol1vea776" path="res://scenes/clickables.tscn" id="4_bc84x"]
