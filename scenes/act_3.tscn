@@ -1,58 +1,24 @@
 [gd_scene format=3 uid="uid://c1n1bb0sfr6kb"]
 
-[ext_resource type="Script" uid="uid://v6judsst1622" path="res://act_3.gd" id="1_olkmm"]
-[ext_resource type="PackedScene" uid="uid://ci4sol1vea776" path="res://scenes/clickables.tscn" id="2_5iqp5"]
-[ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="2_wbox3"]
-[ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="3_2c8ij"]
-[ext_resource type="Texture2D" uid="uid://67c5l4t38eks" path="res://graphics/manor_office_with_book.png" id="4_2c8ij"]
-[ext_resource type="Texture2D" uid="uid://bicspftpu8xxx" path="res://graphics/charles_key.png" id="6_5vsfe"]
+[ext_resource type="Script" uid="uid://v6judsst1622" path="res://scripts/act_3.gd" id="1_olkmm"]
+[ext_resource type="PackedScene" uid="uid://ddbev1vu3radu" path="res://scenes/act_3_main.tscn" id="2_0u20r"]
+[ext_resource type="PackedScene" uid="uid://dikp3fq00cym1" path="res://scenes/flashback_vii.tscn" id="2_5vsfe"]
+[ext_resource type="PackedScene" uid="uid://dlup0ablagb6k" path="res://scenes/flashback_vi.tscn" id="3_wbox3"]
+[ext_resource type="PackedScene" uid="uid://cbsc816fqbrvl" path="res://scenes/hallway.tscn" id="4_2c8ij"]
+[ext_resource type="PackedScene" uid="uid://b27ntf5nuuxjm" path="res://scenes/secret_room.tscn" id="4_5iqp5"]
 
-[node name="ACT3" type="Node2D" unique_id=680942765]
+[node name="Act3" type="Node2D" unique_id=680942765]
 script = ExtResource("1_olkmm")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2117168273]
+[node name="FlashbackVII" parent="." unique_id=959182181 instance=ExtResource("2_5vsfe")]
 
-[node name="MainSceneBackground" type="TextureRect" parent="CanvasLayer" unique_id=1777772280]
-unique_name_in_owner = true
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -14.0
-offset_top = -96.0
-offset_right = 8.0
-offset_bottom = 86.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_2c8ij")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="FlashbackBackground" type="TextureRect" parent="CanvasLayer" unique_id=393630135]
-unique_name_in_owner = true
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -14.0
-offset_top = -96.0
-offset_right = 8.0
-offset_bottom = 86.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_2c8ij")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="CharacterContainer" parent="CanvasLayer" unique_id=57957316 instance=ExtResource("2_wbox3")]
+[node name="SecretRoom" parent="." unique_id=1268322193 instance=ExtResource("4_5iqp5")]
 visible = false
 
-[node name="DialogueUI" parent="CanvasLayer" unique_id=1234273672 instance=ExtResource("3_2c8ij")]
+[node name="Hallway" parent="." unique_id=94715258 instance=ExtResource("4_2c8ij")]
 visible = false
 
-[node name="key" parent="CanvasLayer" unique_id=316619854 instance=ExtResource("2_5iqp5")]
-offset_left = 714.0
-offset_top = 358.0
-offset_right = 777.0
-offset_bottom = 506.0
-texture_normal = ExtResource("6_5vsfe")
-item_id = "key"
-usable = true
+[node name="FlashbackVI" parent="." unique_id=2059632562 instance=ExtResource("3_wbox3")]
+visible = false
+
+[node name="Act3Main" parent="." unique_id=1824170162 instance=ExtResource("2_0u20r")]

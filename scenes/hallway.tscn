@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://cbsc816fqbrvl"]
+
+[ext_resource type="Texture2D" uid="uid://c6bfpxbedpl0x" path="res://graphics/transition.png" id="1_u7i40"]
+[ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="2_3w3tr"]
+[ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="3_1k2v8"]
+
+[node name="Hallway" type="Node2D" unique_id=94715258]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=247178637]
+layer = -1
+
+[node name="SceneBackground" type="TextureRect" parent="CanvasLayer" unique_id=944844762]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -14.0
+offset_top = -96.0
+offset_right = 8.0
+offset_bottom = 86.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_u7i40")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CharacterContainer" parent="CanvasLayer" unique_id=57957316 instance=ExtResource("2_3w3tr")]
+visible = false
+mouse_filter = 1
+
+[node name="DialogueUI" parent="CanvasLayer" unique_id=1234273672 instance=ExtResource("3_1k2v8")]
+visible = false
+mouse_filter = 1
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=844343673]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+color = Color(0.1564266, 0, 0, 0.45490196)
+
+[node name="Door" type="Area2D" parent="." unique_id=879511925]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Door" unique_id=246876921]
+polygon = PackedVector2Array(501, 113, 504, 495, 665, 496, 667, 112)

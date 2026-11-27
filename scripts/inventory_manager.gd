@@ -96,6 +96,10 @@ func use_item(item_id: String):
 	#remove_item(item_id)
 	close_inspect()
 
+func empty_hand():
+	$CanvasLayer/tip.visible = false
+	using_item = "none"
+
 func notification_popup(item_id: String):
 	$CanvasLayer/notification/RichTextLabel.visible = true
 	for i in range(5):
@@ -105,7 +109,16 @@ func notification_popup(item_id: String):
 		await $CanvasLayer/notification/Timer.timeout
 		$CanvasLayer/notification/RichTextLabel.visible = not $CanvasLayer/notification/RichTextLabel.visible
 	$CanvasLayer/notification/RichTextLabel.visible = false
-		
+
+func push_notification(text: String):
+	$CanvasLayer/notification/RichTextLabel.visible = true
+	for i in range(1):
+		$CanvasLayer/notification/RichTextLabel.text = text
+		$CanvasLayer/notification/Timer.start(2)
+		await $CanvasLayer/notification/Timer.timeout
+		$CanvasLayer/notification/RichTextLabel.visible = not $CanvasLayer/notification/RichTextLabel.visible
+	$CanvasLayer/notification/RichTextLabel.visible = false
+
 func InventoryInspect(item_id: String, usable: bool):
 	print("a")
 	$fade_black/a.transparent()

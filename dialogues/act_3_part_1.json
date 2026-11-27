@@ -7,7 +7,7 @@
   "events": [
 	{
 	  "name": "PlaySoundEffect",
-	  "path": "[<SLOW, FAMILIAR FOOTSTEPS APPROACHING FROM BEHIND WILLIAM>]"
+	  "path": "res://audio/Footsteps Echo.wav"
 	},
 	{
 	  "name": "LoadText",
@@ -93,7 +93,7 @@
 	},
 	{
 	  "name": "PlaySoundEffect",
-	  "path": "[<HEAVY RAINFALL SLOWLY FILLING WILLIAM’S EARS>]"
+	  "path": "res://audio/Rain Sound.wav"
 	},
 	{
 		"name": "UnloadSprite",

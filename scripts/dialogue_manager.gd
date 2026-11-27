@@ -8,6 +8,7 @@ var dialogue_ongoing: bool				# Is there a dialogue ongoing?
 var previous_dialogue_events: Array
 var previous_event_idx: int
 var flashback_ongoing: bool
+var current_flashback_id: int
 var flashback_transition: bool
 
 signal dialogue_start
@@ -17,8 +18,8 @@ signal load_sprite(name, position, expression)
 signal unload_sprite(name)
 signal change_background(path, receiver)
 signal highlight_speaker(speaker)
-signal flashback_start
-signal flashback_end
+signal flashback_start(id)
+signal flashback_end(id)
 
 func load_dialogue_json(dialogue_path: String) -> Dictionary:
 	# Basically import the entire json file as text
@@ -74,6 +75,7 @@ func display_current_event() -> void:
 		"Flashback":
 			current_event_idx += 1
 			var flashback_id = event["flashback_id"]
+			current_flashback_id = flashback_id
 			initiate_flashback(flashback_id)
 		"PlaySoundEffect":
 			var SFX_path = event["path"]
@@ -124,11 +126,12 @@ var FLASHBACK_FILES: Dictionary = {
 }
 
 var FLASHBACK_SCENES: Dictionary = {
-	6: "res://scenes/flashback_vi.tscn"
+	6: "res://scenes/flashback_vi.tscn",
+	7: "res://scenes/flashback_vii.tscn"
 }
 
 func initiate_flashback(flashback_id: int) -> void:
-	flashback_start.emit()
+	flashback_start.emit(current_flashback_id)
 	print("FLASHBACK STARTS")
 	flashback_ongoing = true
 	# Save the state before doing the flashback
@@ -152,7 +155,7 @@ func finish_dialogue() -> void:
 		flashback_ongoing = false
 		
 		# Some signal to go back to the main scene
-		flashback_end.emit()
+		flashback_end.emit(current_flashback_id)
 		dialogue_next()
 		print("FLASHBACK ENDS")
 	else:

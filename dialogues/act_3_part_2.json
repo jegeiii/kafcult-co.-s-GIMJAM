@@ -34,6 +34,18 @@
 	  "flashback_id": 7
 	},
 	{
+	  "name": "LoadText",
+	  "speaker": "???",
+	  "segments": [
+		{
+		  "text": "???",
+		  "pacing": 0.5,
+		  "style": "ominous",
+		  "pause_after": 1.5
+		}
+	  ]
+	},
+	{
 	  "name": "Special",
 	  "custom_event_name": "[WILLIAM GASPS SHARPLY, STUMBLING BACK A STEP FROM THE DUST-COVERED CANVAS AND THE BLANK PORCELAIN MASK RESTING BESIDE IT]"
 	},
@@ -119,7 +131,7 @@
 	},
 	{
 	  "name": "PlaySoundEffect",
-	  "path": "[<LOW, DISTORTED RUMBLE AS A WAVE OF SUPERNATURAL HEAT BUILDS>]"
+	  "path": "res://audio/Flames Ignite.wav"
 	},
 	{
 	  "name": "Special",

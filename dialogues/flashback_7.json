@@ -18,6 +18,22 @@
 	},
 	{
 	  "name": "LoadText",
+	  "speaker": "???",
+	  "segments": [
+		{
+		  "text": "???",
+		  "pacing": 0.5,
+		  "style": "ominous",
+		  "pause_after": 1.0
+		}
+	  ]
+	},
+	{
+		"name": "PlaySoundEffect",
+		"path": "res://audio/Rain Sound.wav"
+	},
+	{
+	  "name": "LoadText",
 	  "speaker": "Narrator",
 	  "segments": [
 		{
@@ -129,7 +145,7 @@
 	{
 	  "name": "LoadSprite",
 	  "speaker": "William",
-	  "expression": "sad",
+	  "expression": "normal",
 	  "position": "center"
 	},
 	{
@@ -167,7 +183,7 @@
 	{
 	  "name": "LoadSprite",
 	  "speaker": "William",
-	  "expression": "afraid",
+	  "expression": "normal",
 	  "position": "center"
 	},
 	{
@@ -233,7 +249,7 @@
 	{
 	  "name": "LoadSprite",
 	  "speaker": "Charles",
-	  "expression": "focused",
+	  "expression": "normal",
 	  "position": "center"
 	},
 	{
@@ -279,7 +295,7 @@
 	{
 	  "name": "LoadSprite",
 	  "speaker": "Charles",
-	  "expression": "surprised",
+	  "expression": "normal",
 	  "position": "center"
 	},
 	{
@@ -297,7 +313,7 @@
 	{
 	  "name": "LoadSprite",
 	  "speaker": "William",
-	  "expression": "terrified",
+	  "expression": "normal",
 	  "position": "left"
 	},
 	{
