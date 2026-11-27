@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dvo2xxn21cxfh"]
+
+[ext_resource type="Script" uid="uid://bev73k84ul2rh" path="res://scripts/act_4_end.gd" id="1_pkgvh"]
+[ext_resource type="Texture2D" uid="uid://f2btv1hpd3r5" path="res://graphics/dining_room.png" id="2_oigor"]
+[ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="3_bcjxt"]
+[ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="4_wo527"]
+
+[node name="ACT4End" type="Node2D" unique_id=1946646299]
+script = ExtResource("1_pkgvh")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1103922810]
+layer = -1
+
+[node name="SceneBackground" type="TextureRect" parent="CanvasLayer" unique_id=46962607]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -14.0
+offset_top = -96.0
+offset_right = 8.0
+offset_bottom = 86.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_oigor")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CharacterContainer" parent="CanvasLayer" unique_id=57957316 instance=ExtResource("3_bcjxt")]
+visible = false
+mouse_filter = 1
+
+[node name="DialogueUI" parent="CanvasLayer" unique_id=1234273672 instance=ExtResource("4_wo527")]
+visible = false
+mouse_filter = 1
