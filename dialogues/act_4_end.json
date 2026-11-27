@@ -24,7 +24,7 @@
 	},
 	{
 	  "name": "Special",
-	  "custom_event_name": "[THE BLINDING LIGHT BEGINS TO COLLAPSE]"
+	  "custom_event_name": "TestSpecial"
 	},
 	{
 	  "name": "LoadText",
@@ -134,7 +134,7 @@
 	},
 	{
 	  "name": "Special",
-	  "custom_event_name": "[THE SCREEN TURNS DARK]"
+	  "custom_event_name": "DarkScreen"
 	},
 	{
 	  "name": "LoadText",
@@ -177,6 +177,10 @@
 	  ]
 	},
 	{
+	  "name": "Special",
+	  "custom_event_name": "LoadBedroomWithHappyDiana"
+	},
+	{
 	  "name": "LoadText",
 	  "speaker": "Narrator",
 	  "segments": [
@@ -189,10 +193,6 @@
 	  ]
 	},
 	{
-	  "name": "Special",
-	  "custom_event_name": "[THE BEDROOM DOOR CLOSES AND THE ROOM FALLS QUIET]"
-	},
-	{
 	  "name": "LoadText",
 	  "speaker": "Narrator",
 	  "segments": [
@@ -203,6 +203,74 @@
 		  "pause_after": 0.8
 		}
 	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "LoadBasementWithHappyDiana"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "The King",
+	  "segments": [
+		{
+		  "text": "It was sweet, quiet Diana who whispered of Nathaniel’s midnight walks, leading William’s eyes to his secret with the maid. It was her small hand that stole the handkerchief and laid it beside the poisoned hound in the cellar, lighting the fuse of the boy's wrath.",
+		  "pacing": 0.04,
+		  "style": "narration",
+		  "pause_after": 0.8
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "LoadBedroomWithSadDiana"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "The King",
+	  "segments": [
+		{
+		  "text": "It was sweet, quiet Diana who whispered of Nathaniel’s midnight walks, leading William’s eyes to his secret with the maid. It was her small hand that stole the handkerchief and laid it beside the poisoned hound in the cellar, lighting the fuse of the boy's wrath.",
+		  "pacing": 0.04,
+		  "style": "narration",
+		  "pause_after": 0.8
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "LoadSecretRoomWithNormalDiana"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "The King",
+	  "segments": [
+		{
+		  "text": "And on that final night, while the household drank the sleeping draught and sank into darkness, Diana poured hers silently into the linen at her lap. She lay upon the cold stone among the fallen, eyes open in the dark, watching Charles set the stage and waiting patiently for William, the final actor, to return.",
+		  "pacing": 0.04,
+		  "style": "narration",
+		  "pause_after": 0.8
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "LoadFinalWithTheKing"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "The King",
+	  "segments": [
+		{
+		  "text": "The stage may be empty now… yet my play is far from over. Even as thou watch this curtain fall, she’s still out there… setting another stage, waiting for the next play.",
+		  "pacing": 0.06,
+		  "style": "ominous",
+		  "pause_after": 0.8
+		}
+	  ]
+	},
+	{
+	  "name": "Special",
+	  "custom_event_name": "FinalFadeOut"
 	}
   ]
 }

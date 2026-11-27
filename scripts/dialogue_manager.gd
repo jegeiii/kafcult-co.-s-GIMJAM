@@ -10,6 +10,7 @@ var previous_event_idx: int
 var flashback_ongoing: bool
 var current_flashback_id: int
 var flashback_transition: bool
+var disable_skipping: bool
 
 signal dialogue_start
 signal dialogue_end
@@ -54,6 +55,31 @@ func initiate_dialogue(dialogue_path: String) -> void:
 	# Display the first event
 	dialogue_next()
 
+# Signals for special events
+signal TestSpecial
+signal DarkScreen
+signal LoadBedroomWithHappyDiana
+signal LoadBasementWithHappyDiana
+signal LoadBedroomWithSadDiana
+signal LoadSecretRoomWithNormalDiana
+signal LoadFinalWithTheKing
+signal FinalFadeOut
+
+var SIGNALS: Dictionary = {
+	"TestSpecial": TestSpecial,
+	"DarkScreen": DarkScreen,
+	"LoadBedroomWithHappyDiana": LoadBedroomWithHappyDiana,
+	"LoadBasementWithHappyDiana": LoadBasementWithHappyDiana,
+	"LoadBedroomWithSadDiana": LoadBedroomWithSadDiana,
+	"LoadSecretRoomWithNormalDiana": LoadSecretRoomWithNormalDiana,
+	"LoadFinalWithTheKing": LoadFinalWithTheKing,
+	"FinalFadeOut": FinalFadeOut
+}
+
+func initiate_special_effect(name) -> void:
+	if SIGNALS.has(name):
+		SIGNALS[name].emit()
+
 func display_current_event() -> void:
 	var event: Dictionary = current_dialogue_events[current_event_idx]
 	var event_name: String = event["name"]
@@ -81,6 +107,7 @@ func display_current_event() -> void:
 			var SFX_path = event["path"]
 			AudioManager.play_sfx(SFX_path)
 		"Special":
+			initiate_special_effect(event["custom_event_name"])
 			print("Special Effect")
 		"ChangeBackground":
 			var BG_path = event["path"]
@@ -148,7 +175,6 @@ func initiate_flashback(flashback_id: int) -> void:
 	dialogue_next()
 
 func finish_dialogue() -> void:
-	print("finish_dialogue()")
 	if flashback_ongoing:
 		# Return to previous state
 		current_dialogue_events = previous_dialogue_events
@@ -162,7 +188,7 @@ func finish_dialogue() -> void:
 	else:
 		dialogue_end.emit()
 		dialogue_ongoing = false
-		print("DIALOGUE ENDS")
+		#print("DIALOGUE ENDS")
 
 func _ready():
 	# initiate_dialogue("res://dialogues/experimental_dialogue_text.json")
