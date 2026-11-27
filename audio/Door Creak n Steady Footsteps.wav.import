@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cvs6knxsj3lgy"
+path="res://.godot/imported/Door Creak n Steady Footsteps.wav-28700fc27ec765742697415c78cef78f.sample"
+
+[deps]
+
+source_file="res://audio/Door Creak n Steady Footsteps.wav"
+dest_files=["res://.godot/imported/Door Creak n Steady Footsteps.wav-28700fc27ec765742697415c78cef78f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

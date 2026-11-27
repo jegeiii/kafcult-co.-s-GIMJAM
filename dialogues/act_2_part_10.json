@@ -4,10 +4,6 @@
   ],
   "events": [
 	{
-	  "name": "Flashback",
-	  "flashback_id": 2
-	},
-	{
 	  "name": "Special",
 	  "custom_event_name": "[WALTER DISAPPEARS]"
 	},

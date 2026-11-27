@@ -8,8 +8,10 @@ var from_room: String
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	DialogueManager.dialogue_end.connect(_on_dialogue_end)
+	DialogueManager.change_background.connect(change_background)
 	await get_tree().create_timer(1).timeout
-	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_1.json")
+	#DialogueManager.initiate_dialogue("res://dialogues/act_2_part_1.json")
+	DialogueManager.initiate_dialogue("res://dialogues/flashback_2.json")
 
 func _on_door_pressed() -> void:
 	AudioManager.play_sfx("res://audio/Door.wav")
@@ -140,16 +142,75 @@ func _on_give_dog_toy():
 
 func pet_dog():
 	if InventoryUi.using_item == "none":
-		DialogueManager.initiate_dialogue("res://dialogues/flashback_2.json")
 		$basement/dog.pressed.disconnect(pet_dog)
-		DialogueManager.dialogue_end.connect(flashback_2_end)
+		flashback_2()
+
+func change_background(path, receiver):
+	var target = get_node(receiver)
+	var tween = create_tween()
+	tween.tween_property(target, "self_modulate", Color.BLACK, 0.5)
+	await get_tree().create_timer(0.75).timeout
+	target.texture = load(path)
+	var tween1 = create_tween()
+	tween1.tween_property(target, "self_modulate", Color.WHITE, 0.5)
+
+func flashback_2():
+	DialogueManager.dialogue_end.connect(flashback_2_end)
+	InventoryUi.fade_out(1)
+	InventoryUi.flashback_notification()
+	await get_tree().create_timer(1).timeout
+	$basement.visible = false
+	$flashback_2.visible = true
+	InventoryUi.fade_in(1)
+	await get_tree().create_timer(1).timeout
+	DialogueManager.initiate_dialogue("res://dialogues/flashback_2.json")
+	DialogueManager.dialogue_end.connect(flashback_2_end)
 
 func flashback_2_end():
+	DialogueManager.dialogue_end.disconnect(flashback_2_end)
+	InventoryUi.fade_out(1)
+	InventoryUi.flashback_notification("FLASHBACK FINISHED")
+	await get_tree().create_timer(1).timeout
+	$flashback_2.visible = false
+	$basement.visible = true
+	InventoryUi.fade_in(1)
+	await get_tree().create_timer(1).timeout
 	var tween = create_tween()
 	tween.tween_property($basement/dog, "self_modulate:a", 0.0, 2.0)
-	DialogueManager.dialogue_end.disconnect(flashback_2_end)
 	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_10.json")
 	DialogueManager.dialogue_end.connect(basement_done)
 
 func basement_done():
-	pass
+	DialogueManager.dialogue_end.disconnect(basement_done)
+	InventoryUi.fade_out(1)
+	await get_tree().create_timer(1).timeout
+	$basement.visible = false
+	$"parent's_bedroom".visible = true
+	InventoryUi.fade_in(1)
+	await get_tree().create_timer(1).timeout
+	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_11.json")
+	DialogueManager.dialogue_end.connect(flashback_3)
+
+func flashback_3():
+	DialogueManager.dialogue_end.disconnect(flashback_3)
+	InventoryUi.fade_out(1)
+	InventoryUi.flashback_notification()
+	await get_tree().create_timer(1).timeout
+	$"parent's_bedroom".visible = false
+	$flashback_3.visible = true
+	InventoryUi.fade_in(1)
+	await get_tree().create_timer(1).timeout
+	DialogueManager.initiate_dialogue("res://dialogues/flashback_3.json")
+	DialogueManager.dialogue_end.connect(flashback_3_end)
+
+func flashback_3_end():
+	DialogueManager.dialogue_end.disconnect(flashback_3_end)
+	InventoryUi.fade_out(1)
+	InventoryUi.flashback_notification("FLASHBACK FINISHED")
+	await get_tree().create_timer(1).timeout
+	$"parent's_bedroom".visible = true
+	$flashback_3.visible = false
+	InventoryUi.fade_in(1)
+	await get_tree().create_timer(1).timeout
+	DialogueManager.initiate_dialogue("res://dialogues/flashback_3.json")
+	DialogueManager.dialogue_end.connect(flashback_3_end)

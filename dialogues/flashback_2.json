@@ -19,10 +19,6 @@
 	  ]
 	},
 	{
-	  "name": "ChangeBackground",
-	  "background": "childrens_room"
-	},
-	{
 	  "name": "FadeIn",
 	  "duration": 1.5
 	},
@@ -81,12 +77,12 @@
 	  ]
 	},
 	{
-	  "name": "PlaySound",
-	  "sound": "footsteps"
+	  "name": "PlaySoundEffects",
+	  "path": "res://audio/Footsteps.wav"
 	},
 	{
-	  "name": "PlaySound",
-	  "sound": "door_open"
+	  "name": "PlaySoundEffects",
+	  "path": "res://audio/Door Creak n Steady Footsteps.wav"
 	},
 	{
 	  "name": "UnloadSprite",
@@ -106,12 +102,17 @@
 	  ]
 	},
 	{
-	  "name": "PlaySound",
-	  "sound": "door_close"
+	  "name": "PlaySoundEffects",
+	  "path": "res://audio/Door Unlocking.wav"
 	},
 	{
-	  "name": "FadeOut",
-	  "duration": 1.5
+	  "name": "ChangeBackground",
+	  "path": "res://graphics/transition.png",
+	  "receiver": "flashback_2"
+	},
+	{
+	  "name": "PlaySoundEffects",
+	  "path": "res://audio/Footsteps.wav",
 	},
 	{
 	  "name": "LoadText",
@@ -132,9 +133,8 @@
 	  ]
 	},
 	{
-	  "name": "PlaySound",
-	  "sound": "steady_footsteps",
-	  "loop": true
+	  "name": "PlaySoundEffects",
+	  "path": "res://audio/Footsteps.wav",
 	},
 	{
 	  "name": "LoadText",
@@ -195,8 +195,8 @@
 	  ]
 	},
 	{
-	  "name": "PlaySound",
-	  "sound": "hurried_footsteps"
+	  "name": "PlaySoundEffects",
+	  "path": "res://audio/Footsteps.wav",
 	},
 	{
 	  "name": "LoadText",
@@ -218,15 +218,12 @@
 	},
 	{
 	  "name": "ChangeBackground",
-	  "background": "dining_room"
+	  "path": "res://graphics/dining_room.png",
+	  "receiver": "flashback_2"
 	},
 	{
-	  "name": "FadeIn",
-	  "duration": 1.5
-	},
-	{
-	  "name": "PlaySound",
-	  "sound": "door_open"
+	  "name": "PlaySoundEffects",
+	  "path": "res://audio/door open.wav"
 	},
 	{
 	  "name": "LoadText",
@@ -253,8 +250,8 @@
 	  "position": "right"
 	},
 	{
-	  "name": "PlaySound",
-	  "sound": "plates_clinking_on_table"
+	  "name": "PlaySoundEffects",
+	  "path": "res://audio/Plate Interact.wav"
 	},
 	{
 	  "name": "LoadText",
@@ -347,14 +344,6 @@
 	  ]
 	},
 	{
-	  "name": "PlaySound",
-	  "sound": "running"
-	},
-	{
-	  "name": "PlaySound",
-	  "sound": "door_open"
-	},
-	{
 	  "name": "UnloadSprite",
 	  "speaker": "William",
 	  "transition": "fade"
@@ -363,6 +352,15 @@
 	  "name": "UnloadSprite",
 	  "speaker": "Arthur",
 	  "transition": "fade"
+	},
+	{
+	  "name": "PlaySoundEffects",
+	  "path": "res://audio/Door Unlocking.wav"
+	},
+	{
+	  "name": "ChangeBackground",
+	  "path": "res://graphics/transition.png",
+	  "receiver": "flashback_2"
 	},
 	{
 	  "name": "LoadText",
@@ -381,14 +379,6 @@
 		  "pause_after": 0
 		}
 	  ]
-	},
-	{
-	  "name": "FadeOut",
-	  "duration": 0.5
-	},
-	{
-	  "name": "PlaySound",
-	  "sound": "door_close"
 	},
 	{
 	  "name": "LoadText",
@@ -434,11 +424,8 @@
 	},
 	{
 	  "name": "ChangeBackground",
-	  "background": "main_entrance"
-	},
-	{
-	  "name": "FadeIn",
-	  "duration": 1.5
+	  "path": "res://graphics/entrance.png",
+	  "receiver": "flashback_2"
 	},
 	{
 	  "name": "LoadSprite",
@@ -543,12 +530,12 @@
 	  ]
 	},
 	{
-	  "name": "PlaySound",
-	  "sound": "hurried_footsteps"
+	  "name": "PlaySoundEffects",
+	  "path": "res://audio/Footsteps.wav"
 	},
 	{
-	  "name": "PlaySound",
-	  "sound": "door_open"
+	  "name": "PlaySoundEffects",
+	  "path": "res://audio/Door.wav"
 	},
 	{
 	  "name": "UnloadSprite",
@@ -574,13 +561,14 @@
 	  ]
 	},
 	{
-	  "name": "FadeOut",
-	  "duration": 1.5
-	},
-	{
 	  "name": "UnloadSprite",
 	  "speaker": "Margaret",
 	  "transition": "fade"
+	},
+	{
+	  "name": "ChangeBackground",
+	  "path": "res://graphics/black.png",
+	  "receiver": "flashback_2"
 	},
 	{
 	  "name": "LoadText",
@@ -632,11 +620,8 @@
 	},
 	{
 	  "name": "ChangeBackground",
-	  "background": "dining_room"
-	},
-	{
-	  "name": "FadeIn",
-	  "duration": 1.5
+	  "path": "res://graphics/dining_room.png",
+	  "receiver": "flashback_2"
 	},
 	{
 	  "name": "LoadSprite",
@@ -686,6 +671,287 @@
 		  "pause_after": 0
 		}
 	  ]
-	}
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Margaret",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Margaret",
+	  "expression": "surprised",
+	  "position": "right",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Margaret",
+	  "segments": [
+		{
+		  "text": "Have you checked it yet? ",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0
+		},
+		{
+		  "text": "If it’s from a dead mice then I question your servants’ competence in cleaning the manor.",
+		  "pacing": 0.05,
+		  "style": "normal",
+		  "pause_after": 0
+		},
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Arthur",
+	  "segments": [
+		{
+		  "text": "I shall check the later, then.",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Margaret",
+	  "transition": "fade"
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Arthur",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "normal",
+	  "position": "right",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Nathaniel",
+	  "expression": "normal",
+	  "position": "left",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Sir Arthur, can I come with you?",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Nathaniel",
+	  "segments": [
+		{
+		  "text": "I would like to tag along, Sir Arthur. Do you mind?",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "William",
+	  "transition": "fade"
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Nathaniel",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Arthur",
+	  "expression": "normal",
+	  "position": "center",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Arthur",
+	  "segments": [
+		{
+		  "text": "Very well. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		},
+				{
+		  "text": "Please, follow me.",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "Arthur",
+	  "transition": "fade"
+	},
+	{
+	  "name": "ChangeBackground",
+	  "path": "res://graphics/black.png",
+	  "receiver": "flashback_2"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "William and Nathaniel then followed Arthur down to the basement with steady footsteps. ",
+		  "pacing": 0.06,
+		  "style": "narration",
+		  "pause_after": 0
+		},
+		{
+		  "text": "As they all suspected, there’s a heavy scent of rotten meat that sharply struck their senses, making all of them squint their noses from the intensity. ",
+		  "pacing": 0.06,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Arthur",
+	  "segments": [
+		{
+		  "text": "Stay here for a moment, young masters. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		},
+				{
+		  "text": "I shall open walk in first to check for possible danger. ",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "ChangeBackground",
+	  "path": "res://graphics/basement.png",
+	  "receiver": "flashback_2"
+	},
+	{
+	  "name": "PlaySoundEffects",
+	  "path": "res://audio/door open.wav"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Arthur",
+	  "segments": [
+		{
+		  "text": "! ",
+		  "pacing": 0.06,
+		  "style": "emphasis",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "The moment the lights turn on, right in the middle of the basement cold ground, there lies Walter with some parts of his flesh starting to rot, the dog’s head lulled to the side with his lips turned pale blue. ",
+		  "pacing": 0.06,
+		  "style": "narration",
+		  "pause_after": 0
+		},
+		{
+		  "text": "The Irish Wolfhound's tail no longer wags, just laying there stiffly.",
+		  "pacing": 0.06,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "surprised",
+	  "position": "center",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "Walter…?",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Without waiting for Arthur to back off, William immediately rushed to the dog’s side despite the horrible smell, sobbing loudly as he mourned the lifeless furball in front of him. ",
+		  "pacing": 0.06,
+		  "style": "narration",
+		  "pause_after": 0
+		},
+		{
+		  "text": "It’s the first time he ever cried this hard for something ever in his whole life.",
+		  "pacing": 0.06,
+		  "style": "narration",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "William",
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "William",
+	  "expression": "sad",
+	  "position": "center",
+	  "transition": "fade"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "William",
+	  "segments": [
+		{
+		  "text": "No… Walter!!",
+		  "pacing": 0.06,
+		  "style": "normal",
+		  "pause_after": 0
+		}
+	  ]
+	},
+	{
+	  "name": "UnloadSprite",
+	  "speaker": "William",
+	},
+	{
+	  "name": "LoadSprite",
+	  "speaker": "Nathaniel",
+	  "expression": "happy",
+	  "position": "center",
+	  "transition": "fade"
+	},
   ]
 }

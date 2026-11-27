@@ -15,6 +15,7 @@ signal dialogue_end
 signal load_text(speaker, message_fragments)
 signal load_sprite(name, position, expression)
 signal unload_sprite(name)
+signal change_background(path, receiver)
 signal highlight_speaker(speaker)
 signal flashback_start
 signal flashback_end
@@ -79,6 +80,10 @@ func display_current_event() -> void:
 			AudioManager.play_sfx(SFX_path)
 		"Special":
 			print("Special Effect")
+		"ChangeBackground":
+			var BG_path = event["path"]
+			var receiver = event["receiver"]
+			change_background.emit(BG_path, receiver)
 
 # Runs every next LoadSprite event and 1 LoadText, essentially "grouping" them ig
 # Code runs under the assumption that the last event in the dialogue is a LoadText event
