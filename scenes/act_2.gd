@@ -274,9 +274,10 @@ func flashback_4_end():
 	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_14_afterFB.json")
 
 func _on_dismembered():
+	#$distorted_kids_room.play_dialogue()
+	print("dismembered")
 	$distorted_kids_room/nathaniels_painting.texture_normal = load("res://graphics/nathaniels_painting_body.png")
-	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_15.json")
-	DialogueManager.dialogue_end.connect(distorted_kids_room_done)
+	
 
 func distorted_kids_room_done():
 	print("dismembered")

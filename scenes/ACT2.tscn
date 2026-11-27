@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ci4sol1vea776" path="res://scenes/clickables.tscn" id="4_qt1qe"]
 [ext_resource type="Texture2D" uid="uid://cn8cw652d1w13" path="res://graphics/entrance.png" id="4_sbh7n"]
 [ext_resource type="Texture2D" uid="uid://bewrvixrh3lrg" path="res://graphics/entrance_door.png" id="5_3nniy"]
+[ext_resource type="Texture2D" uid="uid://biae0jcldus0o" path="res://graphics/transition_door.png" id="5_6ct54"]
 [ext_resource type="Texture2D" uid="uid://bicspftpu8xxx" path="res://graphics/charles_key.png" id="5_54ip0"]
 [ext_resource type="Texture2D" uid="uid://6nqwtb578vl8" path="res://graphics/distorted_dining_room.png" id="6_kybp6"]
 [ext_resource type="Texture2D" uid="uid://bfsf0v188v7q7" path="res://graphics/plate.png" id="6_pd338"]
@@ -28,8 +29,15 @@
 [ext_resource type="Texture2D" uid="uid://c6bfpxbedpl0x" path="res://graphics/transition.png" id="17_oxde8"]
 [ext_resource type="Texture2D" uid="uid://xv1keyuf4l66" path="res://graphics/poem.png" id="18_rpow8"]
 [ext_resource type="Texture2D" uid="uid://6rexed1eogdi" path="res://graphics/necklace.png" id="20_73isr"]
+[ext_resource type="Texture2D" uid="uid://ccf4c4xp5gjyp" path="res://graphics/distorted_dining_room_door.png" id="22_p2qt4"]
+[ext_resource type="Texture2D" uid="uid://ctiaichophf8a" path="res://graphics/water_vial.png" id="27_wltfx"]
+[ext_resource type="Texture2D" uid="uid://bav1gv7fea1au" path="res://graphics/basement_door.png" id="28_s7deh"]
 [ext_resource type="Texture2D" uid="uid://qyk68lj2mrqr" path="res://graphics/nathaniels_painting.png" id="29_g56mk"]
 [ext_resource type="Texture2D" uid="uid://cwflb4215bwp0" path="res://graphics/blood.png" id="30_t0ok8"]
+[ext_resource type="Texture2D" uid="uid://d10mjwopcigss" path="res://graphics/office.png" id="31_naxvn"]
+[ext_resource type="Texture2D" uid="uid://dmd6h480j1ky" path="res://graphics/parents_bedroom_door.png" id="33_s7deh"]
+[ext_resource type="Script" uid="uid://blweyf7x455nv" path="res://scripts/distorted_kids_room.gd" id="34_l0aos"]
+[ext_resource type="Texture2D" uid="uid://dp1qfo7d7bpxj" path="res://graphics/distorted_kids_room_door.png" id="36_kn8i4"]
 
 [sub_resource type="GDScript" id="GDScript_pd338"]
 script/source = "extends TextureButton
@@ -45,7 +53,7 @@ func _process(delta: float) -> void:
 	pass
 "
 
-[node name="Node2D" type="Node2D" unique_id=1426360670]
+[node name="ACT2" type="Node2D" unique_id=1426360670]
 script = ExtResource("1_udt4n")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=457309828]
@@ -68,11 +76,11 @@ stretch_mode = 5
 
 [node name="door" type="TextureButton" parent="transition" unique_id=910922027]
 layout_mode = 0
-offset_left = 798.35876
-offset_top = 446.42938
-offset_right = 1157.3589
-offset_bottom = 735.4294
-texture_normal = ExtResource("5_3nniy")
+offset_left = 775.02466
+offset_top = 139.92563
+offset_right = 1181.7043
+offset_bottom = 867.8722
+texture_normal = ExtResource("5_6ct54")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("10_v5o21")
@@ -205,10 +213,10 @@ usable = true
 
 [node name="charles\'s sillhouette" type="TextureButton" parent="distorted_dining_room" unique_id=845101209]
 layout_mode = 0
-offset_left = 980.0
-offset_top = 214.0
-offset_right = 1105.0
-offset_bottom = 293.0
+offset_left = 177.0
+offset_top = 179.0
+offset_right = 302.0
+offset_bottom = 258.0
 texture_normal = ExtResource("2_t1gpn")
 ignore_texture_size = true
 stretch_mode = 5
@@ -219,11 +227,11 @@ script = SubResource("GDScript_pd338")
 [node name="door" type="TextureButton" parent="distorted_dining_room" unique_id=1318661662]
 visible = false
 layout_mode = 0
-offset_left = 421.0
-offset_top = 29.0
-offset_right = 780.0
-offset_bottom = 318.0
-texture_normal = ExtResource("5_3nniy")
+offset_left = 777.0
+offset_top = -8.0
+offset_right = 1106.0
+offset_bottom = 564.0
+texture_normal = ExtResource("22_p2qt4")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("10_v5o21")
@@ -300,18 +308,17 @@ offset_top = 321.00003
 offset_right = 1313.0
 offset_bottom = 426.40546
 scale = Vector2(1, 0.74)
-texture_normal = ExtResource("11_600ry")
+texture_normal = ExtResource("27_wltfx")
 item_id = "water_vial"
 usable = true
 
 [node name="door" type="TextureButton" parent="basement" unique_id=1280210408]
 visible = false
 layout_mode = 0
-offset_left = 421.0
-offset_top = 29.0
-offset_right = 780.0
-offset_bottom = 318.0
-texture_normal = ExtResource("5_3nniy")
+offset_left = 827.0
+offset_right = 1174.0
+offset_bottom = 348.0
+texture_normal = ExtResource("28_s7deh")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("10_v5o21")
@@ -366,11 +373,11 @@ usable = true
 [node name="door" type="TextureButton" parent="parent\'s_bedroom" unique_id=2000587434]
 visible = false
 layout_mode = 0
-offset_left = 421.0
-offset_top = 29.0
-offset_right = 780.0
-offset_bottom = 318.0
-texture_normal = ExtResource("5_3nniy")
+offset_left = 7.0
+offset_top = 208.0
+offset_right = 134.0
+offset_bottom = 670.0
+texture_normal = ExtResource("33_s7deh")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("10_v5o21")
@@ -393,6 +400,7 @@ scale = Vector2(0.5999809, 0.6003189)
 texture = ExtResource("16_54jsy")
 expand_mode = 1
 stretch_mode = 5
+script = ExtResource("34_l0aos")
 
 [node name="nathaniels_painting" parent="distorted_kids_room" unique_id=1675885653 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
@@ -428,11 +436,11 @@ usable = true
 [node name="door" type="TextureButton" parent="distorted_kids_room" unique_id=1959651881]
 visible = false
 layout_mode = 0
-offset_left = 798.35876
-offset_top = 446.42938
-offset_right = 1157.3589
-offset_bottom = 735.4294
-texture_normal = ExtResource("5_3nniy")
+offset_left = -80.00255
+offset_top = 409.78223
+offset_right = 291.67596
+offset_bottom = 1004.4661
+texture_normal = ExtResource("36_kn8i4")
 ignore_texture_size = true
 stretch_mode = 5
 script = ExtResource("10_v5o21")
@@ -445,6 +453,15 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 scale = Vector2(0.5999809, 0.6003189)
 texture = ExtResource("17_oxde8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="office" type="TextureRect" parent="." unique_id=1749312677]
+visible = false
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.5999809, 0.6003189)
+texture = ExtResource("31_naxvn")
 expand_mode = 1
 stretch_mode = 5
 
