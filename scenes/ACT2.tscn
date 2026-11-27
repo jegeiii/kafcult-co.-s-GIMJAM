@@ -29,6 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://xv1keyuf4l66" path="res://graphics/poem.png" id="18_rpow8"]
 [ext_resource type="Texture2D" uid="uid://6rexed1eogdi" path="res://graphics/necklace.png" id="20_73isr"]
 [ext_resource type="Texture2D" uid="uid://qyk68lj2mrqr" path="res://graphics/nathaniels_painting.png" id="29_g56mk"]
+[ext_resource type="Texture2D" uid="uid://cwflb4215bwp0" path="res://graphics/blood.png" id="30_t0ok8"]
 
 [sub_resource type="GDScript" id="GDScript_pd338"]
 script/source = "extends TextureButton
@@ -48,7 +49,7 @@ func _process(delta: float) -> void:
 script = ExtResource("1_udt4n")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=457309828]
-layer = 11
+layer = 20
 
 [node name="CharacterContainer" parent="CanvasLayer" unique_id=57957316 instance=ExtResource("7_sil4y")]
 visible = false
@@ -405,14 +406,38 @@ button_interaction = "inspect"
 
 [node name="knife" parent="distorted_kids_room" unique_id=511602231 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 1316.7086
-offset_top = 341.48517
-offset_right = 1598.3955
-offset_bottom = 654.8636
+offset_left = 986.698
+offset_top = 396.45593
+offset_right = 1268.3848
+offset_bottom = 709.83435
 scale = Vector2(1, 0.5)
 texture_normal = ExtResource("7_kybp6")
 item_id = "knife"
 usable = true
+
+[node name="blood" parent="distorted_kids_room" unique_id=1698083197 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = 1986.7299
+offset_top = 556.371
+offset_right = 2076.7305
+offset_bottom = 651.32056
+texture_normal = ExtResource("30_t0ok8")
+item_id = "blood"
+usable = true
+
+[node name="door" type="TextureButton" parent="distorted_kids_room" unique_id=1959651881]
+visible = false
+layout_mode = 0
+offset_left = 798.35876
+offset_top = 446.42938
+offset_right = 1157.3589
+offset_bottom = 735.4294
+texture_normal = ExtResource("5_3nniy")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("10_v5o21")
+
+[node name="dimmer" parent="distorted_kids_room/door" unique_id=1123873838 instance=ExtResource("3_qt1qe")]
 
 [node name="flashback_4" type="TextureRect" parent="." unique_id=582889705]
 visible = false
@@ -438,3 +463,4 @@ stretch_mode = 5
 [connection signal="pressed" from="basement/dog" to="." method="_on_give_dog_food_and_water"]
 [connection signal="pressed" from="basement/door" to="." method="basement_done"]
 [connection signal="pressed" from="parent\'s_bedroom/door" to="." method="parents_bedroom_done"]
+[connection signal="pressed" from="distorted_kids_room/door" to="." method="transition"]

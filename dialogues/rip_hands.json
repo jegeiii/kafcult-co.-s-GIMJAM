@@ -1,0 +1,31 @@
+{
+  "characters": [
+    "Narrator"
+  ],
+  "events": [
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "You're brilliant, yet you're blind to realize that your hands are bound. ",
+		  "pacing": 0.1,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Or you never fight it? ",
+		  "pacing": 0.1,
+		  "style": "emphasis",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Keep moving as the director commands.",
+		  "pacing": 0.1,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+	  ]
+	}
+  ]
+}

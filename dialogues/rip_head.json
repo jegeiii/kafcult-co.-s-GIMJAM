@@ -1,0 +1,25 @@
+{
+  "characters": [
+    "Narrator"
+  ],
+  "events": [
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Keep your head high above the sky, then. ",
+		  "pacing": 0.1,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "Until the fire in your heart climb its way up to burn each tip of your hair.",
+		  "pacing": 0.1,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+	  ]
+	}
+  ]
+}

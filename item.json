@@ -131,4 +131,11 @@
 			"description": "Supposedly, a self-portrait of Nathaniel. Looks fragile, especially in the heart, eyes, hands, and head region. Better keep it away from sharp objects.",
 			"texture_path": "res://graphics/nathaniels_painting.png"
 		},
+	"blood":
+		{
+			"name": "Blood in a Vial",
+			"count": 0,
+			"description": "",
+			"texture_path": "res://graphics/blood.png"
+		},
 }

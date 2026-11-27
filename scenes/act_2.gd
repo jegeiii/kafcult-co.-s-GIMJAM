@@ -10,6 +10,7 @@ func _ready() -> void:
 	DialogueManager.change_background.connect(change_background)
 	get_node("/root/InventoryUi/item_inspect/item_closeup/pw").correct.connect(_on_pw_correct)
 	get_node("/root/InventoryUi/item_inspect/item_closeup/pw").incorrect.connect(_on_pw_incorrect)
+	get_node("/root/InventoryUi/item_inspect/item_closeup/np").dismembered.connect(_on_dismembered)
 	await get_tree().create_timer(1).timeout
 	#DialogueManager.initiate_dialogue("res://dialogues/act_2_part_1.json")
 	#DialogueManager.initiate_dialogue("res://dialogues/flashback_2.json")
@@ -271,3 +272,16 @@ func flashback_4_end():
 	InventoryUi.fade_in(1)
 	await get_tree().create_timer(1).timeout
 	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_14_afterFB.json")
+
+func _on_dismembered():
+	$distorted_kids_room/nathaniels_painting.texture_normal = load("res://graphics/nathaniels_painting_body.png")
+	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_15.json")
+	DialogueManager.dialogue_end.connect(distorted_kids_room_done)
+
+func distorted_kids_room_done():
+	print("dismembered")
+	DialogueManager.dialogue_end.disconnect(distorted_kids_room_done)
+	InventoryUi.add_item($distorted_kids_room/blood, $distorted_kids_room/blood.item_id)
+	transition_to = "office"
+	starting_dialogue_path = "res://dialogues/act_2_part_16.json"
+	$distorted_kids_room/door.visible = true

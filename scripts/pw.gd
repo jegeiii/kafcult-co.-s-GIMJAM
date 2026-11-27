@@ -6,7 +6,7 @@ signal correct
 signal incorrect
 
 func guess_pw():
-	if guess_order.size() == 6:
+	if guess_order.size() >= 6:
 		if guess_order == correct_order:
 			correct.emit()
 			print("correct")

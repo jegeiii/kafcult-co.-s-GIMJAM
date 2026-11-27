@@ -7,9 +7,14 @@ var scene_lock = true
 #var inspect_depth: int = 0;
 signal fade_black_pressed
 signal written_paper_clicked
+var dialogue_ongoing: bool = false
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("continue_dialogue"): # Replace with your action name
+		print("Spacebar detected! Focused node: ", get_viewport().gui_get_focus_owner())
 
 func _process(delta):
-	if Input.is_action_just_pressed("close_inspect"):
+	if Input.is_action_just_pressed("close_inspect") and !dialogue_ongoing:
 		close_inspect()
 	if Input.is_action_just_pressed("RMB"):
 		$CanvasLayer/tip.visible = false
@@ -122,6 +127,8 @@ func push_notification(text: String):
 	$CanvasLayer/notification/RichTextLabel.visible = false
 
 func InventoryInspect(item_id: String, usable: bool):
+	if $item_inspect/item_closeup/np.visible:
+		$item_inspect/item_closeup/np.visible = false
 	print("a")
 	$fade_black/a.transparent()
 	$fade_black/a.mouse_filter = Control.MOUSE_FILTER_STOP
@@ -168,6 +175,14 @@ func _ready() -> void:
 	#print(inventory)
 	print(inventory_ui["a"]["name"])
 	print(inventory_ui["b"]["description"])
+	DialogueManager.dialogue_end.connect(_on_dialogue_end)
+	DialogueManager.dialogue_start.connect(_on_dialogue_start)
+
+func _on_dialogue_end():
+	dialogue_ongoing = false
+
+func _on_dialogue_start():
+	dialogue_ongoing= true
 	
 #func save():
 	#var file = FileAccess.open("res://items.json", FileAccess.WRITE)

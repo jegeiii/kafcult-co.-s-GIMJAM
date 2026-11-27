@@ -148,6 +148,7 @@ func initiate_flashback(flashback_id: int) -> void:
 	dialogue_next()
 
 func finish_dialogue() -> void:
+	print("finish_dialogue()")
 	if flashback_ongoing:
 		# Return to previous state
 		current_dialogue_events = previous_dialogue_events

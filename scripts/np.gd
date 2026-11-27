@@ -1,11 +1,51 @@
 extends Control
 
+var count: int = 0
+var hands_count: int = 0
+signal dismembered()
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func check_member():
+	DialogueManager.dialogue_end.disconnect(check_member)
+	if count >= 5:
+		dismembered.emit()
+		InventoryUi.close_inspect()
+		visible = false
 
+func check_hands():
+	if hands_count == 2:
+		count += 2
+		DialogueManager.dialogue_end.connect(check_member)
+		DialogueManager.initiate_dialogue("res://dialogues/rip_hands.json")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func _on_heart_pressed() -> void:
+	if InventoryUi.using_item == "knife":
+		DialogueManager.dialogue_end.connect(check_member)
+		DialogueManager.initiate_dialogue("res://dialogues/rip_heart.json")
+		count += 1
+		$heart.visible = false
+
+func _on_eyes_pressed() -> void:
+	if InventoryUi.using_item == "knife":
+		DialogueManager.dialogue_end.connect(check_member)
+		DialogueManager.initiate_dialogue("res://dialogues/rip_eyes.json")
+		count += 1
+		$eyes.visible = false
+
+func _on_hand_l_pressed() -> void:
+	if InventoryUi.using_item == "knife":
+		hands_count += 1
+		check_hands()
+		$handL.visible = false
+
+func _on_hand_r_pressed() -> void:
+	if InventoryUi.using_item == "knife":
+		hands_count += 1
+		check_hands()
+		$handR.visible = false
+
+func _on_head_pressed() -> void:
+	if InventoryUi.using_item == "knife":
+		DialogueManager.dialogue_end.connect(check_member)
+		DialogueManager.initiate_dialogue("res://dialogues/rip_head.json")
+		count += 1
+		$head.visible = false
