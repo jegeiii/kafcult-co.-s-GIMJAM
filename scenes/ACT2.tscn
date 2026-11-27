@@ -35,7 +35,6 @@ func _process(delta: float) -> void:
 script = ExtResource("1_udt4n")
 
 [node name="mansion_entrance" type="Control" parent="." unique_id=1242478844]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 
@@ -160,6 +159,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="basement" type="TextureRect" parent="." unique_id=1910798505]
+visible = false
 offset_right = 1152.0
 offset_bottom = 648.0
 texture = ExtResource("11_bn5lx")
@@ -205,9 +205,12 @@ offset_left = 91.0
 offset_top = 507.0
 offset_right = 224.0
 offset_bottom = 593.0
+focus_mode = 1
 texture_normal = ExtResource("2_t1gpn")
 ignore_texture_size = true
 stretch_mode = 5
+
+[node name="dimmer" parent="basement/dog" unique_id=1972933080 instance=ExtResource("3_qt1qe")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=457309828]
 
@@ -226,4 +229,4 @@ visible = false
 [connection signal="mouse_entered" from="distorted_dining_room/rotten_meat" to="." method="_on_rotten_meat_mouse_entered"]
 [connection signal="pressed" from="distorted_dining_room/rotten_meat" to="." method="_on_rotten_meat_pressed"]
 [connection signal="pressed" from="distorted_dining_room/charles\'s sillhouette" to="." method="_on_charless_sillhouette_pressed"]
-[connection signal="pressed" from="basement/dog" to="." method="_on_dog_pressed"]
+[connection signal="pressed" from="basement/dog" to="." method="_on_give_dog_food_and_water"]

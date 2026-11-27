@@ -12,15 +12,18 @@ func _process(delta):
 	if Input.is_action_pressed("RMB"):
 		$CanvasLayer/tip.visible = false
 		using_item = "none"
-		$CanvasLayer/TextureRect.global_position = Vector2(-100, -100)
 	if using_item != "none":
 		$CanvasLayer/TextureRect.texture = load(inventory_ui[using_item]["texture_path"])
 		$CanvasLayer/TextureRect.global_position = get_global_mouse_position() + Vector2(16, -16)
+	elif using_item == "none":
+		$CanvasLayer/tip.visible = false
+		$CanvasLayer/TextureRect.global_position = Vector2(-100, -100)
 
 func toggle_inventory(state: bool):
-	self.visible = state
+	$CanvasLayer/Button.visible = state
 
 func expand_inventory():
+	$CanvasLayer/Button.release_focus()
 	if $CanvasLayer/Button/Label.text == "<":
 		$CanvasLayer/Button/Label.text = ">"
 		#$Button.set_position($button_opened.position)

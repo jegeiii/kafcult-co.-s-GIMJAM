@@ -9,7 +9,7 @@ var from_room: String
 func _ready() -> void:
 	DialogueManager.dialogue_end.connect(_on_dialogue_end)
 	await get_tree().create_timer(1).timeout
-	#DialogueManager.initiate_dialogue("res://dialogues/act_2_part_1.json")
+	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_1.json")
 
 func _on_door_pressed() -> void:
 	AudioManager.play_sfx("res://audio/Door.wav")
@@ -116,6 +116,7 @@ func _on_rotten_meat_pressed() -> void:
 var given_water: bool = false
 var given_food: bool = false
 func _on_give_dog_food_and_water() -> void:
+	$basement/dog.release_focus()
 	if InventoryUi.using_item == "water":
 		given_water = true
 		InventoryUi.using_item = "none"
@@ -126,20 +127,21 @@ func _on_give_dog_food_and_water() -> void:
 		InventoryUi.remove_item("dogfood")
 	if given_food and given_water:
 		DialogueManager.initiate_dialogue("res://dialogues/act_2_part_8.json")
-		$basement/dog.button_pressed.connect(_on_give_dog_toy)
-
+		$basement/dog.pressed.connect(_on_give_dog_toy)
+	
 func _on_give_dog_toy():
+	$basement/dog.release_focus()
 	if InventoryUi.using_item == "toy":
 		InventoryUi.remove_item("toy")
 		InventoryUi.using_item = "none"
 		DialogueManager.initiate_dialogue("res://dialogues/act_2_part_9.json")
-		$basement/dog.button_pressed.disconnect(_on_give_dog_toy)
-		$basement/dog.button_pressed.connect(pet_dog)
+		$basement/dog.pressed.disconnect(_on_give_dog_toy)
+		$basement/dog.pressed.connect(pet_dog)
 
 func pet_dog():
 	if InventoryUi.using_item == "none":
 		DialogueManager.initiate_dialogue("res://dialogues/flashback_2.json")
-		$basement/dog.button_pressed.disconnect(pet_dog)
+		$basement/dog.pressed.disconnect(pet_dog)
 		DialogueManager.dialogue_end.connect(flashback_2_end)
 
 func flashback_2_end():
