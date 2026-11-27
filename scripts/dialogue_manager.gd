@@ -8,6 +8,7 @@ var dialogue_ongoing: bool				# Is there a dialogue ongoing?
 var previous_dialogue_events: Array
 var previous_event_idx: int
 var flashback_ongoing: bool
+var flashback_transition: bool
 
 signal dialogue_start
 signal dialogue_end
@@ -15,6 +16,8 @@ signal load_text(speaker, message_fragments)
 signal load_sprite(name, position, expression)
 signal unload_sprite(name)
 signal highlight_speaker(speaker)
+signal flashback_start
+signal flashback_end
 
 func load_dialogue_json(dialogue_path: String) -> Dictionary:
 	# Basically import the entire json file as text
@@ -115,7 +118,12 @@ var FLASHBACK_FILES: Dictionary = {
 	7: "res://dialogues/flashback_7.json"
 }
 
+var FLASHBACK_SCENES: Dictionary = {
+	6: "res://scenes/flashback_vi.tscn"
+}
+
 func initiate_flashback(flashback_id: int) -> void:
+	flashback_start.emit()
 	print("FLASHBACK STARTS")
 	flashback_ongoing = true
 	# Save the state before doing the flashback
@@ -139,6 +147,7 @@ func finish_dialogue() -> void:
 		flashback_ongoing = false
 		
 		# Some signal to go back to the main scene
+		flashback_end.emit()
 		dialogue_next()
 		print("FLASHBACK ENDS")
 	else:

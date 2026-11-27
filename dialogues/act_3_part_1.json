@@ -96,6 +96,10 @@
 	  "path": "[<HEAVY RAINFALL SLOWLY FILLING WILLIAM’S EARS>]"
 	},
 	{
+		"name": "UnloadSprite",
+		"speaker": "Nathaniel"
+	},
+	{
 	  "name": "Flashback",
 	  "flashback_id": 6
 	},
@@ -106,6 +110,18 @@
 	{
 	  "name": "Special",
 	  "custom_event_name": "[NATHANIEL’S GENTLE SMILE VANISHES. A YELLOW FLAME IGNITES ALONG HIS COLLAR AND RAPIDLY SPREADS ACROSS HIS JAW, HAIR, AND FACE, BURNING SILENTLY]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "???",
+	  "segments": [
+		{
+		  "text": "???",
+		  "pacing": 0.5,
+		  "style": "thought",
+		  "pause_after": 0.3
+		}
+	  ]
 	},
 	{
 	  "name": "LoadText",
