@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bysi6fywt18ug"]
+
+[ext_resource type="Script" path="res://resource/item_data.gd" id="1_y7lpa"]
+[ext_resource type="Texture2D" uid="uid://bicspftpu8xxx" path="res://graphics/charles_key.png" id="2_8q4kv"]
+
+[resource]
+script = ExtResource("1_y7lpa")
+name = "Key"
+description = "Not tastier than bread"
+texture = ExtResource("2_8q4kv")
+metadata/_custom_type_script = "uid://cfb512b5hewss"

@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://ddbev1vu3radu"]
+
+[ext_resource type="Texture2D" uid="uid://67c5l4t38eks" path="res://graphics/manor_office_with_book.png" id="1_f2p12"]
+[ext_resource type="Script" uid="uid://dcfvbc6e0mwhb" path="res://scenes/act_3_main.gd" id="1_lio8j"]
+[ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="2_57d65"]
+[ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="3_ccm2q"]
+[ext_resource type="PackedScene" uid="uid://ci4sol1vea776" path="res://scenes/clickables.tscn" id="4_bc84x"]
+[ext_resource type="Texture2D" uid="uid://bicspftpu8xxx" path="res://graphics/charles_key.png" id="5_om1hx"]
+
+[node name="Act3Main" type="Node2D" unique_id=1824170162]
+script = ExtResource("1_lio8j")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=677916954]
+layer = -1
+
+[node name="SceneBackground" type="TextureRect" parent="CanvasLayer" unique_id=1943640840]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -14.0
+offset_top = -96.0
+offset_right = 8.0
+offset_bottom = 86.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_f2p12")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CharacterContainer" parent="CanvasLayer" unique_id=57957316 instance=ExtResource("2_57d65")]
+visible = false
+mouse_filter = 1
+
+[node name="DialogueUI" parent="CanvasLayer" unique_id=1234273672 instance=ExtResource("3_ccm2q")]
+visible = false
+mouse_filter = 1
+
+[node name="key" parent="CanvasLayer" unique_id=316619854 instance=ExtResource("4_bc84x")]
+offset_left = 669.0
+offset_top = 120.0
+offset_right = 803.0
+offset_bottom = 225.0
+texture_normal = ExtResource("5_om1hx")
+item_id = "charles_key"
+usable = true
+
+[node name="Keyhole" type="Area2D" parent="." unique_id=1391760634]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Keyhole" unique_id=1436849802]
+polygon = PackedVector2Array(150, 73, 18, 66, 38, 600, 169, 543)
+
+[connection signal="input_event" from="Keyhole" to="." method="_on_keyhole_input_event"]
