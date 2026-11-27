@@ -6,12 +6,20 @@
   ],
   "events": [
 	{
-	  "name": "Special",
-	  "custom_event_name": "[THE AIR IN THE ROOM TURNS FREEZING COLD JUST BEFORE WILLIAM OPENS THE SECRET ROOM]"
-	},
-	{
 	  "name": "PlaySoundEffect",
 	  "path": "[<SLOW, FAMILIAR FOOTSTEPS APPROACHING FROM BEHIND WILLIAM>]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "Nathaniel",
+	  "segments": [
+		{
+		  "text": "... ",
+		  "pacing": 0.065,
+		  "style": "ominous",
+		  "pause_after": 0.3
+		}
+	  ]
 	},
 	{
 	  "name": "LoadText",
@@ -24,10 +32,6 @@
 		  "pause_after": 0.3
 		}
 	  ]
-	},
-	{
-	  "name": "Special",
-	  "custom_event_name": "[WILLIAM FREEZES, THEN SLOWLY TURNS AROUND TO FACE NATHANIEL STANDING AT THE FAR END OF THE CORRIDOR]"
 	},
 	{
 	  "name": "LoadText",
@@ -92,6 +96,10 @@
 	  "path": "[<HEAVY RAINFALL SLOWLY FILLING WILLIAM’S EARS>]"
 	},
 	{
+		"name": "UnloadSprite",
+		"speaker": "Nathaniel"
+	},
+	{
 	  "name": "Flashback",
 	  "flashback_id": 6
 	},
@@ -102,6 +110,18 @@
 	{
 	  "name": "Special",
 	  "custom_event_name": "[NATHANIEL’S GENTLE SMILE VANISHES. A YELLOW FLAME IGNITES ALONG HIS COLLAR AND RAPIDLY SPREADS ACROSS HIS JAW, HAIR, AND FACE, BURNING SILENTLY]"
+	},
+	{
+	  "name": "LoadText",
+	  "speaker": "???",
+	  "segments": [
+		{
+		  "text": "???",
+		  "pacing": 0.5,
+		  "style": "thought",
+		  "pause_after": 0.3
+		}
+	  ]
 	},
 	{
 	  "name": "LoadText",

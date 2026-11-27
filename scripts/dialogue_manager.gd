@@ -8,6 +8,7 @@ var dialogue_ongoing: bool				# Is there a dialogue ongoing?
 var previous_dialogue_events: Array
 var previous_event_idx: int
 var flashback_ongoing: bool
+var flashback_transition: bool
 
 signal dialogue_start
 signal dialogue_end
@@ -15,6 +16,8 @@ signal load_text(speaker, message_fragments)
 signal load_sprite(name, position, expression)
 signal unload_sprite(name)
 signal highlight_speaker(speaker)
+signal flashback_start
+signal flashback_end
 
 func load_dialogue_json(dialogue_path: String) -> Dictionary:
 	# Basically import the entire json file as text
@@ -74,6 +77,8 @@ func display_current_event() -> void:
 		"PlaySoundEffect":
 			var SFX_path = event["path"]
 			AudioManager.play_sfx(SFX_path)
+		"Special":
+			print("Special Effect")
 
 # Runs every next LoadSprite event and 1 LoadText, essentially "grouping" them ig
 # Code runs under the assumption that the last event in the dialogue is a LoadText event
@@ -84,16 +89,16 @@ func dialogue_next() -> void:
 
 	var curr_event = current_dialogue_events[current_event_idx]
 	var curr_event_name = curr_event["name"]
-
+	
 	while curr_event_name != "LoadText" and curr_event_name != "Flashback":
 		display_current_event()
 
 		current_event_idx += 1
-
+		
 		if current_event_idx >= current_dialogue_events.size():
 			finish_dialogue()
 			return
-
+		
 		curr_event = current_dialogue_events[current_event_idx]
 		curr_event_name = curr_event["name"]
 
@@ -104,12 +109,22 @@ func dialogue_next() -> void:
 		current_event_idx += 1
 
 var FLASHBACK_FILES: Dictionary = {
-	1: "res://dialogues/pls_work.json",
-	2: "res://dialogues/flashback_2.json"
+	1: "res://dialogues/flashback_1.json",
+	2: "res://dialogues/flashback_2.json",
+	3: "res://dialogues/flashback_3.json",
+	4: "res://dialogues/flashback_4.json",
+	5: "res://dialogues/flashback_5.json",
+	6: "res://dialogues/flashback_6.json",
+	7: "res://dialogues/flashback_7.json"
+}
+
+var FLASHBACK_SCENES: Dictionary = {
+	6: "res://scenes/flashback_vi.tscn"
 }
 
 func initiate_flashback(flashback_id: int) -> void:
-	print("FLASHBACK")
+	flashback_start.emit()
+	print("FLASHBACK STARTS")
 	flashback_ongoing = true
 	# Save the state before doing the flashback
 	previous_dialogue_events = current_dialogue_events
@@ -132,10 +147,13 @@ func finish_dialogue() -> void:
 		flashback_ongoing = false
 		
 		# Some signal to go back to the main scene
+		flashback_end.emit()
 		dialogue_next()
+		print("FLASHBACK ENDS")
 	else:
 		dialogue_end.emit()
 		dialogue_ongoing = false
+		print("DIALOGUE ENDS")
 
 func _ready():
 	# initiate_dialogue("res://dialogues/experimental_dialogue_text.json")

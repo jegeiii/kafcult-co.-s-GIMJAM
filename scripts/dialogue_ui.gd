@@ -57,7 +57,7 @@ func apply_preset(sample_text, preset) -> String:
 	return result
 
 func _process(delta: float) -> void:
-	if Input.is_action_just_pressed("continue_dialogue") and DialogueManager.dialogue_ongoing:
+	if Input.is_action_just_pressed("continue_dialogue") and DialogueManager.dialogue_ongoing and !DialogueManager.flashback_transition:
 		if is_typing:
 			skip_typing()
 		else:
