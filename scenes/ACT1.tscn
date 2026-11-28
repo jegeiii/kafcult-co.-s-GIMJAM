@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="6_bvngl"]
 [ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="7_0hej8"]
 
-[node name="Node2D" type="Node2D" unique_id=1426360670]
+[node name="ACT1" type="Node2D" unique_id=1426360670]
 script = ExtResource("1_vrawt")
 audio = Array[AudioStream]([ExtResource("2_awjct"), ExtResource("2_wybf4")])
 
