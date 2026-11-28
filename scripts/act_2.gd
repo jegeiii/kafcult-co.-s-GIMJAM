@@ -13,11 +13,12 @@ func _ready() -> void:
 	get_node("/root/InventoryUi/item_inspect/item_closeup/pw").incorrect.connect(_on_pw_incorrect)
 	get_node("/root/InventoryUi/item_inspect/item_closeup/np").dismembered.connect(_on_dismembered)
 	await get_tree().create_timer(1).timeout
-	#DialogueManager.initiate_dialogue("res://dialogues/act_2_part_1.json")
-	#DialogueManager.initiate_dialogue("res://dialogues/flashback_2.json")
+	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_1.json")
 
 func _on_door_pressed() -> void:
-	AudioManager.play_sfx("res://audio/Door.wav")
+	$mansion_entrance/doorL.visible = true
+	#$mansion_entrance/doorR.visible = true
+	AudioManager.play_sfx("res://audio/door open.wav")
 	InventoryUi.fade_out(1)
 	await get_tree().create_timer(1).timeout
 	$mansion_entrance.visible = false
@@ -36,6 +37,7 @@ func _on_laci_pressed() -> void:
 
 func dining_room_done():
 	#DialogueManager.dialogue_end.disconnect(dining_room_done)
+	AudioManager.play_sfx("res://audio/Door.wav")
 	InventoryUi.fade_out(0.2)
 	await get_tree().create_timer(0.2).timeout
 	$dining_room.visible = false
@@ -80,16 +82,19 @@ func flashback_1_end():
 	$distorted_dining_room/door.visible = true
 
 func distorted_dining_room_done():
+	$mansion_entrance/door.visible = false
+	AudioManager.play_sfx("res://audio/door open.wav")
 	InventoryUi.fade_out(1)
 	await get_tree().create_timer(1).timeout
 	$distorted_dining_room.visible = false
-	$transition.visible = true
+	$mansion_entrance.visible = true
 	InventoryUi.fade_in(1)
 	await get_tree().create_timer(1).timeout
 	starting_dialogue_path = "res://dialogues/act_2_part_7.json"
 	transition_to = "basement"
 
 func transition():
+	AudioManager.play_sfx("res://audio/door open.wav")
 	if transition_to == "office":
 		if InventoryUi.using_item == "charles_key":
 			InventoryUi.fade_out(1)
@@ -209,9 +214,10 @@ func basement_done():
 	$transition.visible = true
 	InventoryUi.fade_in(1)
 	await get_tree().create_timer(1).timeout
-	starting_dialogue_path = "res://dialogues/act_2_part_11.json"
-	transition_to = "parent's_bedroom"
-	DialogueManager.dialogue_end.connect(flashback_3)
+	starting_dialogue_path = "res://dialogues/empty.json"
+	transition_to = "mansion_entrance"
+	$mansion_entrance/doorR.visible = true
+	#DialogueManager.dialogue_end.connect(flashback_3)
 
 func flashback_3():
 	DialogueManager.dialogue_end.disconnect(flashback_3)
@@ -253,6 +259,7 @@ func _on_pw_incorrect():
 	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_13.json")
 
 func parents_bedroom_done() -> void:
+	AudioManager.play_sfx("res://audio/door open.wav")
 	InventoryUi.fade_out(1)
 	await get_tree().create_timer(1).timeout
 	$"parent's_bedroom".visible = false
@@ -292,6 +299,7 @@ func _on_dismembered():
 	$distorted_kids_room/nathaniels_painting.texture_normal = load("res://graphics/nathaniels_painting_body.png")
 
 func distorted_kids_room_done():
+	AudioManager.play_sfx("res://audio/door open.wav")
 	InventoryUi.fade_out(1)
 	await get_tree().create_timer(1).timeout
 	$distorted_kids_room.visible = false
@@ -316,13 +324,37 @@ func flashback_5():
 	#DialogueManager.dialogue_end.connect(flashback_5_end)
 
 func flashback_5_end():
-	#DialogueManager.dialogue_end.disconnect(flashback_5_end)
+	DialogueManager.dialogue_end.disconnect(flashback_5_end)
 	#InventoryUi.fade_out(1)
-	#InventoryUi.flashback_notification("FLASHBACK FINISHED")
+	InventoryUi.flashback_notification("FLASHBACK FINISHED")
 	#await get_tree().create_timer(1).timeout
 	#$distorted_kids_room.visible = true
 	#$flashback_4.visible = false
 	#InventoryUi.fade_in(1)
 	#await get_tree().create_timer(1).timeout
-	#ialogueManager.initiate_dialogue("res://dialogues/act_2_part_14_afterFB.json")
-	pass
+	#DialogueManager.initiate_dialogue("res://dialogues/act_2_part_14_afterFB.json")
+	GameManager.change_act_to(3)
+
+
+func _on_door_r_pressed() -> void:
+	AudioManager.play_sfx("res://audio/door open.wav")
+	InventoryUi.fade_out(1)
+	await get_tree().create_timer(1).timeout
+	$mansion_entrance.visible = false
+	$transition.visible = true
+	InventoryUi.fade_in(1)
+	await get_tree().create_timer(1).timeout
+	transition_to = "parent's_bedroom"
+	starting_dialogue_path = "res://dialogues/act_2_part_11.json"
+	DialogueManager.dialogue_end.connect(flashback_3)
+	$mansion_entrance/doorR.visible = false
+
+func _on_door_l_pressed() -> void:
+	AudioManager.play_sfx("res://audio/door open.wav")
+	InventoryUi.fade_out(1)
+	await get_tree().create_timer(1).timeout
+	$mansion_entrance.visible = false
+	$transition.visible = true
+	$mansion_entrance/doorL.visible = false
+	InventoryUi.fade_in(1)
+	await get_tree().create_timer(1).timeout

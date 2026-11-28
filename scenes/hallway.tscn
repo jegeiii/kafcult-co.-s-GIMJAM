@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://c6bfpxbedpl0x" path="res://graphics/transition.png" id="1_u7i40"]
 [ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="2_3w3tr"]
 [ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="3_1k2v8"]
+[ext_resource type="Texture2D" uid="uid://dv5ddenjocyyn" path="res://graphics/hallway_door.png" id="4_txc3n"]
+[ext_resource type="Script" uid="uid://cotejsnlwchi8" path="res://scripts/clickmask.gd" id="5_yjeik"]
+[ext_resource type="PackedScene" uid="uid://c1tdbiw7wt4m3" path="res://scenes/dimmer.tscn" id="6_nlnob"]
 
 [node name="Hallway" type="Node2D" unique_id=94715258]
 
@@ -45,3 +48,16 @@ color = Color(0.1564266, 0, 0, 0.45490196)
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Door" unique_id=246876921]
 polygon = PackedVector2Array(501, 113, 504, 495, 665, 496, 667, 112)
+
+[node name="door" type="TextureButton" parent="." unique_id=1416184486]
+visible = false
+offset_left = 463.0
+offset_top = 87.0
+offset_right = 708.0
+offset_bottom = 513.0
+texture_normal = ExtResource("4_txc3n")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("5_yjeik")
+
+[node name="dimmer" parent="door" unique_id=1440613432 instance=ExtResource("6_nlnob")]

@@ -1,0 +1,11 @@
+{
+  "characters": [
+    "William"
+  ],
+  "events": [
+	{
+	  "name": "PlaySoundEffect",
+	  "path": "res://audio/act1_2.wav"
+	}
+  ]
+}

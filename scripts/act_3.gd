@@ -26,6 +26,7 @@ func _ready() -> void:
 
 func _on_flashback_start(flashback_id) -> void:
 	DialogueManager.flashback_transition = true
+	InventoryUi.flashback_notification()
 	InventoryUi.fade_out(1)
 	await get_tree().create_timer(1).timeout
 	
@@ -44,6 +45,7 @@ func _on_flashback_start(flashback_id) -> void:
 	DialogueManager.flashback_transition = false
 
 func _on_flashback_end(flashback_id) -> void:
+	InventoryUi.flashback_notification("FLASHBACK FINISHED")
 	DialogueManager.flashback_transition = true
 	InventoryUi.fade_out(1)
 	await get_tree().create_timer(1).timeout
@@ -66,7 +68,7 @@ var secret_entrance_unlocked: bool = false
 func _on_keyhole_clicked() -> void:
 	if secret_entrance_unlocked:
 		load_hallway()
-	if InventoryUi.using_item == "charles_key":
+	if InventoryUi.using_item == "key":
 		InventoryUi.empty_hand()
 		print("Entrance Unlocked")
 		InventoryUi.push_notification("??? Unlocked")

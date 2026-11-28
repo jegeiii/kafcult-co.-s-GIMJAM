@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="3_ccm2q"]
 [ext_resource type="PackedScene" uid="uid://ci4sol1vea776" path="res://scenes/clickables.tscn" id="4_bc84x"]
 [ext_resource type="Texture2D" uid="uid://bicspftpu8xxx" path="res://graphics/charles_key.png" id="5_om1hx"]
+[ext_resource type="Texture2D" uid="uid://bhn6y1ptwga4t" path="res://graphics/secret_room_door.png" id="7_5tfrf"]
+[ext_resource type="Script" uid="uid://cotejsnlwchi8" path="res://scripts/clickmask.gd" id="8_s6m0a"]
+[ext_resource type="PackedScene" uid="uid://c1tdbiw7wt4m3" path="res://scenes/dimmer.tscn" id="9_mdlks"]
 
 [node name="Act3Main" type="Node2D" unique_id=1824170162]
 script = ExtResource("1_lio8j")
@@ -28,6 +31,18 @@ texture = ExtResource("1_f2p12")
 expand_mode = 1
 stretch_mode = 5
 
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer" unique_id=994258118]
+offset_left = 909.0
+offset_top = 17.0
+offset_right = 1241.0
+offset_bottom = 618.0
+texture_normal = ExtResource("7_5tfrf")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("8_s6m0a")
+
+[node name="dimmer" parent="CanvasLayer/TextureButton" unique_id=1440613432 instance=ExtResource("9_mdlks")]
+
 [node name="CharacterContainer" parent="CanvasLayer" unique_id=57957316 instance=ExtResource("2_57d65")]
 visible = false
 mouse_filter = 1
@@ -42,7 +57,7 @@ offset_top = 120.0
 offset_right = 803.0
 offset_bottom = 225.0
 texture_normal = ExtResource("5_om1hx")
-item_id = "charles_key"
+item_id = "key"
 usable = true
 
 [node name="Keyhole" type="Area2D" parent="." unique_id=1391760634]
@@ -50,4 +65,5 @@ usable = true
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Keyhole" unique_id=1436849802]
 polygon = PackedVector2Array(150, 73, 18, 66, 38, 600, 169, 543)
 
+[connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_keyhole_pressed"]
 [connection signal="input_event" from="Keyhole" to="." method="_on_keyhole_input_event"]

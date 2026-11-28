@@ -653,7 +653,7 @@
 		{
 		  "text": "Okay, let’s sleep! Good night, Nathan, Will! ",
 		  "pacing": 0.08,
-		  "style": "happy",
+		  "style": "normal",
 		  "pause_after": 0.4
 		}
 	  ]
