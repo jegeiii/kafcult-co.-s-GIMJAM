@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CharacterSprites" format=3 uid="uid://c05nd13df6yg3"]
+
+[ext_resource type="Script" uid="uid://umwev17o1x3g" path="res://resource/character_sprites.gd" id="1_1yat1"]
+
+[resource]
+script = ExtResource("1_1yat1")
+character_name = "Margaret"
+character_normal = "res://scenes/margaret_sprite.tscn"
+character_happy = "res://scenes/margaret_sprite.tscn"
+character_surprised = "res://scenes/margaret_sprite.tscn"
+character_angry = "res://scenes/margaret_sprite.tscn"
+character_sad = "res://scenes/margaret_sprite.tscn"
+metadata/_custom_type_script = "uid://umwev17o1x3g"

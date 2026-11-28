@@ -10,24 +10,25 @@ func _ready():
 func check_member():
 	if count >= 5:
 		DialogueManager.dialogue_end.disconnect(check_member)
-		DialogueManager.initiate_dialogue("res://dialogues/act_2_part_15.json")
+		InventoryUi.close_inspect()
+		#DialogueManager.initiate_dialogue("res://dialogues/act_2_part_15.json")
 		InventoryUi.add_item(get_node("/root/ACT2/distorted_kids_room/blood"), get_node("/root/ACT2/distorted_kids_room/blood").item_id)
 		get_node("/root/ACT2").transition_to = "office"
 		get_node("/root/ACT2").starting_dialogue_path = "res://dialogues/act_2_part_16.json"
 		get_node("/root/ACT2/distorted_kids_room/door").visible = true
-		#dismembered.emit()
+		dismembered.emit()
 		#next()
 		visible = false
 	
 func next():
 	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_15.json")
-	DialogueManager.dialogue_end.connect(_on_dialogue_end)
+	#DialogueManager.dialogue_end.connect(_on_dialogue_end)
 
-func _on_dialogue_end():
-	InventoryUi.add_item($distorted_kids_room/blood, $distorted_kids_room/blood.item_id)
-	get_node("/root/ACT2").transition_to = "office"
-	get_node("/root/ACT2").starting_dialogue_path = "res://dialogues/act_2_part_16.json"
-	$distorted_kids_room/door.visible = true
+#func _on_dialogue_end():
+	#InventoryUi.add_item($distorted_kids_room/blood, $distorted_kids_room/blood.item_id)
+	#get_node("/root/ACT2").transition_to = "office"
+	#get_node("/root/ACT2").starting_dialogue_path = "res://dialogues/act_2_part_16.json"
+	#$distorted_kids_room/door.visible = true
 
 func check_hands():
 	if hands_count == 2:

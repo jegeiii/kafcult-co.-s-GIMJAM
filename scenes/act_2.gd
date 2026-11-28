@@ -8,6 +8,7 @@ var starting_dialogue_path: String
 func _ready() -> void:
 	#DialogueManager.dialogue_end.connect(_on_dialogue_end)
 	DialogueManager.change_background.connect(change_background)
+	$office/fireplace.fireplace_done.connect(_on_fireplace_done)
 	get_node("/root/InventoryUi/item_inspect/item_closeup/pw").correct.connect(_on_pw_correct)
 	get_node("/root/InventoryUi/item_inspect/item_closeup/pw").incorrect.connect(_on_pw_incorrect)
 	get_node("/root/InventoryUi/item_inspect/item_closeup/np").dismembered.connect(_on_dismembered)
@@ -89,13 +90,25 @@ func distorted_dining_room_done():
 	transition_to = "basement"
 
 func transition():
-	InventoryUi.fade_out(1)
-	await get_tree().create_timer(1).timeout
-	get_node(transition_to).visible = true
-	$transition.visible = false
-	InventoryUi.fade_in(1)
-	await get_tree().create_timer(1).timeout
-	DialogueManager.initiate_dialogue(starting_dialogue_path)
+	if transition_to == "office":
+		if InventoryUi.using_item == "charles_key":
+			InventoryUi.fade_out(1)
+			await get_tree().create_timer(1).timeout
+			get_node(transition_to).visible = true
+			$transition.visible = false
+			InventoryUi.fade_in(1)
+			await get_tree().create_timer(1).timeout
+			DialogueManager.initiate_dialogue(starting_dialogue_path)
+		else:
+			DialogueManager.initiate_dialogue("res://dialogues/office_locked.json")
+	else:
+		InventoryUi.fade_out(1)
+		await get_tree().create_timer(1).timeout
+		get_node(transition_to).visible = true
+		$transition.visible = false
+		InventoryUi.fade_in(1)
+		await get_tree().create_timer(1).timeout
+		DialogueManager.initiate_dialogue(starting_dialogue_path)
 
 var rotten_done: bool = false
 func _on_rotten_vegetable_mouse_entered() -> void:
@@ -277,11 +290,39 @@ func _on_dismembered():
 	#$distorted_kids_room.play_dialogue()
 	print("dismembered")
 	$distorted_kids_room/nathaniels_painting.texture_normal = load("res://graphics/nathaniels_painting_body.png")
-	
 
 func distorted_kids_room_done():
-	DialogueManager.dialogue_end.disconnect(distorted_kids_room_done)
-	InventoryUi.add_item($distorted_kids_room/blood, $distorted_kids_room/blood.item_id)
-	transition_to = "office"
-	starting_dialogue_path = "res://dialogues/act_2_part_16.json"
-	$distorted_kids_room/door.visible = true
+	InventoryUi.fade_out(1)
+	await get_tree().create_timer(1).timeout
+	$distorted_kids_room.visible = false
+	$transition.visible = true
+	InventoryUi.fade_in(1)
+	await get_tree().create_timer(1).timeout
+
+func _on_fireplace_done():
+	DialogueManager.initiate_dialogue("res://dialogues/act_2_part_17_conditional.json")
+	DialogueManager.dialogue_end.connect(flashback_5)
+
+func flashback_5():
+	DialogueManager.dialogue_end.disconnect(flashback_5)
+	InventoryUi.fade_out(1)
+	InventoryUi.flashback_notification()
+	await get_tree().create_timer(1).timeout
+	$office.visible = false
+	$flashback_5.visible = true
+	InventoryUi.fade_in(1)
+	await get_tree().create_timer(1).timeout
+	DialogueManager.initiate_dialogue("res://dialogues/flashback_5.json")
+	#DialogueManager.dialogue_end.connect(flashback_5_end)
+
+func flashback_5_end():
+	#DialogueManager.dialogue_end.disconnect(flashback_5_end)
+	#InventoryUi.fade_out(1)
+	#InventoryUi.flashback_notification("FLASHBACK FINISHED")
+	#await get_tree().create_timer(1).timeout
+	#$distorted_kids_room.visible = true
+	#$flashback_4.visible = false
+	#InventoryUi.fade_in(1)
+	#await get_tree().create_timer(1).timeout
+	#ialogueManager.initiate_dialogue("res://dialogues/act_2_part_14_afterFB.json")
+	pass

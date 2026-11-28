@@ -1,0 +1,31 @@
+{
+  "characters": [
+    "Narrator"
+  ],
+  "events": [
+	{
+	  "name": "LoadText",
+	  "speaker": "Narrator",
+	  "segments": [
+		{
+		  "text": "Though inanimate, the fire gives off the feeling of ",
+		  "pacing": 0.1,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": "voracity",
+		  "pacing": 0.1,
+		  "style": "ominous",
+		  "pause_after": 0.3
+		},
+		{
+		  "text": ". ",
+		  "pacing": 0.1,
+		  "style": "narration",
+		  "pause_after": 0.3
+		},
+	  ]
+	}
+  ]
+}

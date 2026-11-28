@@ -30,14 +30,19 @@ func load_character(node: PackedScene, position: String):
 
 # Character Resources
 var CHARACTER_RESOURCES: Dictionary = {
-	"William": preload("res://resource/test_sprites.tres"),
+	"William": preload("res://resource/william_sprites.tres"),
 	"Diana": preload("res://resource/test_sprites.tres"),
-	"Nathaniel": preload("res://resource/test_sprites.tres")
+	"Nathaniel": preload("res://resource/test_sprites.tres"),
+	"Charles": preload("res://resource/charles_sprites.tres"),
+	"Margaret": preload("res://resource/margaret_sprites.tres"),
+	"Arthur": preload("res://resource/test_sprites.tres"),
+	"Charles’s silhouette": preload("res://resource/charles_sprites.tres"),
+	"Miranda": preload("res://resource/margaret_sprites.tres")
 }
 
 func get_character_resource(name):
-	#return CHARACTER_RESOURCES[name]
-	return preload("res://resource/test_sprites.tres")
+	return CHARACTER_RESOURCES[name]
+	#return preload("res://resource/test_sprites.tres")
 
 func get_character_sprite(name, expression):
 	var resource = get_character_resource(name)

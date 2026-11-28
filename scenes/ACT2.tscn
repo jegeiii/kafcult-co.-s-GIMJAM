@@ -30,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://xv1keyuf4l66" path="res://graphics/poem.png" id="18_rpow8"]
 [ext_resource type="Texture2D" uid="uid://6rexed1eogdi" path="res://graphics/necklace.png" id="20_73isr"]
 [ext_resource type="Texture2D" uid="uid://ccf4c4xp5gjyp" path="res://graphics/distorted_dining_room_door.png" id="22_p2qt4"]
+[ext_resource type="Texture2D" uid="uid://c2rr3vwvcqnyr" path="res://graphics/dog.png" id="27_3pgsr"]
 [ext_resource type="Texture2D" uid="uid://ctiaichophf8a" path="res://graphics/water_vial.png" id="27_wltfx"]
 [ext_resource type="Texture2D" uid="uid://bav1gv7fea1au" path="res://graphics/basement_door.png" id="28_s7deh"]
 [ext_resource type="Texture2D" uid="uid://qyk68lj2mrqr" path="res://graphics/nathaniels_painting.png" id="29_g56mk"]
@@ -38,6 +39,9 @@
 [ext_resource type="Texture2D" uid="uid://dmd6h480j1ky" path="res://graphics/parents_bedroom_door.png" id="33_s7deh"]
 [ext_resource type="Script" uid="uid://blweyf7x455nv" path="res://scripts/distorted_kids_room.gd" id="34_l0aos"]
 [ext_resource type="Texture2D" uid="uid://dp1qfo7d7bpxj" path="res://graphics/distorted_kids_room_door.png" id="36_kn8i4"]
+[ext_resource type="Texture2D" uid="uid://dwrufeu0jgxoe" path="res://graphics/fireplace.png" id="39_8fmtm"]
+[ext_resource type="Script" uid="uid://ykyxqppojb7w" path="res://scenes/fireplace.gd" id="40_0p1v7"]
+[ext_resource type="Texture2D" uid="uid://ibvg4gq82mjw" path="res://graphics/ink.png" id="41_aay0o"]
 
 [sub_resource type="GDScript" id="GDScript_pd338"]
 script/source = "extends TextureButton
@@ -290,12 +294,12 @@ usable = true
 
 [node name="dog" type="TextureButton" parent="basement" unique_id=1072540421]
 layout_mode = 0
-offset_left = 91.0
-offset_top = 507.0
-offset_right = 224.0
-offset_bottom = 593.0
+offset_left = 37.0
+offset_top = 352.0
+offset_right = 221.0
+offset_bottom = 620.0
 focus_mode = 1
-texture_normal = ExtResource("2_t1gpn")
+texture_normal = ExtResource("27_3pgsr")
 ignore_texture_size = true
 stretch_mode = 5
 
@@ -394,6 +398,7 @@ expand_mode = 1
 stretch_mode = 5
 
 [node name="distorted_kids_room" type="TextureRect" parent="." unique_id=98947509]
+visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 scale = Vector2(0.5999809, 0.6003189)
@@ -414,10 +419,10 @@ button_interaction = "inspect"
 
 [node name="knife" parent="distorted_kids_room" unique_id=511602231 instance=ExtResource("4_qt1qe")]
 layout_mode = 0
-offset_left = 986.698
-offset_top = 396.45593
-offset_right = 1268.3848
-offset_bottom = 709.83435
+offset_left = 1966.7292
+offset_top = 349.81406
+offset_right = 2248.416
+offset_bottom = 663.1925
 scale = Vector2(1, 0.5)
 texture_normal = ExtResource("7_kybp6")
 item_id = "knife"
@@ -452,11 +457,109 @@ visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 scale = Vector2(0.5999809, 0.6003189)
-texture = ExtResource("17_oxde8")
+texture = ExtResource("16_54jsy")
 expand_mode = 1
 stretch_mode = 5
 
 [node name="office" type="TextureRect" parent="." unique_id=1749312677]
+offset_right = 1920.0
+offset_bottom = 1080.0
+scale = Vector2(0.5999809, 0.6003189)
+texture = ExtResource("31_naxvn")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="fireplace" type="TextureButton" parent="office" unique_id=656238755]
+layout_mode = 0
+offset_left = 441.68076
+offset_top = 466.41873
+offset_right = 910.02905
+offset_bottom = 921.177
+texture_normal = ExtResource("39_8fmtm")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("40_0p1v7")
+
+[node name="dimmer" parent="office/fireplace" unique_id=1733021395 instance=ExtResource("3_qt1qe")]
+
+[node name="ink" parent="office" unique_id=1987364581 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = -126.670715
+offset_top = 448.09515
+offset_right = -61.670715
+offset_bottom = 510.09515
+texture_normal = ExtResource("41_aay0o")
+item_id = "ink"
+usable = true
+
+[node name="ritual_book_after" parent="office" unique_id=2078228605 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = -101.66992
+offset_top = 569.6972
+offset_right = -36.66992
+offset_bottom = 631.6972
+item_id = "ritual_book_after"
+
+[node name="ritual_book_before" parent="office" unique_id=930224205 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = 936.69653
+offset_top = 568.03143
+offset_right = 1001.69653
+offset_bottom = 630.03143
+item_id = "ritual_book_before"
+usable = true
+
+[node name="key" parent="office" unique_id=1374017157 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = -215.00684
+offset_top = 637.9942
+offset_right = -150.00684
+offset_bottom = 699.9942
+item_id = "key"
+usable = true
+
+[node name="blood" parent="office" unique_id=843266833 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = 1388.3774
+offset_top = 546.3763
+offset_right = 1478.378
+offset_bottom = 641.32587
+texture_normal = ExtResource("30_t0ok8")
+item_id = "blood"
+usable = true
+
+[node name="necklace" parent="office" unique_id=1648064381 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = 1271.7072
+offset_top = 559.7025
+offset_right = 1365.7072
+offset_bottom = 646.7025
+texture_normal = ExtResource("20_73isr")
+item_id = "necklace"
+usable = true
+
+[node name="water_vial" parent="office" unique_id=56129112 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = 1155.0369
+offset_top = 561.3683
+offset_right = 1245.0369
+offset_bottom = 666.7737
+scale = Vector2(1, 0.74)
+texture_normal = ExtResource("27_wltfx")
+item_id = "water_vial"
+usable = true
+
+[node name="the_verse" parent="office" unique_id=560186646 instance=ExtResource("4_qt1qe")]
+layout_mode = 0
+offset_left = 1076.7009
+offset_top = 566.3656
+offset_right = 1141.7009
+offset_bottom = 628.3656
+texture_normal = ExtResource("12_5fu1d")
+item_id = "the_verse"
+usable = true
+
+[node name="flashback_5" type="TextureRect" parent="." unique_id=1861550887]
 visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
@@ -480,4 +583,5 @@ stretch_mode = 5
 [connection signal="pressed" from="basement/dog" to="." method="_on_give_dog_food_and_water"]
 [connection signal="pressed" from="basement/door" to="." method="basement_done"]
 [connection signal="pressed" from="parent\'s_bedroom/door" to="." method="parents_bedroom_done"]
-[connection signal="pressed" from="distorted_kids_room/door" to="." method="transition"]
+[connection signal="pressed" from="distorted_kids_room/door" to="." method="distorted_kids_room_done"]
+[connection signal="pressed" from="office/fireplace" to="office/fireplace" method="_on_pressed"]

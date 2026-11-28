@@ -72,6 +72,9 @@ func add_item(item: TextureButton, item_id: String) -> void:
 			get_node("/root/InventoryUi/CanvasLayer/PanelContainer/ScrollContainer/VBoxContainer")
 		)
 		item.texture_normal = load(inventory_ui[item_id]["texture_path"])
+		var bitmap := BitMap.new()
+		bitmap.create_from_image_alpha(item.texture_normal.get_image())
+		item.texture_click_mask = bitmap
 
 		# Make it behave like an inventory item
 		item.button_interaction = "inventory"
@@ -130,17 +133,22 @@ func InventoryInspect(item_id: String, usable: bool):
 	if $item_inspect/item_closeup/np.visible:
 		$item_inspect/item_closeup/np.visible = false
 	print("a")
+	
 	$fade_black/a.transparent()
 	$fade_black/a.mouse_filter = Control.MOUSE_FILTER_STOP
 	$item_inspect/item_closeup/PanelContainer/RichTextLabel.text = inventory_ui[item_id]["description"]
 	$item_inspect/item_closeup/PanelContainer2/RichTextLabel.text = inventory_ui[item_id]["name"]
 	$item_inspect/item_closeup.visible = true
 	$item_inspect/item_closeup/use_button.visible = usable
+	
 	if item_id == "nathaniels_painting":
 		$item_inspect/item_closeup.texture_normal = null
 		$item_inspect/item_closeup/np.visible = true
 	else:
 		$item_inspect/item_closeup.texture_normal = load(inventory_ui[item_id]["texture_path"])
+	
+	
+	
 	$item_inspect/item_closeup/Label.text = item_id
 	update_item_closeup_clickmask()
 

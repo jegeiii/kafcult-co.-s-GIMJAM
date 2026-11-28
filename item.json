@@ -24,70 +24,70 @@
 		{
 			"name": "Charles's Key",
 			"count": 0,
-			"description": "A key that leads to an office.",
+			"description": "A key to unlock Charles’s Office, where secrets are kept hidden behind closed doors.",
 			"texture_path": "res://graphics/charles_key.png"
 		},
 	"plate": 
 		{
 			"name": "Plate",
 			"count": 0,
-			"description": "Something you put food on, I guess.",
+			"description": "A fine porcelain dinner plate.",
 			"texture_path": "res://graphics/plate.png"
 		},
 	"knife": 
 		{
 			"name": "Knife",
 			"count": 0,
-			"description": "Be careful with it. It can stab things.",
+			"description": "A silver cutting knife with sharp edges.",
 			"texture_path": "res://graphics/knife.png"
 		},
 	"rotten_vegetable": 
 		{
 			"name": "Rotten Vegetable",
 			"count": 0,
-			"description": "Eww.",
+			"description": "An inedible piece of vegetable, aged by time.",
 			"texture_path": "res://graphics/rotten_vegetable.png"
 		},
 	"rotten_meat": 
 		{
 			"name": "Rotten Meat",
 			"count": 0,
-			"description": "Don't eat it. Like, for real.",
+			"description": "A slab of spoiled meat in decay.",
 			"texture_path": "res://graphics/rotten_meat.png"
 		},
 	"dogfood": 
 		{
 			"name": "Dog Food",
 			"count": 0,
-			"description": "Tastes like chocolate. How do I know? Shhh, don't question it.",
+			"description": "Walter’s source of nutrition until he no longer could grow.",
 			"texture_path": "res://graphics/dogfood.png"
 		},
 	"water": 
 		{
 			"name": "Dog Feeding Bowl with Water",
 			"count": 0,
-			"description": "Are you sure that's 'water'?",
+			"description": "A normal clear water. Drinkable for soulful beings, supposedly.",
 			"texture_path": "res://graphics/water.png"
 		},
 	"toy": 
 		{
 			"name": "Dog Toy",
 			"count": 0,
-			"description": "Walter seems to like it.",
+			"description": "Walter’s pride and joy before its squeak no longer could be heard.",
 			"texture_path": "res://graphics/toy.png"
 		},
 	"the_verse":
 		{
 			"name": "The Verse",
 			"count": 0,
-			"description": "",
+			"description": "A torn scrap of parchment bearing poet that sounds tragic, yet beautiful.",
 			"texture_path": "res://graphics/the_verse.png"
 		},
 	"water_vial":
 		{
 			"name": "Blackwood Water in Vial",
 			"count": 0,
-			"description": "",
+			"description": "A small glass vial filled with Blackwood Hollow Lake Water, it looks unnaturally dark, almost like an ink.",
 			"texture_path": "res://graphics/water_vial.png"
 		},
 	"jewelry_box":
@@ -121,7 +121,7 @@
 		{
 			"name": "Necklace",
 			"count": 0,
-			"description": "Something Margaret used to wear all the time.",
+			"description": "Margaret’s antique jewelry. Even though the woman herself adores diamonds and gold, this rigid amber necklace seems to reflect her personality well–controlling and hates imperfection.",
 			"texture_path": "res://graphics/necklace.png"
 		},
 	"nathaniels_painting":
@@ -135,7 +135,35 @@
 		{
 			"name": "Blood in a Vial",
 			"count": 0,
-			"description": "",
+			"description": "A small vial containing dark, thick blood, cold to the touch, yet refusing to clot.",
 			"texture_path": "res://graphics/blood.png"
+		},
+	"ink":
+		{
+			"name": "Ink in a Vial",
+			"count": 0,
+			"description": "",
+			"texture_path": "res://graphics/ink.png"
+		},
+	"ritual_book_before":
+		{
+			"name": "Ritual Book",
+			"count": 0,
+			"description": "An ancient leathered grimoire with a yellow sign in the front cover.",
+			"texture_path": "res://graphics/ritual_book.png"
+		},
+	"ritual_book_after":
+		{
+			"name": "Ritual Book",
+			"count": 0,
+			"description": "An ancient leathered grimoire with a yellow sign in the front cover.",
+			"texture_path": "res://graphics/ritual_book.png"
+		},
+	"key":
+		{
+			"name": "Key",
+			"count": 0,
+			"description": "A key to unlock a room you’re not supposed to unlock, not even anyone else. No one is supposed to uncover what’s behind this door.",
+			"texture_path": "res://graphics/key.png"
 		},
 }
