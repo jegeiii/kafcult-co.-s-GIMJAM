@@ -3,7 +3,14 @@
 [ext_resource type="Script" uid="uid://bev73k84ul2rh" path="res://scripts/act_4_end.gd" id="1_pkgvh"]
 [ext_resource type="Texture2D" uid="uid://f2btv1hpd3r5" path="res://graphics/dining_room.png" id="2_oigor"]
 [ext_resource type="PackedScene" uid="uid://dimqef8ptr4f4" path="res://scenes/character_container.tscn" id="3_bcjxt"]
+[ext_resource type="Texture2D" uid="uid://cjtucnlgrujin" path="res://graphics/kids_room.png" id="4_bcjxt"]
 [ext_resource type="PackedScene" uid="uid://cvqlnlldj05ok" path="res://scenes/dialogue_ui.tscn" id="4_wo527"]
+[ext_resource type="Texture2D" uid="uid://dmorqki4jlyfw" path="res://graphics/diana_happy.png" id="5_wo527"]
+[ext_resource type="Texture2D" uid="uid://vdnod31e0127" path="res://graphics/diana_sad.png" id="6_6tstt"]
+[ext_resource type="Texture2D" uid="uid://ir84836xl5rn" path="res://graphics/basement.png" id="6_wo527"]
+[ext_resource type="Texture2D" uid="uid://dmjy3dxx72ukc" path="res://graphics/secret_room.png" id="8_6g4xl"]
+[ext_resource type="Texture2D" uid="uid://dytdn6457xxnk" path="res://graphics/diana_normal.png" id="9_mjxhd"]
+[ext_resource type="Texture2D" uid="uid://baajdoipcnote" path="res://graphics/the_king.png" id="10_2v45q"]
 
 [node name="ACT4End" type="Node2D" unique_id=1946646299]
 script = ExtResource("1_pkgvh")
@@ -11,7 +18,7 @@ script = ExtResource("1_pkgvh")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1103922810]
 layer = -1
 
-[node name="SceneBackground" type="TextureRect" parent="CanvasLayer" unique_id=46962607]
+[node name="SceneBackgroundMain" type="TextureRect" parent="CanvasLayer" unique_id=46962607]
 unique_name_in_owner = true
 anchors_preset = 15
 anchor_right = 1.0
@@ -29,6 +36,119 @@ stretch_mode = 5
 [node name="CharacterContainer" parent="CanvasLayer" unique_id=57957316 instance=ExtResource("3_bcjxt")]
 visible = false
 mouse_filter = 1
+
+[node name="SceneBackgroundBedroom" type="TextureRect" parent="CanvasLayer" unique_id=1583137304]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -14.0
+offset_top = -96.0
+offset_right = 8.0
+offset_bottom = 86.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_bcjxt")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DianaHappyBedroom" type="TextureRect" parent="CanvasLayer" unique_id=659727240]
+unique_name_in_owner = true
+visible = false
+offset_left = 567.0
+offset_top = 262.0
+offset_right = 657.0
+offset_bottom = 451.0
+texture = ExtResource("5_wo527")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DianaSadBedroom" type="TextureRect" parent="CanvasLayer" unique_id=657293767]
+unique_name_in_owner = true
+visible = false
+offset_left = 463.0
+offset_top = 284.0
+offset_right = 576.0
+offset_bottom = 514.0
+texture = ExtResource("6_6tstt")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SceneBackgroundBasement" type="TextureRect" parent="CanvasLayer" unique_id=718416054]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -14.0
+offset_top = -96.0
+offset_right = 8.0
+offset_bottom = 86.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_wo527")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DianaHappyBasement" type="TextureRect" parent="CanvasLayer" unique_id=1997075734]
+unique_name_in_owner = true
+visible = false
+offset_left = 249.0
+offset_top = 235.0
+offset_right = 475.0
+offset_bottom = 606.0
+texture = ExtResource("5_wo527")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SceneBackgroundSecretRoom" type="TextureRect" parent="CanvasLayer" unique_id=1411476277]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -14.0
+offset_top = -91.0
+offset_right = 8.0
+offset_bottom = 91.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_6g4xl")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DianaNormalSecretRoom" type="TextureRect" parent="CanvasLayer" unique_id=2129516446]
+unique_name_in_owner = true
+visible = false
+offset_left = 423.0
+offset_top = 169.0
+offset_right = 806.0
+offset_bottom = 726.0
+texture = ExtResource("9_mjxhd")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1029952824]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TheKing" type="TextureRect" parent="CanvasLayer" unique_id=307827036]
+unique_name_in_owner = true
+visible = false
+offset_left = 346.0
+offset_top = 80.0
+offset_right = 811.0
+offset_bottom = 715.0
+texture = ExtResource("10_2v45q")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="DialogueUI" parent="CanvasLayer" unique_id=1234273672 instance=ExtResource("4_wo527")]
 visible = false

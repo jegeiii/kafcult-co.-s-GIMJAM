@@ -280,7 +280,6 @@ func _on_dismembered():
 	
 
 func distorted_kids_room_done():
-	print("dismembered")
 	DialogueManager.dialogue_end.disconnect(distorted_kids_room_done)
 	InventoryUi.add_item($distorted_kids_room/blood, $distorted_kids_room/blood.item_id)
 	transition_to = "office"
